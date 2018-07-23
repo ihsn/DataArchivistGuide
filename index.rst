@@ -283,7 +283,7 @@ are recommended:
 
 -  Sort records by their unique identifier before you save the file.
 
-Gathering and preparing the documentation 
+Gathering and preparing the documentation
 ==========================================
 
 All information related to the survey may be useful and should be
@@ -2363,7 +2363,7 @@ and methods, scope and coverage, etc.)
 |                                   | tp://www.cso.org/databank>`__     |
 +-----------------------------------+-----------------------------------+
 
-Good practices for completing the File Description 
+Good practices for completing the File Description
 ---------------------------------------------------
 
 The File Description is the DDI section that aims to provide a detailed
@@ -2477,7 +2477,7 @@ available DDI elements.
 |                                   | most cases be left empty.         |
 +-----------------------------------+-----------------------------------+
 
-Good practices for completing the Variables Description 
+Good practices for completing the Variables Description
 --------------------------------------------------------
 
 The Variable Description is the section of the DDI document that
@@ -3467,7 +3467,7 @@ International Household Survey Network
 DDI Reviewers’ Feedback Form
 
 +-----------------+-----------------+-----------------+-----------------+
-| **Country:**    |                 | **Language:**   |
+| **Country:**    | **Language:**                                       |
 +=================+=================+=================+=================+
 | **Dataset       |                 |                 |                 |
 | name:**         |                 |                 |                 |
@@ -3514,10 +3514,10 @@ DDI Reviewers’ Feedback Form
 
 **DOCUMENT DESCRIPTION**
 
-+-------------+-------------+-------------+-------------+-------------+
-| **Document  |
-| Description |
-| **          |
++---------------------------------------------------------------------+
+| **Document  Description**                                           |
+|                                                                     |
+|                                                                     |
 +=============+=============+=============+=============+=============+
 | **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
 | Element**   | *           |             | s           |             |
@@ -3564,15 +3564,9 @@ DDI Reviewers’ Feedback Form
 |             |             |             |             |    Check    |
 +-------------+-------------+-------------+-------------+-------------+
 
-**
-STUDY DESCRIPTION**
-
-+-------------+-------------+-------------+-------------+-------------+
-| **STUDY     |
-| DESCRIPTION |
-| -           |
-| Identificat |
-| ion**       |
+**STUDY DESCRIPTION**
++---------------------------------------------------------------------+
+| **STUDY DESCRIPTION Identification**                                |
 +=============+=============+=============+=============+=============+
 | **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
 | Element**   | *           |             | s           |             |
@@ -5317,4 +5311,3 @@ Website is provided)
 .. |image15| image:: media/image14.png
 .. |image16| image:: media/image15.png
 .. |image17| image:: media/image1.png
-
