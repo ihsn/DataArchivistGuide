@@ -191,15 +191,15 @@ are recommended:
    (Enumeration Area), HHNUM (Household Number). The following options
    are possible:
 
-+-----------------------+-----------------------------------+-----------+
-| Option                |                                   |  Option 3:|
-| 1:**       2:**       | 3:**                              |           |
-|                       |                                   |           |
-| Use a      Generate   | Generate                          |           |
-| combinati  a          | a                                 |           |
-| on         concatena  | sequentia                         |           |
-| of four    ted        | l                                 |           |
-| variables  ID         | number                            |           |
++-----------------------------------------------+-----------+-----------+
+| Option                                        |           |  Option 3:|
+| 1:**       2:**      3:**                     |           |           |
+|                                               |           |           |
+| Use a      Generate   Generate                |           |           |
+| combinati  a          a                       |           |           |
+| on         concatena  sequentia               |           |           |
+| of four    ted       l                        |           |           |
+| variables  ID         number                  |           |           |
 +===========+===========+===========+===========+===========+===========+
 | PROV      | DIST      | EA        | HHNUM     | HHID      | HHID      |
 +-----------+-----------+-----------+-----------+-----------+-----------+
