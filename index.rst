@@ -3519,9 +3519,9 @@ DDI Reviewers’ Feedback Form
 |                                                                     |
 |                                                                     |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+| **DDI       |**Expected** | **Status**  |**Reviewer’s | **Action**  |
+| Element**   |             |             |comments**   |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Study Title | Proper noun | Provided    | Typos/spell |    None     |
 |             | format,     |             | ing         |             |
@@ -3565,6 +3565,7 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 **STUDY DESCRIPTION**
+
 +---------------------------------------------------------------------+
 | **STUDY DESCRIPTION Identification**                                |
 +=============+=============+=============+=============+=============+
