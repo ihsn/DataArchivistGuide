@@ -893,11 +893,11 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   | *The scope of the Multiple        |
+|                                   | The scope of the Multiple         |
 |                                   | Indicator Cluster Survey          |
-|                                   | includes:*                        |
+|                                   | includes:                         |
 |                                   |                                   |
-|                                   | -  *HOUSEHOLD: Household          |
+|                                   | -  HOUSEHOLD: Household           |
 |                                   |    characteristics, household     |
 |                                   |    listing, orphaned and          |
 |                                   |    vulnerable children,           |
@@ -912,7 +912,7 @@ and methods, scope and coverage, etc.)
 |                                   |    tenure and durability of       |
 |                                   |    housing.*                      |
 |                                   |                                   |
-|                                   | -  *WOMEN: Women's                |
+|                                   | -  WOMEN: Women's                 |
 |                                   |    characteristics, child         |
 |                                   |    mortality, tetanus toxoid,     |
 |                                   |    maternal and newborn health,   |
@@ -922,9 +922,9 @@ and methods, scope and coverage, etc.)
 |                                   |    knowledge, with optional       |
 |                                   |    modules for unmet need,        |
 |                                   |    domestic violence, and sexual  |
-|                                   |    behavior.*                     |
+|                                   |    behavior.                      |
 |                                   |                                   |
-|                                   | -  *CHILDREN: Children's          |
+|                                   | -  CHILDREN: Children's           |
 |                                   |    characteristics, birth         |
 |                                   |    registration and early         |
 |                                   |    learning, vitamin A,           |
@@ -1019,17 +1019,17 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   | *The survey covered all de jure   |
+|                                   | The survey covered all de jure    |
 |                                   | household members (usual          |
 |                                   | residents), all women aged 15-49  |
 |                                   | years resident in the household,  |
 |                                   | and all children aged 0-4 years   |
 |                                   | (under age 5) resident in the     |
-|                                   | household.*                       |
+|                                   | household.                        |
 +-----------------------------------+-----------------------------------+
 
 +-----------------------------------+-----------------------------------+
-| **Producers and Sponsors**        |
+| **Producers and Sponsors**                                            |
 +===================================+===================================+
 | Primary investigator              | The primary investigator will in  |
 |                                   | most cases be an institution, but |
@@ -1111,7 +1111,7 @@ and methods, scope and coverage, etc.)
 |                                   | some form contributed to the      |
 |                                   | survey.                           |
 +-----------------------------------+-----------------------------------+
-| **Sampling**                      |                                   |
+| **Sampling**                                                          |
 +-----------------------------------+-----------------------------------+
 | Sampling procedure                | This field only applies to sample |
 |                                   | surveys. Information on sampling  |
@@ -1169,7 +1169,7 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   | *5000 households were selected    |
+|                                   | 5000 households were selected     |
 |                                   | for the sample. Of these, 4996    |
 |                                   | were occupied households and 4811 |
 |                                   | were successfully interviewed for |
