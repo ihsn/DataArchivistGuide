@@ -519,7 +519,7 @@ to describe the DDI document.
 |                                   |                                   |
 |                                   | Popstan Multiple Indicator        |
 |                                   | Cluster Survey 2002               |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Metadata Producer                 | Name of the person(s) or          |
 |                                   | organization(s) who documented    |
 |                                   | the dataset. Use the "role"       |
