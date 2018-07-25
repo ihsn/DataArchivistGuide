@@ -191,29 +191,29 @@ are recommended:
    (Enumeration Area), HHNUM (Household Number). The following options
    are possible:
 
-+-----------------------------------------------+-----------+-----------+
-| Option                                        |           |  Option 3:|
-| 1:**       2:**      3:**                     |           |           |
-|                                               |           |           |
-| Use a      Generate   Generate                |           |           |
-| combinati  a          a                       |           |           |
-| on         concatena  sequentia               |           |           |
-| of four    ted       l                        |           |           |
-| variables  ID         number                  |           |           |
-+===========+===========+===========+===========+===========+===========+
-| PROV      | DIST      | EA        | HHNUM     | HHID      | HHID      |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| 12        | 01        | 014       | 004       | 120101400 | 1         |
-|           |           |           |           | 4         |           |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| 12        | 01        | 015       | 001       | 120101500 | 2         |
-|           |           |           |           | 1         |           |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| 13        | 07        | 008       | 112       | 130700811 | 3         |
-|           |           |           |           | 2         |           |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| Etc       | Etc       | Etc       | Etc       | Etc       | Etc       |
-+-----------+-----------+-----------+-----------+-----------+-----------+
++-------------------------------------------+-------------+-------------+
+| Option 1:                                 | Option 2:   |  Option 3:  |
+| Use a combination of four variables       | Generate    |  Generate   |
+|                                           |     a       |    a        |
+|                                           |concatenaeted| sequential  |
+|                                           |    ID       | number      |
+|                                           |             |             |
+|                                           |             |             |
+|                                           |             |             |
++===========+===========+===========+=======+=============+=============+
+| PROV      | DIST      | EA        | HHNUM | HHID        | HHID        |
++-----------+-----------+-----------+-------+-------------+-------------+
+| 12        | 01        | 014       | 004   | 1201014004  | 1           |
+|           |           |           |       |             |             |
++-----------+-----------+-----------+-------+-------------+-------------+
+| 12        | 01        | 015       | 001   | 1201015001  | 2           |
+|           |           |           |       |             |             |
++-----------+-----------+-----------+-------+-------------+-------------+
+| 13        | 07        | 008       | 112   | 1307008112  | 3           |
+|           |           |           |       |             |             |
++-----------+-----------+-----------+-------+-------------+-------------+
+| Etc       | Etc       | Etc       | Etc   | Etc         | Etc         |
++-----------+-----------+-----------+-------+-------------+-------------+
 
 ..
 
@@ -517,10 +517,10 @@ to describe the DDI document.
 |                                   | -  Including the country name in  |
 |                                   |    the title is optional.         |
 |                                   |                                   |
-|                                   | Examples: *National Household     |
+|                                   | Examples: National Household      |
 |                                   | Budget Survey 2002-2003*          |
 |                                   |                                   |
-|                                   | *Popstan Multiple Indicator       |
+|                                   | Popstan Multiple Indicator        |
 |                                   | Cluster Survey 2002*              |
 +===================================+===================================+
 | Metadata Producer                 | Name of the person(s) or          |
@@ -533,19 +533,19 @@ to describe the DDI document.
 |                                   | Example:                          |
 |                                   |                                   |
 |                                   | +--------------+--------------+   |
-|                                   | | *Name*       | *Role*       |   |
+|                                   | |  Name        |  Role        |   |
 |                                   | +==============+==============+   |
-|                                   | | *National    | *Documentati |   |
-|                                   | | Statistics   | on           |   |
-|                                   | | Office       | of the       |   |
-|                                   | | (NSO)*       | study*       |   |
+|                                   | | National     |Documentation |   |
+|                                   | | Statistics   |of the        |   |
+|                                   | | Office       |study         |   |
+|                                   | | (NSO)        |              |   |
 |                                   | +--------------+--------------+   |
-|                                   | | *Internation | *Review of   |   |
-|                                   | | al           | the          |   |
-|                                   | | Household    | metadata*    |   |
-|                                   | | Survey       |              |   |
-|                                   | | Network      |              |   |
-|                                   | | (IHSN)*      |              |   |
+|                                   | |International | Review of    |   |
+|                                   | |Household     | the          |   |
+|                                   | |Survey        | metadata     |   |
+|                                   | |Network       |              |   |
+|                                   | |(IHSN)        |              |   |
+|                                   | |              |              |   |
 |                                   | +--------------+--------------+   |
 +-----------------------------------+-----------------------------------+
 | Date of Production                | This is the date (in ISO format   |
@@ -576,11 +576,11 @@ to describe the DDI document.
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   | *Version 1.1 (July 2006). This    |
+|                                   | Version 1.1 (July 2006). This     |
 |                                   | version is identical to version   |
 |                                   | 1.0, except for the section on    |
 |                                   | Data Appraisal which was          |
-|                                   | updated.*                         |
+|                                   | updated.                          |
 +-----------------------------------+-----------------------------------+
 | DDI Document ID Number            | The ID number of a DDI document   |
 |                                   | is a unique number that is used   |
@@ -608,17 +608,17 @@ to describe the DDI document.
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   | *The DDI file related to the      |
+|                                   | The DDI file related to the       |
 |                                   | Demographic and Health Survey     |
 |                                   | documented by staff from the      |
 |                                   | Uganda Bureau of Statistics in    |
 |                                   | 2005 would have the following     |
-|                                   | ID:*                              |
+|                                   | ID:                               |
 |                                   |                                   |
-|                                   | *DDI-UGA-UBOS-DHS-2005-v01. If    |
+|                                   | DDI-UGA-UBOS-DHS-2005-v01. If     |
 |                                   | the same survey is documented by  |
 |                                   | a staff from the IHSN, this would |
-|                                   | be DDI-UGA-IHSN-DHS-205-v01.*     |
+|                                   | be DDI-UGA-IHSN-DHS-205-v01.      |
 +-----------------------------------+-----------------------------------+
 
 5.2. Good practices for completing the Study Description
@@ -629,7 +629,7 @@ all elements needed to describe the study itself (investigators, dates
 and methods, scope and coverage, etc.)
 
 +-----------------------------------+-----------------------------------+
-| **Identification**                |
+| **Identification**                |                                   |
 +===================================+===================================+
 | Title                             | The title is the official name of |
 |                                   | the survey as it is stated on the |
@@ -658,11 +658,11 @@ and methods, scope and coverage, etc.)
 |                                   | identical to the Document Title   |
 |                                   | (see above).                      |
 |                                   |                                   |
-|                                   | Examples: *National Household     |
-|                                   | Budget Survey 2002-2003*          |
+|                                   | Examples:  National Household     |
+|                                   | Budget Survey 2002-2003           |
 |                                   |                                   |
-|                                   | *Popstan Multiple Indicator       |
-|                                   | Cluster Survey 2002*              |
+|                                   |  Popstan Multiple Indicator       |
+|                                   | Cluster Survey 2002               |
 +-----------------------------------+-----------------------------------+
 | Subtitle                          | Subtitle is optional and rarely   |
 |                                   | used. A subtitle can be used to   |
@@ -670,10 +670,10 @@ and methods, scope and coverage, etc.)
 |                                   | associated with a sequential      |
 |                                   | qualifier for a survey.           |
 |                                   |                                   |
-|                                   | *Example: Title: Welfare          |
-|                                   | Monitoring Survey 2007*           |
+|                                   |  Example: Title: Welfare          |
+|                                   | Monitoring Survey 2007            |
 |                                   |                                   |
-|                                   | *Subtitle: Fifth round*           |
+|                                   |  Subtitle: Fifth round            |
 +-----------------------------------+-----------------------------------+
 | Abbreviation                      | The abbreviation of a survey is   |
 |                                   | usually the first letter of each  |
@@ -683,12 +683,12 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   | Examples:                         |
 |                                   |                                   |
-|                                   | -  *DHS 2000 for “Demographic and |
-|                                   |    Health Survey 2005”*           |
+|                                   | -   DHS 2000 for “Demographic and |
+|                                   |    Health Survey 2005”            |
 |                                   |                                   |
-|                                   | -  *HIES 2002-2003 for “Household |
+|                                   | -   HIES 2002-2003 for “Household |
 |                                   |    Income and Expenditure Survey  |
-|                                   |    2003”*                         |
+|                                   |    2003”                          |
 +-----------------------------------+-----------------------------------+
 | Study type                        | The study type or *survey type*   |
 |                                   | is the broad category defining    |
@@ -717,7 +717,7 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   | *The Multiple Indicator Cluster   |
+|                                   |  The Multiple Indicator Cluster   |
 |                                   | Survey, Round 3 (MICS3) is the    |
 |                                   | third round of MICS surveys,      |
 |                                   | previously conducted around 1995  |
@@ -736,11 +736,11 @@ and methods, scope and coverage, etc.)
 |                                   | of MICS (MICS2) but less so with  |
 |                                   | MICS1, although there have been a |
 |                                   | number of changes in definition   |
-|                                   | of indicators between rounds.*    |
+|                                   | of indicators between rounds.     |
 |                                   |                                   |
-|                                   | *Round 1 covered X countries,     |
+|                                   | Round 1 covered X countries,      |
 |                                   | round 2 covered Y countries, and  |
-|                                   | Round Z covered N countries.*     |
+|                                   | Round Z covered N countries.      |
 +-----------------------------------+-----------------------------------+
 | Translated title                  | In countries with more than one   |
 |                                   | official language, a translation  |
@@ -782,12 +782,12 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   | *The Demographic and Health       |
+|                                   |  The Demographic and Health       |
 |                                   | Survey implemented by the Uganda  |
 |                                   | Bureau of Statistics in 2005      |
-|                                   | could have the following ID:*     |
+|                                   | could have the following ID:      |
 |                                   |                                   |
-|                                   | *UGA-UBOS-DHS-2005-v01.*          |
+|                                   |  UGA-UBOS-DHS-2005-v01.           |
 +-----------------------------------+-----------------------------------+
 | **Version**                       |                                   |
 +-----------------------------------+-----------------------------------+
@@ -813,17 +813,17 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   | Examples:                         |
 |                                   |                                   |
-|                                   | -  *v0.1: Basic raw data,         |
+|                                   | -   v0.1: Basic raw data,         |
 |                                   |    obtained from data entry       |
-|                                   |    (before editing).*             |
+|                                   |    (before editing).              |
 |                                   |                                   |
-|                                   | -  *v1.2: Edited data, second     |
+|                                   | -   v1.2: Edited data, second     |
 |                                   |    version, for internal use      |
-|                                   |    only.*                         |
+|                                   |    only.                          |
 |                                   |                                   |
-|                                   | -  *v2.1: Edited, anonymous       |
+|                                   | -   v2.1: Edited, anonymous       |
 |                                   |    dataset for public             |
-|                                   |    distribution.*                 |
+|                                   |    distribution.                  |
 |                                   |                                   |
 |                                   | A brief description of the        |
 |                                   | version should follow the         |
@@ -1251,10 +1251,10 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   | *Sample weights were calculated   |
-|                                   | for each of the data files.*      |
+|                                   |  Sample weights were calculated   |
+|                                   | for each of the data files.       |
 |                                   |                                   |
-|                                   | *Sample weights for the household |
+|                                   |  Sample weights for the household |
 |                                   | data were computed as the inverse |
 |                                   | of the probability of selection   |
 |                                   | of the household, computed at the |
@@ -1269,9 +1269,9 @@ and methods, scope and coverage, etc.)
 |                                   | unweighted number of households.  |
 |                                   | The household weight variable is  |
 |                                   | called HHWEIGHT and is used with  |
-|                                   | the HH data and the HL data.*     |
+|                                   | the HH data and the HL data.      |
 |                                   |                                   |
-|                                   | *Sample weights for the women's   |
+|                                   |  Sample weights for the women's   |
 |                                   | data used the un-normalized       |
 |                                   | household weights, adjusted for   |
 |                                   | non-response for the women's      |
@@ -1280,9 +1280,9 @@ and methods, scope and coverage, etc.)
 |                                   | so that the total weighted number |
 |                                   | of women's cases equals the total |
 |                                   | unweighted number of women's      |
-|                                   | cases.*                           |
+|                                   | cases.                            |
 |                                   |                                   |
-|                                   | *Sample weights for the           |
+|                                   |  Sample weights for the           |
 |                                   | children's data followed the same |
 |                                   | approach as the women's and used  |
 |                                   | the un-normalized household       |
@@ -1293,7 +1293,7 @@ and methods, scope and coverage, etc.)
 |                                   | so that the total weighted number |
 |                                   | of children's cases equals the    |
 |                                   | total unweighted number of        |
-|                                   | children's cases.*                |
+|                                   | children's cases.                 |
 +-----------------------------------+-----------------------------------+
 | **Data Collection**               |                                   |
 +-----------------------------------+-----------------------------------+
@@ -1374,14 +1374,14 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   | *The pre-test for the survey took |
+|                                   |  The pre-test for the survey took |
 |                                   | place from August 15, 2006 -      |
 |                                   | August 25, 2006 and included 14   |
 |                                   | interviewers who would later      |
 |                                   | become supervisors for the main   |
-|                                   | survey.*                          |
+|                                   | survey.                           |
 |                                   |                                   |
-|                                   | *Each interviewing team comprised |
+|                                   |  Each interviewing team comprised |
 |                                   | of 3-4 female interviewers (no    |
 |                                   | male interviewers were used due   |
 |                                   | to the sensitivity of the subject |
@@ -1397,9 +1397,9 @@ and methods, scope and coverage, etc.)
 |                                   | everyday throughout the fieldwork |
 |                                   | period, although interviewing     |
 |                                   | teams were permitted to take one  |
-|                                   | day off per week.*                |
+|                                   | day off per week.                 |
 |                                   |                                   |
-|                                   | *Interviews averaged 35 minutes   |
+|                                   |  Interviews averaged 35 minutes   |
 |                                   | for the household questionnaire   |
 |                                   | (excluding salt testing), 23      |
 |                                   | minutes for the women's           |
@@ -1412,13 +1412,13 @@ and methods, scope and coverage, etc.)
 |                                   | used local translation in         |
 |                                   | double-Dutch, when the respondent |
 |                                   | did not speak English or          |
-|                                   | Mumbo-jumbo.*                     |
+|                                   | Mumbo-jumbo.                      |
 |                                   |                                   |
-|                                   | *Six staff members of GenCenStat  |
+|                                   |  Six staff members of GenCenStat  |
 |                                   | provided overall fieldwork        |
 |                                   | coordination and supervision. The |
 |                                   | overall field coordinator was     |
-|                                   | Mrs. Doe.*                        |
+|                                   | Mrs. Doe.                         |
 +-----------------------------------+-----------------------------------+
 | **Data Processing**               |                                   |
 +-----------------------------------+-----------------------------------+
@@ -1454,9 +1454,9 @@ and methods, scope and coverage, etc.)
 |                                   |    provided as External           |
 |                                   |    Resources.                     |
 |                                   |                                   |
-|                                   | Example                           |
+|                                   | Example:                          |
 |                                   |                                   |
-|                                   | *The questionnaires for the       |
+|                                   | The questionnaires for the        |
 |                                   | Generic MICS were structured      |
 |                                   | questionnaires based on the MICS3 |
 |                                   | Model Questionnaire with some     |
@@ -1481,16 +1481,16 @@ and methods, scope and coverage, etc.)
 |                                   | of tenure and durability of       |
 |                                   | housing.*                         |
 |                                   |                                   |
-|                                   | *In addition to a household       |
+|                                   | In addition to a household        |
 |                                   | questionnaire, questionnaires     |
 |                                   | were administered in each         |
 |                                   | household for women age 15-49 and |
 |                                   | children under age five. For      |
 |                                   | children, the questionnaire was   |
 |                                   | administered to the mother or     |
-|                                   | caretaker of the child.*          |
+|                                   | caretaker of the child.           |
 |                                   |                                   |
-|                                   | *The women's questionnaire        |
+|                                   | The women's questionnaire         |
 |                                   | include women's characteristics,  |
 |                                   | child mortality, tetanus toxoid,  |
 |                                   | maternal and newborn health,      |
@@ -1499,9 +1499,9 @@ and methods, scope and coverage, etc.)
 |                                   | and HIV/AIDS knowledge, with      |
 |                                   | optional modules for unmet need,  |
 |                                   | domestic violence, and sexual     |
-|                                   | behavior.*                        |
+|                                   | behavior.                         |
 |                                   |                                   |
-|                                   | *The children's questionnaire     |
+|                                   |  The children's questionnaire     |
 |                                   | includes children's               |
 |                                   | characteristics, birth            |
 |                                   | registration and early learning,  |
@@ -1509,9 +1509,9 @@ and methods, scope and coverage, etc.)
 |                                   | illness, malaria, immunization,   |
 |                                   | and anthropometry, with an        |
 |                                   | optional module for child         |
-|                                   | development.*                     |
+|                                   | development.                      |
 |                                   |                                   |
-|                                   | *The questionnaires were          |
+|                                   |  The questionnaires were          |
 |                                   | developed in English from the     |
 |                                   | MICS3 Model Questionnaires, and   |
 |                                   | were translated into Mumbo-jumbo. |
@@ -1527,15 +1527,15 @@ and methods, scope and coverage, etc.)
 |                                   | Differences in translation were   |
 |                                   | reviewed and resolved in          |
 |                                   | collaboration with the original   |
-|                                   | translators.*                     |
+|                                   | translators.                      |
 |                                   |                                   |
-|                                   | *The English and Mumbo-jumbo      |
+|                                   |  The English and Mumbo-jumbo      |
 |                                   | questionnaires were both piloted  |
-|                                   | as part of the survey pretest.*   |
+|                                   | as part of the survey pretest.    |
 |                                   |                                   |
-|                                   | *All questionnaires and modules   |
+|                                   |  All questionnaires and modules   |
 |                                   | are provided as external          |
-|                                   | resources.*                       |
+|                                   | resources.                        |
 +-----------------------------------+-----------------------------------+
 | Data collectors                   | This element is provided in order |
 |                                   | to record information regarding   |
@@ -1556,13 +1556,13 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   |    *Name: Central Statistics      |
-|                                   |    Office*                        |
+|                                   |    Name: Central Statistics       |
+|                                   |    Office                         |
 |                                   |                                   |
-|                                   |    *Abbreviation: CSO*            |
+|                                   |    Abbreviation: CSO              |
 |                                   |                                   |
-|                                   | *Affiliation: Ministry of         |
-|                                   | Planning*                         |
+|                                   | Affiliation: Ministry of          |
+|                                   | Planning                          |
 +-----------------------------------+-----------------------------------+
 | Supervision                       | This element will provide         |
 |                                   | information on the oversight of   |
@@ -1585,7 +1585,7 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   | *Interviewing was conducted by    |
+|                                   | Interviewing was conducted by     |
 |                                   | teams of interviewers. Each       |
 |                                   | interviewing team comprised of    |
 |                                   | 3-4 female interviewers, a field  |
@@ -1593,9 +1593,9 @@ and methods, scope and coverage, etc.)
 |                                   | driver. Each team used a 4 wheel  |
 |                                   | drive vehicle to travel from      |
 |                                   | cluster to cluster (and where     |
-|                                   | necessary within cluster).*       |
+|                                   | necessary within cluster).        |
 |                                   |                                   |
-|                                   | *The role of the supervisor was   |
+|                                   | The role of the supervisor was    |
 |                                   | to coordinator field data         |
 |                                   | collection activities, including  |
 |                                   | management of the field teams,    |
@@ -1611,9 +1611,9 @@ and methods, scope and coverage, etc.)
 |                                   | control documents, and sent       |
 |                                   | completed questionnaires and      |
 |                                   | progress reports to the central   |
-|                                   | office.*                          |
+|                                   | office.                           |
 |                                   |                                   |
-|                                   | *The field editor was responsible |
+|                                   | The field editor was responsible  |
 |                                   | for reviewing each questionnaire  |
 |                                   | at the end of the day, checking   |
 |                                   | for missed questions, skip        |
@@ -1622,24 +1622,24 @@ and methods, scope and coverage, etc.)
 |                                   | inconsistencies in the data. The  |
 |                                   | field editor also observed        |
 |                                   | interviews and conducted review   |
-|                                   | sessions with interviewers.*      |
+|                                   | sessions with interviewers.       |
 |                                   |                                   |
-|                                   | *Responsibilities of the          |
+|                                   | Responsibilities of the           |
 |                                   | supervisors and field editors are |
 |                                   | described in the Instructions for |
 |                                   | Supervisors and Field Editors,    |
 |                                   | together with the different field |
 |                                   | controls that were in place to    |
 |                                   | control the quality of the        |
-|                                   | fieldwork.*                       |
+|                                   | fieldwork.                        |
 |                                   |                                   |
-|                                   | *Field visits were also made by a |
+|                                   | Field visits were also made by a  |
 |                                   | team of central staff on a        |
 |                                   | periodic basis during fieldwork.  |
 |                                   | The senior staff of GenCenStat    |
 |                                   | also made 3 visits to field teams |
 |                                   | to provide support and to review  |
-|                                   | progress.*                        |
+|                                   | progress.                         |
 +-----------------------------------+-----------------------------------+
 | **Data Processing**               |                                   |
 +-----------------------------------+-----------------------------------+
@@ -1672,27 +1672,27 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   | *Data editing took place at a     |
+|                                   | Data editing took place at a      |
 |                                   | number of stages throughout the   |
-|                                   | processing, including:*           |
+|                                   | processing, including:            |
 |                                   |                                   |
-|                                   | *a) Office editing and coding*    |
+|                                   | a) Office editing and coding      |
 |                                   |                                   |
-|                                   | *b) During data entry*            |
+|                                   | b) During data entry              |
 |                                   |                                   |
-|                                   | *c) Structure checking and        |
-|                                   | completeness*                     |
+|                                   | c) Structure checking and         |
+|                                   | completeness                      |
 |                                   |                                   |
-|                                   | *d) Secondary editing*            |
+|                                   | d) Secondary editing              |
 |                                   |                                   |
-|                                   | *e) Structural checking of SPSS   |
-|                                   | data files*                       |
+|                                   | e) Structural checking of SPSS    |
+|                                   | data files                        |
 |                                   |                                   |
-|                                   | *Detailed documentation of the    |
+|                                   | Detailed documentation of the     |
 |                                   | editing of data can be found in   |
 |                                   | the “Data processing guidelines”  |
 |                                   | document provided as an external  |
-|                                   | resource.*                        |
+|                                   | resource.                         |
 +-----------------------------------+-----------------------------------+
 | Other processing                  | Use this field to provide as much |
 |                                   | information as possible on the    |
@@ -1731,70 +1731,70 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   | *Data were processed in clusters, |
+|                                   | Data were processed in clusters,  |
 |                                   | with each cluster being processed |
 |                                   | as a complete unit through each   |
 |                                   | stage of data processing. Each    |
 |                                   | cluster goes through the          |
-|                                   | following steps:*                 |
+|                                   | following steps:                  |
 |                                   |                                   |
-|                                   | 1) *Questionnaire reception*      |
+|                                   | 1) Questionnaire reception        |
 |                                   |                                   |
-|                                   | 2) *Office editing and coding*    |
+|                                   | 2) Office editing and coding      |
 |                                   |                                   |
-|                                   | 3) *Data entry*                   |
+|                                   | 3) Data entry                     |
 |                                   |                                   |
-|                                   | 4) *Structure and completeness    |
-|                                   |    checking*                      |
+|                                   | 4) Structure and completeness     |
+|                                   |    checking                       |
 |                                   |                                   |
-|                                   | 5) *Verification entry*           |
+|                                   | 5) Verification entry             |
 |                                   |                                   |
-|                                   | 6) *Comparison of verification    |
-|                                   |    data*                          |
+|                                   | 6) Comparison of verification     |
+|                                   |    data                           |
 |                                   |                                   |
-|                                   | 7) *Back up of raw data*          |
+|                                   | 7) Back up of raw data            |
 |                                   |                                   |
-|                                   | 8) *Secondary editing*            |
+|                                   | 8) Secondary editing              |
 |                                   |                                   |
-|                                   | 9) *Edited data back up*          |
+|                                   | 9) Edited data back up            |
 |                                   |                                   |
-|                                   | *After all clusters are           |
+|                                   | After all clusters are            |
 |                                   | processed, all data is            |
 |                                   | concatenated together and then    |
 |                                   | the following steps are completed |
-|                                   | for all data files:*              |
+|                                   | for all data files:               |
 |                                   |                                   |
-|                                   | 10) *Export to SPSS in 4 files    |
+|                                   | 10) Export to SPSS in 4 files     |
 |                                   |     (hh - household, hl -         |
 |                                   |     household members, wm -       |
 |                                   |     women, ch - children under    |
-|                                   |     5)*                           |
+|                                   |     5)                            |
 |                                   |                                   |
-|                                   | 11) *Recoding of variables needed |
-|                                   |     for analysis*                 |
+|                                   | 11) Recoding of variables needed  |
+|                                   |     for analysis                  |
 |                                   |                                   |
-|                                   | 12) *Adding of sample weights*    |
+|                                   | 12) Adding of sample weights      |
 |                                   |                                   |
-|                                   | 13) *Calculation of wealth        |
+|                                   | 13)  Calculation of wealth        |
 |                                   |     quintiles and merging into    |
-|                                   |     data*                         |
+|                                   |     data                          |
 |                                   |                                   |
-|                                   | 14) *Structural checking of SPSS  |
-|                                   |     files*                        |
+|                                   | 14) Structural checking of SPSS   |
+|                                   |     files                         |
 |                                   |                                   |
-|                                   | 15) *Data quality tabulations*    |
+|                                   | 15) Data quality tabulations      |
 |                                   |                                   |
-|                                   | 16) *Production of analysis       |
-|                                   |     tabulations*                  |
+|                                   | 16) Production of analysis        |
+|                                   |     tabulations                   |
 |                                   |                                   |
-|                                   | *Details of each of these steps   |
+|                                   | Details of each of these steps    |
 |                                   | can be found in the data          |
 |                                   | processing documentation, data    |
 |                                   | editing guidelines, data          |
 |                                   | processing programs in CSPro and  |
-|                                   | SPSS, and tabulation guidelines.* |
+|                                   | SPSS, and tabulation guidelines.  |
 |                                   |                                   |
-|                                   | *Data entry was conducted by 12   |
+|                                   | Data entry was conducted by 12    |
 |                                   | data entry operators in tow       |
 |                                   | shifts, supervised by 2 data      |
 |                                   | entry supervisors, using a total  |
@@ -1823,18 +1823,18 @@ and methods, scope and coverage, etc.)
 |                                   | not entered or coded, except in   |
 |                                   | rare circumstances where the      |
 |                                   | response matched an existing code |
-|                                   | in the questionnaire.*            |
+|                                   | in the questionnaire.             |
 |                                   |                                   |
-|                                   | *Structure and completeness       |
+|                                   | Structure and completeness        |
 |                                   | checking ensured that all         |
 |                                   | questionnaires for the cluster    |
 |                                   | had been entered, were            |
 |                                   | structurally sound, and that      |
 |                                   | women's and children's            |
 |                                   | questionnaires existed for each   |
-|                                   | eligible woman and child.*        |
+|                                   | eligible woman and child.         |
 |                                   |                                   |
-|                                   | *100% verification of all         |
+|                                   | 100% verification of all          |
 |                                   | variables was performed using     |
 |                                   | independent verification, i.e.    |
 |                                   | double entry of data, with        |
@@ -1843,16 +1843,16 @@ and methods, scope and coverage, etc.)
 |                                   | or both datasets to correct       |
 |                                   | keying errors by original         |
 |                                   | operators who first keyed the     |
-|                                   | files.*                           |
+|                                   | files.                            |
 |                                   |                                   |
-|                                   | *After completion of all          |
+|                                   |  After completion of all          |
 |                                   | processing in CSPro, all          |
 |                                   | individual cluster files were     |
 |                                   | backed up before concatenating    |
 |                                   | data together using the CSPro     |
-|                                   | file concatenate utility.*        |
+|                                   | file concatenate utility.         |
 |                                   |                                   |
-|                                   | *For tabulation and analysis SPSS |
+|                                   | For tabulation and analysis SPSS  |
 |                                   | versions 10.0 and 14.0 were used. |
 |                                   | Version 10.0 was originally used  |
 |                                   | for all tabulation programs,      |
@@ -1860,9 +1860,9 @@ and methods, scope and coverage, etc.)
 |                                   | version 14.0 was used for child   |
 |                                   | mortality, data quality           |
 |                                   | tabulations and other analysis    |
-|                                   | activities.*                      |
+|                                   | activities.                       |
 |                                   |                                   |
-|                                   | *After transferring all files to  |
+|                                   |  After transferring all files to  |
 |                                   | SPSS, certain variables were      |
 |                                   | recoded for use as background     |
 |                                   | characteristics in the tabulation |
@@ -1881,11 +1881,11 @@ and methods, scope and coverage, etc.)
 |                                   | based on household assets, and    |
 |                                   | both the score and quintiles were |
 |                                   | included in the datasets for use  |
-|                                   | in tabulations.*                  |
+|                                   | in tabulations.                   |
 +-----------------------------------+-----------------------------------+
 
 +-----------------------------------+-----------------------------------+
-| **Data Appraisal**                |
+| **Data Appraisal**                |                                   |
 +===================================+===================================+
 | Estimate of sampling error        | For sampling surveys, it is good  |
 |                                   | practice to calculate and publish |
@@ -1914,7 +1914,7 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   | *Estimates from a sample survey   |
+|                                   | Estimates from a sample survey    |
 |                                   | are affected by two types of      |
 |                                   | errors: 1) non-sampling errors    |
 |                                   | and 2) sampling errors.           |
@@ -1928,9 +1928,9 @@ and methods, scope and coverage, etc.)
 |                                   | error, however, non-sampling      |
 |                                   | errors are impossible to avoid    |
 |                                   | and difficult to evaluate         |
-|                                   | statistically.*                   |
+|                                   | statistically.                    |
 |                                   |                                   |
-|                                   | *If the sample of respondents had |
+|                                   | If the sample of respondents had  |
 |                                   | been a simple random sample, it   |
 |                                   | would have been possible to use   |
 |                                   | straightforward formulae for      |
@@ -1950,9 +1950,9 @@ and methods, scope and coverage, etc.)
 |                                   | This method is documented in the  |
 |                                   | SPSS file CSDescriptives.pdf      |
 |                                   | found under the Help, Algorithms  |
-|                                   | options in SPSS.*                 |
+|                                   | options in SPSS.                  |
 |                                   |                                   |
-|                                   | *Sampling errors have been        |
+|                                   |  Sampling errors have been        |
 |                                   | calculated for a select set of    |
 |                                   | statistics (all of which are      |
 |                                   | proportions due to the            |
@@ -1974,14 +1974,14 @@ and methods, scope and coverage, etc.)
 |                                   | simple random sample had been     |
 |                                   | used), as well as the 95 percent  |
 |                                   | confidence intervals (+/-2        |
-|                                   | standard errors).*                |
+|                                   | standard errors).                 |
 |                                   |                                   |
-|                                   | *Details of the sampling errors   |
+|                                   | Details of the sampling errors    |
 |                                   | are presented in the sampling     |
 |                                   | errors appendix to the report and |
 |                                   | in the sampling errors table      |
 |                                   | presented in the external         |
-|                                   | resources.*                       |
+|                                   | resources.                        |
 +-----------------------------------+-----------------------------------+
 | Other forms data appraisal        | This section can be used to       |
 |                                   | report any other action taken to  |
@@ -2004,64 +2004,64 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   | *A series of data quality tables  |
+|                                   | A series of data quality tables   |
 |                                   | and graphs are available to       |
 |                                   | review the quality of the data    |
-|                                   | and include the following:*       |
+|                                   | and include the following:        |
 |                                   |                                   |
-|                                   | -  *Age distribution of the       |
-|                                   |    household population*          |
+|                                   | -  Age distribution of the        |
+|                                   |    household population           |
 |                                   |                                   |
-|                                   | -  *Age distribution of eligible  |
-|                                   |    women and interviewed women*   |
+|                                   | -  Age distribution of eligible   |
+|                                   |    women and interviewed women    |
 |                                   |                                   |
-|                                   | -  *Age distribution of eligible  |
+|                                   | -  Age distribution of eligible   |
 |                                   |    children and children for whom |
 |                                   |    the mother or caretaker was    |
-|                                   |    interviewed*                   |
+|                                   |    interviewed                    |
 |                                   |                                   |
-|                                   | -  *Age distribution of children  |
-|                                   |    under age 5 by 3 month groups* |
+|                                   | -  Age distribution of children   |
+|                                   |    under age 5 by 3 month groups  |
 |                                   |                                   |
-|                                   | -  *Age and period ratios at      |
-|                                   |    boundaries of eligibility*     |
+|                                   | -  Age and period ratios at       |
+|                                   |    boundaries of eligibility      |
 |                                   |                                   |
-|                                   | -  *Percent of observations with  |
+|                                   | -  Percent of observations with   |
 |                                   |    missing information on         |
-|                                   |    selected variables*            |
+|                                   |    selected variables             |
 |                                   |                                   |
-|                                   | -  *Presence of mother in the     |
+|                                   | -  Presence of mother in the      |
 |                                   |    household and person           |
 |                                   |    interviewed for the under 5    |
-|                                   |    questionnaire*                 |
+|                                   |    questionnaire                  |
 |                                   |                                   |
-|                                   | -  *School attendance by single   |
-|                                   |    year age*                      |
+|                                   | -  School attendance by single    |
+|                                   |    year age                       |
 |                                   |                                   |
-|                                   | -  *Sex ratio at birth among      |
+|                                   | -  Sex ratio at birth among       |
 |                                   |    children ever born, surviving  |
-|                                   |    and dead by age of respondent* |
+|                                   |    and dead by age of respondent  |
 |                                   |                                   |
-|                                   | -  *Distribution of women by time |
-|                                   |    since last birth*              |
+|                                   | -  Distribution of women by time  |
+|                                   |    since last birth               |
 |                                   |                                   |
-|                                   | -  *Scatter plot of weight by     |
+|                                   | -  Scatter plot of weight by      |
 |                                   |    height, weight by age and      |
-|                                   |    height by age*                 |
+|                                   |    height by age                  |
 |                                   |                                   |
-|                                   | -  *Graph of male and female      |
+|                                   | -  Graph of male and female       |
 |                                   |    population by single years of  |
-|                                   |    age*                           |
+|                                   |    age                            |
 |                                   |                                   |
-|                                   | -  *Population pyramid*           |
+|                                   | -  Population pyramid             |
 |                                   |                                   |
-|                                   | *The results of each of these     |
+|                                   | The results of each of these      |
 |                                   | data quality tables are shown in  |
 |                                   | the appendix of the final report  |
 |                                   | and are also given in the         |
-|                                   | external resources section.*      |
+|                                   | external resources section.       |
 |                                   |                                   |
-|                                   | *The general rule for             |
+|                                   | The general rule for              |
 |                                   | presentation of missing data in   |
 |                                   | the final report tabulations is   |
 |                                   | that a column is presented for    |
@@ -2074,7 +2074,7 @@ and methods, scope and coverage, etc.)
 |                                   | rows are suppressed and noted at  |
 |                                   | the bottom of the tables in the   |
 |                                   | report (not in the SPSS output,   |
-|                                   | however).*                        |
+|                                   | however).                         |
 +-----------------------------------+-----------------------------------+
 | **Data Access**                   |                                   |
 +-----------------------------------+-----------------------------------+
@@ -2105,29 +2105,29 @@ and methods, scope and coverage, etc.)
 |                                   | An example of statement could be  |
 |                                   | the following:                    |
 |                                   |                                   |
-|                                   | *Confidentiality of respondents   |
+|                                   | Confidentiality of respondents    |
 |                                   | is guaranteed by Articles N to NN |
 |                                   | of the National Statistics Act of |
-|                                   | [date].*                          |
+|                                   | [date].                           |
 |                                   |                                   |
-|                                   | *Before being granted access to   |
+|                                   | Before being granted access to    |
 |                                   | the dataset, all users have to    |
-|                                   | formally agree:*                  |
+|                                   | formally agree:                   |
 |                                   |                                   |
-|                                   | 1. *To make no copies of any      |
+|                                   | 1. To make no copies of any       |
 |                                   |    files or portions of files to  |
 |                                   |    which s/he is granted access   |
 |                                   |    except those authorized by the |
-|                                   |    data depositor.*               |
+|                                   |    data depositor.                |
 |                                   |                                   |
-|                                   | 2. *Not to use any technique in   |
+|                                   | 2. Not to use any technique in    |
 |                                   |    an attempt to learn the        |
 |                                   |    identity of any person,        |
 |                                   |    establishment, or sampling     |
 |                                   |    unit not identified on public  |
-|                                   |    use data files.*               |
+|                                   |    use data files.                |
 |                                   |                                   |
-|                                   | 3. *To hold in strictest          |
+|                                   | 3. To hold in strictest           |
 |                                   |    confidence the identification  |
 |                                   |    of any establishment or        |
 |                                   |    individual that may be         |
@@ -2138,7 +2138,7 @@ and methods, scope and coverage, etc.)
 |                                   |    her/his analysis will be       |
 |                                   |    immediately brought to the     |
 |                                   |    attention of the data          |
-|                                   |    depositor.*                    |
+|                                   |    depositor.                     |
 |                                   |                                   |
 |                                   | This statement does not replace a |
 |                                   | more comprehensive data agreement |
@@ -2194,31 +2194,31 @@ and methods, scope and coverage, etc.)
 |                                   | use file for example, you could   |
 |                                   | enter information like:           |
 |                                   |                                   |
-|                                   | *The dataset has been anonymized  |
+|                                   | The dataset has been anonymized   |
 |                                   | and is available as a Public Use  |
 |                                   | Dataset. It is accessible to all  |
 |                                   | for statistical and research      |
 |                                   | purposes only, under the          |
-|                                   | following terms and conditions:*  |
+|                                   | following terms and conditions:   |
 |                                   |                                   |
-|                                   | 1. *The data and other materials  |
+|                                   | 1. The data and other materials   |
 |                                   |    will not be redistributed or   |
 |                                   |    sold to other individuals,     |
 |                                   |    institutions, or organizations |
 |                                   |    without the written agreement  |
 |                                   |    of the [National Data          |
-|                                   |    Archive].*                     |
+|                                   |    Archive].                      |
 |                                   |                                   |
-|                                   | 2. *The data will be used for     |
+|                                   | 2. The data will be used for      |
 |                                   |    statistical and scientific     |
 |                                   |    research purposes only. They   |
 |                                   |    will be used solely for        |
 |                                   |    reporting of aggregated        |
 |                                   |    information, and not for       |
 |                                   |    investigation of specific      |
-|                                   |    individuals or organizations.* |
+|                                   |    individuals or organizations.  |
 |                                   |                                   |
-|                                   | 3. *No attempt will be made to    |
+|                                   | 3. No attempt will be made to     |
 |                                   |    re-identify respondents, and   |
 |                                   |    no use will be made of the     |
 |                                   |    identity of any person or      |
@@ -2226,18 +2226,18 @@ and methods, scope and coverage, etc.)
 |                                   |    inadvertently. Any such        |
 |                                   |    discovery would immediately be |
 |                                   |    reported to the [National Data |
-|                                   |    Archive].*                     |
+|                                   |    Archive].                      |
 |                                   |                                   |
-|                                   | 4. *No attempt will be made to    |
+|                                   | 4. No attempt will be made to     |
 |                                   |    produce links among datasets   |
 |                                   |    provided by the [National Data |
 |                                   |    Archive], or among data from   |
 |                                   |    the [National Data Archive]    |
 |                                   |    and other datasets that could  |
 |                                   |    identify individuals or        |
-|                                   |    organizations.*                |
+|                                   |    organizations.                 |
 |                                   |                                   |
-|                                   | 5. *Any books, articles,          |
+|                                   | 5. Any books, articles,           |
 |                                   |    conference papers, theses,     |
 |                                   |    dissertations, reports, or     |
 |                                   |    other publications that employ |
@@ -2246,22 +2246,22 @@ and methods, scope and coverage, etc.)
 |                                   |    cite the source of data in     |
 |                                   |    accordance with the Citation   |
 |                                   |    Requirement provided with each |
-|                                   |    dataset.*                      |
+|                                   |    dataset.                       |
 |                                   |                                   |
-|                                   | 6. *An electronic copy of all     |
+|                                   | 6. An electronic copy of all      |
 |                                   |    reports and publications based |
 |                                   |    on the requested data will be  |
 |                                   |    sent to the [National Data     |
-|                                   |    Archive].*                     |
+|                                   |    Archive].                      |
 |                                   |                                   |
-|                                   | 7. *The original collector of the |
+|                                   | 7.  The original collector of the |
 |                                   |    data, the [National Data       |
 |                                   |    Archive], and the relevant     |
 |                                   |    funding agencies bear no       |
 |                                   |    responsibility for use of the  |
 |                                   |    data or for interpretations or |
 |                                   |    inferences based upon such     |
-|                                   |    uses.*                         |
+|                                   |    uses.                          |
 +-----------------------------------+-----------------------------------+
 | Citation requirements             | Citation requirement is the way   |
 |                                   | that the dataset should be        |
@@ -2289,13 +2289,13 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   | *"National Statistics Office of   |
+|                                   | "National Statistics Office of    |
 |                                   | Popstan, Multiple Indicators      |
 |                                   | Cluster Survey 2000 (MICS 2000),  |
 |                                   | Version 1.1 of the public use     |
 |                                   | dataset (April 2001), provided by |
 |                                   | the National Data Archive.        |
-|                                   | www.nda_popstan.org"*             |
+|                                   | www.nda_popstan.org"              |
 +-----------------------------------+-----------------------------------+
 | **Disclaimer and Copyright**      |                                   |
 +-----------------------------------+-----------------------------------+
@@ -2307,7 +2307,7 @@ and methods, scope and coverage, etc.)
 |                                   | same agency. The IHSN recommends  |
 |                                   | the following formulation:        |
 |                                   |                                   |
-|                                   | *The user of the data             |
+|                                   | The user of the data              |
 |                                   | acknowledges that the original    |
 |                                   | collector of the data, the        |
 |                                   | authorized distributor of the     |
@@ -2315,18 +2315,18 @@ and methods, scope and coverage, etc.)
 |                                   | agency bear no responsibility for |
 |                                   | use of the data or for            |
 |                                   | interpretations or inferences     |
-|                                   | based upon such uses.*            |
+|                                   | based upon such uses.             |
 +-----------------------------------+-----------------------------------+
 | Copyright                         | Include here a copyright          |
 |                                   | statement on the dataset, such    |
 |                                   | as:                               |
 |                                   |                                   |
-|                                   | c *2007, Popstan Central          |
-|                                   | Statistics Agency*                |
+|                                   | c 2007, Popstan Central           |
+|                                   | Statistics Agency                 |
 +-----------------------------------+-----------------------------------+
 
 +-----------------------------------+-----------------------------------+
-| **Contacts**                      |
+| **Contacts**                      |                                   |
 +===================================+===================================+
 | Contact persons                   | Users of the data may need        |
 |                                   | further clarification and         |
@@ -2351,16 +2351,16 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   |    *Name: Head, Data Processing   |
-|                                   |    Division*                      |
+|                                   |    Name: Head, Data Processing    |
+|                                   |    Division                       |
 |                                   |                                   |
-|                                   |    *Affiliation: National         |
-|                                   |    Statistics Office*             |
+|                                   |    Affiliation: National          |
+|                                   |    Statistics Office              |
 |                                   |                                   |
 |                                   |    *Email: dataproc@cso.org*      |
 |                                   |                                   |
-|                                   | *URI:*\ `www.cso.org/databank <ht |
-|                                   | tp://www.cso.org/databank>`__     |
+|                                   | URI:\ `www.cso.org/databank       |
+|                                   | <http://www.cso.org/databank>`__  |
 +-----------------------------------+-----------------------------------+
 
 Good practices for completing the File Description
@@ -2389,7 +2389,7 @@ available DDI elements.
 |                                   |                                   |
 |                                   | Examples:                         |
 |                                   |                                   |
-|                                   | -  *The file contains data        |
+|                                   | -  The file contains data         |
 |                                   |    related to section 3A of the   |
 |                                   |    household survey questionnaire |
 |                                   |    (Education of household        |
@@ -2397,9 +2397,9 @@ available DDI elements.
 |                                   |    It also contains the weighting |
 |                                   |    coefficient, and various       |
 |                                   |    recoded variables on levels of |
-|                                   |    education.*                    |
+|                                   |    education.                     |
 |                                   |                                   |
-|                                   | -  *The file contains derived     |
+|                                   | -  The file contains derived      |
 |                                   |    data on household consumption, |
 |                                   |    annualized and aggregated by   |
 |                                   |    category of products and       |
@@ -2411,7 +2411,7 @@ available DDI elements.
 |                                   |    generated using a Stata        |
 |                                   |    program named                  |
 |                                   |    “cons_aggregate.do” available  |
-|                                   |    in the external resources.*    |
+|                                   |    in the external resources.     |
 +===================================+===================================+
 | Producer                          | Put the name of the agency that   |
 |                                   | produced the data file. Most data |
@@ -2573,28 +2573,28 @@ provides detailed information on each variable.
 | Data type                         | Four types of variables are       |
 |                                   | recognized by the Toolkit:        |
 |                                   |                                   |
-|                                   | -  Numeric: *Numeric variables    |
+|                                   | -  Numeric: Numeric variables     |
 |                                   |    are used to store any number,  |
 |                                   |    integer or floating point      |
-|                                   |    (decimals).*                   |
+|                                   |    (decimals).                    |
 |                                   |                                   |
-|                                   | -  Fixed string: *A fixed string  |
+|                                   | -  Fixed string: A fixed string   |
 |                                   |    variable has a predefined      |
 |                                   |    length (default length is 8    |
 |                                   |    but it can range from 1 to 255 |
 |                                   |    characters in length) which    |
 |                                   |    enables the publisher to       |
 |                                   |    handle this data type more     |
-|                                   |    efficiently.*                  |
+|                                   |    efficiently.                   |
 |                                   |                                   |
-|                                   | -  Dynamic string: *Dynamic       |
+|                                   | -  Dynamic string: Dynamic        |
 |                                   |    string variables can be used   |
 |                                   |    to store open-ended            |
-|                                   |    questions.*                    |
+|                                   |    questions.                     |
 |                                   |                                   |
-|                                   | -  Date: *date variables stored   |
+|                                   | -  Date: date variables stored    |
 |                                   |    in ISO format                  |
-|                                   |    (YYYY-MM-DD?—should specify)*  |
+|                                   |    (YYYY-MM-DD?—should specify)   |
 |                                   |                                   |
 |                                   | The data type is usually properly |
 |                                   | identified when the data is       |
@@ -2866,14 +2866,14 @@ provides detailed information on each variable.
 |                                   |                                   |
 |                                   | Example:                          |
 |                                   |                                   |
-|                                   | *A household member is defined as |
+|                                   | A household member is defined as  |
 |                                   | any person who has been resident  |
 |                                   | in the household for six months   |
 |                                   | or more in a given year and takes |
 |                                   | meals together OR by default the  |
 |                                   | head of household, infants under  |
 |                                   | 6 months, newly wedded couples    |
-|                                   | etc.*                             |
+|                                   | etc.                              |
 +-----------------------------------+-----------------------------------+
 | Pre-question text                 | The *pre-question texts* are the  |
 |                                   | instructions provided to the      |
@@ -2921,20 +2921,20 @@ provides detailed information on each variable.
 |                                   |                                   |
 |                                   | |image16|                         |
 |                                   |                                   |
-|                                   | -  Pre-question: *Check age. If   |
+|                                   | -  Pre-question: Check age. If    |
 |                                   |    child is 3 years old or more,  |
-|                                   |    ask:*                          |
+|                                   |    ask:                           |
 |                                   |                                   |
-|                                   | -  Literal question: *Does (name) |
+|                                   | -  Literal question: Does (name)  |
 |                                   |    attend any organized learning  |
 |                                   |    or early childhood education   |
 |                                   |    programme, such as private or  |
 |                                   |    government facility, including |
 |                                   |    kindergarten or community      |
-|                                   |    child care?*                   |
+|                                   |    child care?                    |
 |                                   |                                   |
-|                                   | -  Post-question: *If answer is 2 |
-|                                   |    or 9 > Goto next module*       |
+|                                   | -  Post-question: If answer is 2  |
+|                                   |    or 9 > Goto next module        |
 +-----------------------------------+-----------------------------------+
 | Interviewer Instruction           | Copy/paste the instructions       |
 |                                   | provided to the interviewers in   |
@@ -2973,12 +2973,12 @@ provides detailed information on each variable.
 |                                   | For example, if variable AGE_GRP  |
 |                                   | was obtained by recoding variable |
 |                                   | S1Q3, we could simply mention     |
-|                                   | *“Variable obtained by recoding   |
+|                                   | “Variable obtained by recoding    |
 |                                   | the age in years provided in      |
 |                                   | variable S1Q3 into age groups for |
 |                                   | years 0-4, 5-9, …, 60-64, 65 and  |
 |                                   | over. Code 99 indicates unknown   |
-|                                   | age.”*                            |
+|                                   | age.”                             |
 |                                   |                                   |
 |                                   | When the derivation method is     |
 |                                   | more complex, provide here a      |
@@ -2993,7 +2993,7 @@ provides detailed information on each variable.
 |                                   | case, the information provided    |
 |                                   | here could be:                    |
 |                                   |                                   |
-|                                   | *“This variable provides the      |
+|                                   | “This variable provides the       |
 |                                   | annual household expenditure. It  |
 |                                   | was obtained by aggregating       |
 |                                   | expenditure data on all goods and |
@@ -3011,7 +3011,7 @@ provides detailed information on each variable.
 |                                   | Appendix 2 of the Report on Data  |
 |                                   | Processing, and in the Stata      |
 |                                   | program “aggregates.do” available |
-|                                   | in external resources.”*          |
+|                                   | in external resources.”           |
 +-----------------------------------+-----------------------------------+
 | Security                          | This field will be left empty in  |
 |                                   | most cases. It can be used to     |
@@ -3051,7 +3051,7 @@ standard (which complements the DDI standard).
 |                                   | the document is found is a        |
 |                                   | relative path and should be the   |
 |                                   | folder that will be pasted into   |
-|                                   | the \**\document path. Once you   |
+|                                   | the document path. Once you       |
 |                                   | have pointed to the specified     |
 |                                   | resource make sure you check file |
 |                                   | access by clicking the folder     |
@@ -3519,8 +3519,8 @@ DDI Reviewers’ Feedback Form
 |                                                                     |
 |                                                                     |
 +=============+=============+=============+=============+=============+
-| **DDI       |**Expected** | **Status**  |**Reviewer’s | **Action**  |
-| Element**   |             |             |comments**   |             |
+| DDI         |  Expected   |   Status    |Reviewer’s   |   Action    |
+| Element     |             |             |comments     |             |
 |             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Study Title | Proper noun | Provided    | Typos/spell |    None     |
@@ -3569,9 +3569,9 @@ DDI Reviewers’ Feedback Form
 +---------------------------------------------------------------------+
 | **STUDY DESCRIPTION Identification**                                |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+| DDI         |  Expected   |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Title       | Full name   | Provided    | Typos/spell |    None     |
 |             | of the      |             | ing         |             |
@@ -3589,10 +3589,10 @@ DDI Reviewers’ Feedback Form
 |             | by hyphen.  |             |             |             |
 |             |             |             |             |             |
 |             | Example:    |             |             |             |
-|             | *Household  |             |             |             |
+|             | Household   |             |             |             |
 |             | Budget      |             |             |             |
 |             | Survey      |             |             |             |
-|             | 2006-2007*  |             |             |             |
+|             | 2006-2007   |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Sub-title   | In most     | Provided    | Typos/spell |    None     |
 |             | cases,      |             | ing         |             |
@@ -3674,13 +3674,13 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **STUDY     |
-| DESCRIPTION |
-| – Version** |
+| STUDY       |                                                       |
+| DESCRIPTION |                                                       |
+| – Version   |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+| DDI         | Expected    |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Description | Version     | Provided    | Typos/spell |    None     |
 |             | number      |             | ing         |             |
@@ -3692,22 +3692,22 @@ DDI Reviewers’ Feedback Form
 |             | “label”.    |             |             |             |
 |             | Examples:   |             |             |             |
 |             |             |             |             |             |
-|             | *V0 – Raw   |             |             |             |
+|             | V0 – Raw    |             |             |             |
 |             | data,       |             |             |             |
-|             | unedited*   |             |             |             |
+|             | unedited    |             |             |             |
 |             |             |             |             |             |
-|             | *V1.1 –     |             |             |             |
+|             | V1.1 –      |             |             |             |
 |             | Edited non  |             |             |             |
 |             | anonymized  |             |             |             |
-|             | data*       |             |             |             |
+|             | data        |             |             |             |
 |             |             |             |             |             |
-|             | *V2.2 –     |             |             |             |
+|             | V2.2 –      |             |             |             |
 |             | Public use  |             |             |             |
 |             | dataset,    |             |             |             |
 |             | 2\ nd       |             |             |             |
 |             | release     |             |             |             |
 |             | (Nov.       |             |             |             |
-|             | 2007)*      |             |             |             |
+|             | 2007)       |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Production  | Date in ISO | Provided    |             |    None     |
 | date        | format (at  |             |             |             |
@@ -3729,14 +3729,14 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **STUDY     |
-| DESCRIPTION |
-| -           |
-| Overview**  |
+|   STUDY     |                                                       |
+| DESCRIPTION |                                                       |
+| -           |                                                       |
+| Overview    |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+| DDI         | Expected    |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Abstract    | Clear and   | Provided    | Typos/spell |    None     |
 |             | concise     |             | ing         |             |
@@ -3773,13 +3773,13 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **STUDY     |
-| DESCRIPTION |
-| - Scope**   |
+| STUDY       |                                                       |
+| DESCRIPTION |                                                       |
+| - Scope     |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+| DDI         |   Expected  |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Description | Typically,  | Provided    | Typos/spell |    None     |
 | of scope    | list of     |             | ing         |             |
@@ -3813,14 +3813,14 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **STUDY     |
-| DESCRIPTION |
-| -           |
-| Coverage**  |
+| STUDY       |                                                       |
+| DESCRIPTION |                                                       |
+| -           |                                                       |
+| Coverage    |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+| DDI         |   Expected  |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Country     | Country     | Provided    | Typos/spell |    None     |
 |             | name in     |             | ing         |             |
@@ -3836,14 +3836,14 @@ DDI Reviewers’ Feedback Form
 |             | coverage.   |             |             |             |
 |             | Examples:   |             |             |    Check    |
 |             |             |             |             |             |
-|             | *-          |             |             |             |
-|             | National,   |             |             |             |
+|             |             |             |             |             |
+|             | -National,  |             |             |             |
 |             | except      |             |             |             |
 |             | province of |             |             |             |
-|             | …*          |             |             |             |
+|             | …           |             |             |             |
 |             |             |             |             |             |
-|             | *- Rural    |             |             |             |
-|             | only*       |             |             |             |
+|             | - Rural     |             |             |             |
+|             | only        |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Universe    | Population  | Provided    | Typos/spell |    None     |
 |             | covered by  |             | ing         |             |
@@ -3871,15 +3871,15 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **STUDY     |
-| DESCRIPTION |
-| - Producers |
-| and         |
-| Sponsors**  |
+|   STUDY     |                                                       |
+| DESCRIPTION |                                                       |
+| - Producers |                                                       |
+| and         |                                                       |
+| Sponsors    |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+| DDI         |   Expected  |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Primary     | Full name   | Provided    | Typos/spell |    None     |
 | investigato | of the      |             | ing         |             |
@@ -3939,14 +3939,14 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **STUDY     |
-| DESCRIPTION |
-| –           |
-| Sampling**  |
+|   STUDY     |                                                       |
+| DESCRIPTION |                                                       |
+| –           |                                                       |
+| Sampling    |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+| DDI         | Expected    |   Status    | Reviewer’s  |  Action     |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Sampling    | Sample      | Provided    | Typos/spell |    None     |
 | procedure   | size,       |             | ing         |             |
@@ -4039,15 +4039,15 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **STUDY     |
-| DESCRIPTION |
-| - Data      |
-| Collection* |
-| *           |
+| STUDY       |                                                       |
+| DESCRIPTION |                                                       |
+| - Data      |                                                       |
+| Collection  |                                                       |
+|             |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+| DDI         |   Expected  |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             | comments    |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Dates of    | Dates in    | Provided    |             |    None     |
 | data        | ISO format: |             |             |             |
@@ -4121,15 +4121,15 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **STUDY     |
-| DESCRIPTION |
-| - Data      |
-| Processing* |
-| *           |
+|   STUDY     |                                                       |
+| DESCRIPTION |                                                       |
+| - Data      |                                                       |
+| Processing  |                                                       |
+|             |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+|   DDI       |   Expected  |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Data        | Statement   | Provided    | Typos/spell |    None     |
 | editing     | on method   |             | ing         |             |
@@ -4515,13 +4515,13 @@ DDI Reviewers’ Feedback Form
 **VARIABLES**
 
 +-------------+-------------+-------------+-------------+-------------+
-| **VARIABLES |
-| - Variable  |
-| checks**    |
+|   VARIABLES |                                                       |
+| - Variable  |                                                       |
+| checks      |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+| DDI         | Expected    |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Variable    | Variable    | All         |             |    None     |
 | Names       | names       |             |             |             |
@@ -4752,19 +4752,19 @@ DDI Reviewers’ Feedback Form
 |             | It can be   |             |             |    Check    |
 |             | in words    |             |             |             |
 |             | (e.g.       |             |             |             |
-|             | “\ *Househo |             |             |             |
+|             | “\Househo   |             |             |             |
 |             | ld          |             |             |             |
 |             | members     |             |             |             |
 |             | aged 15 and |             |             |             |
-|             | over*\ ”,   |             |             |             |
+|             | over \ ”,   |             |             |             |
 |             | or in       |             |             |             |
 |             | logical     |             |             |             |
 |             | terms based |             |             |             |
 |             | on          |             |             |             |
 |             | variables   |             |             |             |
 |             | (e.g.:      |             |             |             |
-|             | *A05> 15    |             |             |             |
-|             | and A07=1*) |             |             |             |
+|             |  A05> 15    |             |             |             |
+|             | and A07=1)  |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Source of   | Empty in    | All         | Typos/spell |    None     |
 | information | most cases. |             | ing         |             |
@@ -4935,15 +4935,15 @@ DDI Reviewers’ Feedback Form
 **EXTERNAL RESOURCES**
 
 +-------------+-------------+-------------+-------------+-------------+
-| **EXTERNAL  |
-| RESOURCES - |
-| External    |
-| resources   |
-| checks**    |
+|   EXTERNAL  |                                                       |
+| RESOURCES - |                                                       |
+| External    |                                                       |
+| resources   |                                                       |
+| checks      |                                                       |
 +=============+=============+=============+=============+=============+
-| **Item**    | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-|             | *           |             | s           |             |
-|             |             |             | comments**  |             |
+|   Item      |   Expected  |   Status    | Reviewer’s  |   Action    |
+|             |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Questionnai | All         | Yes         |             |    None     |
 | re          | questionnai |             |             |             |
@@ -5209,13 +5209,13 @@ DDI Reviewers’ Feedback Form
 Website is provided)
 
 +-------------+-------------+-------------+-------------+-------------+
-| **CD-ROM /  |
-| Website     |
-| Check**     |
+| CD-ROM /    |                                                       |
+| Website     |                                                       |
+| Check**     |                                                       |
 +=============+=============+=============+=============+=============+
-| **Item**    | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-|             | *           |             | s           |             |
-|             |             |             | comments**  |             |
+|   Item      |   Expected  |   Status    | Reviewer’s  |   Action    |
+|             |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | CD-ROM name | Should be   |             |             |    None     |
 |             | the         |             |             |             |
