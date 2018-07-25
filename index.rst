@@ -171,8 +171,6 @@ are recommended:
    reason is that sorting and filtering records is much more efficient
    when variables are numeric).
 
-..
-
    For the convenience of users of the data, avoid identifiers made of
    too many variables. For example, in a household survey, the household
    identifier will preferably be a single variable (which you may create
@@ -215,7 +213,6 @@ are recommended:
 | Etc       | Etc       | Etc       | Etc   | Etc         | Etc         |
 +-----------+-----------+-----------+-------+-------------+-------------+
 
-..
 
    Options 2 and 3 are recommended. Note that if option 3 is chosen, it
    is crucial to preserve (but not distribute) a file that would provide
@@ -521,7 +518,7 @@ to describe the DDI document.
 |                                   | Budget Survey 2002-2003*          |
 |                                   |                                   |
 |                                   | Popstan Multiple Indicator        |
-|                                   | Cluster Survey 2002*              |
+|                                   | Cluster Survey 2002               |
 +===================================+===================================+
 | Metadata Producer                 | Name of the person(s) or          |
 |                                   | organization(s) who documented    |
@@ -629,7 +626,7 @@ all elements needed to describe the study itself (investigators, dates
 and methods, scope and coverage, etc.)
 
 +-----------------------------------+-----------------------------------+
-| **Identification**                |                                   |
+| **Identification**                                                    |
 +===================================+===================================+
 | Title                             | The title is the official name of |
 |                                   | the survey as it is stated on the |
@@ -1319,7 +1316,7 @@ and methods, scope and coverage, etc.)
 |                                   | represent the period for which    |
 |                                   | the data collected are applicable |
 |                                   | or relevant.                      |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Mode of data collection           | The mode of data collection is    |
 |                                   | the manner in which the interview |
 |                                   | was conducted or information was  |
@@ -2412,7 +2409,7 @@ available DDI elements.
 |                                   |    program named                  |
 |                                   |    “cons_aggregate.do” available  |
 |                                   |    in the external resources.     |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Producer                          | Put the name of the agency that   |
 |                                   | produced the data file. Most data |
 |                                   | files will have been produced by  |
@@ -2497,7 +2494,7 @@ provides detailed information on each variable.
 |                                   | TOOLKIT, but make recommendations |
 |                                   | to the data processor for         |
 |                                   | consideration for future surveys. |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Variable Labels                   | All variables should have a label |
 |                                   | that                              |
 |                                   |                                   |
@@ -3044,7 +3041,7 @@ standard (which complements the DDI standard).
 |                                   | the attached document. It can be  |
 |                                   | the title, name, or an            |
 |                                   | abbreviated version of the title. |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Resource                          | The resource is used to point to  |
 |                                   | the file that will be attached    |
 |                                   | and distributed. The folder where |
@@ -3295,7 +3292,7 @@ optional and will in most cases be left empty.
 |                                   | field. It best identifies the     |
 |                                   | manner the variables are grouped  |
 |                                   | together. This field is optional. |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Label                             | The label used to identify the    |
 |                                   | group should be clear and relate  |
 |                                   | to the type chosen. If these are  |
