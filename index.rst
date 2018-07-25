@@ -3676,7 +3676,7 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 | STUDY       |                                                       |
 | DESCRIPTION |                                                       |
-| – Version   |                                                       |
+|  Version    |                                                       |
 +=============+=============+=============+=============+=============+
 | DDI         | Expected    |   Status    | Reviewer’s  |   Action    |
 | Element     |             |             | comments    |             |
@@ -3731,7 +3731,7 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 |   STUDY     |                                                       |
 | DESCRIPTION |                                                       |
-| -           |                                                       |
+|             |                                                       |
 | Overview    |                                                       |
 +=============+=============+=============+=============+=============+
 | DDI         | Expected    |   Status    | Reviewer’s  |   Action    |
@@ -3775,7 +3775,7 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 | STUDY       |                                                       |
 | DESCRIPTION |                                                       |
-| - Scope     |                                                       |
+|   Scope     |                                                       |
 +=============+=============+=============+=============+=============+
 | DDI         |   Expected  |   Status    | Reviewer’s  |   Action    |
 | Element     |             |             | comments    |             |
@@ -3815,7 +3815,7 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 | STUDY       |                                                       |
 | DESCRIPTION |                                                       |
-| -           |                                                       |
+|             |                                                       |
 | Coverage    |                                                       |
 +=============+=============+=============+=============+=============+
 | DDI         |   Expected  |   Status    | Reviewer’s  |   Action    |
@@ -3873,7 +3873,7 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 |   STUDY     |                                                       |
 | DESCRIPTION |                                                       |
-| - Producers |                                                       |
+| Producers   |                                                       |
 | and         |                                                       |
 | Sponsors    |                                                       |
 +=============+=============+=============+=============+=============+
@@ -3941,7 +3941,7 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 |   STUDY     |                                                       |
 | DESCRIPTION |                                                       |
-| –           |                                                       |
+|             |                                                       |
 | Sampling    |                                                       |
 +=============+=============+=============+=============+=============+
 | DDI         | Expected    |   Status    | Reviewer’s  |  Action     |
@@ -4041,7 +4041,7 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 | STUDY       |                                                       |
 | DESCRIPTION |                                                       |
-| - Data      |                                                       |
+| Data        |                                                       |
 | Collection  |                                                       |
 |             |                                                       |
 +=============+=============+=============+=============+=============+
@@ -4123,7 +4123,7 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 |   STUDY     |                                                       |
 | DESCRIPTION |                                                       |
-| - Data      |                                                       |
+| Data        |                                                       |
 | Processing  |                                                       |
 |             |                                                       |
 +=============+=============+=============+=============+=============+
@@ -4173,7 +4173,7 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 |   STUDY     |                                                       |
 | DESCRIPTION |                                                       |
-| - Data      |                                                       |
+| Data        |                                                       |
 | Appraisal   |                                                       |
 +=============+=============+=============+=============+=============+
 | DDI         |   Expected  |   Status    | Reviewer’s  |   Action    |
@@ -4221,7 +4221,7 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 |   STUDY     |                                                       |
 | DESCRIPTION |                                                       |
-| - Data      |                                                       |
+| Data        |                                                       |
 | Access      |                                                       |
 +=============+=============+=============+=============+=============+
 |   DDI       |   Expected  |   Status    | Reviewer’s  |   Action    |
@@ -4273,8 +4273,8 @@ DDI Reviewers’ Feedback Form
 |             | statement.  |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Citation    | Citation    | Provided    | Typos/spell |    None     |
-| requirement | based on a  |             | ing         |             |
-| s           | standard    | Not         | errors      |    Add      |
+| requirements| based on a  |             | ing         |             |
+|             | standard    | Not         | errors      |    Add      |
 |             | format.     | provided    | detected    |             |
 |             | Must        |             |             |    Fix      |
 |             | include the |             |             |             |
@@ -4293,7 +4293,7 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 | STUDY       |                                                       |
 | DESCRIPTION |                                                       |
-| -           |                                                       |
+|             |                                                       |
 | Disclaimer  |                                                       |
 | and         |                                                       |
 | Copyright   |                                                       |
@@ -4327,7 +4327,7 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 |   STUDY     |                                                       |
 | DESCRIPTION |                                                       |
-| -           |                                                       |
+|             |                                                       |
 | Contacts    |                                                       |
 +=============+=============+=============+=============+=============+
 | DDI         |   Expected  |   Status    | Reviewer’s  |   Action    |
