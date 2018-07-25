@@ -4171,14 +4171,14 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **STUDY     |
-| DESCRIPTION |
-| - Data      |
-| Appraisal** |
+|   STUDY     |                                                       |
+| DESCRIPTION |                                                       |
+| - Data      |                                                       |
+| Appraisal   |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+| DDI         |   Expected  |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Estimates   | Summary     | Provided    | Typos/spell |    None     |
 | of sampling | statement   |             | ing         |             |
@@ -4219,14 +4219,14 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **STUDY     |
-| DESCRIPTION |
-| - Data      |
-| Access**    |
+|   STUDY     |                                                       |
+| DESCRIPTION |                                                       |
+| - Data      |                                                       |
+| Access      |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+|   DDI       |   Expected  |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Access      | Full name   | Provided    | Typos/spell |    None     |
 | authority   | of the      |             | ing         |             |
@@ -4291,16 +4291,16 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **STUDY     |
-| DESCRIPTION |
-| -           |
-| Disclaimer  |
-| and         |
-| Copyright** |
+| STUDY       |                                                       |
+| DESCRIPTION |                                                       |
+| -           |                                                       |
+| Disclaimer  |                                                       |
+| and         |                                                       |
+| Copyright   |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+|   DDI       |   Expected  |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Disclaimer  | Standard    | Provided    | Typos/spell |    None     |
 |             | statement   |             | ing         |             |
@@ -4325,14 +4325,14 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **STUDY     |
-| DESCRIPTION |
-| -           |
-| Contacts**  |
+|   STUDY     |                                                       |
+| DESCRIPTION |                                                       |
+| -           |                                                       |
+| Contacts    |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+| DDI         |   Expected  |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Contact     | Name and/or | Provided    | Typos/spell |    None     |
 | persons     | title of    |             | ing         |             |
@@ -4354,14 +4354,14 @@ DDI Reviewers’ Feedback Form
 **DATA FILES**
 
 +-------------+-------------+-------------+-------------+-------------+
-| **DATA      |
-| FILES -     |
-| File        |
-| checks**    |
+| DATA        |                                                       |
+| FILES -     |                                                       |
+| File        |                                                       |
+| checks      |                                                       |
 +=============+=============+=============+=============+=============+
-| **Item**    | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-|             | *           |             | s           |             |
-|             |             |             | comments**  |             |
+|   Item      |   Expected  |   Status    | Reviewer’s  |   Action    |
+|             |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Order of    | Data files  | Yes         |             |    None     |
 | appearance  | are listed  |             |             |             |
@@ -4409,15 +4409,15 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **DATA      |
-| FILES -     |
-| File        |
-| Description |
-| **          |
+| DATA        |                                                       |
+| FILES -     |                                                       |
+| File        |                                                       |
+| Description |                                                       |
+|             |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+| DDI         |   Expected  |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Name        | File name   | Yes         |             |    None     |
 |             | should not  |             |             |             |
@@ -4451,12 +4451,12 @@ DDI Reviewers’ Feedback Form
 |             | re          |             |             |             |
 |             | sections.   |             |             |             |
 |             | Example:    |             |             |             |
-|             | *Section    |             |             |             |
+|             | Section     |             |             |             |
 |             | 3Aof the    |             |             |             |
 |             | Household   |             |             |             |
 |             | questionnai |             |             |             |
 |             | re:         |             |             |             |
-|             | Education.* |             |             |             |
+|             | Education.  |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Producer    | In most     | All         | Typos/spell |    None     |
 |             | cases, the  |             | ing         |             |
@@ -4515,9 +4515,9 @@ DDI Reviewers’ Feedback Form
 **VARIABLES**
 
 +-------------+-------------+-------------+-------------+-------------+
-|   VARIABLES |                                                       |
-| - Variable  |                                                       |
-| checks      |                                                       |
+| *VARIABLES* |                                                       |
+|  Variable   |                                                       |
+|  checks     |                                                       |
 +=============+=============+=============+=============+=============+
 | DDI         | Expected    |   Status    | Reviewer’s  |   Action    |
 | Element     |             |             | comments    |             |
@@ -4677,8 +4677,7 @@ DDI Reviewers’ Feedback Form
 |             | appear in   |             |             |             |
 |             | red.        |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
-
-+-------------+-------------+-------------+-------------+-------------+
+|             |             |             |             |             |
 | Decimals    |             | All         |             |    None     |
 |             |             |             |             |             |
 |             |             | Some        |             |    Add      |
@@ -4686,7 +4685,7 @@ DDI Reviewers’ Feedback Form
 |             |             | None        |             |    Fix      |
 |             |             |             |             |             |
 |             |             |             |             |    Check    |
-+=============+=============+=============+=============+=============+
++-------------+-------------+-------------+-------------+-------------+
 | Implicit    | Needed when | All         |             |    None     |
 | decimals    | the files   |             |             |             |
 |             | were        | Some        |             |    Add      |
@@ -4718,14 +4717,14 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **VARIABLES |
-| -           |
-| Description |
-| **          |
+| *VARIABLES* |                                                       |
+|             |                                                       |
+| Description |                                                       |
+|             |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+| DDI         |   Expected  |   Status    | Reviewer’s  |  Action     |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Definition  | Will be     | All         | Typos/spell |    None     |
 |             | empty in    |             | ing         |             |
@@ -4788,13 +4787,13 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **VARIABLES |
-| -           |
-| Question**  |
+| *VARIABLES* |                                                       |
+|             |                                                       |
+| Question    |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+|   DDI       |   Expected  |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Pre-questio | Pre-questio | All         | Typos/spell |    None     |
 | n           | n           |             | ing         |             |
@@ -4857,16 +4856,16 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **VARIABLES |
-| -           |
-| Imputation  |
-| and         |
-| derivation* |
-| *           |
+| *VARIABLES* |                                                       |
+|             |                                                       |
+| Imputation  |                                                       |
+| and         |                                                       |
+| derivation  |                                                       |
+|             |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+| DDI         |   Expected  |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Imputation  | Empty in    | All         | Typos/spell |    None     |
 |             | most cases. |             | ing         |             |
@@ -4886,12 +4885,12 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **VARIABLES |
-| - Others**  |
+| *VARIABLES* |                                                       |
+| Others      |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+|   DDI       |   Expected  |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Security    | Empty in    | All         | Typos/spell |    None     |
 |             | most cases. |             | ing         |             |
@@ -4913,9 +4912,9 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **VARIABLES |
-| - Variable  |
-| groups**    |
+| *VARIABLES* |                                                       |
+|  Variable   |                                                       |
+|  groups     |                                                       |
 +=============+=============+=============+=============+=============+
 | **Item**    | **Expected* | **Status**  | **Reviewer’ | **Action**  |
 |             | *           |             | s           |             |
@@ -5017,14 +5016,14 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **EXTERNAL  |
-| RESOURCES - |
-| Identificat |
-| ion**       |
+| EXTERNAL    |                                                       |
+| RESOURCES   |                                                       |
+| Identificat |                                                       |
+| ion         |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+| DDI         |   Expected  |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Type        | All         | All         |             |    None     |
 |             | documents   |             |             |             |
@@ -5117,16 +5116,16 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **EXTERNAL  |
-| RESOURCES - |
-| Contributor |
-| s           |
-| and         |
-| rights**    |
+| EXTERNAL    |                                                       |
+| RESOURCES   |                                                       |
+| Contributors|                                                       |
+| and         |                                                       |
+| rights      |                                                       |
+|             |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+| DDI         |   Expected  |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Contributor | Optional    | All         |             |    None     |
 | (s)         |             |             |             |             |
@@ -5154,13 +5153,13 @@ DDI Reviewers’ Feedback Form
 +-------------+-------------+-------------+-------------+-------------+
 
 +-------------+-------------+-------------+-------------+-------------+
-| **EXTERNAL  |
-| RESOURCES - |
-| Content**   |
+|   EXTERNAL  |                                                       |
+| RESOURCES - |                                                       |
+| Content     |                                                       |
 +=============+=============+=============+=============+=============+
-| **DDI       | **Expected* | **Status**  | **Reviewer’ | **Action**  |
-| Element**   | *           |             | s           |             |
-|             |             |             | comments**  |             |
+|   DDI       | Expected    |   Status    | Reviewer’s  |   Action    |
+| Element     |             |             | comments    |             |
+|             |             |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 | Description | Short       | All         | Typos/spell |    None     |
 |             | description |             | ing         |             |
