@@ -4410,7 +4410,7 @@ DDI Reviewers’ Feedback Form
 
 +-------------+-------------+-------------+-------------+-------------+
 | DATA        |                                                       |
-| FILES -     |                                                       |
+| FILES       |                                                       |
 | File        |                                                       |
 | Description |                                                       |
 |             |                                                       |
