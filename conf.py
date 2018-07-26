@@ -112,6 +112,8 @@ html_static_path = ['_static']
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'GuideforDataArchivistsdoc'
 
+def setup(app):
+    app.add_stylesheet('theme_overrides.css')
 
 # -- Options for LaTeX output ------------------------------------------------
 
