@@ -1,28 +1,23 @@
-|image0|
+.. image:: media/image1.png
 
 **International Household Survey Network**
 
 **IHSN**
 
-Quick Reference Guide
+Quick Reference Guide for Data Archivists
+=========================================
 
-for
-
-Data Archivists
-
-DRAFT - Version 2007.03
+**DRAFT - Version 2007.03**
 
 June 2007
+   Olivier Dupriez (World Bank)
+    
+   and
 
-Diana Marcela Sanchez Castro
-
-Olivier Dupriez (World Bank)
-
-and
-
-Geoffrey Greenwell (PARIS21)
-
+   Geoffrey Greenwell (PARIS21)
+ 
 Content
+=======
 
 `Introduction 1 <#introduction>`__
 
@@ -67,6 +62,7 @@ Content
 `10. Independent quality review 32 <#independent-quality-review>`__
 
 Acknowledgments
+===============
 
 Francois Fonteneau (PARIS21), Chris Rockmore (World Bank) and Jan Smit
 (ESCAP) provided valuable input.
@@ -77,8 +73,16 @@ for completing survey metadata.
 Many thanks also to all our colleagues and friends from statistical
 agencies in Africa who provided feedback on the Toolkit.
 
++--------------------------------------------------------------------+
+| This document (or an updated version of it) is available at        |
+| www.surveynetwork.org.                                             |
+|                                                                    |
+| Comments and suggestions are always appreciated and can be sent to |
+| odupriez@worldbank.org or toolkit@surveynetwork.org                |
++--------------------------------------------------------------------+
+
 Introduction
-============
+-------------
 
 This *Quick Reference Guide for Data Archivists* provides data
 archivists with guidelines to document a micro-dataset in compliance
@@ -113,9 +117,10 @@ an external reviewer.
 
 This Guide is not an IHSN Toolkit reference or training manual. It is
 assumed that users are already familiar with the Toolkit. A *Toolkit*
-*User’s Guide* is available at www.surveynetwork.org/toolkit.
+*User’s Guide* is available at www.surveynetwork.org/guidelines.
 
-**Before you start: organizing your files**
+Before you start: organizing your files
+---------------------------------------
 
 Documentation of a dataset will be considerably facilitated if you
 organize your data and other files properly. We recommend that, before
