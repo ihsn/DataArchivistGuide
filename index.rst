@@ -126,18 +126,26 @@ Documentation of a dataset will be considerably facilitated if you
 organize your data and other files properly. We recommend that, before
 anything else, you create the necessary directories as follows:
 
--  |image1|\ Create a directory for the survey. We suggest you name it
-   using the survey’s abbreviated name and year, e.g. “HIES2007” for
-   “Household Income and Expenditure Survey 2007”
++------------+--------------+------------------------------------------+
+|.. image:: media/image2.png|- Create a directory for the survey.      |
+|                           |  We suggest you name it using the        |
+|                           |                                          |
+|                           |  survey’s “HIES2007” for “Household      |
+|                           |  Income and Expenditure Survey 2007”     |
++                           +------------------------------------------+
+|                           |- Create various sub-directories for the. |
+|                           |  data files (and for the various versions|
+|                           |                                          | 
+|                           |  of the dataset if relevant)             |
+|                           +------------------------------------------+
+|                           |- Create sub-directories for the          |
+|                           |  documentation and for the program files |
+|                           |                                          |
+|                           |  if relevant (see example).              |
++------------+--------------+------------------------------------------+
 
--  Create various sub-directories for the data files (and for the
-   various versions of the dataset if relevant)
-
--  Create sub-directories for the documentation and for the program
-   files if relevant (see example).
-
-Gathering and preparing the data set
-====================================
+1. Gathering and preparing the data set
+=======================================
 
 Gathering and preparing data requires great care. Various versions of
 the data may have been produced. Before starting to document a dataset,
@@ -162,11 +170,11 @@ are recommended:
 
 *Flat file:*
 
-   |image2|
+.. image:: media/image3.png
 
-   *Hierarchical file:*
+*Hierarchical file:*
 
-   |image3|
+.. image:: media/image4.png
 
 -  If a dataset contains multiple related files, each record in each
    file must have a unique identifier. This identifier may be made of
@@ -187,7 +195,7 @@ are recommended:
 
    If you prepare your data files for public dissemination, it may be
    preferable to generate a unique household identification that would
-   not be a compilation of geographic codes (because geographic codes
+   **not** be a compilation of geographic codes (because geographic codes
    are highly identifying). In such case, it is recommended to generate
    an ID based on a sequential number.
 
@@ -196,41 +204,28 @@ are recommended:
    (Enumeration Area), HHNUM (Household Number). The following options
    are possible:
 
-+-------------------------------------------+-------------+-------------+
-| Option 1:                                 | Option 2:   |  Option 3:  |
-| Use a combination of four variables       | Generate    |  Generate   |
-|                                           |     a       |    a        |
-|                                           |concatenaeted| sequential  |
-|                                           |    ID       | number      |
-|                                           |             |             |
-|                                           |             |             |
-|                                           |             |             |
-+===========+===========+===========+=======+=============+=============+
-| PROV      | DIST      | EA        | HHNUM | HHID        | HHID        |
-+-----------+-----------+-----------+-------+-------------+-------------+
-| 12        | 01        | 014       | 004   | 1201014004  | 1           |
-|           |           |           |       |             |             |
-+-----------+-----------+-----------+-------+-------------+-------------+
-| 12        | 01        | 015       | 001   | 1201015001  | 2           |
-|           |           |           |       |             |             |
-+-----------+-----------+-----------+-------+-------------+-------------+
-| 13        | 07        | 008       | 112   | 1307008112  | 3           |
-|           |           |           |       |             |             |
-+-----------+-----------+-----------+-------+-------------+-------------+
-| Etc       | Etc       | Etc       | Etc   | Etc         | Etc         |
-+-----------+-----------+-----------+-------+-------------+-------------+
+=====  =====  =====  ========== ==================== =====================
+ Option 1: Use a combination of Option 2: Generate a  Option 3: Generate a
+              four variables       concatenated ID       sequential number
+------------------------------- -------------------- ---------------------
+PROV   DIST    EA    HHNUM      HHID                 HHID                 
+=====  =====  =====  ========== ==================== =====================
+12     01     014    004        1201014004           1                    
+12     01     015    001        1201015001           2                    
+13     07     008    112        1307008112           3                    
+Etc    Etc    Etc    Etc        Etc                  Etc                  
+=====  =====  =====  ========== ==================== =====================
 
-
-   Options 2 and 3 are recommended. Note that if option 3 is chosen, it
-   is crucial to preserve (but not distribute) a file that would provide
-   the mapping between the original codes and the new HHID.
+Options 2 and 3 are recommended. Note that if option 3 is chosen, it is 
+crucial to preserve (but not distribute) a file that would provide the 
+mapping between the original codes and the new HHID.
 
 -  Make sure that, in all data files, the identification variable(s)
-   provide a unique identifier. Use the duplicate function in SPSS or
-   the isid command in Stata to verify this.
+   provide a unique identifier. Use the *duplicate* function in SPSS or
+   the *isid* command in Stata to verify this.
 
 -  If your dataset is hierarchical, carefully test the file
-   relationships (using the merge command in SPSS and Stata). For a
+   relationships (using the *merge* command in SPSS and Stata). For a
    household survey for example, verify the all records in the
    individual-level files have a corresponding household in the
    household-level master file. Verify also that all households have at
@@ -242,7 +237,7 @@ are recommended:
 
 -  Do not include string variables if they can be converted into numeric
    variables. Statistical software is very inefficient when working with
-   string variables. In Stata, the destring and the encode commands can
+   string variables. In Stata, the *destring* and the *encode* commands can
    be used to make such conversions.
 
 -  Verify the completeness of your data files by comparing the content
@@ -274,7 +269,7 @@ are recommended:
    easily identified in at least one of the data files. These variables
    are needed for the calculation of sampling errors.
 
--  Put the variables in a logic sequence (using the order command in
+-  Put the variables in a logic sequence (using the *order* command in
    Stata if needed or the “/KEEP=” option in SPSS when saving a file).
 
 -  Generate descriptive statistics for all variables (frequencies for
@@ -282,13 +277,24 @@ are recommended:
    that these statistics look reasonable.
 
 -  Compress the variables to reduce the file size; use the compress
-   command in Stata, or the compress option when you save a SPSS data
+   command in Stata, or the *compress* option when you save a SPSS data
    file.
 
 -  Sort records by their unique identifier before you save the file.
 
-Gathering and preparing the documentation
-==========================================
++--------------------------------------------------------------------+
+| *Suggestion:*                                                      |
+|                                                                    |
+| If you are in the process of establishing a data archive and plan  |
+| to document a collection of surveys, undertake a full inventory of |
+| all existing data and metadata before you start the documentation. |
+| Use the IHSN Inventory Guidelines and Forms to before you start the|
+| documentation. Use the *IHSN Inventory Guidelines and Forms* to    |
+| facilitate this inventory (available at www.surveynetwork.org).    |
++--------------------------------------------------------------------+
+
+2. Gathering and preparing the documentation
+============================================
 
 All information related to the survey may be useful and should be
 archived (even if not all will be disseminated to the public). This
@@ -344,15 +350,16 @@ useful, although not required.
 
 Scan all resources with an updated virus detection application.
 
-Importing data and establishing relationships
-=============================================
+3. Importing data and establishing relationships
+================================================
 
 After all data and documentation files are gathered and checked, import
 the data files in the Toolkit. In the Microdata Management Toolkit,
 order the files in a logical fashion (e.g. sequentially through
 sections).
 
-   Note: If you are documenting a population census and have very large
+.. note::
+   If you are documenting a population census and have very large
    data files, it is recommended to split the files by geographic area.
    Typically, you will have a file at individual level, one at the
    household level, and possibly one at the community level, for each
@@ -373,17 +380,48 @@ Validate Relationships* in the Toolkit. This automatic validation is a
 way to check the structural integrity of the identifier variables and
 assure there are no duplicates in the data.
 
-|image4|
++--------------------------------------------------------------------+
+| Establishing relationships – An example                            |
++====================================================================+
+|In this example, we assume that the dataset is obtained from a      |
+|household budget survey and comprises:                              |
+|                                                                    |
+|- A household-level file “hhld.dat” with the household              |
+|  characteristics (one record per household). Each household is     |
+|  identified by a variable named *hhid*.                            |
+|                                                                    |
+|- A household-level file “hhld.dat” with the household (one record  |
+|  per person).Each household member is identified by the combination|
+|  of variables *hhid and memno*.                                    |
+|                                                                    |
+|- A consumption data file “cons.dat”, with one record per item      |
+|  (goods and services) per household. Each record is uniquely       |
+|  identified by the combination of variables *hhid* and *itemno*.   |
+|  The file also contains a variable *district* identifying the      |
+|  district where the household resides.                             |
+|                                                                    |
+|- A data file “prices.dat” with average price per commodity, per    |
+|  district (one record per item per district). Each record is       | 
+|  uniquely identified by variables *district* and *itemno*.         |
++--------------------------------------------------------------------+
+|                   .. image:: media/image5.png                      |
++--------------------------------------------------------------------+
+|In the IHSN Toolkit, these relationships will be established as     |
+|follows in the “Key variables and relationships” section of each    |
+|data file:                                                          |
++--------------------------------------------------------------------+
+|                   .. image:: media/image6.png                      |
++--------------------------------------------------------------------+
 
 If you have imported your data from any format other than fixed ASCII,
-re-sequence the data using the Variables > Resequence option in the
+re-sequence the data using the *Variables* > *Resequence* option in the
 Toolkit. This re-sequencing tool will automatically fill the “StartCol”
 and “EndCol” columns in the variable description section. This must be
 done for each data file.
 
-|image5|
+.. image:: media/image7.png
 
-|image6|
+.. image:: media/image8.png
 
 Before going further, quickly browse all variables in all data files to
 visually check the frequencies. This will allow you to easily spot some
