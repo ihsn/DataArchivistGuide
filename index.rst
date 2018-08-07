@@ -852,187 +852,184 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   |  *UGA-UBOS-DHS-2005-v01.*         |
 +-----------------------------------+-----------------------------------+
-| **Version**                       |                                   |
+| **Version**                                                           |
 +-----------------------------------+-----------------------------------+
-| Description                       | The version description should    |
-|                                   | contain a version number followed |
-|                                   | by a version label. The version   |
-|                                   | number should follow a standard   |
-|                                   | convention to be adopted by the   |
-|                                   | institute. We recommend that      |
-|                                   | larger series be defined by a     |
-|                                   | number to the left of a decimal   |
-|                                   | and iterations of the same series |
-|                                   | by a sequential number that       |
-|                                   | identifies the release. Larger    |
-|                                   | series will typically include (0) |
-|                                   | the raw, unedited dataset; (1)    |
-|                                   | the edited dataset, non           |
-|                                   | anonymized, for internal use at   |
-|                                   | the data producing agency; and    |
-|                                   | (2) the edited dataset, prepared  |
-|                                   | for dissemination to secondary    |
-|                                   | users (possibly anonymized).      |
+| Description                       |The version description should     |
+|                                   |contain a version number followed  |
+|                                   |by a version label. The version    |
+|                                   |number should follow a standard    |
+|                                   |convention to be adopted by the    |
+|                                   |institute. We recommend that       |
+|                                   |larger series be defined by a      |
+|                                   |number to the left of a decimal    |
+|                                   |and iterations of the same series  |
+|                                   |by a sequential number that        |
+|                                   |identifies the release. Larger     |
+|                                   |series will typically include (0)  |
+|                                   |the raw, unedited dataset; (1)     |
+|                                   |the edited dataset, non            |
+|                                   |anonymized, for internal use at    |
+|                                   |the data producing agency; and     |
+|                                   |(2) the edited dataset, prepared   |
+|                                   |for dissemination to secondary     |
+|                                   |users (possibly anonymized).       |
 |                                   |                                   |
-|                                   | Examples:                         |
+|                                   |Example:                           |
+|                                   |  -  *v0.1: Basic raw data,        |
+|                                   |     obtained from data entry      |
+|                                   |     (before editing)*.            |
 |                                   |                                   |
-|                                   | -   v0.1: Basic raw data,         |
-|                                   |    obtained from data entry       |
-|                                   |    (before editing).              |
+|                                   |  -  *v1.2: Edited data, second    |
+|                                   |     version, for internal use     |
+|                                   |     only*.                        |
 |                                   |                                   |
-|                                   | -   v1.2: Edited data, second     |
-|                                   |    version, for internal use      |
-|                                   |    only.                          |
+|                                   |  -  *v2.1: Edited, anonymous      |
+|                                   |     dataset for public            |
+|                                   |     distribution*.                |
 |                                   |                                   |
-|                                   | -   v2.1: Edited, anonymous       |
-|                                   |    dataset for public             |
-|                                   |    distribution.                  |
-|                                   |                                   |
-|                                   | A brief description of the        |
-|                                   | version should follow the         |
-|                                   | numerical identification.         |
+|                                   |A brief description of the version |
+|                                   |should follow the numerical        |
+|                                   |identification.                    |
 +-----------------------------------+-----------------------------------+
-| Production date                   | This is the date in ISO format    |
-|                                   | (yyyy-mm-dd) of actual and final  |
-|                                   | production of the data.           |
-|                                   | Production dates of all versions  |
-|                                   | should be carefully tracked.      |
-|                                   | Provide at least the month and    |
-|                                   | year. Use the calendar icon in    |
-|                                   | the Metadata editor to assure     |
-|                                   | that the date selected is in      |
-|                                   | compliance with the ISO format.   |
+| Production date                   |This is the date in ISO format     |
+|                                   |(yyyy-mm-dd) of actual and final   |
+|                                   |production of the data.            |
+|                                   |Production dates of all versions   |
+|                                   |should be carefully tracked.       |
+|                                   |Provide at least the month and     |
+|                                   |year. Use the calendar icon in     |
+|                                   |the Metadata editor to assure      |
+|                                   |that the date selected is in       |
+|                                   |compliance with the ISO format.    |
 +-----------------------------------+-----------------------------------+
-| Notes                             | Version notes should provide a    |
-|                                   | brief report on the changes made  |
-|                                   | through the versioning process.   |
-|                                   | The note should indicate how this |
-|                                   | version differs from other        |
-|                                   | versions of the same dataset.     |
+| Notes                             |Version notes should provide a     |
+|                                   |brief report on the changes made   |
+|                                   |through the versioning process.    |
+|                                   |The note should indicate how this  |
+|                                   |version differs from other         |
+|                                   |versions of the same dataset.      |
 +-----------------------------------+-----------------------------------+
-| **Overview**                      |                                   |
+| **Overview**                                                          |
 +-----------------------------------+-----------------------------------+
-| Abstract                          | The abstract should provide a     |
-|                                   | clear summary of the purposes,    |
-|                                   | objectives and content of the     |
-|                                   | survey. It should be written by a |
-|                                   | researcher or survey statistician |
-|                                   | aware of the survey.              |
+| Abstract                          |The abstract should provide a      |
+|                                   |clear summary of the purposes,     |
+|                                   |objectives and content of the      |
+|                                   |survey. It should be written by a  |
+|                                   |researcher or survey statistician  |
+|                                   |aware of the survey.               |
 +-----------------------------------+-----------------------------------+
-| Kind of data                      | This field is a broad             |
-|                                   | classification of the data and it |
-|                                   | is associated with a drop down    |
-|                                   | box providing controlled          |
-|                                   | vocabulary. That controlled       |
-|                                   | vocabulary includes 9 items but   |
-|                                   | is not limited to them.           |
+| Kind of data                      |This field is a broad              |
+|                                   |classification of the data and it  |
+|                                   |is associated with a drop down     |
+|                                   |box providing controlled           |
+|                                   |vocabulary. That controlled        |
+|                                   |vocabulary includes 9 items but    |
+|                                   |is not limited to them.            |
 +-----------------------------------+-----------------------------------+
-| Unit of analysis                  | A survey could have various units |
-|                                   | of analysis. These are fairly     |
-|                                   | standard and are usually:         |
+| Unit of analysis                  |A survey could have various units  |
+|                                   |of analysis. These are fairly      |
+|                                   |standard and are usually:          |
 |                                   |                                   |
-|                                   | -  Household (household survey,   |
-|                                   |    census)                        |
+|                                   |-  Household (household survey,    |
+|                                   |   census)                         |
 |                                   |                                   |
-|                                   | -  Person (household survey,      |
-|                                   |    census)                        |
+|                                   |-  Person (household survey,       |
+|                                   |   census)                         |
 |                                   |                                   |
-|                                   | -  Enterprise (enterprise survey) |
+|                                   |-  Enterprise (enterprise survey)  |
 |                                   |                                   |
-|                                   | -  Commodity (household survey,   |
-|                                   |    price survey)                  |
+|                                   |-  Commodity (household survey,    |
+|                                   |   price survey)                   |
 |                                   |                                   |
-|                                   | -  Plots of land (agricultural    |
-|                                   |    survey)                        |
+|                                   |-  Plots of land (agricultural     |
+|                                   |   survey)                         |
 +-----------------------------------+-----------------------------------+
-| **Scope**                         |                                   |
+| **Scope**                                                             |
 +-----------------------------------+-----------------------------------+
-| Description of scope              | The scope is a description of the |
-|                                   | themes covered by the survey. It  |
-|                                   | can be viewed as a summary of the |
-|                                   | modules that are included in the  |
-|                                   | questionnaire. The scope does not |
-|                                   | deal with geographic coverage.    |
+| Description of scope              |The scope is a description of the  |
+|                                   |themes covered by the survey. It   |
+|                                   |can be viewed as a summary of the  |
+|                                   |modules that are included in the   |
+|                                   |questionnaire. The scope does not  |
+|                                   |deal with geographic coverage.     |
 |                                   |                                   |
-|                                   | Example:                          |
+|                                   |Example:                           |
+|                                   |  The scope of the Multiple        |
+|                                   |  Indicator Cluster Survey         |
+|                                   |  includes:                        |
 |                                   |                                   |
-|                                   | The scope of the Multiple         |
-|                                   | Indicator Cluster Survey          |
-|                                   | includes:                         |
+|                                   |  -  *HOUSEHOLD: Household         |
+|                                   |     characteristics, household    |
+|                                   |     listing, orphaned and         |
+|                                   |     vulnerable children,          |
+|                                   |     education, child labour, water|
+|                                   |     and sanitation, household use |
+|                                   |     of insecticide treated        |
+|                                   |     mosquito nets, and salt       |
+|                                   |     iodization, with optional     |
+|                                   |     modules for child discipline, |
+|                                   |     child disability, maternal    |
+|                                   |     mortality and security of     |
+|                                   |     tenure and durability of      |
+|                                   |     housing.*                     |
 |                                   |                                   |
-|                                   | -  HOUSEHOLD: Household           |
-|                                   |    characteristics, household     |
-|                                   |    listing, orphaned and          |
-|                                   |    vulnerable children,           |
-|                                   |    education, child labour, water |
-|                                   |    and sanitation, household use  |
-|                                   |    of insecticide treated         |
-|                                   |    mosquito nets, and salt        |
-|                                   |    iodization, with optional      |
-|                                   |    modules for child discipline,  |
-|                                   |    child disability, maternal     |
-|                                   |    mortality and security of      |
-|                                   |    tenure and durability of       |
-|                                   |    housing.*                      |
+|                                   |  -  *WOMEN: Women's               |
+|                                   |     characteristics, child        |
+|                                   |     mortality, tetanus toxoid,    |
+|                                   |     maternal and newborn health,  |
+|                                   |     marriage, polygyny, female    |
+|                                   |     genital cutting,              |
+|                                   |     contraception, and HIV/AIDS   |
+|                                   |     knowledge, with optional      |
+|                                   |     modules for unmet need,       |
+|                                   |     domestic violence, and sexual |
+|                                   |     behavior.*                    |
 |                                   |                                   |
-|                                   | -  WOMEN: Women's                 |
-|                                   |    characteristics, child         |
-|                                   |    mortality, tetanus toxoid,     |
-|                                   |    maternal and newborn health,   |
-|                                   |    marriage, polygyny, female     |
-|                                   |    genital cutting,               |
-|                                   |    contraception, and HIV/AIDS    |
-|                                   |    knowledge, with optional       |
-|                                   |    modules for unmet need,        |
-|                                   |    domestic violence, and sexual  |
-|                                   |    behavior.                      |
-|                                   |                                   |
-|                                   | -  CHILDREN: Children's           |
-|                                   |    characteristics, birth         |
-|                                   |    registration and early         |
-|                                   |    learning, vitamin A,           |
-|                                   |    breastfeeding, care of         |
-|                                   |    illness, malaria,              |
-|                                   |    immunization, and              |
-|                                   |    anthropometry, with an         |
-|                                   |    optional module for child      |
-|                                   |    development.*                  |
+|                                   |  -  *CHILDREN: Children's         |
+|                                   |     characteristics, birth        |
+|                                   |     registration and early        |
+|                                   |     learning, vitamin A,          |
+|                                   |     breastfeeding, care of        |
+|                                   |     illness, malaria,             |
+|                                   |     immunization, and             |
+|                                   |     anthropometry, with an        |
+|                                   |     optional module for child     |
+|                                   |     development.*                 |
 +-----------------------------------+-----------------------------------+
-| Topic classifications             | A topic classification            |
-|                                   | facilitates referencing and       |
-|                                   | searches in electronic survey     |
-|                                   | catalogs. Topics should be        |
-|                                   | selected from a standard          |
-|                                   | thesaurus, preferably an          |
-|                                   | international, multilingual       |
-|                                   | thesaurus. The IHSN recommends    |
-|                                   | the use of the thesaurus used by  |
-|                                   | the Council of European Social    |
-|                                   | Science Data Archives (CESSDA).   |
-|                                   | The CESSDA thesaurus has been     |
-|                                   | introduced as a controlled        |
-|                                   | vocabulary in the IHSN Study      |
-|                                   | Template version 1.3 (available   |
-|                                   | at                                |
-|                                   | `www.surveynetwork.org/toolkit <h |
-|                                   | ttp://www.surveynetwork.org/toolk |
-|                                   | it>`__).                          |
+| Topic classifications             |A topic classification             |
+|                                   |facilitates referencing and        |
+|                                   |searches in electronic survey      |
+|                                   |catalogs. Topics should be         |
+|                                   |selected from a standard           |
+|                                   |thesaurus, preferably an           |
+|                                   |international, multilingual        |
+|                                   |thesaurus. The IHSN recommends     |
+|                                   |the use of the thesaurus used by   |
+|                                   |the Council of European Social     |
+|                                   |Science Data Archives (CESSDA).    |
+|                                   |The CESSDA thesaurus has been      |
+|                                   |introduced as a controlled         |
+|                                   |vocabulary in the IHSN Study       |
+|                                   |Template version 1.3 (available    |
+|                                   |`www.surveynetwork.org/toolkit <h  |
+|                                   |ttp://www.surveynetwork.org/toolk  |
+|                                   |it>`__).                           |
 +-----------------------------------+-----------------------------------+
-| Keywords                          | Keywords summarize the content or |
-|                                   | subject matter of the survey. As  |
-|                                   | topic classifications, these are  |
-|                                   | used to facilitate referencing    |
-|                                   | and searches in electronic survey |
-|                                   | catalogs. Keywords should be      |
-|                                   | selected from a standard          |
-|                                   | thesaurus, preferably an          |
-|                                   | international, multilingual       |
-|                                   | thesaurus. Entering a list of     |
-|                                   | keywords is tedious. This option  |
-|                                   | is provided for advanced users    |
-|                                   | only.                             |
+| Keywords                          |Keywords summarize the content or  |
+|                                   |subject matter of the survey. As   |
+|                                   |topic classifications, these are   |
+|                                   |used to facilitate referencing     |
+|                                   |and searches in electronic survey  |
+|                                   |catalogs. Keywords should be       |
+|                                   |selected from a standard           |
+|                                   |thesaurus, preferably an           |
+|                                   |international, multilingual        |
+|                                   |thesaurus. Entering a list of      |
+|                                   |keywords is tedious. This option   |
+|                                   |is provided for advanced users     |
+|                                   |only.                              |
 +-----------------------------------+-----------------------------------+
-| **Coverage**                      |                                   |
+| **Coverage**                                                          |
 +-----------------------------------+-----------------------------------+
 | Country                           | Enter the country name, even in   |
 |                                   | cases where the survey did not    |
@@ -1044,280 +1041,275 @@ and methods, scope and coverage, etc.)
 |                                   | covers more than one country,     |
 |                                   | enter all in separate rows.       |
 +-----------------------------------+-----------------------------------+
-| Geographic coverage               | This filed aims at describing at  |
-|                                   | what geographic level the data    |
-|                                   | are representative. Typical       |
-|                                   | entries will be “National         |
-|                                   | coverage”, “Urban (or rural)      |
-|                                   | areas only”, “state of …”,        |
-|                                   | “Capital city”, etc.              |
+| Geographic coverage               |This filed aims at describing at   |
+|                                   |what geographic level the data     |
+|                                   |are representative. Typical        |
+|                                   |entries will be “National          |
+|                                   |coverage”, “Urban (or rural)       |
+|                                   |areas only”, “state of …”,         |
+|                                   |“Capital city”, etc.               |
 |                                   |                                   |
-|                                   | Note that we do not describe here |
-|                                   | where the data was collected. For |
-|                                   | example, as sample survey could   |
-|                                   | be declared as “national          |
-|                                   | coverage” even in cases where     |
-|                                   | some districts where not included |
-|                                   | in the sample, as long as the     |
-|                                   | sampling strategy was such that   |
-|                                   | the representativity is national. |
+|                                   |Note that we do not describe here  |
+|                                   |where the data was collected. For  |
+|                                   |example, as sample survey could    |
+|                                   |be declared as “national           |
+|                                   |coverage” even in cases where      |
+|                                   |some districts where not included  |
+|                                   |in the sample, as long as the      |
+|                                   |sampling strategy was such that    |
+|                                   |the representativity is national.  |
 +-----------------------------------+-----------------------------------+
-| Universe                          | We are interested here in the     |
-|                                   | survey universe (not the universe |
-|                                   | of particular sections of the     |
-|                                   | questionnaires or variables),     |
-|                                   | i.e. in the identification of the |
-|                                   | population of interest in the     |
-|                                   | survey. The universe will rarely  |
-|                                   | be the entire population of the   |
-|                                   | country. Sample household         |
-|                                   | surveys, for example, usually do  |
-|                                   | not cover homeless, nomads,       |
-|                                   | diplomats, community households.  |
-|                                   | Population censuses do not cover  |
-|                                   | diplomats. Try to provide the     |
-|                                   | most detailed information         |
-|                                   | possible on the population        |
-|                                   | covered by the survey/census.     |
+| Universe                          |We are interested here in the      |
+|                                   |survey universe (not the universe  |
+|                                   |of particular sections of the      |
+|                                   |questionnaires or variables),      |
+|                                   |i.e. in the identification of the  |
+|                                   |population of interest in the      |
+|                                   |survey. The universe will rarely   |
+|                                   |be the entire population of the    |
+|                                   |country. Sample household          |
+|                                   |surveys, for example, usually do   |
+|                                   |not cover homeless, nomads,        |
+|                                   |diplomats, community households.   |
+|                                   |Population censuses do not cover   |
+|                                   |diplomats. Try to provide the      |
+|                                   |most detailed information          |
+|                                   |possible on the population         |
+|                                   |covered by the survey/census.      |
 |                                   |                                   |
-|                                   | Example:                          |
-|                                   |                                   |
-|                                   | The survey covered all de jure    |
-|                                   | household members (usual          |
-|                                   | residents), all women aged 15-49  |
-|                                   | years resident in the household,  |
-|                                   | and all children aged 0-4 years   |
-|                                   | (under age 5) resident in the     |
-|                                   | household.                        |
-+-----------------------------------+-----------------------------------+
-
+|                                   |Example:                           |
+|                                   |  *The survey covered all de jure  |
+|                                   |  household members (usual         |
+|                                   |  residents), all women aged 15-49 |
+|                                   |  years resident in the household, |
+|                                   |  and all children aged 0-4 years  |
+|                                   |  (under age 5) resident in the    |
+|                                   |  household.*                      |
 +-----------------------------------+-----------------------------------+
 | **Producers and Sponsors**                                            |
-+===================================+===================================+
-| Primary investigator              | The primary investigator will in  |
-|                                   | most cases be an institution, but |
-|                                   | could also be an individual in    |
-|                                   | the case of small-scale academic  |
-|                                   | surveys. The two fields to be     |
-|                                   | completed are the Name and the    |
-|                                   | Affiliation fields. Generally, in |
-|                                   | a survey, the Primary             |
-|                                   | Investigator will be the          |
-|                                   | institution implementing the      |
-|                                   | survey. If various institutions   |
-|                                   | have been equally involved as     |
-|                                   | main investigators, then all      |
-|                                   | should be mentioned. This only    |
-|                                   | includes the agencies responsible |
-|                                   | for the implementation of the     |
-|                                   | survey, not its funding or        |
-|                                   | technical assistance. The order   |
-|                                   | in which they are listed is       |
-|                                   | discretionary. It can be          |
-|                                   | alphabetic or by significance of  |
-|                                   | contribution. Individual persons  |
-|                                   | can also be mentioned. If persons |
-|                                   | are mentioned use the appropriate |
-|                                   | format of Surname, First name.    |
 +-----------------------------------+-----------------------------------+
-| Other producers                   | This field is provided to list    |
-|                                   | other interested parties and      |
-|                                   | persons that have played a        |
-|                                   | significant but not the leading   |
-|                                   | technical role in implementing    |
-|                                   | and producing the data. The       |
-|                                   | specific fields to be competed    |
-|                                   | are: Name of the organization,    |
-|                                   | Abbreviation, Affiliation and     |
-|                                   | Role. If any of the fields are    |
-|                                   | not applicable these can be left  |
-|                                   | blank. The abbreviations should   |
-|                                   | be the official abbreviation of   |
-|                                   | the organization. The role should |
-|                                   | be a short and succinct phrase or |
-|                                   | description on the specific       |
-|                                   | assistance provided by the        |
-|                                   | organization in order to produce  |
-|                                   | the data. The roles should be     |
-|                                   | standard vocabulary such as:      |
-|                                   |                                   |
-|                                   | -  [Technical assistance in]      |
-|                                   |    questionnaire design           |
-|                                   |                                   |
-|                                   | -  [Technical assistance in]      |
-|                                   |    sampling methodology /         |
-|                                   |    selection                      |
-|                                   |                                   |
-|                                   | -  [Technical assistance in] data |
-|                                   |    collection                     |
-|                                   |                                   |
-|                                   | -  [Technical assistance in] data |
-|                                   |    processing                     |
-|                                   |                                   |
-|                                   | -  [Technical assistance in] data |
-|                                   |    analysis                       |
-|                                   |                                   |
-|                                   | Do not include here the financial |
-|                                   | sponsors.                         |
+| Primary investigator              |The primary investigator will in   |
+|                                   |most cases be an institution, but  |
+|                                   |could also be an individual in     |
+|                                   |the case of small-scale academic   |
+|                                   |surveys. The two fields to be      |
+|                                   |completed are the Name and the     |
+|                                   |Affiliation fields. Generally, in  |
+|                                   |a survey, the Primary              |
+|                                   |Investigator will be the           |
+|                                   |institution implementing the       |
+|                                   |survey. If various institutions    |
+|                                   |have been equally involved as      |
+|                                   |main investigators, then all       |
+|                                   |should be mentioned. This only     |
+|                                   |includes the agencies responsible  |
+|                                   |for the implementation of the      |
+|                                   |survey, not its funding or         |
+|                                   |technical assistance. The order    |
+|                                   |in which they are listed is        |
+|                                   |discretionary. It can be           |
+|                                   |alphabetic or by significance of   |
+|                                   |contribution. Individual persons   |
+|                                   |can also be mentioned. If persons  |
+|                                   |are mentioned use the appropriate  |
+|                                   |format of Surname, First name.     |
 +-----------------------------------+-----------------------------------+
-| Funding                           | List the organizations (national  |
-|                                   | or international) that have       |
-|                                   | contributed, in cash or in kind,  |
-|                                   | to the financing of the survey.   |
-|                                   | The government institution that   |
-|                                   | has provided funding should not   |
-|                                   | be forgotten.                     |
+| Other producers                   |This field is provided to list     |
+|                                   |other interested parties and       |
+|                                   |persons that have played a         |
+|                                   |significant but not the leading    |
+|                                   |technical role in implementing     |
+|                                   |and producing the data. The        |
+|                                   |specific fields to be competed     |
+|                                   |are: Name of the organization,     |
+|                                   |Abbreviation, Affiliation and      |
+|                                   |Role. If any of the fields are     |
+|                                   |not applicable these can be left   |
+|                                   |blank. The abbreviations should    |
+|                                   |be the official abbreviation of    |
+|                                   |the organization. The role should  |
+|                                   |be a short and succinct phrase or  |
+|                                   |description on the specific        |
+|                                   |assistance provided by the         |
+|                                   |organization in order to produce   |
+|                                   |the data. The roles should be      |
+|                                   |standard vocabulary such as:       |
+|                                   |                                   |
+|                                   |-  [Technical assistance in]       |
+|                                   |   questionnaire design            |
+|                                   |                                   |
+|                                   |-  [Technical assistance in]       |
+|                                   |   sampling methodology /          |
+|                                   |   selection                       |
+|                                   |                                   |
+|                                   |-  [Technical assistance in] data  |
+|                                   |   collection                      |
+|                                   |                                   |
+|                                   |-  [Technical assistance in] data  |
+|                                   |   processing                      |
+|                                   |                                   |
+|                                   |-  [Technical assistance in] data  |
+|                                   |   analysis                        |
+|                                   |                                   |
+|                                   |Do not include here the financial  |
+|                                   |sponsors.                          |
 +-----------------------------------+-----------------------------------+
-| Other acknowledgements            | This optional field can be used   |
-|                                   | to acknowledge any other people   |
-|                                   | and institutions that have in     |
-|                                   | some form contributed to the      |
-|                                   | survey.                           |
+| Funding                           |List the organizations (national   |
+|                                   |or international) that have        |
+|                                   |contributed, in cash or in kind,   |
+|                                   |to the financing of the survey.    |
+|                                   |The government institution that    |
+|                                   |has provided funding should not    |
+|                                   |be forgotten.                      |
++-----------------------------------+-----------------------------------+
+| Other acknowledgements            |This optional field can be used    |
+|                                   |to acknowledge any other people    |
+|                                   |and institutions that have in      |
+|                                   |some form contributed to the       |
+|                                   |survey.                            |
 +-----------------------------------+-----------------------------------+
 | **Sampling**                                                          |
 +-----------------------------------+-----------------------------------+
-| Sampling procedure                | This field only applies to sample |
-|                                   | surveys. Information on sampling  |
-|                                   | procedure is crucial (although    |
-|                                   | not applicable for censuses and   |
-|                                   | administrative datasets). This    |
-|                                   | section should include summary    |
-|                                   | information that includes though  |
-|                                   | is not limited to:                |
+| Sampling procedure                |This field only applies to sample  |
+|                                   |surveys. Information on sampling   |
+|                                   |procedure is crucial (although     |
+|                                   |not applicable for censuses and    |
+|                                   |administrative datasets). This     |
+|                                   |section should include summary     |
+|                                   |information that includes though   |
+|                                   |is not limited to:                 |
 |                                   |                                   |
-|                                   | -  Sample size                    |
+|                                   |-  Sample size                     |
 |                                   |                                   |
-|                                   | -  Selection process (e.g.,       |
-|                                   |    probability proportional to    |
-|                                   |    size or over sampling)         |
+|                                   |-  Selection process (e.g.,        |
+|                                   |   probability proportional to     |
+|                                   |   size or over sampling)          |
 |                                   |                                   |
-|                                   | -  Stratification (implicit and   |
-|                                   |    explicit)                      |
+|                                   |-  Stratification (implicit and    |
+|                                   |   explicit)                       |
 |                                   |                                   |
-|                                   | -  Stages of sample selection     |
+|                                   |-  Stages of sample selection      |
 |                                   |                                   |
-|                                   | -  Design omissions in the sample |
+|                                   |-  Design omissions in the sample  |
 |                                   |                                   |
-|                                   | -  Level of representation        |
+|                                   |-  Level of representation         |
 |                                   |                                   |
-|                                   | -  Strategy for absent            |
-|                                   |    respondents/not found/refusals |
-|                                   |    (replacement or not)           |
+|                                   |-  Strategy for absent             |
+|                                   |   respondents/not found/refusals  |
+|                                   |   (replacement or not)            |
 |                                   |                                   |
-|                                   | -  Sample frame used, and listing |
-|                                   |    exercise conducted to update   |
-|                                   |    it                             |
+|                                   |-  Sample frame used, and listing  |
+|                                   |   exercise conducted to update    |
+|                                   |   it                              |
 |                                   |                                   |
-|                                   | It is useful also to indicate     |
-|                                   | here what variables in the data   |
-|                                   | files identify the various levels |
-|                                   | of stratification and the primary |
-|                                   | sample unit. These are crucial to |
-|                                   | the data users who want to        |
-|                                   | properly account for the sampling |
-|                                   | design in their analyses and      |
-|                                   | calculations of sampling errors.  |
+|                                   |It is useful also to indicate      |
+|                                   |here what variables in the data    |
+|                                   |files identify the various levels  |
+|                                   |of stratification and the primary  |
+|                                   |sample unit. These are crucial to  |
+|                                   |the data users who want to         |
+|                                   |properly account for the sampling  |
+|                                   |design in their analyses and       |
+|                                   |calculations of sampling errors.   |
 |                                   |                                   |
-|                                   | This section accepts only text    |
-|                                   | format; formulae cannot be        |
-|                                   | entered. In most cases, technical |
-|                                   | documents will exist that         |
-|                                   | describe the sampling strategy in |
-|                                   | detail. In such cases, include    |
-|                                   | here a reference                  |
-|                                   | (title/author/date) to this       |
-|                                   | document, and make sure that the  |
-|                                   | document is provided in the       |
-|                                   | External Resources.               |
+|                                   |This section accepts only text     |
+|                                   |format; formulae cannot be         |
+|                                   |entered. In most cases, technical  |
+|                                   |documents will exist that          |
+|                                   |describe the sampling strategy in  |
+|                                   |detail. In such cases, include     |
+|                                   |here a reference                   |
+|                                   |(title/author/date) to this        |
+|                                   |document, and make sure that the   |
+|                                   |document is provided in the        |
+|                                   |External Resources.                |
 |                                   |                                   |
-|                                   | Example:                          |
-|                                   |                                   |
-|                                   | 5000 households were selected     |
-|                                   | for the sample. Of these, 4996    |
-|                                   | were occupied households and 4811 |
-|                                   | were successfully interviewed for |
-|                                   | a response rate of 96.3%. Within  |
-|                                   | these households, 7815 eligible   |
-|                                   | women aged 15-49 were identified  |
-|                                   | for interview, of which 7505 were |
-|                                   | successfully interviewed          |
-|                                   | (response rate 96.0%), and 3242   |
-|                                   | children aged 0-4 were identified |
-|                                   | for whom the mother or caretaker  |
-|                                   | was successfully interviewed for  |
-|                                   | 3167 children (response rate      |
-|                                   | 97.7%). These give overall        |
-|                                   | response rates (household         |
-|                                   | response rate times individual    |
-|                                   | response rate) for the women's    |
-|                                   | interview of 92.5% and for the    |
-|                                   | children's interview of 94.1%.*   |
+|                                   |Example:                           |
+|                                   |  *5000 households were selected   |
+|                                   |  for the sample. Of these, 4996   |
+|                                   |  were occupied households and 4811|
+|                                   |  were successfully interviewed for|
+|                                   |  a response rate of 96.3%. Within |
+|                                   |  these households, 7815 eligible  |
+|                                   |  women aged 15-49 were identified |
+|                                   |  for interview, of which 7505 were|
+|                                   |  successfully interviewed         |
+|                                   |  (response rate 96.0%), and 3242  |
+|                                   |  children aged 0-4 were identified|
+|                                   |  for whom the mother or caretaker |
+|                                   |  was successfully interviewed for |
+|                                   |  3167 children (response rate     |
+|                                   |  97.7%). These give overall       |
+|                                   |  response rates (household        |
+|                                   |  response rate times individual   |
+|                                   |  response rate) for the women's   |
+|                                   |  interview of 92.5% and for the   |
+|                                   |  children's interview of 94.1%.*  |
 +-----------------------------------+-----------------------------------+
-| Deviation from sample design      | This field only applies to sample |
-|                                   | surveys.                          |
+| Deviation from sample design      |This field only applies to sample  |
+|                                   |surveys.                           |
 |                                   |                                   |
-|                                   | Sometimes the reality of the      |
-|                                   | field requires a deviation from   |
-|                                   | the sampling design (for example  |
-|                                   | due to difficulty to access to    |
-|                                   | zones due to weather problems,    |
-|                                   | political instability, etc). If   |
-|                                   | for any reason, the sample design |
-|                                   | has deviated, this should be      |
-|                                   | reported here.                    |
+|                                   |Sometimes the reality of the       |
+|                                   |field requires a deviation from    |
+|                                   |the sampling design (for example   |
+|                                   |due to difficulty to access to     |
+|                                   |zones due to weather problems,     |
+|                                   |political instability, etc). If    |
+|                                   |for any reason, the sample design  |
+|                                   |has deviated, this should be       |
+|                                   |reported here.                     |
 +-----------------------------------+-----------------------------------+
-| Response rates                    | Response rate provides that       |
-|                                   | percentage of households (or      |
-|                                   | other sample unit) that           |
-|                                   | participated in the survey based  |
-|                                   | on the original sample size.      |
-|                                   | Omissions may occur due to        |
-|                                   | refusal to participate,           |
-|                                   | impossibility to locate the       |
-|                                   | respondent, or other. Sometimes,  |
-|                                   | a household may be replaced by    |
-|                                   | another by design. Check that the |
-|                                   | information provided here is      |
-|                                   | consistent with the sample size   |
-|                                   | indicated in the “Sampling        |
-|                                   | procedure field” and the number   |
-|                                   | of records found in the dataset   |
-|                                   | (for example, if the sample       |
-|                                   | design mention a sample of 5,000  |
-|                                   | households and the data on        |
-|                                   | contain data on 4,500 households, |
-|                                   | the response rate should not be   |
-|                                   | 100 percent).                     |
+| Response rates                    |Response rate provides that        |
+|                                   |percentage of households (or       |
+|                                   |other sample unit) that            |
+|                                   |participated in the survey based   |
+|                                   |on the original sample size.       |
+|                                   |Omissions may occur due to         |
+|                                   |refusal to participate,            |
+|                                   |impossibility to locate the        |
+|                                   |respondent, or other. Sometimes,   |
+|                                   |a household may be replaced by     |
+|                                   |another by design. Check that the  |
+|                                   |information provided here is       |
+|                                   |consistent with the sample size    |
+|                                   |indicated in the “Sampling         |
+|                                   |procedure field” and the number    |
+|                                   |of records found in the dataset    |
+|                                   |(for example, if the sample        |
+|                                   |design mention a sample of 5,000   |
+|                                   |households and the data on         |
+|                                   |contain data on 4,500 households,  |
+|                                   |the response rate should not be    |
+|                                   |100 percent).                      |
 |                                   |                                   |
-|                                   | Provide if possible the response  |
-|                                   | rates by stratum. If information  |
-|                                   | is available on the causes of     |
-|                                   | non-response (refusal/not         |
-|                                   | found/other), provide this        |
-|                                   | information as well.              |
+|                                   |Provide if possible the response   |
+|                                   |rates by stratum. If information   |
+|                                   |is available on the causes of      |
+|                                   |non-response (refusal/not          |
+|                                   |found/other), provide this         |
+|                                   |information as well.               |
 |                                   |                                   |
-|                                   | This field can also in some cases |
-|                                   | be used to describe non-responses |
-|                                   | in population censuses.           |
+|                                   |This field can also in some cases  |
+|                                   |be used to describe non-responses  |
+|                                   |in population censuses.            |
 +-----------------------------------+-----------------------------------+
-| Weighting                         | This field only applies to sample |
-|                                   | surveys.                          |
+| Weighting                         |This field only applies to sample  |
+|                                   |surveys.                           |
 |                                   |                                   |
-|                                   | Provide here the list of          |
-|                                   | variables used as weighting       |
-|                                   | coefficient. If more than one     |
-|                                   | variable is a weighting variable, |
-|                                   | describe how these variables      |
-|                                   | differ from each other and what   |
-|                                   | the purpose of each one of them   |
-|                                   | is.                               |
+|                                   |Provide here the list of           |
+|                                   |variables used as weighting        |
+|                                   |coefficient. If more than one      |
+|                                   |variable is a weighting variable,  |
+|                                   |describe how these variables       |
+|                                   |differ from each other and what    |
+|                                   |the purpose of each one of them    |
+|                                   |is.                                |
 |                                   |                                   |
-|                                   | Example:                          |
+|                                   |Example:                           |
+|                                   | *Sample weights were calculated   |
+|                                   | for each of the data files.*      |
 |                                   |                                   |
-|                                   |  Sample weights were calculated   |
-|                                   | for each of the data files.       |
-|                                   |                                   |
-|                                   |  Sample weights for the household |
+|                                   | *Sample weights for the household |
 |                                   | data were computed as the inverse |
 |                                   | of the probability of selection   |
 |                                   | of the household, computed at the |
@@ -1332,9 +1324,9 @@ and methods, scope and coverage, etc.)
 |                                   | unweighted number of households.  |
 |                                   | The household weight variable is  |
 |                                   | called HHWEIGHT and is used with  |
-|                                   | the HH data and the HL data.      |
+|                                   | the HH data and the HL data.*     |
 |                                   |                                   |
-|                                   |  Sample weights for the women's   |
+|                                   | *Sample weights for the women's   |
 |                                   | data used the un-normalized       |
 |                                   | household weights, adjusted for   |
 |                                   | non-response for the women's      |
@@ -1343,9 +1335,9 @@ and methods, scope and coverage, etc.)
 |                                   | so that the total weighted number |
 |                                   | of women's cases equals the total |
 |                                   | unweighted number of women's      |
-|                                   | cases.                            |
+|                                   | cases.*                           |
 |                                   |                                   |
-|                                   |  Sample weights for the           |
+|                                   | *Sample weights for the           |
 |                                   | children's data followed the same |
 |                                   | approach as the women's and used  |
 |                                   | the un-normalized household       |
@@ -1356,95 +1348,92 @@ and methods, scope and coverage, etc.)
 |                                   | so that the total weighted number |
 |                                   | of children's cases equals the    |
 |                                   | total unweighted number of        |
-|                                   | children's cases.                 |
+|                                   | children's cases.*                |
 +-----------------------------------+-----------------------------------+
-| **Data Collection**               |                                   |
+| **Data Collection**                                                   |
 +-----------------------------------+-----------------------------------+
-| Dates of data collection          | Enter the dates (at least month   |
-|                                   | and year) of the start and end of |
-|                                   | the data collection. They should  |
-|                                   | be in the standard ISO format of  |
-|                                   | YYYY-MM-DD.                       |
+| Dates of data collection          |Enter the dates (at least month    |
+|                                   |and year) of the start and end of  |
+|                                   |the data collection. They should   |
+|                                   |be in the standard ISO format of   |
+|                                   |YYYY-MM-DD.                        |
 |                                   |                                   |
-|                                   | In some cases, data collection    |
-|                                   | for a same survey can be          |
-|                                   | conducted in waves. In such case, |
-|                                   | you should enter the start and    |
-|                                   | end date of each wave separately, |
-|                                   | and identify each wave in the     |
-|                                   | “cycle” field.                    |
+|                                   |In some cases, data collection     |
+|                                   |for a same survey can be           |
+|                                   |conducted in waves. In such case,  |
+|                                   |you should enter the start and     |
+|                                   |end date of each wave separately,  |
+|                                   |and identify each wave in the      |
+|                                   |“cycle” field.                     |
 +-----------------------------------+-----------------------------------+
-
+| Time period                       |This field will usually be left    |
+|                                   |empty. Time period differs from    |
+|                                   |the dates of collection as they    |
+|                                   |represent the period for which     |
+|                                   |the data collected are applicable  |
+|                                   |or relevant.                       |
 +-----------------------------------+-----------------------------------+
-| Time period                       | This field will usually be left   |
-|                                   | empty. Time period differs from   |
-|                                   | the dates of collection as they   |
-|                                   | represent the period for which    |
-|                                   | the data collected are applicable |
-|                                   | or relevant.                      |
+| Mode of data collection           |The mode of data collection is     |
+|                                   |the manner in which the interview  |
+|                                   |was conducted or information was   |
+|                                   |gathered. This field is a          |
+|                                   |controlled vocabulary field. Use   |
+|                                   |the drop-down button in the        |
+|                                   |Toolkit to select one option. In   |
+|                                   |most cases, the response will be   |
+|                                   |“face to face interview”. But for  |
+|                                   |some specific kinds of datasets,   |
+|                                   |such as for example data on rain   |
+|                                   |falls, the response will be        |
+|                                   |different.                         |
 +-----------------------------------+-----------------------------------+
-| Mode of data collection           | The mode of data collection is    |
-|                                   | the manner in which the interview |
-|                                   | was conducted or information was  |
-|                                   | gathered. This field is a         |
-|                                   | controlled vocabulary field. Use  |
-|                                   | the drop-down button in the       |
-|                                   | Toolkit to select one option. In  |
-|                                   | most cases, the response will be  |
-|                                   | “face to face interview”. But for |
-|                                   | some specific kinds of datasets,  |
-|                                   | such as for example data on rain  |
-|                                   | falls, the response will be       |
-|                                   | different.                        |
-+-----------------------------------+-----------------------------------+
-| Notes on data collection          | This element is provided in order |
-|                                   | to document any specific          |
-|                                   | observations, occurrences or      |
-|                                   | events during data collection.    |
-|                                   | Consider stating such items like: |
+| Notes on data collection          |This element is provided in order  |
+|                                   |to document any specific           |
+|                                   |observations, occurrences or       |
+|                                   |events during data collection.     |
+|                                   |Consider stating such items like:  |
 |                                   |                                   |
-|                                   | -  Was a training of enumerators  |
-|                                   |    held? (elaborate)              |
+|                                   |-  Was a training of enumerators   |
+|                                   |   held? (elaborate)               |
 |                                   |                                   |
-|                                   | -  Any events that could have a   |
-|                                   |    bearing on the data quality?   |
+|                                   |-  Any events that could have a    |
+|                                   |   bearing on the data quality?    |
 |                                   |                                   |
-|                                   | -  How long did an interview take |
-|                                   |    on average?                    |
+|                                   |-  How long did an interview take  |
+|                                   |   on average?                     |
 |                                   |                                   |
-|                                   | -  Was there a process of         |
-|                                   |    negotiation between            |
-|                                   |    households, the community and  |
-|                                   |    the implementing agency?       |
+|                                   |-  Was there a process of          |
+|                                   |   negotiation between             |
+|                                   |   households, the community and   |
+|                                   |   the implementing agency?        |
 |                                   |                                   |
-|                                   | -  Are anecdotal events recorded? |
+|                                   |-  Are anecdotal events recorded?  |
 |                                   |                                   |
-|                                   | -  Have the field teams           |
-|                                   |    contributed by supplying       |
-|                                   |    information on issues and      |
-|                                   |    occurrences during data        |
-|                                   |    collection?                    |
+|                                   |-  Have the field teams            |
+|                                   |   contributed by supplying        |
+|                                   |   information on issues and       |
+|                                   |   occurrences during data         |
+|                                   |   collection?                     |
 |                                   |                                   |
-|                                   | -  In what language was the       |
-|                                   |    interview conducted?           |
+|                                   |-  In what language was the        |
+|                                   |   interview conducted?            |
 |                                   |                                   |
-|                                   | -  Was a pilot survey conducted?  |
+|                                   |-  Was a pilot survey conducted?   |
 |                                   |                                   |
-|                                   | -  Were there any corrective      |
-|                                   |    actions taken by management    |
-|                                   |    when problems occurred in the  |
-|                                   |    field?                         |
+|                                   |-  Were there any corrective       |
+|                                   |   actions taken by management     |
+|                                   |   when problems occurred in the   |
+|                                   |   field?                          |
 |                                   |                                   |
-|                                   | Example:                          |
-|                                   |                                   |
-|                                   |  The pre-test for the survey took |
+|                                   |Example:                           |
+|                                   | *The pre-test for the survey took |
 |                                   | place from August 15, 2006 -      |
 |                                   | August 25, 2006 and included 14   |
 |                                   | interviewers who would later      |
 |                                   | become supervisors for the main   |
-|                                   | survey.                           |
+|                                   | survey.*                          |
 |                                   |                                   |
-|                                   |  Each interviewing team comprised |
+|                                   | *Each interviewing team comprised |
 |                                   | of 3-4 female interviewers (no    |
 |                                   | male interviewers were used due   |
 |                                   | to the sensitivity of the subject |
@@ -1460,9 +1449,9 @@ and methods, scope and coverage, etc.)
 |                                   | everyday throughout the fieldwork |
 |                                   | period, although interviewing     |
 |                                   | teams were permitted to take one  |
-|                                   | day off per week.                 |
+|                                   | day off per week.*                |
 |                                   |                                   |
-|                                   |  Interviews averaged 35 minutes   |
+|                                   | *Interviews averaged 35 minutes   |
 |                                   | for the household questionnaire   |
 |                                   | (excluding salt testing), 23      |
 |                                   | minutes for the women's           |
@@ -1475,51 +1464,48 @@ and methods, scope and coverage, etc.)
 |                                   | used local translation in         |
 |                                   | double-Dutch, when the respondent |
 |                                   | did not speak English or          |
-|                                   | Mumbo-jumbo.                      |
+|                                   | Mumbo-jumbo.*                     |
 |                                   |                                   |
-|                                   |  Six staff members of GenCenStat  |
+|                                   | *Six staff members of GenCenStat  |
 |                                   | provided overall fieldwork        |
 |                                   | coordination and supervision. The |
 |                                   | overall field coordinator was     |
-|                                   | Mrs. Doe.                         |
+|                                   | Mrs. Doe.*                        |
 +-----------------------------------+-----------------------------------+
-| **Data Processing**               |                                   |
-+-----------------------------------+-----------------------------------+
-| Questionnaires                    | This element is provided to       |
-|                                   | describe the questionnaire(s)     |
-|                                   | used for the data collection. The |
-|                                   | following should be mentioned:    |
+| Questionnaires                    |This element is provided to        |
+|                                   |describe the questionnaire(s)      |
+|                                   |used for the data collection. The  |
+|                                   |following should be mentioned:     |
 |                                   |                                   |
-|                                   | -  List of questionnaires and     |
-|                                   |    short description of each (all |
-|                                   |    questionnaires must be         |
-|                                   |    provided as External           |
-|                                   |    Resources)                     |
+|                                   |-  List of questionnaires and      |
+|                                   |   short description of each (all  |
+|                                   |   questionnaires must be          |
+|                                   |   provided as External            |
+|                                   |   Resources)                      |
 |                                   |                                   |
-|                                   | -  In what language were the      |
-|                                   |    questionnaires published?      |
+|                                   |-  In what language were the       |
+|                                   |   questionnaires published?       |
 |                                   |                                   |
-|                                   | -  Information on the             |
-|                                   |    questionnaire design process   |
-|                                   |    (based on a previous           |
-|                                   |    questionnaire, based on a      |
-|                                   |    standard model questionnaire,  |
-|                                   |    review by stakeholders). If a  |
-|                                   |    document was compiled that     |
-|                                   |    contains the comments provided |
-|                                   |    by the stakeholders on the     |
-|                                   |    draft questionnaire, or a      |
-|                                   |    report prepared on the         |
-|                                   |    questionnaire testing, a       |
-|                                   |    reference to these documents   |
-|                                   |    should be provided here and    |
-|                                   |    the documents should be        |
-|                                   |    provided as External           |
-|                                   |    Resources.                     |
+|                                   |-  Information on the              |
+|                                   |   questionnaire design process    |
+|                                   |   (based on a previous            |
+|                                   |   questionnaire, based on a       |
+|                                   |   standard model questionnaire,   |
+|                                   |   review by stakeholders). If a   |
+|                                   |   document was compiled that      |
+|                                   |   contains the comments provided  |
+|                                   |   by the stakeholders on the      |
+|                                   |   draft questionnaire, or a       |
+|                                   |   report prepared on the          |
+|                                   |   questionnaire testing, a        |
+|                                   |   reference to these documents    |
+|                                   |   should be provided here and     |
+|                                   |   the documents should be         |
+|                                   |   provided as External            |
+|                                   |   Resources.                      |
 |                                   |                                   |
-|                                   | Example:                          |
-|                                   |                                   |
-|                                   | The questionnaires for the        |
+|                                   |Example:                           |
+|                                   | *The questionnaires for the       |
 |                                   | Generic MICS were structured      |
 |                                   | questionnaires based on the MICS3 |
 |                                   | Model Questionnaire with some     |
@@ -1544,16 +1530,16 @@ and methods, scope and coverage, etc.)
 |                                   | of tenure and durability of       |
 |                                   | housing.*                         |
 |                                   |                                   |
-|                                   | In addition to a household        |
+|                                   | *In addition to a household       |
 |                                   | questionnaire, questionnaires     |
 |                                   | were administered in each         |
 |                                   | household for women age 15-49 and |
 |                                   | children under age five. For      |
 |                                   | children, the questionnaire was   |
 |                                   | administered to the mother or     |
-|                                   | caretaker of the child.           |
+|                                   | caretaker of the child.*          |
 |                                   |                                   |
-|                                   | The women's questionnaire         |
+|                                   | *The women's questionnaire        |
 |                                   | include women's characteristics,  |
 |                                   | child mortality, tetanus toxoid,  |
 |                                   | maternal and newborn health,      |
@@ -1562,9 +1548,9 @@ and methods, scope and coverage, etc.)
 |                                   | and HIV/AIDS knowledge, with      |
 |                                   | optional modules for unmet need,  |
 |                                   | domestic violence, and sexual     |
-|                                   | behavior.                         |
+|                                   | behavior.*                        |
 |                                   |                                   |
-|                                   |  The children's questionnaire     |
+|                                   | *The children's questionnaire     |
 |                                   | includes children's               |
 |                                   | characteristics, birth            |
 |                                   | registration and early learning,  |
@@ -1572,9 +1558,9 @@ and methods, scope and coverage, etc.)
 |                                   | illness, malaria, immunization,   |
 |                                   | and anthropometry, with an        |
 |                                   | optional module for child         |
-|                                   | development.                      |
+|                                   | development.*                     |
 |                                   |                                   |
-|                                   |  The questionnaires were          |
+|                                   | *The questionnaires were          |
 |                                   | developed in English from the     |
 |                                   | MICS3 Model Questionnaires, and   |
 |                                   | were translated into Mumbo-jumbo. |
@@ -1590,260 +1576,252 @@ and methods, scope and coverage, etc.)
 |                                   | Differences in translation were   |
 |                                   | reviewed and resolved in          |
 |                                   | collaboration with the original   |
-|                                   | translators.                      |
+|                                   | translators.*                     |
 |                                   |                                   |
-|                                   |  The English and Mumbo-jumbo      |
+|                                   | *The English and Mumbo-jumbo      |
 |                                   | questionnaires were both piloted  |
-|                                   | as part of the survey pretest.    |
+|                                   | as part of the survey pretest.*   |
 |                                   |                                   |
-|                                   |  All questionnaires and modules   |
+|                                   | *All questionnaires and modules   |
 |                                   | are provided as external          |
-|                                   | resources.                        |
+|                                   | resources.*                       |
 +-----------------------------------+-----------------------------------+
-| Data collectors                   | This element is provided in order |
-|                                   | to record information regarding   |
-|                                   | the persons and/or agencies that  |
-|                                   | took charge of the data           |
-|                                   | collection. This element includes |
-|                                   | 3 fields: Name, Abbreviation and  |
-|                                   | the Affiliation. In most cases,   |
-|                                   | we will record here the name of   |
-|                                   | the agency, not the name of       |
-|                                   | interviewers. Only in the case of |
-|                                   | very small-scale surveys, with a  |
-|                                   | very limited number of            |
-|                                   | interviewers, the name of person  |
-|                                   | will be included as well. The     |
-|                                   | field Affiliation is optional and |
-|                                   | not relevant in all cases.        |
+| Data collectors                   |This element is provided in order  |
+|                                   |to record information regarding    |
+|                                   |the persons and/or agencies that   |
+|                                   |took charge of the data            |
+|                                   |collection. This element includes  |
+|                                   |3 fields: Name, Abbreviation and   |
+|                                   |the Affiliation. In most cases,    |
+|                                   |we will record here the name of    |
+|                                   |the agency, not the name of        |
+|                                   |interviewers. Only in the case of  |
+|                                   |very small-scale surveys, with a   |
+|                                   |very limited number of             |
+|                                   |interviewers, the name of person   |
+|                                   |will be included as well. The      |
+|                                   |field Affiliation is optional and  |
+|                                   |not relevant in all cases.         |
 |                                   |                                   |
-|                                   | Example:                          |
+|                                   |Example:                           |
+|                                   |  *Abbreviation: CSO*              | 
 |                                   |                                   |
-|                                   |    Name: Central Statistics       |
-|                                   |    Office                         |
-|                                   |                                   |
-|                                   |    Abbreviation: CSO              |
-|                                   |                                   |
-|                                   | Affiliation: Ministry of          |
-|                                   | Planning                          |
+|                                   |  *Affiliation: Ministry of        |
+|                                   |  Planning*                        |
 +-----------------------------------+-----------------------------------+
-| Supervision                       | This element will provide         |
-|                                   | information on the oversight of   |
-|                                   | the data collection. The          |
-|                                   | following should be considered:   |
+| Supervision                       |This element will provide          |
+|                                   |information on the oversight of    |
+|                                   |the data collection. The           |
+|                                   |following should be considered:    |
 |                                   |                                   |
-|                                   | -  Were the enumerators organized |
-|                                   |    in teams that included a       |
-|                                   |    controller and a supervisor?   |
-|                                   |    With how many                  |
-|                                   |    controllers/supervisors per    |
-|                                   |    interviewer?                   |
+|                                   |-  Were the enumerators organized  |
+|                                   |   in teams that included a        |
+|                                   |   controller and a supervisor?    |
+|                                   |   With how many                   |
+|                                   |   controllers/supervisors per     |
+|                                   |   interviewer?                    |
 |                                   |                                   |
-|                                   | -  What were the main roles of    |
-|                                   |    the controllers/supervisors?   |
+|                                   |-  What were the main roles of     |
+|                                   |   the controllers/supervisors?    |
 |                                   |                                   |
-|                                   | -  Were there visits to the field |
-|                                   |    by upper management? How       |
-|                                   |    often?                         |
+|                                   |-  Were there visits to the field  |
+|                                   |   by upper management? How        |
+|                                   |   often?                          |
 |                                   |                                   |
-|                                   | Example:                          |
+|                                   |Example:                           |
+|                                   |  *Interviewing was conducted by   |
+|                                   |  teams of interviewers. Each      |
+|                                   |  interviewing team comprised of   |
+|                                   |  3-4 female interviewers, a field |
+|                                   |  editor and a supervisor, and a   |
+|                                   |  driver. Each team used a 4 wheel |
+|                                   |  drive vehicle to travel from     |
+|                                   |  cluster to cluster (and where    |
+|                                   |  necessary within cluster).*      |
 |                                   |                                   |
-|                                   | Interviewing was conducted by     |
-|                                   | teams of interviewers. Each       |
-|                                   | interviewing team comprised of    |
-|                                   | 3-4 female interviewers, a field  |
-|                                   | editor and a supervisor, and a    |
-|                                   | driver. Each team used a 4 wheel  |
-|                                   | drive vehicle to travel from      |
-|                                   | cluster to cluster (and where     |
-|                                   | necessary within cluster).        |
+|                                   |  *The role of the supervisor was  |
+|                                   |  to coordinator field data        |
+|                                   |  collection activities, including |
+|                                   |  management of the field teams,   |
+|                                   |  supplies and equipment, finances,|
+|                                   |  maps and listings, coordinate    |
+|                                   |  with local authorities concerning|
+|                                   |  the survey plan and make         |
+|                                   |  arrangements for accommodation   |
+|                                   |  and travel. Additionally, the    |
+|                                   |  field supervisor assigned the    |
+|                                   |  work to the interviewers, spot   |
+|                                   |  checked work, maintained field   |
+|                                   |  control documents, and sent      |
+|                                   |  completed questionnaires and     |
+|                                   |  progress reports to the central  |
+|                                   |  office.*                         |
 |                                   |                                   |
-|                                   | The role of the supervisor was    |
-|                                   | to coordinator field data         |
-|                                   | collection activities, including  |
-|                                   | management of the field teams,    |
-|                                   | supplies and equipment, finances, |
-|                                   | maps and listings, coordinate     |
-|                                   | with local authorities concerning |
-|                                   | the survey plan and make          |
-|                                   | arrangements for accommodation    |
-|                                   | and travel. Additionally, the     |
-|                                   | field supervisor assigned the     |
-|                                   | work to the interviewers, spot    |
-|                                   | checked work, maintained field    |
-|                                   | control documents, and sent       |
-|                                   | completed questionnaires and      |
-|                                   | progress reports to the central   |
-|                                   | office.                           |
+|                                   |  *The field editor was responsible|
+|                                   |  for reviewing each questionnaire |
+|                                   |  at the end of the day, checking  |
+|                                   |  for missed questions, skip       |
+|                                   |  errors, fields incorrectly       |
+|                                   |  completed, and checking for      |
+|                                   |  inconsistencies in the data. The |
+|                                   |  field editor also observed       |
+|                                   |  interviews and conducted review  |
+|                                   |  sessions with interviewers.*     |
 |                                   |                                   |
-|                                   | The field editor was responsible  |
-|                                   | for reviewing each questionnaire  |
-|                                   | at the end of the day, checking   |
-|                                   | for missed questions, skip        |
-|                                   | errors, fields incorrectly        |
-|                                   | completed, and checking for       |
-|                                   | inconsistencies in the data. The  |
-|                                   | field editor also observed        |
-|                                   | interviews and conducted review   |
-|                                   | sessions with interviewers.       |
+|                                   |  *Responsibilities of the         |
+|                                   |  supervisors and field editors are|
+|                                   |  described in the Instructions for|
+|                                   |  Supervisors and Field Editors,   |
+|                                   |  together with the different field|
+|                                   |  controls that were in place to   |
+|                                   |  control the quality of the       |
+|                                   |  fieldwork.*                      |
 |                                   |                                   |
-|                                   | Responsibilities of the           |
-|                                   | supervisors and field editors are |
-|                                   | described in the Instructions for |
-|                                   | Supervisors and Field Editors,    |
-|                                   | together with the different field |
-|                                   | controls that were in place to    |
-|                                   | control the quality of the        |
-|                                   | fieldwork.                        |
-|                                   |                                   |
-|                                   | Field visits were also made by a  |
-|                                   | team of central staff on a        |
-|                                   | periodic basis during fieldwork.  |
-|                                   | The senior staff of GenCenStat    |
-|                                   | also made 3 visits to field teams |
-|                                   | to provide support and to review  |
-|                                   | progress.                         |
+|                                   |  *Field visits were also made by a|
+|                                   |  team of central staff on a       |
+|                                   |  periodic basis during fieldwork. |
+|                                   |  The senior staff of GenCenStat   |
+|                                   |  also made 3 visits to field teams|
+|                                   |  to provide support and to review |
+|                                   |  progress.*                       |
 +-----------------------------------+-----------------------------------+
 | **Data Processing**               |                                   |
 +-----------------------------------+-----------------------------------+
-| Data editing                      | The data editing should contain   |
-|                                   | information on how the data was   |
-|                                   | treated or controlled for in      |
-|                                   | terms of consistency and          |
-|                                   | coherence. This item does not     |
-|                                   | concern the data entry phase but  |
-|                                   | only the editing of data whether  |
-|                                   | manual or automatic.              |
+| Data editing                      |The data editing should contain    |
+|                                   |information on how the data was    |
+|                                   |treated or controlled for in       |
+|                                   |terms of consistency and           |
+|                                   |coherence. This item does not      |
+|                                   |concern the data entry phase but   |
+|                                   |only the editing of data whether   |
+|                                   |manual or automatic.               |
 |                                   |                                   |
-|                                   | -  Was a hot deck or a cold deck  |
-|                                   |    technique used to edit the     |
-|                                   |    data?                          |
+|                                   |-  Was a hot deck or a cold deck   |
+|                                   |   technique used to edit the      |
+|                                   |   data?                           |
 |                                   |                                   |
-|                                   | -  Were corrections made          |
-|                                   |    automatically (by program), or |
-|                                   |    by visual control of the       |
-|                                   |    questionnaire?                 |
+|                                   |-  Were corrections made           |
+|                                   |   automatically (by program), or  |
+|                                   |   by visual control of the        |
+|                                   |   questionnaire?                  |
 |                                   |                                   |
-|                                   | -  What software was used?        |
+|                                   |-  What software was used?         |
 |                                   |                                   |
-|                                   | If materials are available        |
-|                                   | (specifications for data editing, |
-|                                   | report on data editing, programs  |
-|                                   | used for data editing), they      |
-|                                   | should be listed here and         |
-|                                   | provided as external resources.   |
+|                                   |If materials are available         |
+|                                   |(specifications for data editing,  |
+|                                   |report on data editing, programs   |
+|                                   |used for data editing), they       |
+|                                   |should be listed here and          |
+|                                   |provided as external resources.    |
 |                                   |                                   |
-|                                   | Example:                          |
+|                                   |Example:                           |
+|                                   |  *Data editing took place at a    |
+|                                   |  number of stages throughout the  |
+|                                   |  processing, including:*          |
 |                                   |                                   |
-|                                   | Data editing took place at a      |
-|                                   | number of stages throughout the   |
-|                                   | processing, including:            |
+|                                   |  *a) Office editing and coding*   |
 |                                   |                                   |
-|                                   | a) Office editing and coding      |
+|                                   |  *b) During data entry*           |
 |                                   |                                   |
-|                                   | b) During data entry              |
+|                                   |  *c) Structure checking and       |
+|                                   |  completenes*                     |
 |                                   |                                   |
-|                                   | c) Structure checking and         |
-|                                   | completeness                      |
+|                                   |  *d) Secondary editing*           |
 |                                   |                                   |
-|                                   | d) Secondary editing              |
+|                                   |  *e) Structural checking of SPSS  |
+|                                   |  data files*                      |
 |                                   |                                   |
-|                                   | e) Structural checking of SPSS    |
-|                                   | data files                        |
-|                                   |                                   |
-|                                   | Detailed documentation of the     |
-|                                   | editing of data can be found in   |
-|                                   | the “Data processing guidelines”  |
-|                                   | document provided as an external  |
-|                                   | resource.                         |
+|                                   |  *Detailed documentation of the   |
+|                                   |  editing of data can be found in  |
+|                                   |  the “Data processing guidelines” |
+|                                   |  document provided as an external |
+|                                   |  resource.*                       |
 +-----------------------------------+-----------------------------------+
-| Other processing                  | Use this field to provide as much |
-|                                   | information as possible on the    |
-|                                   | data entry design. This includes  |
-|                                   | such details as:                  |
+| Other processing                  |Use this field to provide as much  |
+|                                   |information as possible on the     |
+|                                   |data entry design. This includes   |
+|                                   |such details as:                   |
 |                                   |                                   |
-|                                   | -  Mode of data entry (manual or  |
-|                                   |    by scanning, in the field/in   |
-|                                   |    regions/at headquarters)       |
+|                                   |-  Mode of data entry (manual or   |
+|                                   |   by scanning, in the field/in    |
+|                                   |   regions/at headquarters)        |
 |                                   |                                   |
-|                                   | -  Computer architecture (laptop  |
-|                                   |    computers in the field,        |
-|                                   |    desktop computers, scanners,   |
-|                                   |    PDA, other; indicate the       |
-|                                   |    number of computers used)      |
+|                                   |-  Computer architecture (laptop   |
+|                                   |   computers in the field,         |
+|                                   |   desktop computers, scanners,    |
+|                                   |   PDA, other; indicate the        |
+|                                   |   number of computers used)       |
 |                                   |                                   |
-|                                   | -  Software used                  |
+|                                   |-  Software used                   |
 |                                   |                                   |
-|                                   | -  Use (and rate) of double data  |
-|                                   |    entry                          |
+|                                   |-  Use (and rate) of double data   |
+|                                   |   entry                           |
 |                                   |                                   |
-|                                   | -  Average productivity of data   |
-|                                   |    entry operators; number of     |
-|                                   |    data entry operators involved  |
-|                                   |    and their work schedule        |
+|                                   |-  Average productivity of data    |
+|                                   |   entry operators; number of      |
+|                                   |   data entry operators involved   |
+|                                   |   and their work schedule         |
 |                                   |                                   |
-|                                   | Information on tabulation and     |
-|                                   | analysis can also be provided     |
-|                                   | here.                             |
+|                                   |Information on tabulation and      |
+|                                   |analysis can also be provided      |
+|                                   |here.                              |
 |                                   |                                   |
-|                                   | All available materials (data     |
-|                                   | entry/tabulation/analysis         |
-|                                   | programs; reports on data entry)  |
-|                                   | should be listed here and         |
-|                                   | provided as external resources.   |
+|                                   |All available materials (data      |
+|                                   |entry/tabulation/analysis          |
+|                                   |programs; reports on data entry)   |
+|                                   |should be listed here and          |
+|                                   |provided as external resources.    |
 |                                   |                                   |
-|                                   | Example:                          |
-|                                   |                                   |
-|                                   | Data were processed in clusters,  |
+|                                   |Example:                           |
+|                                   | *Data were processed in clusters, |
 |                                   | with each cluster being processed |
 |                                   | as a complete unit through each   |
 |                                   | stage of data processing. Each    |
 |                                   | cluster goes through the          |
-|                                   | following steps:                  |
+|                                   | following steps:*                 |
 |                                   |                                   |
-|                                   | 1) Questionnaire reception        |
+|                                   |  *1) Questionnaire reception*     |
 |                                   |                                   |
-|                                   | 2) Office editing and coding      |
+|                                   |  *2) Office editing and coding*   |
 |                                   |                                   |
-|                                   | 3) Data entry                     |
+|                                   |  *3) Data entry*                  |
 |                                   |                                   |
-|                                   | 4) Structure and completeness     |
-|                                   |    checking                       |
+|                                   |  *4) Structure and completeness   |
+|                                   |  checking*                        |
 |                                   |                                   |
-|                                   | 5) Verification entry             |
+|                                   |  *5) Verification entry*          |
 |                                   |                                   |
-|                                   | 6) Comparison of verification     |
-|                                   |    data                           |
+|                                   |  *6) Comparison of verification   |
+|                                   |   data*                           |
 |                                   |                                   |
-|                                   | 7) Back up of raw data            |
+|                                   |  *7) Back up of raw data*         |
 |                                   |                                   |
-|                                   | 8) Secondary editing              |
+|                                   |  *8) Secondary editing*           |
 |                                   |                                   |
-|                                   | 9) Edited data back up            |
+|                                   |  *9) Edited data back up*         |
 |                                   |                                   |
-|                                   | After all clusters are            |
-|                                   | processed, all data is            |
-|                                   | concatenated together and then    |
-|                                   | the following steps are completed |
-|                                   | for all data files:               |
+|                                   |  *After all clusters are          |
+|                                   |  processed, all data is           |
+|                                   |  concatenated together and then   |
+|                                   |  the following steps are completed|
+|                                   |  for all data files:*             |
 |                                   |                                   |
-|                                   | 10) Export to SPSS in 4 files     |
-|                                   |     (hh - household, hl -         |
-|                                   |     household members, wm -       |
-|                                   |     women, ch - children under    |
-|                                   |     5)                            |
+|                                   |  *10) Export to SPSS in 4 files   |
+|                                   |   (hh - household, hl -           |
+|                                   |   household members, wm -         |
+|                                   |   women, ch - children under 5)*  |
 |                                   |                                   |
-|                                   | 11) Recoding of variables needed  |
-|                                   |     for analysis                  |
+|                                   |  *11) Recoding of variables needed|
+|                                   |   for analysis*                   |
 |                                   |                                   |
-|                                   | 12) Adding of sample weights      |
+|                                   |  *12) Adding of sample weights    |
 |                                   |                                   |
-|                                   | 13)  Calculation of wealth        |
-|                                   |     quintiles and merging into    |
-|                                   |     data                          |
+|                                   |  *13)  Calculation of wealth      |
+|                                   |    quintiles and merging into     |
+|                                   |    data*                          |
 |                                   |                                   |
-|                                   | 14) Structural checking of SPSS   |
-|                                   |     files                         |
+|                                   |  *14) Structural checking of SPSS |
+|                                   |    files*                         |
 |                                   |                                   |
 |                                   | 15) Data quality tabulations      |
 |                                   |                                   |
