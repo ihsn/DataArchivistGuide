@@ -429,14 +429,14 @@ outliers or invalid codes, which will require recoding (which can be
 done in the Toolkit or in the source data files which will then have to
 be re-imported).
 
-|image7|
+.. image:: media/Image9_1.PNG
 
 Last, view the content of each data files in the “Data Entry” page. All
 data should be displayed in black fonts. Data displayed in bold red
 indicate out of range values. Data in bold blue fonts indicate that
 value labels are missing for that variable.
 
-|image8|
+.. image:: media/image10.png
 
 Save the file. The Toolkit saves all data files and the information you
 already added (on key relationships, etc) in one single file (Nesstar
@@ -445,41 +445,58 @@ using the survey abbreviation, year and version number as file name
 (e.g., HIES2007_v11). Note that it is good practice to avoid using
 spaces in a file name (use underscore characters instead).
 
-Importing external resources
-============================
+4. Importing external resources
+===============================
 
-Before importing your external resources, create folders in the Toolkit
-as necessary (these are directories in the External Resources section in
-the Toolkit, not new directories on your hard drive). If you have very
-few external resources, all resources can be listed in the root
-directory. If you have many, organize them by type of resources (in the
-example below, we have created separate directories for the
-Questionnaires, Technical Documents, Computer Programs, Reports, Tables,
-Photos and Maps).
-
-|image9|\ Create an entry for each resource by entering a label in the
-Resource Information field. This label should be short but explicit.
-Then identify the resource file in the “Resource” field. The field
-“Resource” is used to indicate the filename or URL location (website) of
-the external resource. The resource consists of the filename, and a
-relative path (relative to the directory where your study Nesstar file
-is saved). The reason for entering a relative path is that it will allow
-you to move the whole study directory and its subdirectories to another
-location or another drive, without having to re-enter the location of
-the files.
-
-Example:
-
-Let’s assume your study is a household budget survey conducted in 2007.
-If you followed the recommendations made in the introductory chapter
-“Before you start – Organizing your files”, you will have created a
-directory like C:\HIES2007. Your nesstar file will be saved as
-HIES2007.Nesstar in this directory. Suppose also that a document titled
-Report2007.pdf is saved in a directory C:\HIES2007\DOCS. When you fill
-the resource field in the External Resources page, do NOT enter
-“C:\HIES2007\DOCS\Report2007.pdf. Enter the file name as follows:
-
-|image10|
++----------------------------+-----------------------+------------------+
+|Before importing your external resources, create folders in the Toolkit|
+|as necessary (these are directories in the External Resources section  |
+|in the Toolkit, not new directories on your hard drive). If you have   |
+|very few external resources, all resources can be listed in the root   |
+|directory. If you have many, organize them by type of resources (in the|
+|example below, we have created separate directories for the            |
+|Questionnaires, Technical Documents, Computer Programs, Reports,       |
+|Tables, Photos and Maps).                                              |
++----------------------------+-----------------------+------------------+
+|.. image:: media/image11.png| Create an entry for each resource by     |
+|                            | entering a label in the Resource         |
+|                            |                                          |
+|                            | Information field. This label should be  |
+|                            | short but explicit. Then identify the    |
+|                            |                                          |
+|                            | resource file in the  “Resource” field.  |
+|                            | The field “Resource” is used to indicate |
+|                            |                                          |
+|                            | the filename or URL location (website) of|
+|                            | the external resource. The resource      |
+|                            |                                          |
+|                            | consists of the filename, and a relative |
+|                            | path (relative to the directory where    |
+|                            |                                          |
+|                            | your study Nesstar file is saved). The   |
+|                            | reason for entering a relative path is   |
+|                            |                                          |
+|                            | that it will allow you to move the whole | 
+|                            | study directory and its subdirectories to|
+|                            |                                          |
+|                            | another location or another drive,       |
+|                            | without having to re-enter the location  |
+|                            |                                          |
+|                            | of the files.                            |
++----------------------------+-----------------------+------------------+
+|Example:                                                               |
+|                                                                       |
+|Let’s assume your study is a household budget survey conducted in 2007.|
+|If you followed the recommendations made in the introductory chapter   |
+|“Before you start – Organizing your files”, you will have created a    |
+|directory like C:\HIES2007. Your nesstar file will be saved as         |
+|HIES2007.Nesstar in this directory. Suppose also that a document titled|
+|Report2007.pdf is saved in a directory C:\HIES2007\DOCS. When you fill |
+|the resource field in the External Resources page, do NOT enter        |
+|“C:\HIES2007\DOCS\Report2007.pdf. Enter the file name as follows:      |
+|                                                                       |
+|.. image:: media/image12.png                                           |
++----------------------------+-----------------------+------------------+
 
 Some resources might be composed of more than one file (for example, the
 CSPro data entry application includes multiple files that should not be
@@ -492,8 +509,8 @@ separate resources, or zip the files into one single file. In such case,
 list the different formats available in the “Content/ Description”
 field.
 
-Completing metadata
-===================
+5. Completing metadata
+======================
 
 The IHSN Toolkit (version 1.n) makes use of the Data Documentation
 Initiative (DDI Version 2) and the Dublin Core (DCMI version X) metadata
@@ -508,6 +525,14 @@ The DDI requires completion of the following sections: Document
 Description, Study Description, Data Files Description, Variables
 Description, and External Resources Description. Recommendations for
 each field included in the IHSN template are provided below.
+
++--------------------------------------------------------------------+
+| The IHSN recommends using the standardized IHSN DDI/DCMI templates |
+| (Study Template and External Resources Template). This Quick       |
+| Reference Guide is based on these two templates. Visit the IHSN    |
+| website to download the latest version of these templates,         |
+| available in multiple languages.                                   |
++--------------------------------------------------------------------+
 
 **Overall recommendations:**
 
@@ -536,131 +561,128 @@ is a description of that XML file. The IHSN Template selected 5 elements
 to describe the DDI document.
 
 +-----------------------------------+-----------------------------------+
-| Study Title                       | The title is the official name of |
-|                                   | the survey as it is stated on the |
-|                                   | questionnaire or as it appears in |
-|                                   | the design documents. The         |
-|                                   | following items should be noted:  |
+| Study Title                       |The title is the official name of  |
+|                                   |the survey as it is stated on the  |
+|                                   |questionnaire or as it appears in  |
+|                                   |the design documents. The          |
+|                                   |following items should be noted:   |
 |                                   |                                   |
-|                                   | -  Include the reference year(s)  |
-|                                   |    of the survey in the title.    |
+|                                   |-  Include the reference year(s)   |
+|                                   |   of the survey in the title.     |
 |                                   |                                   |
-|                                   | -  Do not include the             |
-|                                   |    abbreviation of the survey     |
-|                                   |    name in the title.             |
+|                                   |-  Do not include the              |
+|                                   |   abbreviation of the survey      |
+|                                   |   name in the title.              |
 |                                   |                                   |
-|                                   | -  As the survey title is a       |
-|                                   |    proper noun, the first letter  |
-|                                   |    of each word should be         |
-|                                   |    capitalized (except for        |
-|                                   |    prepositions or other          |
-|                                   |    conjunctions).                 |
+|                                   |-  As the survey title is a        |
+|                                   |   proper noun, the first letter   |
+|                                   |   of each word should be          |
+|                                   |   capitalized (except for         |
+|                                   |   prepositions or other           |
+|                                   |   conjunctions).                  |
 |                                   |                                   |
-|                                   | -  Including the country name in  |
-|                                   |    the title is optional.         |
+|                                   |-  Including the country name in   |
+|                                   |   the title is optional.          |
 |                                   |                                   |
-|                                   | Examples: National Household      |
-|                                   | Budget Survey 2002-2003*          |
+|                                   |Example:                           |
+|                                   |  -  *National Household Budget    |
+|                                   |     Survey 2002-2003*             |
 |                                   |                                   |
-|                                   | Popstan Multiple Indicator        |
-|                                   | Cluster Survey 2002               |
+|                                   |  -  *Popstan Multiple Indicator   |
+|                                   |     Cluster Survey 2002*          |
 +-----------------------------------+-----------------------------------+
-| Metadata Producer                 | Name of the person(s) or          |
-|                                   | organization(s) who documented    |
-|                                   | the dataset. Use the "role"       |
-|                                   | attribute to distinguish          |
-|                                   | different stages of involvement   |
-|                                   | in the production process.        |
+| Metadata Producer                 |Name of the person(s) or           |
+|                                   |organization(s) who documented     |
+|                                   |the dataset. Use the "role"        |
+|                                   |attribute to distinguish           |
+|                                   |different stages of involvement    |
+|                                   |in the production process.         |
 |                                   |                                   |
-|                                   | Example:                          |
-|                                   |                                   |
-|                                   +----------------+------------------+
-|                                   |   Name         |Role              |
-|                                   +----------------+------------------+
-|                                   |  National      |Documentation     |
-|                                   |  Statistics    |of the            |
-|                                   |  Office        |study             |
-|                                   |  (NSO)         |                  |
-|                                   +----------------+------------------+
-|                                   | International  | Review of        |
-|                                   | Household      | the              |
-|                                   | Survey         | metadata         |
-|                                   | Network        |                  |
-|                                   | (IHSN)         |                  |
-|                                   |                |                  |
-|                                   |                |                  |
-+-----------------------------------+----------------+------------------+
-| Date of Production                | This is the date (in ISO format   |
-|                                   | YYYY-MM-DD) the DDI document was  |
-|                                   | produced (not distributed or      |
-|                                   | archived). This date will be      |
-|                                   | automatically imputed when you    |
-|                                   | save the file.                    |
+|                                   |Example:                           |
+|                                   | +----------------+---------------+|
+|                                   | |   *Name*       |*Role*         ||
+|                                   | +----------------+---------------+|
+|                                   | |*National       |*Documentation ||
+|                                   | |Statistics      |of the         ||
+|                                   | |Office          |study*         ||
+|                                   | |(NSO)*          |               ||
+|                                   | +----------------+---------------+|
+|                                   | |*International  |*Review of     ||
+|                                   | |Household       |the            ||
+|                                   | |Survey          |metadata*      ||
+|                                   | |Network         |               ||
+|                                   | |(IHSN)*         |               ||
+|                                   | +----------------+---------------+|
++-----------------------------------+----------------+------------------+       
+| Date of Production                |This is the date (in ISO format    |
+|                                   |YYYY-MM-DD) the DDI document was   |
+|                                   |produced (not distributed or       |
+|                                   |archived). This date will be       |
+|                                   |automatically imputed when you     |
+|                                   |save the file.                     |
 +-----------------------------------+-----------------------------------+
-| DDI Document Version              | Documenting a dataset is not a    |
-|                                   | trivial exercise. Producing       |
-|                                   | “perfect” metadata is probably    |
-|                                   | impossible. It may therefore      |
-|                                   | happen that, having identified    |
-|                                   | errors in a DDI document or       |
-|                                   | having received suggestions for   |
-|                                   | improvement, you decide to modify |
-|                                   | the Document even after a first   |
-|                                   | version has been disseminated.    |
-|                                   | This element is used to identify  |
-|                                   | and describe the current version  |
-|                                   | of the document. It is good       |
-|                                   | practice to provide a version     |
-|                                   | number (and date), and            |
-|                                   | information on what distinguishes |
-|                                   | this version from the previous    |
-|                                   | one(s) if relevant.               |
+| DDI Document Version              |Documenting a dataset is not a     |
+|                                   |trivial exercise. Producing        |
+|                                   |“perfect” metadata is probably     |
+|                                   |impossible. It may therefore       |
+|                                   |happen that, having identified     |
+|                                   |errors in a DDI document or        |
+|                                   |having received suggestions for    |
+|                                   |improvement, you decide to modify  |
+|                                   |the Document even after a first    |
+|                                   |version has been disseminated.     |
+|                                   |This element is used to identify   |
+|                                   |and describe the current version   |
+|                                   |of the document. It is good        |
+|                                   |practice to provide a version      |
+|                                   |number (and date), and             |
+|                                   |information on what distinguishes  |
+|                                   |this version from the previous     |
+|                                   |one(s) if relevant.                |
 |                                   |                                   |
-|                                   | Example:                          |
-|                                   |                                   |
-|                                   | Version 1.1 (July 2006). This     |
-|                                   | version is identical to version   |
-|                                   | 1.0, except for the section on    |
-|                                   | Data Appraisal which was          |
-|                                   | updated.                          |
+|                                   |Example:                           |
+|                                   |  *Version 1.1 (July 2006). This   |
+|                                   |  version is identical to version  |
+|                                   |  1.0, except for the section on   |
+|                                   |  Data Appraisal which was         |
+|                                   |  updated.*                        |
 +-----------------------------------+-----------------------------------+
-| DDI Document ID Number            | The ID number of a DDI document   |
-|                                   | is a unique number that is used   |
-|                                   | to identify this DDI file. Define |
-|                                   | and use a consistent scheme to    |
-|                                   | use. Such an ID could be          |
-|                                   | constructed as follows:           |
-|                                   | DDI-country-producer-survey-year  |
-|                                   | where                             |
+| DDI Document ID Number            |The ID number of a DDI document    |
+|                                   |is a unique number that is used    |
+|                                   |to identify this DDI file. Define  |
+|                                   |and use a consistent scheme to     |
+|                                   |use. Such an ID could be           |
+|                                   |constructed as follows:            |
+|                                   |DDI-country-producer-survey-year   |
+|                                   |where                              |
 |                                   |                                   |
-|                                   | -  *country* is the 3-letter ISO  |
-|                                   |    country abbreviation           |
+|                                   |-  *country* is the 3-letter ISO   |
+|                                   |   country abbreviation            |
 |                                   |                                   |
-|                                   | -  *producer* is the abbreviation |
-|                                   |    of the producing agency        |
+|                                   |-  *producer* is the abbreviation  |
+|                                   |   of the producing agency         |
 |                                   |                                   |
-|                                   | -  *survey* is the survey         |
-|                                   |    abbreviation                   |
+|                                   |-  *survey* is the survey          |
+|                                   |   abbreviation                    |
 |                                   |                                   |
-|                                   | -  *year* is the reference year   |
-|                                   |    (or the year the survey        |
-|                                   |    started)                       |
+|                                   |-  *year* is the reference year    |
+|                                   |   (or the year the survey         |
+|                                   |   started)                        |
 |                                   |                                   |
-|                                   | -  DDI document version number    |
+|                                   |- DDI document version number      |
 |                                   |                                   |
-|                                   | Example:                          |
-|                                   |                                   |
-|                                   | The DDI file related to the       |
-|                                   | Demographic and Health Survey     |
-|                                   | documented by staff from the      |
-|                                   | Uganda Bureau of Statistics in    |
-|                                   | 2005 would have the following     |
-|                                   | ID:                               |
-|                                   |                                   |
-|                                   | DDI-UGA-UBOS-DHS-2005-v01. If     |
-|                                   | the same survey is documented by  |
-|                                   | a staff from the IHSN, this would |
-|                                   | be DDI-UGA-IHSN-DHS-205-v01.      |
+|                                   |Example:                           |
+|                                   |  *The DDI file related to the     |
+|                                   |  Demographic and Health Survey    |
+|                                   |  documented by staff from the     |
+|                                   |  Uganda Bureau of Statistics in   |
+|                                   |  2005 would have the following    |
+|                                   |  ID:                              |
+|                                   |  DDI-UGA-UBOS-DHS-2005-v01. If    |
+|                                   |  the same survey is documented by |
+|                                   |  a staff from the IHSN, this      |
+|                                   |  would be                         |
+|                                   |  DDI-UGA-IHSN-DHS-205-v01.*       |
 +-----------------------------------+-----------------------------------+
 
 5.2. Good practices for completing the Study Description
@@ -672,94 +694,94 @@ and methods, scope and coverage, etc.)
 
 +-----------------------------------+-----------------------------------+
 | **Identification**                                                    |
-+===================================+===================================+
-| Title                             | The title is the official name of |
-|                                   | the survey as it is stated on the |
-|                                   | questionnaire or as it appears in |
-|                                   | the design documents. The         |
-|                                   | following items should be noted:  |
-|                                   |                                   |
-|                                   | -  Include the reference year(s)  |
-|                                   |    of the survey in the title.    |
-|                                   |                                   |
-|                                   | -  Do not include the             |
-|                                   |    abbreviation of the survey     |
-|                                   |    name in the title.             |
-|                                   |                                   |
-|                                   | -  As the survey title is a       |
-|                                   |    proper noun, the first letter  |
-|                                   |    of each word should be         |
-|                                   |    capitalized (except for        |
-|                                   |    prepositions or other          |
-|                                   |    conjunctions).                 |
-|                                   |                                   |
-|                                   | -  Including the country name in  |
-|                                   |    the title is optional.         |
-|                                   |                                   |
-|                                   | The title will in most cases be   |
-|                                   | identical to the Document Title   |
-|                                   | (see above).                      |
-|                                   |                                   |
-|                                   | Examples:  National Household     |
-|                                   | Budget Survey 2002-2003           |
-|                                   |                                   |
-|                                   |  Popstan Multiple Indicator       |
-|                                   | Cluster Survey 2002               |
 +-----------------------------------+-----------------------------------+
-| Subtitle                          | Subtitle is optional and rarely   |
-|                                   | used. A subtitle can be used to   |
-|                                   | add information usually           |
-|                                   | associated with a sequential      |
-|                                   | qualifier for a survey.           |
+| Title                             |The title is the official name of  |
+|                                   |the survey as it is stated on the  |
+|                                   |questionnaire or as it appears in  |
+|                                   |the design documents. The          |
+|                                   |following items should be noted:   |
 |                                   |                                   |
-|                                   |  Example: Title: Welfare          |
-|                                   | Monitoring Survey 2007            |
+|                                   |-  Include the reference year(s)   |
+|                                   |   of the survey in the title.     |
 |                                   |                                   |
-|                                   |  Subtitle: Fifth round            |
+|                                   |-  Do not include the              |
+|                                   |   abbreviation of the survey      |
+|                                   |   name in the title.              |
+|                                   |                                   |
+|                                   |-  As the survey title is a        |
+|                                   |   proper noun, the first letter   |
+|                                   |   of each word should be          |
+|                                   |   capitalized (except for         |
+|                                   |   prepositions or other           |
+|                                   |   conjunctions).                  |
+|                                   |                                   |
+|                                   |-  Including the country name in   |
+|                                   |   the title is optional.          |
+|                                   |                                   |
+|                                   |The title will in most cases be    |
+|                                   |identical to the Document Title    |
+|                                   |(see above).                       |
+|                                   |                                   |
+|                                   |Example:                           |
+|                                   |  -  *National Household Budget    |
+|                                   |     Survey 2002-2003*             |
+|                                   |                                   |
+|                                   |  -  *Popstan Multiple Indicator   |
+|                                   |     Cluster Survey 2002*          |
 +-----------------------------------+-----------------------------------+
-| Abbreviation                      | The abbreviation of a survey is   |
-|                                   | usually the first letter of each  |
-|                                   | word of the titled survey. The    |
-|                                   | survey reference year(s) may be   |
-|                                   | included.                         |
+| Subtitle                          |Subtitle is optional and rarely    |
+|                                   |used. A subtitle can be used to    |
+|                                   |add information usually            |
+|                                   |associated with a sequential       |
+|                                   |qualifier for a survey.            |
 |                                   |                                   |
-|                                   | Examples:                         |
+|                                   |Example:                           | 
+|                                   |  *Title: Welfare Monitoring       |
+|                                   |  Survey 2007*                     |
 |                                   |                                   |
-|                                   | -   DHS 2000 for “Demographic and |
-|                                   |    Health Survey 2005”            |
-|                                   |                                   |
-|                                   | -   HIES 2002-2003 for “Household |
-|                                   |    Income and Expenditure Survey  |
-|                                   |    2003”                          |
+|                                   |  *Subtitle: Fifth round*          |
 +-----------------------------------+-----------------------------------+
-| Study type                        | The study type or *survey type*   |
-|                                   | is the broad category defining    |
-|                                   | the survey. This item has a       |
-|                                   | controlled vocabulary (you may    |
-|                                   | customize the IHSN template to    |
-|                                   | adjust this controlled vocabulary |
-|                                   | if needed).                       |
+| Abbreviation                      |The abbreviation of a survey is    |
+|                                   |usually the first letter of each   |
+|                                   |word of the titled survey. The     |
+|                                   |survey reference year(s) may be    |
+|                                   |included.                          |
+|                                   |                                   |
+|                                   |Example:                           |
+|                                   |  -  *DHS 2000 for “Demographic and|
+|                                   |     Health Survey 2005”*          |
+|                                   |                                   |
+|                                   |  -  *HIES 2002-2003 for “Household|
+|                                   |     Income and Expenditure Survey |
+|                                   |     2003”*                        |
 +-----------------------------------+-----------------------------------+
-| Series information                | A survey may be repeated at       |
-|                                   | regular intervals (such as an     |
-|                                   | annual labour force survey), or   |
-|                                   | be part of an international       |
-|                                   | survey program (such as the MICS, |
-|                                   | CWIQ, DHS, LSMS and others). The  |
-|                                   | Series information is a           |
-|                                   | description of this “collection”  |
-|                                   | of surveys. A brief description   |
-|                                   | of the characteristics of the     |
-|                                   | survey, including when it         |
-|                                   | started, how many rounds were     |
-|                                   | already implemented, and who is   |
-|                                   | in charge would be provided here. |
-|                                   | If the survey does not belong to  |
-|                                   | a series, leave this field empty. |
+| Study type                        |The study type or *survey type*    |
+|                                   |is the broad category defining     |
+|                                   |the survey. This item has a        |
+|                                   |controlled vocabulary (you may     |
+|                                   |customize the IHSN template to     |
+|                                   |adjust this controlled vocabulary  |
+|                                   |if needed).                        |
++-----------------------------------+-----------------------------------+
+| Series information                |A survey may be repeated at        |
+|                                   |regular intervals (such as an      |
+|                                   |annual labour force survey), or    |
+|                                   |be part of an international        |
+|                                   |survey program (such as the MICS,  |
+|                                   |CWIQ, DHS, LSMS and others). The   |
+|                                   |Series information is a            |
+|                                   |description of this “collection”   |
+|                                   |of surveys. A brief description    |
+|                                   |of the characteristics of the      |
+|                                   |survey, including when it          |
+|                                   |started, how many rounds were      |
+|                                   |already implemented, and who is    |
+|                                   |in charge would be provided here.  |
+|                                   |If the survey does not belong to   |
+|                                   |a series, leave this field empty.  |
 |                                   |                                   |
-|                                   | Example:                          |
-|                                   |                                   |
-|                                   |  The Multiple Indicator Cluster   |
+|                                   |Example:                           |
+|                                   | *The Multiple Indicator Cluster   |
 |                                   | Survey, Round 3 (MICS3) is the    |
 |                                   | third round of MICS surveys,      |
 |                                   | previously conducted around 1995  |
@@ -778,58 +800,57 @@ and methods, scope and coverage, etc.)
 |                                   | of MICS (MICS2) but less so with  |
 |                                   | MICS1, although there have been a |
 |                                   | number of changes in definition   |
-|                                   | of indicators between rounds.     |
+|                                   | of indicators between rounds.*    |
 |                                   |                                   |
-|                                   | Round 1 covered X countries,      |
+|                                   | *Round 1 covered X countries,     |
 |                                   | round 2 covered Y countries, and  |
-|                                   | Round Z covered N countries.      |
+|                                   | Round Z covered N countries.*     |
 +-----------------------------------+-----------------------------------+
-| Translated title                  | In countries with more than one   |
-|                                   | official language, a translation  |
-|                                   | of the title may be provided.     |
-|                                   | Likewise, the translated title    |
-|                                   | may simply be a translation into  |
-|                                   | English from a country’s own      |
-|                                   | language. Special characters      |
-|                                   | should be properly displayed      |
-|                                   | (such as accents and other stress |
-|                                   | marks or different alphabets).    |
+| Translated title                  |In countries with more than one    |
+|                                   |official language, a translation   |
+|                                   |of the title may be provided.      |
+|                                   |Likewise, the translated title     |
+|                                   |may simply be a translation into   |
+|                                   |English from a country’s own       |
+|                                   |language. Special characters       |
+|                                   |should be properly displayed       |
+|                                   |(such as accents and other stress  |
+|                                   |marks or different alphabets).     |
 +-----------------------------------+-----------------------------------+
-| ID Number                         | The ID number of a dataset is a   |
-|                                   | unique number that is used to     |
-|                                   | identify a particular survey.     |
-|                                   | Define and use a consistent       |
-|                                   | scheme to use. Such an ID could   |
-|                                   | be constructed as follows:        |
-|                                   | country-producer-survey-year-vers |
-|                                   | ion                               |
-|                                   | where                             |
+| ID Number                         |The ID number of a dataset is a    |
+|                                   |unique number that is used to      |
+|                                   |identify a particular survey.      |
+|                                   |Define and use a consistent        |
+|                                   |scheme to use. Such an ID could    |
+|                                   |be constructed as follows:         |
+|                                   |country-producer-survey-year-vers  |
+|                                   |ion                                |
+|                                   |where                              |
 |                                   |                                   |
-|                                   | -  *country* is the 3-letter ISO  |
-|                                   |    country abbreviation           |
+|                                   |-  *country* is the 3-letter ISO   |
+|                                   |   country abbreviation            |
 |                                   |                                   |
-|                                   | -  *producer* is the abbreviation |
-|                                   |    of the producing agency        |
+|                                   |-  *producer* is the abbreviation  |
+|                                   |   of the producing agency         |
 |                                   |                                   |
-|                                   | -  *survey* is the survey         |
-|                                   |    abbreviation                   |
+|                                   |-  *survey* is the survey          |
+|                                   |   abbreviation                    |
 |                                   |                                   |
-|                                   | -  *year* is the reference year   |
-|                                   |    (or the year the survey        |
-|                                   |    started)                       |
+|                                   |-  *year* is the reference year    |
+|                                   |   (or the year the survey         |
+|                                   |   started)                        |
 |                                   |                                   |
-|                                   | -  *version* is the number        |
-|                                   |    dataset version number (see    |
-|                                   |    Version Description below)     |
+|                                   |-  *version* is the number         |
+|                                   |   dataset version number (see     |
+|                                   |   Version Description below)      |
 |                                   |                                   |
-|                                   | Example:                          |
+|                                   |Example:                           |
+|                                   |  *The Demographic and Health      |
+|                                   |  Survey implemented by the Uganda |
+|                                   |  Bureau of Statistics in 2005     |
+|                                   |  could have the following ID:*    |
 |                                   |                                   |
-|                                   |  The Demographic and Health       |
-|                                   | Survey implemented by the Uganda  |
-|                                   | Bureau of Statistics in 2005      |
-|                                   | could have the following ID:      |
-|                                   |                                   |
-|                                   |  UGA-UBOS-DHS-2005-v01.           |
+|                                   |  *UGA-UBOS-DHS-2005-v01.*         |
 +-----------------------------------+-----------------------------------+
 | **Version**                       |                                   |
 +-----------------------------------+-----------------------------------+
