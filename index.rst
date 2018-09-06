@@ -599,20 +599,20 @@ to describe the DDI document.
 |                                   |in the production process.         |
 |                                   |                                   |
 |                                   |Example:                           |
-|                                   | +----------------+---------------+|
-|                                   | |   *Name*       |*Role*         ||
-|                                   | +----------------+---------------+|
-|                                   | |*National       |*Documentation ||
-|                                   | |Statistics      |of the         ||
-|                                   | |Office          |study*         ||
-|                                   | |(NSO)*          |               ||
-|                                   | +----------------+---------------+|
-|                                   | |*International  |*Review of     ||
-|                                   | |Household       |the            ||
-|                                   | |Survey          |metadata*      ||
-|                                   | |Network         |               ||
-|                                   | |(IHSN)*         |               ||
-|                                   | +----------------+---------------+|
+|                                   +----------------+------------------+
+|                                   |   *Name*       |*Role*            |
+|                                   +----------------+------------------+
+|                                   | *National      |*Documentation    |
+|                                   | Statistics     |of the            |
+|                                   | Office         |study*            |
+|                                   | (NSO)*         |                  |
+|                                   +----------------+------------------+
+|                                   | *International |*Review of        |
+|                                   | Household      |the               |
+|                                   | Survey         |metadata*         |
+|                                   | Network        |                  |
+|                                   | (IHSN)*        |                  |
+|                                   |                |                  |
 +-----------------------------------+----------------+------------------+
 | Date of Production                |This is the date (in ISO format    |
 |                                   |YYYY-MM-DD) the DDI document was   |
