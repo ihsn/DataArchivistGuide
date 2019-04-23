@@ -209,7 +209,7 @@ provides information on the child in the household.
 
 .. image:: media/Page4_2.png
 
-Tables 1 and 2 illustrate the two data structures. They
+*Tables 1 and 2* illustrate the two data structures. They
 contain the same information about six people on age and their
 relationship with the head of the household. The flat dataset
 (Table 1) stores the information on each family member in a new
@@ -221,7 +221,7 @@ across people and each record contains all values measured on the
 same person across variables. For every additional member
 characteristic, the dataset maintains the same number of columns,
 gains additional rows and gets longer and less flat compared to
-Table 1. The first two columns of this dataset have a
+*Table 1*. The first two columns of this dataset have a
 hierarchical structure, where the ID member column is nested
 inside the ID household column. 
 
@@ -236,7 +236,7 @@ characteristics.
 1.2. Datasets with multiple units of analysis should be stored in different data files 
 --------------------------------------------------------------------------------------
 It is recommended that you store your data in different files
-when you have multiple observational units. For example, Table 3
+when you have multiple observational units. For example, *Table 3*
 shows a dataset that has both household-level data (columns on
 the type of dwelling and walls material) and individual-level
 data (columns on the marital status, work status, and worker
@@ -269,7 +269,7 @@ stored in different columns. While this dataset structure can be
 useful for some analysis, the standard data structure where columns
 are variables and not values is the norm. 
 
-For example, Table 4 (options 1 and 2) gives information at the
+For example, *Table 4* (options 1 and 2) gives information at the
 individual-level on marital status, relationship with the head of
 the household and age. The difference between both tables is how the
 variable ‘age’ is reported. Option 1 had broken the variable ‘age’
@@ -279,44 +279,80 @@ the size of the dataset. Option 2 is recommended since there is only
 one heading and store of the information occupies less space, allowing
 the user to identify the structure of the data in a clear manner.
 
+**Table 4. Data Structures: Hypothetical datasets**
 
+.. image:: media/Page6_1.png
 
+1.4. Each observation in every file must have a unique identifier
+-----------------------------------------------------------------
 
-*Flat file:*
+Before you check for uniqueness of the identifiers in your files, you
+need to figure out the unit of analysis. Even if you are not the data
+producer, it is often easy to identify it. You can always review the
+documentation to see if the information has been provided. Below, some
+examples of units of analysis:
 
-.. image:: media/image3.png
+**Table 5. Unit of Analysis by Study type**
 
-*Hierarchical file:*
+.. image:: media/Page6_2.png
 
-.. image:: media/image4.png
+Once you recognize the unit of analysis, the next step is to identify
+the column that uniquely identifies each record. If a dataset contains
+multiple related files, each record in every file must have a unique
+identifier. The data producer can also choose multiple variables to
+define a unique identifier. In that case, more than one column in a
+dataset is used to guarantee uniqueness. These identifiers are also
+called **key variables** or **ID variables**. The variable(s) should
+not contain missing values or have any duplicates. They are used by
+statistical packages such as SPSS, R or Stata when data files need
+to be merged for analysis
 
--  If a dataset contains multiple related files, each record in each
-   file must have a unique identifier. This identifier may be made of
-   one or multiple variables. These identifiers are also called “key
-   variables”, as they are used by statistical packages such as SPSS or
-   Stata when data files need to be merged. [2]_ Identifiers must be
-   composed of numeric variables only (some software applications,
-   including the IHSN Toolkit, require that identifiers be numeric. The
-   reason is that sorting and filtering records is much more efficient
-   when variables are numeric).
+The absence of a unique identifier is a data quality issue, so one
+needs to ensure that the unique IDs remain fixed/present during the
+data cleaning process. If this correction is not possible, the archivist
+should note the anomalies in the documentation process.
 
-   For the convenience of users of the data, avoid identifiers made of
-   too many variables. For example, in a household survey, the household
-   identifier will preferably be a single variable (which you may create
-   by concatenating a group of variables [3]_), and the individual
-   identifier should be the combination of only two variables (the
-   household ID, and the sequential number of each member).
++--------------------------------------------------------------------+
+|*Best Practices*                                                    |
+|                                                                    |
+|- It is recommended that ID variables be defined as a numeric since |
+|  sorting and filtering records is much more efficient when         |
+|  variables are numeric.                                            |
+|- ID variables should not contain spaces, special characters or     |
+|  accents, since they may suffer modifications when the dataset is  |
+|  converted in different formats.                                   |
+|- For the convenience of users of the data, avoid identifiers       |
+|  consisting of too many variables. For example, in a household     |
+|  survey, the household identifier should ideally be a single       | 
+|  variable (which you may create by concatenating a group of        |
+|  variables [3]_), and the individual identifier should be the      |
+|  combination of only two variables (the household ID, and the      | 
+|  sequential number of each member).                                |
+|- It is recommended that you generate an ID based on a sequential   |
+|  number, however, keep in mind that it should not be too long      |
+|  because statistical packages and spreadsheet programs store a     |
+|  number of digits of precision, so opening a data set that contains|
+|  ID variables with many characters, might result in truncated      |
+|  fields. For instance, the limit of the number of characters in    |
+|  Microsoft Excel is 15, so it changes any digits past the fifteenth|
+|  place to zeroes.                                                  |
+|- If you prepare your data files for public dissemination, it may be|
+|  preferable to generate a unique household identification that     |
+|  would **not** be a compilation of geographic codes (because       |
+|  geographic codes are highly identifying). This recommendation is  |
+|  to ensure anonymity and will be explained in further detail later |
+|  on in this text. The following example shows how to construct a   |
+|  unique identifier without using detailed information provided by  |
+|  the geographic codes.                                             |
++--------------------------------------------------------------------+
 
-   If you prepare your data files for public dissemination, it may be
-   preferable to generate a unique household identification that would
-   **not** be a compilation of geographic codes (because geographic codes
-   are highly identifying). In such case, it is recommended to generate
-   an ID based on a sequential number.
-
-   Example: Suppose the unique identification of a household is the
-   combination of variables PROV (Province), DIST (District), EA
-   (Enumeration Area), HHNUM (Household Number). The following options
-   are possible:
+Example
+  -  Suppose the unique identification of a household is a combination of
+     of variables PROV (Province), DIST (District), EA (Enumeration Area),
+     HHNUM (Household Number). Options 2 and 3 are recommended. Note that
+     if option 3 is chosen, it is crucial o preserve (but not distribute)
+     a file that would provide the mapping between the original codes and
+     the new HHID.
 
 =====  =====  =====  ========== ==================== =====================
  Option 1: Use a combination of Option 2: Generate a  Option 3: Generate a
@@ -330,13 +366,148 @@ PROV   DIST    EA    HHNUM      HHID                 HHID
 Etc    Etc    Etc    Etc        Etc                  Etc
 =====  =====  =====  ========== ==================== =====================
 
-Options 2 and 3 are recommended. Note that if option 3 is chosen, it is
-crucial to preserve (but not distribute) a file that would provide the
-mapping between the original codes and the new HHID.
+Once you recognize the unit of analysis and the variable that uniquely 
+identifies it, the following checks are suggested:
 
--  Make sure that, in all data files, the identification variable(s)
-   provide a unique identifier. Use the *duplicate* function in SPSS or
-   the *isid* command in Stata to verify this.
+-  Even if the data set has a variable with a label "unique identifier",
+   it is important to confirm that this variable truly does uniquely
+   identify each record. To confirm or even to find out what the unique
+   identifier is, you can make use of the *-duplicate-* function in SPSS or
+   the *-isid-* command in Stata (for R, do as shown in *Table 6*). For more
+   details, refer to *Example 1 and Example 2 of Section A*.
+
+**Table 6. Check for unique identifiers: STATA/R/SPSS Commands**
+
++---------------------+---------------------------+----------------------+
+|   **STATA Code**    |         **R Code**        |  **SPSS Function**   |
++---------------------+---------------------------+----------------------+
+|*use “household.dta”*|*my_data<-*                |*GET*                 |
+|                     |*read_dta("household.dta")*|*FILE='household.sav'*|
+|*isid "key1" "key2"* |                           |                      |
+|                     |                           |*execute.*            |
+|                     |*id <-c( "key1" , " key2")*|                      |
+|                     |                           |From the menu choose: |
+|                     |*isid(my_data, id,*        |                      |
+|                     |*verbose = FALSE)*         |- Data>Indentify      |
+|                     |                           |  Duplicate Cases     |
+|                     |                           |- Select Key Variables|
++---------------------+---------------------------+----------------------+
+
+-  Finally, check that the ID variable for the unit of observation doesn't
+   have missing or assigned zero/null values. Ensure that the datasets are
+   sorted and arranged by their unique identifiers.
+   
+*Table 7* below gives a hypothetical example. In this dataset, the
+highlighted columns (hh1, hh2, hh3) are the key variables, which means that
+they are supposed to make up the unique identifier. However, looking at
+those variables, we can identify some problems: the key variables do not
+uniquely identify each observation as they have the same values in rows 4
+and 5, they also have some missing values (represented by asterisks), 
+assigned zero values and some null values (those that say NA, don’t know).
+All these issues suggest that those variables are not the key variables,
+and one needs to go back and double-check the data documentation.
+Alternatively, the archivist could check with the data producer and ask
+them how to fix these variables, in case those are indeed the key variables.
+
+**Table 7. Check for unique identifiers: Hypothetical data set**
+
+.. image:: media/Page8_2.png
+
+*Example 3* provides further details and describes the steps involved in
+performing a validation when the identifier is made of multiple variables
+(see *Section A*).
+
+1.5. Identifying duplicate observations
+---------------------------------------
+
+One way to rule out problems with the unique identifier is to check if
+there are duplicate observations (records with identical values for all
+variables, not just the unique identifiers). Duplicate observations can
+generate erroneous analysis and cause data management problems. Some
+possible reasons for duplicate data are, for example, the same record
+being entered twice during data collection. They could also arise from
+an incorrect reading of the questionnaires during the scanning process
+if paper-based methods are being used. 
+
+Identifying duplicate observations is a crucial step. Correcting this
+issue may involve eliminating the duplicates from the dataset or giving
+them some other appropriate treatment.
+
+Statistical packages have several commands that help identify duplicates.
+*Table 8* shows examples of these commands in STATA, R and SPSS. The STATA
+command *-duplicates report-* generates a table that summarizes the number
+of copies for each record (across all variables). The command
+*-duplicates tag-* allows us to distinguish between duplicates and unique
+observations. For more details, refer to *Example 4* of *Section A*.
+
+**Table 8. Check for duplicates observations: STATA/R/SPSS Commands**
+
++---------------------+---------------------------+----------------------+
+|   **STATA Code**    |         **R Code**        |  **SPSS Function**   |
++---------------------+---------------------------+----------------------+
+|*use “household.dta”*|*my_data<-*                |*GET*                 |
+|                     |*load("household.rda")*    |*FILE='household.sav'*|
+|*duplicates report*  |                           |                      |
+|                     |*household*                |*execute.*            |
+|*duplicates tag,*    |*[duplicated(household),]* |                      |
+|*generate(newvar)*   |                           |From the menu choose: |
+|                     |                           |                      |
+|                     |                           |- Data>Indentify      |
+|                     |                           |  Duplicate Cases     |
++---------------------+---------------------------+----------------------+
+
+1.6. Ensure that each individual dataset can be combined into a single database 
+-------------------------------------------------------------------------------
+
+For organizational purposes, surveys are often stored in different datasets.
+Therefore, checking the relationship between the data files is an essential
+step to keep in mind throughout the data validation process. The role of
+the data producer is to store the information as efficiently as possible,
+which implies storing data in different files. The role of the data user is
+to analyse the data as holistically as possible, which could sometimes mean
+that they might have to join all the different data files into a single
+file to facilitate analysis. It is essential to ensure that each of the
+separate files can be combined (merged or appended depending on the case)
+into a single file, should the data user want to undertake this step. 
+
+Use statistical software to validate that all files can be combined into
+one. For a household survey, for example, verify that all records in the
+individual-level files have a corresponding household in the household-level
+master file. Also, verify that all households have at least on
+e corresponding record in the household-roster file that lists all
+individuals. Below, some considerations to keep in mind before merging data
+files:
+
+- The variable name of the identifier should be the same across all datasets.
+- The ID variables need to be the same type (either both numeric or both 
+  string) across all databases.
+- Except for ID variables, it is highly recommended that the databases don't
+  share the same variable names or labels.
+
+Example
+ - A household survey is disseminated in two datasets; one contains
+   information about household characteristics and the other contains
+   information on the children (administered only to mothers or caretakers).
+   To build a dataset containing all the information about the household
+   characteristics, including where the children live, one needs to combine
+   these files. Users are thus assured that all observations in the
+   child-level file have corresponding household information.
+  
+ **Joining data files: Hypothetical data set** 
+  
+.. image:: media/Page10_1.png
+  
+.. image:: media/Page10_2.png
+  
+Statistical packages have some commands that allows us to combine datasets
+using one or multiple unique identifiers. *Table 9* shows examples of 
+these commands/functions in STATA, R and SPSS. For more details, refer to
+*Example 5* of *Section A*.  
+
+
+
+
+
 
 -  If your dataset is hierarchical, carefully test the file
    relationships (using the *merge* command in SPSS and Stata). For a
