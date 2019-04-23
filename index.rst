@@ -502,8 +502,272 @@ Example
 Statistical packages have some commands that allows us to combine datasets
 using one or multiple unique identifiers. *Table 9* shows examples of 
 these commands/functions in STATA, R and SPSS. For more details, refer to
-*Example 5* of *Section A*.  
+*Example 5* of *Section A*. 
 
+**Table 9. Joining data files: STATA/R/SPSS Commands**
+
++---------------------+---------------------------+----------------------+
+|   **STATA Code**    |         **R Code**        |  **SPSS Function**   |
++---------------------+---------------------------+----------------------+
+|*use “household.dta”*|*household<-*              |*GET*                 |
+|                     |*load("household.rda")*    |*FILE='household.sav'*|
+|*merge 1:m hh1 hh2*  |                           |                      |
+|*hh3 using*          |*individuals<-*            |                      |
+|*"individuals.dta"*  |*load("individuals.rda")*  |*execute.*            |
+|                     |                           |                      |
+|                     |*md<-merge(household,*     |From the menu choose: |
+|                     |*individuals, by=c("hh1",  |                      |
+|                     |"hh2", “hh3”),all=TRUE)*   |- Data>Merge Files>   |
+|                     |                           |  Add Variables       |
+|                     |                           |                      |
+|                     |                           |- Select the data file|
+|                     |                           |  to merge            |
+|                     |                           |                      |
+|                     |                           |- Select Key Variables|
++---------------------+---------------------------+----------------------+
+
+Panel datasets should be stored in different files as well. Having one
+file per data collection period is a good practice. To combine the different
+periods of a panel dataset, the data user could merge them (Adding variables
+to the existing observations for the same period) or append them (Adding
+observations for a different period to the existing variables). To make sure
+that panels can be properly appended, the following checks are suggested: 
+
+- Check for the column(s) that identifies the period of the data (Year, Wave,
+  Serie, etc.).
+- The variable names and variable types should be the same across all datasets.
+- Ensure that the variables use the same label and the same coding across all
+  datasets.
+  
+  In SPSS, use the function *“Append new records”* and in STATA the command
+  *-append-* to combine datasets vertically.
+
+1.7. Check for variables with missing values 
+--------------------------------------------
+
+Getting data ready for documentation also involves checking for variables
+that do not provide complete information because they are full of missing
+values. This step is important because missing values can have unexpected
+effects on the data analysis process. Typically, missing values are defined
+as a character (.a, .b, single period or asterisks), special numeric
+(-1, -2) or blanks. Variables entirely comprised of missing values should
+ideally not be included in the dataset. However, before excluding them, it
+is useful to check whether the missing values are expected according to the
+questionnaire, and the skip patterns.
+
+For example, a hypothetical household survey at the individual-level
+(Table 10) provides information about the respondent’s employment status.
+The survey identifies if the respondent is employed in Column D, and then
+provides information about the worker category in Column E, but only for
+those who reported being employed in Column D. This means that those who
+answered ‘unemployed’ in column D should have a valid missing value in
+column E. In other words, this is a pattern in the missing values that
+should be observed and duly noted. 
+
+On the other hand, Columns F and G are used to determine if the people who
+are not employed are looking for a job and are actively seeking it. These
+questions are not asked to the employed people (those who answered “yes”
+in Column D), which mean that again, the missing values in those columns
+correspond with what is expected. However, Column H contains information
+for all employed individuals, so missing values in this column suggest
+that there is a problem in the data and should be addressed. Therefore,
+one should not blindly delete missing values at the outset without checking
+for these patterns. 
+
+**Table 10. Checking for Missing Values: Hypothetical data set**
+
+.. image:: media/Page12.png
+
+In SPSS, use the function *“Missing Value Analysis”* and in R, do as shown
+in *Table 11*. You can also use the STATA command *-misstable summarize-*
+that produces a report that counts all the missing values. You can also use
+the *-rowmiss()-* command with *-egen-* to generate the number of missing 
+values among the specified variables. For more details, refer to
+*Example 6* of *Section A*.
+
+**Table 11. Counting Missing Values: STATA/R/SPSS Commands**
+
++----------------------+---------------------------+---------------------+
+|   **STATA Code**     |         **R Code**        |  **SPSS Function**  |
++----------------------+---------------------------+---------------------+
+|*use "individual.dta”*|*individual<-*             |*GET*                |
+|                      |*load("individual.rda")*   |*FILE=*              |
+|*misstable summarize* |                           |*'individual.sav'*   |
+|                      |*colSums*                  |                     |
+|                      |*(is.na(individual))*      |*execute.*           |
+|                      |                           |                     |
+|                      |*colMeans*                 |From the menu choose:|
+|                      |*(is.na(individual))*      |                     |
+|                      |                           |- Data>Analyze>      |
+|                      |                           |  Missing Value      |
+|                      |                           |  Analysis           |
+|                      |                           |                     |
+|                      |                           |- Select “Use All    |
+|                      |                           |  Variables”         |
++----------------------+---------------------------+---------------------+
+
++--------------------------------------------------------------------+
+|*Best Practices*                                                    |
+|                                                                    |
+|Since there are different reasons for missing values, data producer |
+|should code them with negative integers or letters to distinguish   |
+|the missing values and valid data. For instance, (− 1) might be the |
+|code for “Don’t Know”, (-2) the code for “Refused to Answer” and    |
+|(-9) code for “Not Applicable”.                                     |
++--------------------------------------------------------------------+
+
+1.8. Check Improper value ranges 
+--------------------------------
+
+It is helpful to generate descriptive statistics for all variables
+(frequencies for discrete variables; min/max/mean for continuous
+variables) and verify that these statistics look reasonable. Just as
+there are variables that must take on only specific values, such as “F”
+and “M” for gender, there are also some variables that can take on
+several values (such as age or height). However, those values must fit
+a particular range. For example, we don't expect negative values, or
+typically see values over 115 years for age. 
+
+Values for categorical variables should be guided by the questionnaire
+(or separate documentation for constructed variables). If we have an
+education variable that has 9 response options in the questionnaire,
+the corresponding ‘education’ variable in the dataset should have 9
+categories. We should not observe more than 9 unique values for this
+variable. Similarly, for any questions in the survey for which the
+options are only “yes”, “no” and “other”, we should not observe more
+than these 3 unique values.  When out of range values exist, this might
+signal data cleaning issues. 
+
+*Table 12* shows examples of some commands/functions in STATA, R and
+SPSS.
+
+**Table 12. Generate descriptive statistics: STATA/R/SPSS Commands**
+
++----------------------+---------------------------+---------------------+
+|   **STATA Code**     |         **R Code**        |  **SPSS Function**  |
++----------------------+---------------------------+---------------------+
+|*use "individual.dta”*|*individual<-*             |*GET*                |
+|                      |*load("individual.rda")*   |*FILE=*              |
+|*summarize*           |                           |*'individual.sav'*   |
+|                      |*summary(individual)*      |                     |
+|                      |                           |*execute.*           |
+|                      |                           |                     |
+|                      |                           |From the menu choose:|
+|                      |                           |                     |
+|                      |                           |- Data>Analyze>      |
+|                      |                           |  Descriptive        |
+|                      |                           |  Statistics>        |
+|                      |                           |  Frequencies        |
+|                      |                           |                     |
+|                      |                           |- Select “Statistics"|
++----------------------+---------------------------+---------------------+
+
+1.9. Verify that the number of records in each file corresponds to what is expected 
+-----------------------------------------------------------------------------------
+
+The technical documentation helps to form some expectations about the size
+of the dataset. Make sure that in all the files, the number of records is
+the same as (or is similar to) what is explicitly stated in the sample
+design of your survey.
+
+Suppose that you have a household survey and according to the documentation
+the sample size is 50,321 households. Consequently, the file that contains
+the household-level information should have a similar number of observations.
+When this is not the case, you should be able to account for this difference
+in data documentation.
+
+On the other hand, even if the number of individual records is not available
+in the documentation, you can still perform a rough check on the files. For
+example, if you have the household level file and the person level file, the
+latter should be between 2 or 6 times larger than the former, depending on
+the average household size in the country for which the information has been
+collected. Another example is to compare the household level file of an
+expenditure survey with the consumption level file (at the product-level).
+
+The latter should have n times the number of observations than the former,
+where n is the average number of products that each household records in the
+survey.
+
+1.10. Datasets must contain all variables from the questionnaire and be in a logic sequence 
+-------------------------------------------------------------------------------------------
+
+Verify the completeness of your data files by comparing the content of these
+files with the survey questionnaire. All variables in the questionnaire should
+appear in the dataset, except those excluded on purpose by the producer of the
+data because of reasons of confidentiality (see numeral *1.15*). 
+Cross-checking with the questionnaire(s) is needed to ensure that all sections
+are included in the dataset. 
+
+Additionally, it is a good practice to make sure that the database is sorted
+in the same order as the questionnaire. This practice will help users navigate
+seamlessly across the dataset using the questionnaire as a route map. 
+
+The Stata command *-describe-* displays the names, variable labels and other
+characteristics, which helps us verify that no variables have been omitted in
+the database. It simultaneously confirms that all variables are correctly
+ordered. Refer to *Example 7* of *Section A* for further details.
+
+1.11. Include the relevant weighting coefficients and variables identifying the stratification levels 
+-----------------------------------------------------------------------------------------------------
+
+All data files of a sample survey should have clearly labelled variable(s)
+with information on the survey weights. Sample surveys need to be
+representative of a broader population for which the data is collected,
+and the user needs the survey weights for almost every analysis performed.
+In the case of household surveys, the survey weights are equal among
+members of the same household but differ across households. Weights are
+positive and strictly higher than zero. They should not have a larger
+value than the population for which the survey is representative.
+
+A more detailed description of how the survey weights would look like
+should be provided in the documentation of the survey.  Based on it, you
+can perform some basic range checks. Notice that Census datasets do not
+need weights since a census collects data on all the individuals in the
+population. There are however some exceptions, for example in the case of
+IPUMS, the data collected are not full censuses but census samples, so
+weights are required in this context. 
+
+Additionally, for sample surveys, verify that the variables identifying
+the various levels of stratification and the primary sampling unit are
+included and easily identifiable in at least one of the data files. These
+variables are needed for the calculation of sampling errors.
+
+1.12. Variables and codes for categorical variables must be labelled 
+--------------------------------------------------------------------
+
+**Variable labels**
+
+Labels should be short and precise. They should provide a clear
+indication of what information is contained in the variables. Variable
+labels are brief descriptions or attributes of each variable. Without
+variable labels, users are not able to link the variables in the
+database to the questions of the questionnaire. So, one should ensure
+that all variables are labelled.
+ 
+Additionally, even if variables are fully labelled, the following
+practices must be considered: 
+
+- Variable labels can be up to 80 characters long in Stata and 255 in
+  SPSS, however, it is recommended that labels be informative,  short
+  and accurate.
+- It is a common practice to have a literal question from the survey as
+  a variable label. However, the literal questions are usually longer
+  than the maximum number of characters, so this is not an advisable
+  practice. 
+- The same label should not be used for two different variables. 
+
+**Value labels**
+
+Label values are used for categorical variables. To ensure the correct
+encoding of data, it is important to check that the stored values in
+those variables correspond to what is expected according to the
+questionnaire. In the case of continuous variables, we also suggest the
+checking of ranges. For instance, if the question is about the number of
+working hours, the variable should not have negative values. 
+
+You can compare variable labels in the dataset to those in the
+questionnaire using the *–codebook-* Stata command or *–labelbook*-. 
+Refer to *Example 8* of *Section A* for further details.
 
 
 
