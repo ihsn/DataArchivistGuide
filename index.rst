@@ -769,67 +769,151 @@ You can compare variable labels in the dataset to those in the
 questionnaire using the *–codebook-* Stata command or *–labelbook*-. 
 Refer to *Example 8* of *Section A* for further details.
 
+1.13.  Temporary, calculated or derived variables should not be disseminated 
+----------------------------------------------------------------------------
 
+Remove all unnecessary or temporary variables from the data files. These
+variables are not collected in the field and present no interest for users.
 
+The data producer could generate variables that are only needed during the
+quality control process but are not relevant to the final data user. For
+example, the variable “_merge” in Stata is generated automatically after
+performing the check described in the Numeral *1.6*, when the data producer
+wants to see if the datasets match properly. Variables that group categories
+of a question, dummy variables that identify a question’s category are all
+variables produced during the coding process that are not relevant once the 
+analysis is completed. 
 
+There are cases in which calculated variables may be useful to the users, so
+they must be documented in the metadata. For example, most Labor Force Surveys
+(LFS) contain derived dummy variables to identify the sections of the
+population that are employed or unemployed. These variables are generated
+using multiple questions from the dataset and are essential elements of any 
+LFS. Most data users prefer to make use of them instead of computing them on
+their own, to reduce the risk of error. This is a strong argument to make a
+case for keeping these variables in the dataset, despite them being a
+by-product of other original variables.
 
--  If your dataset is hierarchical, carefully test the file
-   relationships (using the *merge* command in SPSS and Stata). For a
-   household survey for example, verify the all records in the
-   individual-level files have a corresponding household in the
-   household-level master file. Verify also that all households have at
-   least one corresponding record in the household-roster file that
-   lists all individuals.
+To be useful, those variables that remain in the dataset must be well
+documented, else they, they may be useless to or misunderstood by users.
 
--  Verify that the number of records in each file corresponds to what is
-   expected.
+1.14. Check that the data types are correct
+-------------------------------------------
 
--  Do not include string variables if they can be converted into numeric
-   variables. Statistical software is very inefficient when working with
-   string variables. In Stata, the *destring* and the *encode* commands can
-   be used to make such conversions.
+Do not include string variables if they can be converted into numeric
+variables. Look at your data and check the variables' types, particularly
+for those that you expect to be numeric (age, years, number of
+persons/employees/hours, income, purchases/expenditures, weights, and so
+forth). If there are numeric variables stored as string variables, your
+data needs cleaning.
 
--  Verify the completeness of your data files by comparing the content
-   of these files with the survey questionnaire. Make sure that data
-   from all sections of the questionnaire are included in the dataset.
+For example, *Table 13* contains a data set at the individual-level with
+some variables that should be numeric. The columns B (Age) and E
+(Working Weeks) are stored as numeric variables, which is fine. However,
+the variables ‘Number of working of hours per week’ (Column G), ‘Number
+of persons working at the business’ (Column H) and ‘Monthly Income’
+(Column I) are loaded as strings because there are non-numeric values
+(don't know, skip, refused to answer) and some missing values present.
+Those variables need to be cleaned and converted from string variables
+to numeric variables.
 
--  Verify that all variables are labelled (variable labels), and that
-   the codes for all categorical variables are labelled (value labels).
-   The labels should be short but precise; a same label should not be
-   used for two different variables.
+**Table 13. Checking Data Types: Hypothetical data set**
 
--  For the convenience of the data users, include the relevant weighting
-   coefficient variable(s) in all data files if possible.
+.. image:: media/Page16.png
 
--  Avoid repeating a same variable in multiple files unless there is a
-   good reason for it (variables identifying the household, variables
-   such as geographic codes, and weighting variables should be present
-   in all files).
+Statistical packages have some commands that allows us to make such
+conversions. *Table 14* shows examples of these commands/functions in
+STATA, R and SPSS.
 
--  Remove all unnecessary or temporary variables from the data files
-   (the variables that present no interest for secondary users). To be
-   useful, a derived variable must be documented. For example, the
-   filtering variables (“FILTER$”) generated by SPSS, or the *\_merge*
-   variable generated in Stata are not necessary in the files once the
-   analysis is done.
+**Table 14. Convert string variables to numeric: STATA/R/SPSS Commands**
 
--  For sample surveys, verify that the variables identifying the various
-   levels of stratification and the primary sample unit are included and
-   easily identified in at least one of the data files. These variables
-   are needed for the calculation of sampling errors.
++----------------------+---------------------------+---------------------+
+|   **STATA Code**     |         **R Code**        |  **SPSS Function**  |
++----------------------+---------------------------+---------------------+
+|*use "individual.dta”*|*individual<-*             |*GET*                |
+|                      |*load("individual.rda")*   |*FILE=*              |
+|*destring (varname),* |                           |*'individual.sav'*   |
+|*{generate|replace}*  |*Individual $varname =*    |                     |
+|                      |*as.numeric(Individual*    |*execute.*           |
+|                      |*$varname)*                |                     |
+|                      |                           |From the menu choose:|
+|                      |                           |                     |
+|                      |                           |- Data>Transform>    |
+|                      |                           |  Recode into Same|  |
+|                      |                           |  Different Variables|
+|                      |                           |                     |
+|                      |                           |- Select the variable|
+|                      |                           |                     |
+|                      |                           |- Select “Old and New|
+|                      |                           |  Values” and Recode |
+|                      |                           |  it                 |
+|                      |                           |                     |
+|                      |                           |- Select “Convert    |
+|                      |                           |  numeric strings to |
+|                      |                           |  numbers (‘5’->5)   |
++----------------------+---------------------------+---------------------+
 
--  Put the variables in a logic sequence (using the *order* command in
-   Stata if needed or the “/KEEP=” option in SPSS when saving a file).
+1.15. Datasets must not have directed identifiers
+-------------------------------------------------
 
--  Generate descriptive statistics for all variables (frequencies for
-   discrete variables; min/max/mean for continuous variables) and verify
-   that these statistics look reasonable.
+One must verify that in all data files, sensitive information or direct
+identifiers that could reveal the identity of the respondent directly
+(names, addresses, GPS coordinates, phone numbers, etc.) have been removed.
+Check to ensure this information is not in the dataset(s). If it is, those
+variables need to be removed from shared datasets. 
 
--  Compress the variables to reduce the file size; use the compress
-   command in Stata, or the *compress* option when you save a SPSS data
-   file.
+Keep in mind that if you are preparing a dataset for public release, you
+need a cleaned, anonymous dataset.  Removing all direct identifiers is the
+first key step to ensuring the anonymity of the participants. However,
+before you start any privacy procedures, you should always check your data.
 
--  Sort records by their unique identifier before you save the file.
+For more information on how to apply statistical disclosure control (SDC)
+methods to data before release, see the document "Introduction to
+Statistical Disclosure Control (SDC)" available at
+http://ihsn.org/sites/default/files/resources/ihsn-working-paper-007-Oct27.pdf 
+
+1.16. Compress the variables to reduce the file size
+----------------------------------------------------
+
+Compress the variables consist of reducing the size of the data file without
+loss of precision or modifying the information that it provides. Listed
+below are some reasons why compressing a data set may be a useful practice
+for at least three reasons: First, it makes faster the process of creating
+backups, uploading and downloading data files from your data repository or
+any Survey Catalog. Second, it reduces the time that data users will need
+to spend working with the data. Additionally, it will make the data more
+accessible to the different type of users; sometimes the data size will
+impose restrictions on those users who lack high computational power.
+Third, it will help to free up disk space in the server where you store
+your data
+
+Example
+ - *Table 15* shows two versions of one dataset that provides 
+   individual-levelinformation about the year of the first union, age, 
+   school attendance,and health insurance. There is no difference in 
+   the appearance of both datasets. However, version 1 was saving 
+   uncompressed and version 2compressed. In the uncompressed version, 
+   the variables “ID” and “Year” are stored as double, which means that
+   they can store number with high decimal precision, but they
+   are designed to only record information of integer numbers between
+   -32,767 and 32,740. So, the compressed version changed the storage
+   type of these variables to int and saves 6 bytes per observation.
+   Similarly, other variables like “age” and “school attendance” are
+   stored as a byte in the compressed version, which saves 7 bytes
+   per observation when are compared to the uncompressed version.
+   Let’s suppose that one has a data set with 500 variables like these,
+   the total savings would be 3500 bytes per observation; if this data set
+   has 50.000 observations, it means that the savings in memory space
+   would be around 175 megabytes. 
+   
+   **Table 15. Compressing the Variables: Hypothetical data set**
+   
+.. image:: media/Page18_1.png
+
+.. image:: media/Page18_2.png
+
+Use the *compress* command in Stata, or the *compress* option when you
+save a SPSS data file.
 
 +--------------------------------------------------------------------+
 | *Suggestion:*                                                      |
