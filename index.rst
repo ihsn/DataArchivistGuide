@@ -539,8 +539,8 @@ that panels can be properly appended, the following checks are suggested:
 - Ensure that the variables use the same label and the same coding across all
   datasets.
   
- In SPSS, use the function *“Append new records”* and in STATA the command
- *-append-* to combine datasets vertically.
+In SPSS, use the function *“Append new records”* and in STATA the command
+*-append-* to combine datasets vertically.
 
 1.7. Check for variables with missing values 
 --------------------------------------------
@@ -1265,7 +1265,7 @@ to describe the DDI document.
 |                                   |and use a consistent scheme to     |
 |                                   |use. Such an ID could be           |
 |                                   |constructed as follows:            |
-|                                   |DDI-country-producer-survey-year   |
+|                                   |DDI_COUNTRY_PRODUCER_SURVEY_YEAR   |
 |                                   |where                              |
 |                                   |                                   |
 |                                   |-  *country* is the 3-letter ISO   |
@@ -1290,11 +1290,17 @@ to describe the DDI document.
 |                                   |  Uganda Bureau of Statistics in   |
 |                                   |  2005 would have the following    |
 |                                   |  ID:                              |
-|                                   |  DDI-UGA-UBOS-DHS-2005-v01. If    |
+|                                   |  DDI_UGA_UBOS_DHS_2005_v01. If    |
 |                                   |  the same survey is documented by |
 |                                   |  a staff from the IHSN, this      |
 |                                   |  would be                         |
-|                                   |  DDI-UGA-IHSN-DHS-205-v01.*       |
+|                                   |  DDI_UGA_IHSN_DHS_205_v01.*       |
++-----------------------------------+-----------------------------------+
+| Collection                        |This field allows viewed and       |
+|                                   |searched the study by collection   |
++-----------------------------------+-----------------------------------+
+| Programs                          |Link surveys to projects / trust   |
+|                                   |funds                              |
 +-----------------------------------+-----------------------------------+
 
 5.2. Good practices for completing the Study Description
@@ -1307,7 +1313,7 @@ and methods, scope and coverage, etc.)
 +-----------------------------------+-----------------------------------+
 | **Identification**                                                    |
 +-----------------------------------+-----------------------------------+
-| Title                             |The title is the official name of  |
+| Survey Title                      |The title is the official name of  |
 |                                   |the survey as it is stated on the  |
 |                                   |questionnaire or as it appears in  |
 |                                   |the design documents. The          |
@@ -1330,18 +1336,14 @@ and methods, scope and coverage, etc.)
 |                                   |-  Including the country name in   |
 |                                   |   the title is optional.          |
 |                                   |                                   |
-|                                   |The title will in most cases be    |
-|                                   |identical to the Document Title    |
-|                                   |(see above).                       |
-|                                   |                                   |
 |                                   |Example:                           |
 |                                   |  -  *National Household Budget    |
-|                                   |     Survey 2002-2003*             |
+|                                   |     Survey 2012-2013*             |
 |                                   |                                   |
 |                                   |  -  *Popstan Multiple Indicator   |
-|                                   |     Cluster Survey 2002*          |
+|                                   |     Cluster Survey 2012*          |
 +-----------------------------------+-----------------------------------+
-| Subtitle                          |Subtitle is optional and rarely    |
+| Survey Subtitle                   |Subtitle is optional and rarely    |
 |                                   |used. A subtitle can be used to    |
 |                                   |add information usually            |
 |                                   |associated with a sequential       |
@@ -1353,17 +1355,17 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   |  *Subtitle: Fifth round*          |
 +-----------------------------------+-----------------------------------+
-| Abbreviation                      |The abbreviation of a survey is    |
+| Abbreviation or Acronym           |The abbreviation of a survey is    |
 |                                   |usually the first letter of each   |
 |                                   |word of the titled survey. The     |
 |                                   |survey reference year(s) may be    |
 |                                   |included.                          |
 |                                   |                                   |
 |                                   |Example:                           |
-|                                   |  -  *DHS 2000 for “Demographic and|
+|                                   |  -  *DHS 2015 for “Demographic and|
 |                                   |     Health Survey 2005”*          |
 |                                   |                                   |
-|                                   |  -  *HIES 2002-2003 for “Household|
+|                                   |  -  *HIES 2012-2013 for “Household|
 |                                   |     Income and Expenditure Survey |
 |                                   |     2003”*                        |
 +-----------------------------------+-----------------------------------+
@@ -1429,7 +1431,7 @@ and methods, scope and coverage, etc.)
 |                                   |(such as accents and other stress  |
 |                                   |marks or different alphabets).     |
 +-----------------------------------+-----------------------------------+
-| ID Number                         |The ID number of a dataset is a    |
+| Unique user defined ID Number     |The ID number of a dataset is a    |
 |                                   |unique number that is used to      |
 |                                   |identify a particular survey.      |
 |                                   |Define and use a consistent        |
@@ -1464,9 +1466,18 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   |  *UGA-UBOS-DHS-2005-v01.*         |
 +-----------------------------------+-----------------------------------+
+| Depositor                         |The name of the person             |
+|                                   |(or institution) who provided this |
+|                                   |data collection to the archive     |
+|                                   |storing it.                        |
++-----------------------------------+-----------------------------------+
+| Date of Deposit                   |The date that the data collection  |
+|                                   |was deposited with the archive that|
+|                                   |originally received it.            |
++-----------------------------------+-----------------------------------+
 | **Version**                                                           |
 +-----------------------------------+-----------------------------------+
-| Description                       |The version description should     |
+| Version Description               |The version description should     |
 |                                   |contain a version number followed  |
 |                                   |by a version label. The version    |
 |                                   |number should follow a standard    |
@@ -1487,15 +1498,15 @@ and methods, scope and coverage, etc.)
 |                                   |users (possibly anonymized).       |
 |                                   |                                   |
 |                                   |Example:                           |
-|                                   |  -  *v0.1: Basic raw data,        |
+|                                   |  -  *v00: Basic raw data,         |
 |                                   |     obtained from data entry      |
 |                                   |     (before editing)*.            |
 |                                   |                                   |
-|                                   |  -  *v1.2: Edited data, second    |
+|                                   |  -  *v01: Edited data, second     |
 |                                   |     version, for internal use     |
 |                                   |     only*.                        |
 |                                   |                                   |
-|                                   |  -  *v2.1: Edited, anonymous      |
+|                                   |  -  *v02: Edited, anonymous       |
 |                                   |     dataset for public            |
 |                                   |     distribution*.                |
 |                                   |                                   |
@@ -1514,14 +1525,57 @@ and methods, scope and coverage, etc.)
 |                                   |that the date selected is in       |
 |                                   |compliance with the ISO format.    |
 +-----------------------------------+-----------------------------------+
-| Notes                             |Version notes should provide a     |
+| Version Notes                     |Version notes should provide a     |
 |                                   |brief report on the changes made   |
 |                                   |through the versioning process.    |
 |                                   |The note should indicate how this  |
 |                                   |version differs from other         |
 |                                   |versions of the same dataset.      |
 +-----------------------------------+-----------------------------------+
+| **Study Authorization**                                               |
++-----------------------------------+-----------------------------------+
+| Authorizing Agency                |Name of the agent or agency that   |
+|                                   |authorized the study. The          |
+|                                   |"affiliation" attribute indicates  |
+|                                   |the institutional affiliation of   |
+|                                   |the authorizing agent or agency.   |
+|                                   |The "abbr" attribute holds the     |
+|                                   |abbreviation of the authorizing    |
+|                                   |agent's or agency's name           |
++-----------------------------------+-----------------------------------+
+| Authorization Statement           |The text of the authorization. Use |
+|                                   |XHTML to capture significant       |
+|                                   |structure in the document          |
+|                                   |                                   |
+|                                   |Example:                           |
+|                                   |                                   |
+|                                   |Required documentation covering    |
+|                                   |the study purpose, disclosure      |
+|                                   |information, questionnaire         |
+|                                   |content, and consent statements    |
+|                                   |was delivered to the OUHS on       |
+|                                   |2010-10-01 and reviewed by the     |
+|                                   |compliance officer. Statement of   |
+|                                   |authorization for the described    |
+|                                   |study was received on 2010-11-04   |
++-----------------------------------+-----------------------------------+
+| Legal basis                       |Decree or law authorizing or       |
+|                                   |requiring the study                |
+|                                   |(e.g. census act)                  |
++-----------------------------------+-----------------------------------+
 | **Overview**                                                          |
++-----------------------------------+-----------------------------------+
+| Study Budget                      |Describe the budget of the project |
+|                                   |in as much detail as needed.       |
+|                                   |Internal structure is allowed using|
+|                                   |XHTML elements. Different          |
+|                                   |organizations express their budgets|
+|                                   |in different formats and this open |
+|                                   |format allows flexibility.         |
+|                                   |                                   |
+|                                   |Attributes: Budget line ID, Budget |
+|                                   |line label, Amount, Currency and   |
+|                                   |Source of funding.                 |
 +-----------------------------------+-----------------------------------+
 | Abstract                          |The abstract should provide a      |
 |                                   |clear summary of the purposes,     |
@@ -1530,9 +1584,13 @@ and methods, scope and coverage, etc.)
 |                                   |researcher or survey statistician  |
 |                                   |aware of the survey.               |
 +-----------------------------------+-----------------------------------+
+| Objectives of the study           |Describe the Main (explicit) and   |
+|                                   |secondary (explicit) objectives of |
+|                                   |the survey.                        |
++-----------------------------------+-----------------------------------+
 | Kind of data                      |This field is a broad              |
 |                                   |classification of the data and it  |
-|                                   |is associated with a drop down     |
+|                                   |is associated with a drop-down     |
 |                                   |box providing controlled           |
 |                                   |vocabulary. That controlled        |
 |                                   |vocabulary includes 9 items but    |
@@ -1641,6 +1699,50 @@ and methods, scope and coverage, etc.)
 |                                   |is provided for advanced users     |
 |                                   |only.                              |
 +-----------------------------------+-----------------------------------+
+| **Quality Statement**                                                 |
++-----------------------------------+-----------------------------------+
+| Standards Compliance              |This section lists all specific    |
+|                                   |standards complied with during the |
+|                                   |execution of this study. Note the  |
+|                                   |standard name and producer and how |
+|                                   |the study complied with the        |
+|                                   |standard                           |
++-----------------------------------+-----------------------------------+
+| Other Quality Statement           |Enter any additional quality       |
+|                                   |statements                         |  
++-----------------------------------+-----------------------------------+
+| **Post Evaluation Procedures**                                        |
++-----------------------------------+-----------------------------------+
+| Evaluator Type                    |The evaluator element identifies   |
+|                                   |persons or organizations involved  |
+|                                   |in the evaluation. The Affiliation |
+|                                   |attribute contains the affiliation |
+|                                   |of the individual or organization. |
+|                                   |The Abbr. attribute holds an       |
+|                                   |abbreviation for the individual or |
+|                                   |organization. The Role attribute   |
+|                                   |indicates the role played by the   |
+|                                   |individual or organization in the  |
+|                                   |evaluation process.                |
+|                                   |                                   |
+|                                   |Example:                           |
+|                                   |                                   |
+|                                   |- Affiliation: United Nations      |
+|                                   |                                   |
+|                                   |- Abbr.: UNSD                      |
+|                                   |                                   |
+|                                   |- Role: Consultant                 |
++-----------------------------------+-----------------------------------+
+| Evaluation Process                |Describes the evaluation process   |
+|                                   |followed. Ex-Post Evaluations are  |
+|                                   |frequently done within large       |
+|                                   |statistical or research agencies,  |
+|                                   |in particular when the survey is   |
+|                                   |intended to be repeated or on-going|
++-----------------------------------+-----------------------------------+
+| Evaluation Outcomes               |Describe the outcomes of the       | 
+|                                   |evaluation                         | 
++-----------------------------------+-----------------------------------+
 | **Coverage**                                                          |
 +-----------------------------------+-----------------------------------+
 | Country                           | Enter the country name, even in   |
@@ -1671,6 +1773,9 @@ and methods, scope and coverage, etc.)
 |                                   |sampling strategy was such that    |
 |                                   |the representativity is national.  |
 +-----------------------------------+-----------------------------------+
+| Geographic Unit                   |Lowest level of geographic         |
+|                                   |aggregation covered by the data.   |
++-----------------------------------+-----------------------------------+
 | Universe                          |We are interested here in the      |
 |                                   |survey universe (not the universe  |
 |                                   |of particular sections of the      |
@@ -1698,10 +1803,39 @@ and methods, scope and coverage, etc.)
 |                                   |  (under age 5) resident in the    |
 |                                   |  household.*                      |
 +-----------------------------------+-----------------------------------+
+| Geographic bounding box           |The geographic bounding box is the |
+|                                   |minimum box, defined by west and   |
+|                                   |east longitudes and north and south|
+|                                   |latitudes, that includes the       |
+|                                   |largest geographic extent of the   |
+|                                   |dataset's geographic coverage.     |
+|                                   |This element is used in the first  |
+|                                   |pass of a coordinate-based search. |
+|                                   |If the Geographic bounding Polygon |
+|                                   |element is included, then this     |
+|                                   |field element MUST be included     | 
++-----------------------------------+-----------------------------------+
+| Geographic Bounding Polygon       |This field allows the creation of  |
+|                                   |multiple polygons to describe in a |
+|                                   |more detailed manner the geographic|
+|                                   |area covered by the dataset. It    |
+|                                   |should only be used to define the  |
+|                                   |outer boundaries of a covered area.|
+|                                   |                                   |
+|                                   |Example:                           |
+|                                   |In the United States, such polygons|
+|                                   |can be created to define boundaries|
+|                                   |for Hawaii, Alaska, and the        |
+|                                   |continental United States, but not |
+|                                   |interior boundaries for the        |
+|                                   |contiguous states. This field is   |
+|                                   |used to refine a coordinate-based  |
+|                                   |search, not to actually map an area| 
++-----------------------------------+-----------------------------------+
 | **Producers and Sponsors**                                            |
 +-----------------------------------+-----------------------------------+
-| Primary investigator              |The primary investigator will in   |
-|                                   |most cases be an institution, but  |
+| Authoring Entity/Primary          |The primary investigator will in   |
+| investigators                     |most cases be an institution, but  |
 |                                   |could also be an individual in     |
 |                                   |the case of small-scale academic   |
 |                                   |surveys. The two fields to be      |
@@ -1726,7 +1860,7 @@ and methods, scope and coverage, etc.)
 |                                   |are mentioned use the appropriate  |
 |                                   |format of Surname, First name.     |
 +-----------------------------------+-----------------------------------+
-| Other producers                   |This field is provided to list     |
+| Producers                         |This field is provided to list     |
 |                                   |other interested parties and       |
 |                                   |persons that have played a         |
 |                                   |significant but not the leading    |
