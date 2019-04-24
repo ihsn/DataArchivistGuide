@@ -3730,14 +3730,14 @@ provides detailed information on each variable.
 |                                   |   99999 must be listed in the     |
 |                                   |   missing section as follows:     |
 |                                   |                                   |
-|                                   |.. image:: media/Page45.png        |
+|                                   |.. image:: media/Page43.png        |
 |                                   |                                   |
 |                                   |-  If you modify information such  |
 |                                   |   as the categories or missing    |
 |                                   |   values, you must use the        |
 |                                   |   “Documentation > Update         |
 |                                   |   Statistics” command in the      |
-|                                   |   Toolkit to refresh the summary  |
+|                                   |   Editor to refresh the summary   |
 |                                   |   statistics.                     |
 +-----------------------------------+-----------------------------------+
 | **DOCUMENTATION**                                                     |
@@ -3801,7 +3801,7 @@ provides detailed information on each variable.
 +-----------------------------------+-----------------------------------+
 | Concepts                          |Greater description on the nature  |
 |                                   |of the variable can be placed in   |
-|                                   |this element. For example this     |
+|                                   |this element. For example, this    |
 |                                   |element can provide a clearer      |
 |                                   |definition for certain variables   |
 |                                   |(i.e. a variable that provides     |
@@ -3889,7 +3889,7 @@ provides detailed information on each variable.
 |                                   |cases where some instructions      |
 |                                   |relate to multiple variables,      |
 |                                   |repeat the information in all      |
-|                                   |variables. The Toolkit allows you  |
+|                                   |variables. The Editor allows you   |
 |                                   |to select multiple variables and   |
 |                                   |enter the information to all       |
 |                                   |these variables at once.           |
@@ -3982,7 +3982,7 @@ The External Resources are all materials related to the study others
 than the data files. They include documents (such as the questionnaires,
 interviewer’s manuals, reports, etc), programs (data entry, editing,
 tabulation, and analysis), maps, photos, and others. To document
-external resources, the IHSN Toolkit uses the Dublin Core metadata
+external resources, the Metadata Editor  uses the Dublin Core metadata
 standard (which complements the DDI standard).
 
 +-----------------------------------+-----------------------------------+
@@ -4109,7 +4109,7 @@ standard (which complements the DDI standard).
 | Author(s)                         |Include all authors that are       |
 |                                   |listed on the report.              |
 +-----------------------------------+-----------------------------------+
-| Date                              |Date of the publication of the     |
+| Date Created                      |Date of the publication of the     |
 |                                   |report or resource (at least       |
 |                                   |month and year). For reports,      |
 |                                   |this is most likely stated on the  |
@@ -4140,7 +4140,7 @@ standard (which complements the DDI standard).
 |                                   |controlled vocabulary does not     |
 |                                   |provide the format you need, type  |
 |                                   |it (or add it in the controlled    |
-|                                   |vocabulary using the Toolkit       |
+|                                   |vocabulary using the Editor        |
 |                                   |Template Editor). Providing        |
 |                                   |information on the format will     |
 |                                   |inform the user on the software    |
@@ -4205,8 +4205,6 @@ standard (which complements the DDI standard).
 |                                   |documenting studies.               |
 +-----------------------------------+-----------------------------------+
 
-.. _section-1:
-
 6. Creating variable groups
 ===========================
 
@@ -4216,19 +4214,18 @@ useful to the user in the case of data files that contain many variables
 and are not organized by topic (some flat files contain hundreds or even
 thousands of variables).
 
-The Toolkit allows you to group variables found in various separate data
-files. For example, education data may be found in various locations and
-the disparate variables grouped together. Also, a same variable can
+The Metadata Editor allows you to group variables found in various separate
+data files. For example, education data may be found in various locations 
+and the disparate variables grouped together. Also, a same variable can
 belong to more than one group.
 
 Variable groups are “virtual”. The variables themselves are not moved or
 grouped. They remain untouched in the data files.
 
-In the final output of the Toolkit (CD-ROM of website), the variable
-groups will appear under a menu item “Data dictionary”. The only reason
-for grouping variables is to allow users to easily locate variables
-related to their topic of interest. If your dataset contains very few
-variables, there is no justification for grouping them.
+The variable groups will appear under a menu item “Data dictionary”.
+The only reason for grouping variables is to allow users to easily
+locate variables related to their topic of interest. If your dataset
+contains very few variables, there is no justification for grouping them.
 
 If you decide to create variable groups (and sub-groups if needed), make
 sure that ALL variables in the dataset belong to at least one group.
@@ -4273,11 +4270,11 @@ optional and will in most cases be left empty.
 7. Running validations and diagnostics
 ======================================
 
-The Microdata Management Toolkit includes a useful series of diagnostic
-and validation modules (see the drop down menu *Tools*): these range
-from very simple validations (such as the *Tools-Validate Metadata*) to
-complex visual displays that iterate through each variable and provides
-feedback to the archivist at the variable level.
+The Metadata Editor includes a useful series of diagnostic and validation
+modules (see the drop down menu *Tools*): these range from very simple
+validations (such as the *Tools-Validate Metadata*) to complex visual
+displays that iterate through each variable and provides feedback to the
+archivist at the variable level.
 
 -  *Validate Metadata*: verifies that all mandatory fields are filled
    in.
@@ -4285,22 +4282,26 @@ feedback to the archivist at the variable level.
 -  *Validate External Resources*: verifies all mandatory fields in the
    External Resources are filled in.
 
--  *DDI Diagnostic*: this provides a visual display and issues warnings
-   if DDI elements are missing. It also displays information at the file
-   level and identifies any variables with missing labels, discrete
-   variables with missing value or code label, variables with the same
-   name or frequency displays with more than 30 modalities.
+-  *Health Check*: displays a popup window that provides some information
+   and diagnostics regarding the R package. The Metadata Editor uses R
+   to import and export the data. The health check option tells the which
+   version of R is being used on the machine. In addition, the Health
+   Check will provide information on the Environment Path and the result
+   of the execution of the R script.
 
--  *DDI Diagnostic Detailed*: this provides a more in-depth display as
-   the simpler DDI diagnostic (above). It checks the metadata at the
-   individual variable level and checks: labelling, definitions,
-   universe, source etc.
+-  *Validate Dataset Relations*: this option is used to validate
+   hierarchically related datasets. The ‘Base key variables’ should be
+   the variables that uniquely identify a case within that file.
 
--  *Dublin Core diagnostic*: Checks the metadata provided for the
-   External Resources.
+-  *Translation Manager*: provides the user with the ability to translate
+   the interface of the Metadata Editor into any language. Selecting this
+   option will display the Translation Manager interface. When using the
+   option for the first time, the English template will be displayed with
+   all the labels that require translation.
+
 
 In addition to these validations, it is recommended that you generate
-the DDI document (in the Toolkit, use the Export DDI” command) and
+the DDI document (in the Editor, use the Export DDI” function) and
 verify the size of the resulting [.xml] file. A fully documented survey
 with a large number of variables should not produce a file larger than
 10Mb. Very large DDI files often indicate errors in the selection of
@@ -4310,12 +4311,14 @@ like the household ID in a sample household file).
 8. Generating the survey documentation in PDF
 =============================================
 
-The Microdata Management Toolkit includes a useful tool for producing a
-PDF document summarizing all metadata entered in the Toolkit (see *Tools
-> Study Documentation PDF*). Generating this report is one of the final
-stages of properly preparing a survey for publication and dissemination.
-If previous versions exist and changes have been made to the data files
-or the metadata make sure you re-run the PDF generator.
+Once you are confident that all necessary checks have been completed, 
+you may generate the survey documentation in PDF. The Metadata Editor
+includes a useful tool for producing a PDF document summarizing all
+metadata entered in the Editor (see Documentation > PDF Documentation).
+Generating this report is one of the final stages of properly preparing
+a survey for publication and dissemination. If previous versions exist
+and changes have been made to the data files or the metadata make sure
+you re-run the PDF generator. 
 
 This report should be generated, saved and attached as an *External
 Resource*.
@@ -4326,7 +4329,7 @@ Resource*.
 |  related to the study. This list should include this PDF report    |
 |  itself. **Before** you generate it, make sure you create one entry|
 |  in the External Resources for documenting this report. Immediately|
-|  after you generate the PDF report, import it in the Toolkit.      |
+|  after you generate the PDF report, import it in the Editor.       |
 +--------------------------------------------------------------------+
 
 One thing to keep in mind is that in a survey with a large number of
@@ -4336,85 +4339,39 @@ produce one report with the study metadata, and one with the files and
 variables metadata), or change the content options (e.g., not including
 a frequency table for all variables).
 
-9. Producing the final output
-=============================
+If your agency has a website, you may upload this PDF directly to the
+web server. The IHSN recommends the use of a proper DDI-compliant
+cataloguing system, such as the one provided by its National Data
+Archive (NADA) application. NADA is an open source package, available
+free of charge at www.surveynetwork.org.
 
-Once you are confident that all necessary checks have been completed,
-you may generate the final output using the CD-ROM Builder module of the
-IHSN Toolkit. This includes the CD-ROM and survey website.
-
-Before you generate the CD-ROM:
-
--  Make sure you have a customized “branding” for the CD-ROM. If you
-   don’t, design a branding (instructions are provided in the Toolkit
-   User’s Guide).
-
--  Prepare content for the “Home page” of the CD-ROM. Typically, a
-   statement by the Director of the data producing agency, or a brief
-   summary of the objectives and findings of the survey, will be
-   generated.
-
-Generate the CD-ROM with the appropriate options. The IHSN recommends:
-
--  To generate the CD-ROM without data
-
--  To export all datasets to ASCII format, and to include the zipped
-   ASCII files on the CD-ROM, together with the syntax file to export
-   the data to SPSS, Stata and other formats (which shoulod be provided
-   as external resources). The ASCII format is more standard than the
-   Toolkit Nesstar format, and is a guarantee of long-term viability of
-   your data files.
-
--  To include an autorun file.
-
--  To include all external resources.
-
--  To check that the CD-ROM outline does not include any empty pages
-   (use the Toolkit utility to check)
-
--  To name the CD-ROM according to the dataset abbreviation and version.
-
-After you generate the CD-ROM:
-
--  Check all links before you replicate it, in particular the ones to
-   external resources.
-
--  Test the autorun.
-
-If your agency has a website, you may upload the content of the CD-ROM
-directly to the web server. The IHSN recommends the use of a proper
-DDI-compliant cataloguing system, such as the one provided by its
-National Data Archive (NADA) application. NADA is an open source
-package, available free of charge at www.surveynetwork.org.
-
-10. Independent quality review
+9. Independent quality review
 ==============================
 
 An independent review of the data and metadata is highly recommended
 prior to publishing the final output. The Appendix provides a blank
 review form (the *DDI Reviewer’s Feedback Form*) to be used by an
-external reviewer. The IHSN can assist in identifying external
-reviewers.
+external reviewer. 
 
 The external review can be based on:
 
 1. The DDI file (xml file, containing no microdata and no external
    resources)
 
-2. The Nesstar file (containing microdata and DDI/DCMI metadata)
+2. The Metadata Editor project (containing microdata and DDI/DCMI metadata)
 
-3. The CD-ROM (or website), without microdata
+3. The PDF Document
 
-4. The CD-ROM (or website), with microdata
+4. The Microdata
 
-The preferred option is the last one, as it allows a full check of the
-final output. If data are highly confidential and cannot be shared with
-the reviewer, option 3 is the most appropriate.
+The preferred option is to review the metadata and microdata, as it allows a
+full check of the final output. If data are highly confidential and cannot 
+be shared with the reviewer, options 1-3 are the most appropriate. 
 
 In order to prepare for the independent quality review, proceed to step
 10 if you will use options three or four. Follow the guidance there, and
 then finalize the archiving before producing the final output. Else,
-send the DDI-XML or the Nesstar file to the reviewer.
+send the DDI-XML to the reviewer.
 
 The following Form is available at www.surveynetwork.org
 
