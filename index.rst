@@ -539,8 +539,8 @@ that panels can be properly appended, the following checks are suggested:
 - Ensure that the variables use the same label and the same coding across all
   datasets.
   
-  In SPSS, use the function *“Append new records”* and in STATA the command
-  *-append-* to combine datasets vertically.
+ In SPSS, use the function *“Append new records”* and in STATA the command
+ *-append-* to combine datasets vertically.
 
 1.7. Check for variables with missing values 
 --------------------------------------------
@@ -906,7 +906,7 @@ Example
    has 50.000 observations, it means that the savings in memory space
    would be around 175 megabytes. 
    
-   **Table 15. Compressing the Variables: Hypothetical data set**
+ **Table 15. Compressing the Variables: Hypothetical data set**
    
 .. image:: media/Page18_1.png
 
@@ -946,7 +946,7 @@ to be included if available include:
 
    -  Sampling information
 
-   -  Interviewers and supervisors manuals
+   -  Interviewers and supervisor’s manuals
 
    -  List of codes
 
@@ -958,7 +958,7 @@ to be included if available include:
 
    -  Survey budget and other key planning documents
 
-   -  Powerpoint presentations and other related material
+   -  PowerPoint presentations and other related material
 
 -  Computer programs (used for data entry, editing, tabulation and
    analysis)
@@ -987,9 +987,8 @@ Scan all resources with an updated virus detection application.
 ================================================
 
 After all data and documentation files are gathered and checked, import
-the data files in the Toolkit. In the Microdata Management Toolkit,
-order the files in a logical fashion (e.g. sequentially through
-sections).
+the data files in the Editor. In the Metadata Editor, order the files
+in a logical fashion (e.g., sequentially through sections).
 
 .. note::
    If you are documenting a population census and have very large
@@ -999,9 +998,9 @@ sections).
    State or Province. In such case, import all files for one State or
    Province only. You will import the other data files after you
    complete the documentation of the files. This will considerably
-   reduce the time needed to save your files. The Toolkit will allow you
-   to replicate the metadata from the documented files to all other data
-   files that you will import later.
+   reduce the time needed to save your files. The Metadata Editor will 
+   allow you to replicate the metadata from the documented files to all 
+   other data files that you will import later.
 
 After all files are imported and ordered in a proper sequence, define
 the key variables for each data file. The base key variable(s) in a data
@@ -1009,8 +1008,8 @@ file is (are) the variable(s) that provide the unique identifier of each
 record in that specific data file.
 
 Then establish the relations and validate them using the *Tool >
-Validate Relationships* in the Toolkit. This automatic validation is a
-way to check the structural integrity of the identifier variables and
+Validate Dataset Relations* in the Editor. This automatic validation is 
+a way to check the structural integrity of the identifier variables and
 assure there are no duplicates in the data.
 
 +--------------------------------------------------------------------+
@@ -1039,52 +1038,42 @@ assure there are no duplicates in the data.
 +--------------------------------------------------------------------+
 |                   .. image:: media/image5.png                      |
 +--------------------------------------------------------------------+
-|In the IHSN Toolkit, these relationships will be established as     |
+|In the Metadata Editor, these relationships will be established as  |
 |follows in the “Key variables and relationships” section of each    |
 |data file:                                                          |
 +--------------------------------------------------------------------+
-|                   .. image:: media/image6.png                      |
+|                   .. image:: media/Page21.png                      |
 +--------------------------------------------------------------------+
 
 If you have imported your data from any format other than fixed ASCII,
 re-sequence the data using the *Variables* > *Resequence* option in the
-Toolkit. This re-sequencing tool will automatically fill the “StartCol”
+Editor. This re-sequencing tool will automatically fill the “StartCol”
 and “EndCol” columns in the variable description section. This must be
 done for each data file.
 
-.. image:: media/image7.png
-
-.. image:: media/image8.png
+.. image:: media/Page22.png
 
 Before going further, quickly browse all variables in all data files to
 visually check the frequencies. This will allow you to easily spot some
 outliers or invalid codes, which will require recoding (which can be
-done in the Toolkit or in the source data files which will then have to
+done in the Editor or in the source data files which will then have to
 be re-imported).
 
-.. image:: media/Image9_1.PNG
+.. image:: media/Page22_2.png
 
-Last, view the content of each data files in the “Data Entry” page. All
-data should be displayed in black fonts. Data displayed in bold red
-indicate out of range values. Data in bold blue fonts indicate that
-value labels are missing for that variable.
-
-.. image:: media/image10.png
-
-Save the file. The Toolkit saves all data files and the information you
-already added (on key relationships, etc) in one single file (Nesstar
-format). We recommend you save this file in the survey root directory,
-using the survey abbreviation, year and version number as file name
-(e.g., HIES2007_v11). Note that it is good practice to avoid using
+Save the project. The Editor saves the full project, the associated data
+and documentation in one zip file. We recommend you save the project using
+the survey abbreviation, year and version number as project name
+(e.g., UGA_2018_HIES_v01_M). Note that it is good practice to avoid using
 spaces in a file name (use underscore characters instead).
 
 4. Importing external resources
 ===============================
 
 +----------------------------+-----------------------+------------------+
-|Before importing your external resources, create folders in the Toolkit|
+|Before importing your external resources, create folders in the Editor |
 |as necessary (these are directories in the External Resources section  |
-|in the Toolkit, not new directories on your hard drive). If you have   |
+|in the Editor, not new directories on your hard drive). If you have    |
 |very few external resources, all resources can be listed in the root   |
 |directory. If you have many, organize them by type of resources (in the|
 |example below, we have created separate directories for the            |
@@ -1104,31 +1093,28 @@ spaces in a file name (use underscore characters instead).
 |                            | the external resource. The resource      |
 |                            |                                          |
 |                            | consists of the filename, and a relative |
-|                            | path (relative to the directory where    |
+|                            | path. The reason for entering a relative |
 |                            |                                          |
-|                            | your study Nesstar file is saved). The   |
-|                            | reason for entering a relative path is   |
+|                            | path is that it will allow you to move   |
+|                            | the whole study directory and its        |
 |                            |                                          |
-|                            | that it will allow you to move the whole |
-|                            | study directory and its subdirectories to|
+|                            | subdirectories to another location or    |
+|                            | another drive, without having to re-enter|
 |                            |                                          |
-|                            | another location or another drive,       |
-|                            | without having to re-enter the location  |
-|                            |                                          |
-|                            | of the files.                            |
+|                            | the location of the files.               |
 +----------------------------+-----------------------+------------------+
 |Example:                                                               |
 |                                                                       |
-|Let’s assume your study is a household budget survey conducted in 2007.|
+|Let’s assume your study is a Household Budget Survey conducted in 2018.| 
 |If you followed the recommendations made in the introductory chapter   |
 |“Before you start – Organizing your files”, you will have created a    |
-|directory like C:\HIES2007. Your nesstar file will be saved as         |
-|HIES2007.Nesstar in this directory. Suppose also that a document titled|
-|Report2007.pdf is saved in a directory C:\HIES2007\DOCS. When you fill |
-|the resource field in the External Resources page, do NOT enter        |
-|“C:\HIES2007\DOCS\Report2007.pdf. Enter the file name as follows:      |
+|directory like C:\ UGA_2018_HIES. Suppose also that a document titled  |
+|Report2018.pdf is saved in a directory C:\ UGA_2018_HIES\Doc. When you |
+|fill the resource field in the External Resources page, do NOT enter   |
+|“C:\ UGA_2018_HIES\Doc\Report2018.pdf.pdf. Enter the file name as      |
+|follows: Doc\Reports\Report2018.pdf                                    |
 |                                                                       |
-|.. image:: media/image12.png                                           |
+|.. image:: media/Page22_3.png                                          |
 +----------------------------+-----------------------+------------------+
 
 Some resources might be composed of more than one file (for example, the
@@ -1142,12 +1128,35 @@ separate resources, or zip the files into one single file. In such case,
 list the different formats available in the “Content/ Description”
 field.
 
++--------------------------------------------------------------------+
+|*Best Practices – Naming Convention for External Resources*         |
+|                                                                    |
+|- Use file names short, but self-explanatory about the content of   |
+|  the document.                                                     |
+|- Preferably, use lower cases.                                      |
+|- Avoid spaces to delimit words.                                    |
+|- Be consistent with your method of naming across all files. For    |
+|  instance, if you use underscores to delimit words, keep it that   |
+|  way in all files.                                                 |
+|- Use only alphanumeric characters, underscores or dashes. Avoid    |
+|  using special characters (!@#$%^&*()~) or any accented characters.|
+|- If you intend to have an archive useable and downloadable across  |
+|  multiple countries, use English names for your files.             |
++--------------------------------------------------------------------+
+
 5. Completing metadata
 ======================
 
-The IHSN Toolkit (version 1.n) makes use of the Data Documentation
-Initiative (DDI Version 2) and the Dublin Core (DCMI version X) metadata
-standards.
+The Metadata Editor makes use of the Data Documentation Initiative
+(DDI Version 2.5), the Dublin Core (DCMI version X) metadata standards
+and ISO 19139 for geospatial information. 
+
+The table below provides an overview of the different metadata standards
+as related to the project. Each metadata standard is integrated into the
+template that will define the project.
+
+
+.. image:: media/Page23.png
 
 A thorough completion of the DDI and DCMI elements will significantly
 raise the value of the archiving work by providing users with the
@@ -1155,9 +1164,9 @@ necessary information to put the study into its proper context and to
 understand its purpose.
 
 The DDI requires completion of the following sections: Document
-Description, Study Description, Data Files Description, Variables
-Description, and External Resources Description. Recommendations for
-each field included in the IHSN template are provided below.
+Description, Study Description, Datasets, Variables Groups, and
+External Resources. Recommendations for each field included in the
+IHSN template are provided below. 
 
 +--------------------------------------------------------------------+
 | The IHSN recommends using the standardized IHSN DDI/DCMI templates |
@@ -1173,7 +1182,7 @@ each field included in the IHSN template are provided below.
    involved in some of the technical aspects of the survey.
 
 -  As a general rule, avoid using ALL CAPS when you fill DDI fields.
-   Also, check the spelling of all entries. The Toolkit does not provide
+   Also, check the spelling of all entries. The Editor does not provide
    (yet) an automatic spell checker.
 
 -  Some of the examples below present an optimal documentation of some
@@ -1190,39 +1199,9 @@ each field included in the IHSN template are provided below.
 Documenting a study using the DDI and DCMI metadata standards consists
 of generating a metadata file which will be saved in XML format in what
 is called an *XML Document*. The *Document Description* described below
-is a description of that XML file. The IHSN Template selected 5 elements
+is a description of that XML file. The IHSN Template selected 4 elements
 to describe the DDI document.
 
-+-----------------------------------+-----------------------------------+
-| Study Title                       |The title is the official name of  |
-|                                   |the survey as it is stated on the  |
-|                                   |questionnaire or as it appears in  |
-|                                   |the design documents. The          |
-|                                   |following items should be noted:   |
-|                                   |                                   |
-|                                   |-  Include the reference year(s)   |
-|                                   |   of the survey in the title.     |
-|                                   |                                   |
-|                                   |-  Do not include the              |
-|                                   |   abbreviation of the survey      |
-|                                   |   name in the title.              |
-|                                   |                                   |
-|                                   |-  As the survey title is a        |
-|                                   |   proper noun, the first letter   |
-|                                   |   of each word should be          |
-|                                   |   capitalized (except for         |
-|                                   |   prepositions or other           |
-|                                   |   conjunctions).                  |
-|                                   |                                   |
-|                                   |-  Including the country name in   |
-|                                   |   the title is optional.          |
-|                                   |                                   |
-|                                   |Example:                           |
-|                                   |  -  *National Household Budget    |
-|                                   |     Survey 2002-2003*             |
-|                                   |                                   |
-|                                   |  -  *Popstan Multiple Indicator   |
-|                                   |     Cluster Survey 2002*          |
 +-----------------------------------+-----------------------------------+
 | Metadata Producer                 |Name of the person(s) or           |
 |                                   |organization(s) who documented     |
@@ -1274,9 +1253,9 @@ to describe the DDI document.
 |                                   |one(s) if relevant.                |
 |                                   |                                   |
 |                                   |Example:                           |
-|                                   |  *Version 1.1 (July 2006). This   |
+|                                   |  *Version 02 (July 2017). This    |
 |                                   |  version is identical to version  |
-|                                   |  1.0, except for the section on   |
+|                                   |  01, except for the section on    |
 |                                   |  Data Appraisal which was         |
 |                                   |  updated.*                        |
 +-----------------------------------+-----------------------------------+
