@@ -1900,7 +1900,7 @@ and methods, scope and coverage, etc.)
 |                                   |Do not include here the financial  |
 |                                   |sponsors.                          |
 +-----------------------------------+-----------------------------------+
-| Funding                           |List the organizations (national   |
+| Funding Agency/Sponsor            |List the organizations (national   |
 |                                   |or international) that have        |
 |                                   |contributed, in cash or in kind,   |
 |                                   |to the financing of the survey.    |
@@ -1908,8 +1908,8 @@ and methods, scope and coverage, etc.)
 |                                   |has provided funding should not    |
 |                                   |be forgotten.                      |
 +-----------------------------------+-----------------------------------+
-| Other acknowledgements            |This optional field can be used    |
-|                                   |to acknowledge any other people    |
+| Other Identifications/            |This optional field can be used    |
+| acknowledgements                  |to acknowledge any other people    |
 |                                   |and institutions that have in      |
 |                                   |some form contributed to the       |
 |                                   |survey.                            |
@@ -1992,6 +1992,58 @@ and methods, scope and coverage, etc.)
 |                                   |  interview of 92.5% and for the   |
 |                                   |  children's interview of 94.1%.*  |
 +-----------------------------------+-----------------------------------+
+| Sample Frame Name                 |Sample frame describes the sampling|
+|                                   |frame used for identifying the     |
+|                                   |population from which the sample   |
+|                                   |was taken. Label and text          |
+|                                   |describing the sample frame        |
++-----------------------------------+-----------------------------------+
+| Update of listing                 |Describes operations conducted to  |
+|                                   |update the sample frame            |
++-----------------------------------+-----------------------------------+
+| Valid Period                      |Defines a time period for the      |
+|                                   |validity of the sampling frame.    |
+|                                   |Enter dates in YYYY-MM-DD format.  |
++-----------------------------------+-----------------------------------+
+|Custodian                          |Custodian identifies the agency or |
+|                                   |individual who is responsible for  |
+|                                   |creating or maintaining the sample |
+|                                   |frame. Attribute affiliation       |
+|                                   |provides the affiliation of the    |
+|                                   |custodian with an agency or        |
+|                                   |organization. Attribute abbr.      |
+|                                   |provides an abbreviation for the   |
+|                                   |custodian.                         |
++-----------------------------------+-----------------------------------+
+|Use Statement                      |Sample frame use statement         |
++-----------------------------------+-----------------------------------+
+|Frame Unit                         |Provides information about the     |
+|                                   |sampling frame unit. The attribute |
+|                                   |"is Primary" is boolean, indicating|
+|                                   |whether the unit is primary or not.|
++-----------------------------------+-----------------------------------+
+|Reference Period                   |Indicates the period of time in    |
+|                                   |which the sampling frame was       |
+|                                   |actually used for the study in     |
+|                                   |question. Use ISO 8601 date/time   |
+|                                   |formats to enter the relevant      |
+|                                   |date(s).                           |
++-----------------------------------+-----------------------------------+
+|Sample Size                        |This element provides the targeted |
+|                                   |sample size in integer format.     |
+|                                   |                                   |
+|                                   |Attributes: Planned / Actual and   |
+|                                   |Unit and Number.                   |
++-----------------------------------+-----------------------------------+
+|Sample Size Formula                |This element includes the formula  |
+|                                   |that was used to determine the     |
+|                                   |sample size                        |
++-----------------------------------+-----------------------------------+
+|Stratification                     |Describe the Stratification        |
+|                                   |(implicit and explicit) and the    |
+|                                   |Variables identifying strata and   |
+|                                   |PSU                                |
++-----------------------------------+-----------------------------------+
 | Deviation from sample design      |This field only applies to sample  |
 |                                   |surveys.                           |
 |                                   |                                   |
@@ -2005,7 +2057,7 @@ and methods, scope and coverage, etc.)
 |                                   |has deviated, this should be       |
 |                                   |reported here.                     |
 +-----------------------------------+-----------------------------------+
-| Response rates                    |Response rate provides that        |
+| Response rate                     |Response rate provides that        |
 |                                   |percentage of households (or       |
 |                                   |other sample unit) that            |
 |                                   |participated in the survey based   |
@@ -2112,12 +2164,40 @@ and methods, scope and coverage, etc.)
 |                                   |and identify each wave in the      |
 |                                   |“cycle” field.                     |
 +-----------------------------------+-----------------------------------+
+|Collector Training                 |Describes the training provided to |
+|                                   |data collectors including          |
+|                                   |interviewer training, process      |
+|                                   |testing, compliance with standards |
+|                                   |etc. This is repeatable for        |
+|                                   |language and to capture different  |
+|                                   |aspects of the training process.   |
+|                                   |The type attribute allows          |
+|                                   |specification of the type of       |
+|                                   |training being described           |
++-----------------------------------+-----------------------------------+
+|Frequency of Data Collection       |For data collected at more than one|
+|                                   |point in time, the frequency with  |
+|                                   |which the data were collected. The |
+|                                   |"freq" attribute is included to    |
+|                                   |permit the development of a        |
+|                                   |controlled vocabulary for this     |
+|                                   |element.                           |
++-----------------------------------+-----------------------------------+
 | Time period                       |This field will usually be left    |
 |                                   |empty. Time period differs from    |
 |                                   |the dates of collection as they    |
 |                                   |represent the period for which     |
 |                                   |the data collected are applicable  |
 |                                   |or relevant.                       |
++-----------------------------------+-----------------------------------+
+|Data Sources                       |Used to list the book(s),          |
+|                                   |article(s), serial(s), and/or      |
+|                                   |machine-readable data file(s)--if  |
+|                                   |any--that served as the source(s)  |
+|                                   |of the data collection             |
++-----------------------------------+-----------------------------------+
+|Alternatives to data collection    |Sources of data available /        |
+|                                   |potentially considered             |
 +-----------------------------------+-----------------------------------+
 | Mode of data collection           |The mode of data collection is     |
 |                                   |the manner in which the interview  |
@@ -2132,6 +2212,13 @@ and methods, scope and coverage, etc.)
 |                                   |such as for example data on rain   |
 |                                   |falls, the response will be        |
 |                                   |different.                         |
++-----------------------------------+-----------------------------------+
+|Data Capture                       |Where was data capture done (e.g., |
+|                                   |In the field or at the office) and |
+|                                   |when was data capture done. Also,  |
+|                                   |describe the technology using for  |
+|                                   |data capture (e.g. scanning, PDAs  |
+|                                   |OR Web)                            |
 +-----------------------------------+-----------------------------------+
 | Notes on data collection          |This element is provided in order  |
 |                                   |to document any specific           |
@@ -2332,28 +2419,53 @@ and methods, scope and coverage, etc.)
 |                                   | are provided as external          |
 |                                   | resources.*                       |
 +-----------------------------------+-----------------------------------+
+|Instrument Development             |Describe any development work on   |
+|                                   |the data collection instrument.    |
+|                                   |Type attribute allows for the      |
+|                                   |optional use of a defined          |
+|                                   |development type with or without   |
+|                                   |use of a controlled vocabulary.    |
++-----------------------------------+-----------------------------------+
+|Review process for survey          |Description of the review process /|
+|instrument                         |list of agencies/people consulted  |
++-----------------------------------+-----------------------------------+
+|Pilot/testing of survey instrument |Description of pilot survey        |
+|and data collection                |                                   |
++-----------------------------------+-----------------------------------+
+|Survey management team             |Attributes: Name, Tittle, Agency,  |
+|                                   |Role                               |
++-----------------------------------+-----------------------------------+
 | Data collectors                   |This element is provided in order  |
 |                                   |to record information regarding    |
 |                                   |the persons and/or agencies that   |
 |                                   |took charge of the data            |
 |                                   |collection. This element includes  |
-|                                   |3 fields: Name, Abbreviation and   |
-|                                   |the Affiliation. In most cases,    |
-|                                   |we will record here the name of    |
-|                                   |the agency, not the name of        |
+|                                   |3 fields: Name, Abbreviation,      |
+|                                   |the Affiliation and the Role. In   |
+|                                   |most cases, we will record here the|
+|                                   |name of the agency, not the name of|
 |                                   |interviewers. Only in the case of  |
 |                                   |very small-scale surveys, with a   |
 |                                   |very limited number of             |
 |                                   |interviewers, the name of person   |
 |                                   |will be included as well. The      |
 |                                   |field Affiliation is optional and  |
-|                                   |not relevant in all cases.         |
+|                                   |not relevant in all cases. The role|
+|                                   |attribute specifies the role of    |
+|                                   |person in the data collection      |
+|                                   |process.                           |
 |                                   |                                   |
 |                                   |Example:                           |
 |                                   |  *Abbreviation: CSO*              |
 |                                   |                                   |
 |                                   |  *Affiliation: Ministry of        |
 |                                   |  Planning*                        |
+|                                   |                                   |
+|                                   |  *Role: Planner*                  |
++-----------------------------------+-----------------------------------+
+|Compliance with international data |Describe if the survey comply with |
+|collection standards               |international survey               |
+|                                   |recommendations                    |
 +-----------------------------------+-----------------------------------+
 | Supervision                       |This element will provide          |
 |                                   |information on the oversight of    |
@@ -2433,7 +2545,7 @@ and methods, scope and coverage, etc.)
 +-----------------------------------+-----------------------------------+
 | **Data Processing**               |                                   |
 +-----------------------------------+-----------------------------------+
-| Data editing                      |The data editing should contain    |
+| Data entry and editing            |The data editing should contain    |
 |                                   |information on how the data was    |
 |                                   |treated or controlled for in       |
 |                                   |terms of consistency and           |
@@ -2482,6 +2594,12 @@ and methods, scope and coverage, etc.)
 |                                   |  the “Data processing guidelines” |
 |                                   |  document provided as an external |
 |                                   |  resource.*                       |
++-----------------------------------+-----------------------------------+
+|Software                           |List of software used for the key  |
+|                                   |activities (especially data entry, |
+|                                   |editing, tabulation, analysis).    |
+|                                   |                                   |
+|                                   |Attributes: Purpose and Software   |
 +-----------------------------------+-----------------------------------+
 | Other processing                  |Use this field to provide as much  |
 |                                   |information as possible on the     |
@@ -2669,6 +2787,31 @@ and methods, scope and coverage, etc.)
 |                                   |both the score and quintiles were  |
 |                                   |included in the datasets for use   |
 |                                   |in tabulations.*                   |
++-----------------------------------+-----------------------------------+
+| **Coding Instructions**                                               |
++-----------------------------------+-----------------------------------+
+|Coding Instructions Text           |Describe specific coding           |
+|                                   |instructions used in data          |
+|                                   |processing, cleaning, assession,   |
+|                                   |or tabulation. Use this field to   |
+|                                   |describe instructions in a human   |
+|                                   |readable form.                     |
+|                                   |                                   |
+|                                   |Example:                           |
+|                                   | *Due to an error in the data      |
+|                                   | collection system the value of    |
+|                                   | “27” was entered for the variable |
+|                                   | NBWFBPC which should be coded as  |
+|                                   | an invalid value of “99”*         |
++-----------------------------------+-----------------------------------+
+|Command                            |Provide command code for the coding|
+|                                   |instruction. The formalLanguage    |
+|                                   |attribute identifies the language  |
+|                                   |of the command code.               |
+|                                   |                                   |
+|                                   |Example:                           |
+|                                   | *SPSS">RECODE V1 TO V100          |
+|                                   | (10 THROUGH HIGH = 0)*            |
 +-----------------------------------+-----------------------------------+
 | **Data Appraisal**                                                    |
 +-----------------------------------+-----------------------------------+
@@ -2874,7 +3017,7 @@ and methods, scope and coverage, etc.)
 |                                   |a particular individual whose      |
 |                                   |functions may change over time.    |
 +-----------------------------------+-----------------------------------+
-| Confidentiality                   |If the dataset is not anonymized,  |
+| Confidentiality Declaration       |If the dataset is not anonymized,  |
 |                                   |we may indicate here what          |
 |                                   |Affidavit of Confidentiality must  |
 |                                   |be signed before the data can be   |
@@ -3046,7 +3189,7 @@ and methods, scope and coverage, etc.)
 |                                   |    inferences based upon such     |
 |                                   |    uses.*                         |
 +-----------------------------------+-----------------------------------+
-| Citation requirements             |Citation requirement is the way    |
+| Citation requirement              |Citation requirement is the way    |
 |                                   |that the dataset should be         |
 |                                   |referenced when cited in any       |
 |                                   |publication. Every dataset should  |
