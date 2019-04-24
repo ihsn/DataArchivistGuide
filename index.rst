@@ -1832,7 +1832,7 @@ and methods, scope and coverage, etc.)
 |                                   |used to refine a coordinate-based  |
 |                                   |search, not to actually map an area| 
 +-----------------------------------+-----------------------------------+
-| **Producers and Sponsors**                                            |
+| **Producers and Sponsors.**                                           |
 +-----------------------------------+-----------------------------------+
 | Authoring Entity/Primary          |The primary investigator will in   |
 | investigators                     |most cases be an institution, but  |
