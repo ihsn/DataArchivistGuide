@@ -3217,10 +3217,52 @@ and methods, scope and coverage, etc.)
 |                                   |  *"National Statistics Office of  |
 |                                   |  Popstan, Multiple Indicators     |
 |                                   |  Cluster Survey 2000 (MICS 2000), |
-|                                   |  Version 1.1 of the public use    |
+|                                   |  Version 01 of the public use     |
 |                                   |  dataset (April 2001), provided by|
 |                                   |  the National Data Archive.       |
 |                                   |  www.nda_popstan.org"*            |
++-----------------------------------+-----------------------------------+
+|Location of Data Collection        |Location where the data collection |
+|                                   |is currently stored. Use the URI   |
+|                                   |attribute to provide a URN or URL  |
+|                                   |for the storage site or the actual |
+|                                   |address from which the data may be |
+|                                   |downloaded.                        |
++-----------------------------------+-----------------------------------+
+|URL for Location of Data Collection|Location where the data collection |
+|                                   |is currently stored. Provide a URN |
+|                                   |or URL for the storage site or the |
+|                                   |actual address from which the data |
+|                                   |may be downloaded.                 |
++-----------------------------------+-----------------------------------+
+|Archive Where Study Originally     |Statement of collection            |
+|Stored                             |availability. An archive may need  |
+|                                   |to indicate that a collection is   |
+|                                   |unavailable because it is embargoed|
+|                                   |for a period of time, because it   |
+|                                   |has been superseded, because a new |
+|                                   |edition is imminent, etc. It is    |
+|                                   |anticipated that a controlled      |
+|                                   |vocabulary will be developed for   |
+|                                   |this element.                      |
++-----------------------------------+-----------------------------------+
+|Availability Status                |Statement of collection            |
+|                                   |availability. An archive may need  |
+|                                   |to indicate that a collection is   |
+|                                   |unavailable because it is embargoed|
+|                                   |for a period of time, because it   |
+|                                   |has been superseded, because a new |
+|                                   |edition is imminent, etc. It is    |
+|                                   |anticipated that a controlled      |
+|                                   |vocabulary will be developed for   |
+|                                   |this element.                      |
++-----------------------------------+-----------------------------------+
+|Deposit Requirement                |Information regarding user         |
+|                                   |responsibility for informing       |
+|                                   |archives of their use of data      |
+|                                   |through providing citations to the |
+|                                   |published work or providing copies |
+|                                   |of the manuscripts.                |
 +-----------------------------------+-----------------------------------+
 | **Disclaimer and Copyright**                                          |
 +-----------------------------------+-----------------------------------+
@@ -3246,7 +3288,7 @@ and methods, scope and coverage, etc.)
 |                                   |statement on the dataset, such     |
 |                                   |as:                                |
 |                                   |                                   |
-|                                   |*© 2007, Popstan Central           |
+|                                   |*© 2017, Popstan Central           |
 |                                   |Statistics Agency*                 |
 +-----------------------------------+-----------------------------------+
 | **Contacts**                                                          |
@@ -3292,7 +3334,11 @@ description of each data file. The IHSN has selected six of the
 available DDI elements.
 
 +-----------------------------------+-----------------------------------+
-| Contents                          |A data filename usually provides   |
+|File Citation                      |Provides for a full bibliographic  |
+|                                   |citation option for each data file |
+|                                   |described in File Description.     |
++-----------------------------------+-----------------------------------+
+| Contents of Files                 |A data filename usually provides   |
 |                                   |little information on its          |
 |                                   |content. Provide here a            |
 |                                   |description of this content. This  |
@@ -3333,7 +3379,7 @@ available DDI elements.
 |                                   |    “cons_aggregate.do” available  |
 |                                   |    in the external resources.*    |
 +-----------------------------------+-----------------------------------+
-| Producer                          |Put the name of the agency that    |
+| File Producer                     |Put the name of the agency that    |
 |                                   |produced the data file. Most data  |
 |                                   |files will have been produced by   |
 |                                   |the survey primary investigator.   |
@@ -3383,15 +3429,7 @@ available DDI elements.
 |                                   |Editing” filed in the Study        |
 |                                   |Description section).              |
 +-----------------------------------+-----------------------------------+
-| Missing data                      |Missing data can be given certain  |
-|                                   |coding. A common convention is to  |
-|                                   |iterate the number “9” to fill a   |
-|                                   |field. This value needs to be      |
-|                                   |defined as missing in the data     |
-|                                   |set and can be explained in        |
-|                                   |detail in this element.            |
-+-----------------------------------+-----------------------------------+
-| Notes                             |This field, aiming to provide      |
+| Files Notes                       |This field, aiming to provide      |
 |                                   |information to the user on items   |
 |                                   |not covered elsewhere, will in     |
 |                                   |most cases be left empty.          |
@@ -3404,7 +3442,9 @@ The Variable Description is the section of the DDI document that
 provides detailed information on each variable.
 
 +-----------------------------------+-----------------------------------+
-| Variable Names                    |These are the names given to the   |
+| **VARIABLES**                                                         |
++-----------------------------------+-----------------------------------+
+| Names                             |These are the names given to the   |
 |                                   |variables. Ideally, the variable   |
 |                                   |names should be a maximum of 8     |
 |                                   |characters, and use a logical      |
@@ -3414,11 +3454,11 @@ provides detailed information on each variable.
 |                                   |variable names do not follow       |
 |                                   |these principles, DO NOT CHANGE    |
 |                                   |THE VARIABLE NAMES IN THE          |
-|                                   |TOOLKIT, but make recommendations  |
+|                                   |EDITOR, but make recommendations   |
 |                                   |to the data processor for          |
 |                                   |consideration for future surveys.  |
 +-----------------------------------+-----------------------------------+
-| Variable Labels                   |All variables should have a label  |
+| Labels                            |All variables should have a label  |
 |                                   |that                               |
 |                                   |                                   |
 |                                   |-  Provides the item or question   |
@@ -3441,11 +3481,7 @@ provides detailed information on each variable.
 |                                   |-  Make sure that different        |
 |                                   |   variables have different        |
 |                                   |   labels (avoid duplicate         |
-|                                   |   labels). The IHSN Toolkit       |
-|                                   |   provides a tool to check        |
-|                                   |   availability and unicity of     |
-|                                   |   variable labels (see Tools >    |
-|                                   |   Validate Variable).             |
+|                                   |   labels).                        |
 |                                   |                                   |
 |                                   |-  For expenditure or income:      |
 |                                   |   indicating the currency and     |
@@ -3461,37 +3497,11 @@ provides detailed information on each variable.
 |                                   |in order to allow users to export  |
 |                                   |the data to ASCII fixed format.    |
 |                                   |To do so, use the “Variables >     |
-|                                   |Resequence” command in the         |
-|                                   |Toolkit, for each data file.       |
-+-----------------------------------+-----------------------------------+
-| Categories                        |Variable categories are the lists  |
-|                                   |of codes (and their meaning) that  |
-|                                   |apply to the variable. The         |
-|                                   |Toolkit imports categories and     |
-|                                   |their labels from the source data  |
-|                                   |files (SPSS, Stata).               |
-|                                   |                                   |
-|                                   |If necessary, add/edit the codes.  |
-|                                   |Use the Documentation > Create     |
-|                                   |categories from statistics if the  |
-|                                   |source dataset did not include     |
-|                                   |value labels (e,g., when imported  |
-|                                   |from ASCII). Make sure the         |
-|                                   |categories are not hierarchical,   |
-|                                   |and do not include codes for       |
-|                                   |“Missing”. The codes for Missing   |
-|                                   |must be specified in the “Missing  |
-|                                   |data” field. If you fail to do     |
-|                                   |that, the summary statistics       |
-|                                   |(mean, standard deviation, etc)    |
-|                                   |will be calculated including the   |
-|                                   |missing code, which will be        |
-|                                   |considered as a valid value.       |
-|                                   |                                   |
-|                                   |.. image:: media/image13.png       |
+|                                   |Resequence” function in the        |
+|                                   |Editor, for each data file.        |
 +-----------------------------------+-----------------------------------+
 | Data type                         |Four types of variables are        |
-|                                   |recognized by the Toolkit:         |
+|                                   |recognized by the Editot:          |
 |                                   |                                   |
 |                                   |-  *Numeric: Numeric variables     |
 |                                   |   are used to store any number,   |
@@ -3523,16 +3533,16 @@ provides detailed information on each variable.
 |                                   |when this is not absolutely        |
 |                                   |needed. Such issues must be taken  |
 |                                   |care of before the data is         |
-|                                   |imported in the Toolkit. See the   |
+|                                   |imported in the Editor. See the    |
 |                                   |section on “\ `1. Gathering and    |
 |                                   |preparing the                      |
 |                                   |dataset <#gathering-and-preparing  |
 |                                   |-the-data-set>`__\ ”               |
 |                                   |above.                             |
 +-----------------------------------+-----------------------------------+
-| Measure                           |The Microdata Management Toolkit   |
-|                                   |will allow you to define the       |
-|                                   |measure of a variable as:          |
+| Measure                           |The Metadata Editor will allow you |
+|                                   |to define the measure of a variable|
+|                                   |as:                                |
 |                                   |                                   |
 |                                   |-  *Nominal*: variable with        |
 |                                   |   numeric assignations for        |
@@ -3578,17 +3588,37 @@ provides detailed information on each variable.
 |                                   |   of the person, the amount of    |
 |                                   |   income or expenditure, etc.     |
 +-----------------------------------+-----------------------------------+
+| **CATEGORIES**                                                        |
++-----------------------------------+-----------------------------------+
+| Categories                        |Variable categories are the lists  |
+|                                   |of codes (and their meaning) that  |
+|                                   |apply to the variable. The         |
+|                                   |Editor imports categories and      |
+|                                   |their labels from the source data  |
+|                                   |files (SPSS, Stata).               |
+|                                   |                                   |
+|                                   |If necessary, add/edit the codes.  |
+|                                   |Use the Documentation > Create     |
+|                                   |categories from statistics if the  |
+|                                   |source dataset did not include     |
+|                                   |value labels (e,g., when imported  |
+|                                   |from ASCII). Do not include codes  |
+|                                   |for “Missing”. The codes for       |
+|                                   |Missing must be specified in the   |
+|                                   |“Missing data” field. If you fail  |
+|                                   |to do that, the summary statistics |
+|                                   |(mean, standard deviation, etc)    |
+|                                   |will be calculated including the   |
+|                                   |missing code, which will be        |
+|                                   |considered as a valid value.       |
+|                                   |                                   |
+|                                   |.. image:: media/Page42.png        |
++-----------------------------------+-----------------------------------+
+| **VARIABLE INFORMATION**                                              |
++-----------------------------------+-----------------------------------+
 | Time variable                     |This is a check-box used to tag    |
 |                                   |and identify variables used to     |
 |                                   |define time.                       |
-+-----------------------------------+-----------------------------------+
-| Weight variable                   |This is a check box that is used   |
-|                                   |to tag the weight variable. It is  |
-|                                   |a good practice to include the     |
-|                                   |weight variable with each data     |
-|                                   |file that is being archived. If    |
-|                                   |it is included, the check box      |
-|                                   |should be ticked.                  |
 +-----------------------------------+-----------------------------------+
 | Min                               |Allows modifying the minimum       |
 |                                   |value of a variable. For each      |
@@ -3629,6 +3659,8 @@ provides detailed information on each variable.
 |                                   |Missing values should be           |
 |                                   |differentiated from “not           |
 |                                   |applicable” and zero (0) values.   |
++-----------------------------------+-----------------------------------+
+| **STATISTICS**                                                        |
 +-----------------------------------+-----------------------------------+
 | Statistics Options                |Various options exist for          |
 |                                   |displaying and presenting summary  |
@@ -3698,7 +3730,7 @@ provides detailed information on each variable.
 |                                   |   99999 must be listed in the     |
 |                                   |   missing section as follows:     |
 |                                   |                                   |
-|                                   |.. image:: media/image14.png       |
+|                                   |.. image:: media/Page45.png        |
 |                                   |                                   |
 |                                   |-  If you modify information such  |
 |                                   |   as the categories or missing    |
@@ -3708,10 +3740,7 @@ provides detailed information on each variable.
 |                                   |   Toolkit to refresh the summary  |
 |                                   |   statistics.                     |
 +-----------------------------------+-----------------------------------+
-| Weights                           |The appropriate weight should be   |
-|                                   |attached to the file and selected  |
-|                                   |in this element. The weight        |
-|                                   |should be well labelled.           |
+| **DOCUMENTATION**                                                     |
 +-----------------------------------+-----------------------------------+
 | Definition                        |This element provides a space to   |
 |                                   |describe the variable in detail.   |
