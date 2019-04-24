@@ -50,29 +50,7 @@ Content
 `8. Generating the survey documentation in PDF
 31 <#generating-the-survey-documentation-in-pdf>`__
 
-`9. Producing the final output 31 <#producing-the-final-output>`__
-
-`10. Independent quality review 32 <#independent-quality-review>`__
-
-Acknowledgments
-===============
-
-Francois Fonteneau (PARIS21), Chris Rockmore (World Bank) and Jan Smit
-(ESCAP) provided valuable input.
-
-Trevor Croft (UNICEF) provided many of the examples of good practices
-for completing survey metadata.
-
-Many thanks also to all our colleagues and friends from statistical
-agencies in Africa who provided feedback on the Toolkit.
-
-+--------------------------------------------------------------------+
-| This document (or an updated version of it) is available at        |
-| www.surveynetwork.org.                                             |
-|                                                                    |
-| Comments and suggestions are always appreciated and can be sent to |
-| odupriez@worldbank.org or toolkit@surveynetwork.org                |
-+--------------------------------------------------------------------+
+`9. Independent quality review 32 <#independent-quality-review>`__
 
 Introduction
 -------------
@@ -80,9 +58,25 @@ Introduction
 This *Quick Reference Guide for Data Archivists* provides data
 archivists with guidelines to document a micro-dataset in compliance
 with the Data Documentation Initiative (DDI) and the Dublin Core (DCMI)
-metadata standards, using the Microdata Management Toolkit provided by
-the International Household Survey Network (IHSN) [1]_. It summarizes
-the process in 10 chronological steps:
+metadata standards, using the World Bank Metadata Editor.
+
+The World Bank Metadata Editor is an application designed to help document
+data collection operations undertaken for different kinds of research
+projects. The application is developed as an open-source tool by the World
+Bank. A number of Metadata standards recognized as global models for
+defining and describing different types of data have been integrated into
+the Metadata Editor, these are: The Data Documentation Initiative
+(DDI Codebook), The Dublin Core Metadata Initiative (DCMI) and the ISO
+19139 for geospatial data.
+
+The Metadata Editor is modelled on the Nesstar Publisher. As such it should
+provide a familiar environment for the Nesstar users. As an added benefit,
+the Metadata Editor is flexible and can support the documentation of
+multiple-data types. Out of the box it supports the documentation of survey
+data, time Series data, geospatial data, statistical tables, images,
+analytical scripts and standalone publications or documents.
+
+This Guide summarizes the process in 10 chronological steps:
 
 1.  Gathering and preparing the data set
 
@@ -108,94 +102,255 @@ Also provided (in appendix) is the *IHSN DDI Reviewers’ Feedback Form*
 which provides a standard tool for the assessment of survey metadata by
 an external reviewer.
 
-This Guide is not an IHSN Toolkit reference or training manual. It is
-assumed that users are already familiar with the Toolkit. A *Toolkit*
-*User’s Guide* is available at www.surveynetwork.org/guidelines.
+This Guide is not a Metadata Editor reference or training manual. It is
+assumed that users are already familiar with the Editor. A *Metadata*
+*Editor User’s Guide* is available at 
+https://metadata-editor.readthedocs.io/en/latest/.
 
 Before you start: organizing your files
 ---------------------------------------
 
-Documentation of a dataset will be considerably facilitated if you
+Documentation of a dataset will be most efficient if you
 organize your data and other files properly. We recommend that, before
 anything else, you create the necessary directories as follows:
 
 +------------+--------------+------------------------------------------+
-|.. image:: media/image2.png|- Create a directory for the survey.      |
+|.. image:: media/Page2.png |- Create a directory for the survey.      |
 |                           |  We suggest you name it using the        |
 |                           |                                          |
-|                           |  survey’s “HIES2007” for “Household      |
-|                           |  Income and Expenditure Survey 2007”     |
+|                           |  country, survey’s year and the          |
+|                           |  abbreviated name, e.g. “UGA_2018_HIES”  |
+|                           |                                          |
+|                           |  for “Household Income and Expenditure   | 
+|                           |  Survey” of Uganda collected in 2018.    |
 +                           +------------------------------------------+
 |                           |- Create various sub-directories for the. |
 |                           |  data files (and for the various versions|
-|                           |                                          |
 |                           |  of the dataset if relevant)             |
 |                           +------------------------------------------+
 |                           |- Create sub-directories for the          |
 |                           |  documentation and for the program files |
-|                           |                                          |
 |                           |  if relevant (see example).              |
 +------------+--------------+------------------------------------------+
 
 1. Gathering and preparing the data set
 =======================================
 
-Gathering and preparing data requires great care. Various versions of
-the data may have been produced. Before starting to document a dataset,
-it is important to ensure that you have the most appropriate version of
-all data files. If you are preparing a dataset for public release, you
-need the most final, edited, and anonymized version of the data. If you
-are documenting a dataset for archiving and internal use only, you may
-want to include the raw data (before editing), as well as the final,
-fully edited non-anonymized files. The Toolkit provides you with a
-possibility to document the specificity of each version of a dataset.
+Gathering and preparing data is a process that requires great care. 
+Prior to documenting a dataset, it is important to ensure that you are
+working with the most appropriate version of all the concerned data
+files. If the dataset is meant for public release, one should work with
+the final, edited, anonymous version of the dataset. If the dataset is
+being documented for archiving and internal use only, one may include
+the raw data as well as the final, fully edited files. The Metadata
+Editor provides you with the possibility of documenting the specificity
+of each version of the dataset.
 
-Much of the quality of the output generated by the Toolkit will depend
-upon the preparatory work. Although some changes in the data can be made
-in the Toolkit, it is highly recommended that the necessary checks and
-changes be made in advance using a statistical package. The following
-are recommended:
+Much of the quality of the output generated by the Editor will depend
+upon the prior preparatory work. Although the Editor can make some
+changes to the data, it is highly recommended that the necessary checks
+and changes be made in advance using a statistical package and a script.
+This ensures accurate and replicable results. 
 
--  Preferably, organize your files in a hierarchical format (not in a
-   flat format). Hierarchical files are easier to analyze (as they
-   contain less variables to store the same information), and are more
-   efficient in terms of data storage (smaller files).
+This section describes the various checks and balances involved in the
+data preparation process, such as: making a diagnostic on the structure
+of your data, cleaning it and identifying the various variables at the
+outset. Listed below are some common data problems that users encounter:
 
-*Flat file:*
+-  Absence of variables that uniquely identify each record of the dataset
+-  Duplicate observations
+-  Errors from merging multiple datasets
+-  Encountering incomplete data when comparing the content of the data
+   files with the original survey questionnaire
+-  Unlabelled data
+-  Variables with missing values
+-  Unnecessary or temporary variables in the data files
+-  Data with sensitive information or direct identifiers
 
-.. image:: media/image3.png
+Some practical examples using a statistical package are provided in
+*Section A “Data Validations in Stata: Practical Examples*.
 
-*Hierarchical file:*
++--------------------------------------------------------------------+
+| *Note*                                                             |
+|                                                                    |
+| If you are working in a data archive, be careful not to overwrite  |
+| your original variables. Since managing databases involves several |
+| data-checking procedures, archive a new version in addition to the |
+| original. Work on this new version, leaving the original data files|
+| untouched.                                                         |
++--------------------------------------------------------------------+
 
-.. image:: media/image4.png
+The following procedures are recommended for preparing your dataset(s):
 
--  If a dataset contains multiple related files, each record in each
-   file must have a unique identifier. This identifier may be made of
-   one or multiple variables. These identifiers are also called “key
-   variables”, as they are used by statistical packages such as SPSS or
-   Stata when data files need to be merged. [2]_ Identifiers must be
-   composed of numeric variables only (some software applications,
-   including the IHSN Toolkit, require that identifiers be numeric. The
-   reason is that sorting and filtering records is much more efficient
-   when variables are numeric).
+1.2. Data files should be organized in a hierarchical format
+------------------------------------------------------------
 
-   For the convenience of users of the data, avoid identifiers made of
-   too many variables. For example, in a household survey, the household
-   identifier will preferably be a single variable (which you may create
-   by concatenating a group of variables [3]_), and the individual
-   identifier should be the combination of only two variables (the
-   household ID, and the sequential number of each member).
+Look at your data and visualize it to understand its structure.
+It is preferable to organize your files in a hierarchical format
+instead of a flat format. In a hierarchical format, columns
+contain specific information about all possible units of analysis
+and rows form the individual observations (households,
+establishments, products, communities/countries, or any
+combination of those). Hierarchical files are easier to analyse,
+as they contain fewer columns that store the same information and
+are more compact. A flat format contains multiple columns with
+information on only one specific unit of analysis, so the
+information becomes redundant. For example, the information
+provided in one column is about the household head, and the row
+provides information on the child in the household.
 
-   If you prepare your data files for public dissemination, it may be
-   preferable to generate a unique household identification that would
-   **not** be a compilation of geographic codes (because geographic codes
-   are highly identifying). In such case, it is recommended to generate
-   an ID based on a sequential number.
+**Table 1. Flat Format**
 
-   Example: Suppose the unique identification of a household is the
-   combination of variables PROV (Province), DIST (District), EA
-   (Enumeration Area), HHNUM (Household Number). The following options
-   are possible:
+.. image:: media/Page4_1.png
+
+**Table 2. Hierarchical Format**
+
+.. image:: media/Page4_2.png
+
+*Tables 1 and 2* illustrate the two data structures. They
+contain the same information about six people on age and their
+relationship with the head of the household. The flat dataset
+(Table 1) stores the information on each family member in a new
+column. Note that for every additional member or characteristic,
+the dataset gets flatter and wider. The hierarchical dataset
+(see Table 2) has one observation and one row per person.
+Each variable contains a value that measures the same attribute
+across people and each record contains all values measured on the
+same person across variables. For every additional member
+characteristic, the dataset maintains the same number of columns,
+gains additional rows and gets longer and less flat compared to
+*Table 1*. The first two columns of this dataset have a
+hierarchical structure, where the ID member column is nested
+inside the ID household column. 
+
+Hierarchical files are easier to manage. Suppose in this example
+that there were many characteristics measured for everyone, the
+hierarchical structure would be a more convenient format because
+for each new characteristic, the dataset creates only one
+additional column, whereas, in the flat structure, it would
+create as many columns as there are people in the data with such
+characteristics.
+
+1.2. Datasets with multiple units of analysis should be stored in different data files 
+--------------------------------------------------------------------------------------
+It is recommended that you store your data in different files
+when you have multiple observational units. For example, *Table 3*
+shows a dataset that has both household-level data (columns on
+the type of dwelling and walls material) and individual-level
+data (columns on the marital status, work status, and worker
+category). Note that storing both levels of information in one
+dataset will result in a repetition of household characteristics
+for each household member. In Table 3, the information about the
+columns ‘type of dwelling’ and ‘wall material’ is repeated for
+everyone. Sometimes, this duplication is inefficient, and it is
+easier to have the dataset broken down by observational unit, into
+multiple files. In this example, it would be simpler to create two
+files:  one for the household characteristics and another for the
+individual characteristics. The two files can be connected through
+a unique identifier, which in this case will be the household ID and
+member ID. We discuss the need for this unique identifier further on
+in this text as well. 
+
+**Table 3. Single data set with more than one observational unit**
+
+.. image:: media/Page5.png
+
+1.3. Columns in a dataset should represent variables, not values
+----------------------------------------------------------------
+
+It is recommended that columns represent variables (e.g., sex, age,
+marital status) and rows represent observations (e.g., individuals,
+households, firms, products and so forth). In some datasets, columns
+instead of describing variables or attributes, describe values, which
+means that one variable is broken into segments and each one is
+stored in different columns. While this dataset structure can be
+useful for some analysis, the standard data structure where columns
+are variables and not values is the norm. 
+
+For example, *Table 4* (options 1 and 2) gives information at the
+individual-level on marital status, relationship with the head of
+the household and age. The difference between both tables is how the
+variable ‘age’ is reported. Option 1 had broken the variable ‘age’
+into segments. This practice makes your data: i) messier, it has
+values of the variable as headings, and ii) inefficient, it increases
+the size of the dataset. Option 2 is recommended since there is only
+one heading and store of the information occupies less space, allowing
+the user to identify the structure of the data in a clear manner.
+
+**Table 4. Data Structures: Hypothetical datasets**
+
+.. image:: media/Page6_1.png
+
+1.4. Each observation in every file must have a unique identifier
+-----------------------------------------------------------------
+
+Before you check for uniqueness of the identifiers in your files, you
+need to figure out the unit of analysis. Even if you are not the data
+producer, it is often easy to identify it. You can always review the
+documentation to see if the information has been provided. Below, some
+examples of units of analysis:
+
+**Table 5. Unit of Analysis by Study type**
+
+.. image:: media/Page6_2.png
+
+Once you recognize the unit of analysis, the next step is to identify
+the column that uniquely identifies each record. If a dataset contains
+multiple related files, each record in every file must have a unique
+identifier. The data producer can also choose multiple variables to
+define a unique identifier. In that case, more than one column in a
+dataset is used to guarantee uniqueness. These identifiers are also
+called **key variables** or **ID variables**. The variable(s) should
+not contain missing values or have any duplicates. They are used by
+statistical packages such as SPSS, R or Stata when data files need
+to be merged for analysis
+
+The absence of a unique identifier is a data quality issue, so one
+needs to ensure that the unique IDs remain fixed/present during the
+data cleaning process. If this correction is not possible, the archivist
+should note the anomalies in the documentation process.
+
++--------------------------------------------------------------------+
+|*Best Practices*                                                    |
+|                                                                    |
+|- It is recommended that ID variables be defined as a numeric since |
+|  sorting and filtering records is much more efficient when         |
+|  variables are numeric.                                            |
+|- ID variables should not contain spaces, special characters or     |
+|  accents, since they may suffer modifications when the dataset is  |
+|  converted in different formats.                                   |
+|- For the convenience of users of the data, avoid identifiers       |
+|  consisting of too many variables. For example, in a household     |
+|  survey, the household identifier should ideally be a single       | 
+|  variable (which you may create by concatenating a group of        |
+|  variables [3]_), and the individual identifier should be the      |
+|  combination of only two variables (the household ID, and the      | 
+|  sequential number of each member).                                |
+|- It is recommended that you generate an ID based on a sequential   |
+|  number, however, keep in mind that it should not be too long      |
+|  because statistical packages and spreadsheet programs store a     |
+|  number of digits of precision, so opening a data set that contains|
+|  ID variables with many characters, might result in truncated      |
+|  fields. For instance, the limit of the number of characters in    |
+|  Microsoft Excel is 15, so it changes any digits past the fifteenth|
+|  place to zeroes.                                                  |
+|- If you prepare your data files for public dissemination, it may be|
+|  preferable to generate a unique household identification that     |
+|  would **not** be a compilation of geographic codes (because       |
+|  geographic codes are highly identifying). This recommendation is  |
+|  to ensure anonymity and will be explained in further detail later |
+|  on in this text. The following example shows how to construct a   |
+|  unique identifier without using detailed information provided by  |
+|  the geographic codes.                                             |
++--------------------------------------------------------------------+
+
+Example
+  -  Suppose the unique identification of a household is a combination of
+     of variables PROV (Province), DIST (District), EA (Enumeration Area),
+     HHNUM (Household Number). Options 2 and 3 are recommended. Note that
+     if option 3 is chosen, it is crucial o preserve (but not distribute)
+     a file that would provide the mapping between the original codes and
+     the new HHID.
 
 =====  =====  =====  ========== ==================== =====================
  Option 1: Use a combination of Option 2: Generate a  Option 3: Generate a
@@ -209,71 +364,554 @@ PROV   DIST    EA    HHNUM      HHID                 HHID
 Etc    Etc    Etc    Etc        Etc                  Etc
 =====  =====  =====  ========== ==================== =====================
 
-Options 2 and 3 are recommended. Note that if option 3 is chosen, it is
-crucial to preserve (but not distribute) a file that would provide the
-mapping between the original codes and the new HHID.
+Once you recognize the unit of analysis and the variable that uniquely 
+identifies it, the following checks are suggested:
 
--  Make sure that, in all data files, the identification variable(s)
-   provide a unique identifier. Use the *duplicate* function in SPSS or
-   the *isid* command in Stata to verify this.
+-  Even if the data set has a variable with a label "unique identifier",
+   it is important to confirm that this variable truly does uniquely
+   identify each record. To confirm or even to find out what the unique
+   identifier is, you can make use of the *-duplicate-* function in SPSS or
+   the *-isid-* command in Stata (for R, do as shown in *Table 6*). For more
+   details, refer to *Example 1 and Example 2 of Section A*.
 
--  If your dataset is hierarchical, carefully test the file
-   relationships (using the *merge* command in SPSS and Stata). For a
-   household survey for example, verify the all records in the
-   individual-level files have a corresponding household in the
-   household-level master file. Verify also that all households have at
-   least one corresponding record in the household-roster file that
-   lists all individuals.
+**Table 6. Check for unique identifiers: STATA/R/SPSS Commands**
 
--  Verify that the number of records in each file corresponds to what is
-   expected.
++---------------------+---------------------------+----------------------+
+|   **STATA Code**    |         **R Code**        |  **SPSS Function**   |
++---------------------+---------------------------+----------------------+
+|*use “household.dta”*|*my_data<-*                |*GET*                 |
+|                     |*read_dta("household.dta")*|*FILE='household.sav'*|
+|*isid "key1" "key2"* |                           |                      |
+|                     |                           |*execute.*            |
+|                     |*id <-c( "key1" , " key2")*|                      |
+|                     |                           |From the menu choose: |
+|                     |*isid(my_data, id,*        |                      |
+|                     |*verbose = FALSE)*         |- Data>Indentify      |
+|                     |                           |  Duplicate Cases     |
+|                     |                           |- Select Key Variables|
++---------------------+---------------------------+----------------------+
 
--  Do not include string variables if they can be converted into numeric
-   variables. Statistical software is very inefficient when working with
-   string variables. In Stata, the *destring* and the *encode* commands can
-   be used to make such conversions.
+-  Finally, check that the ID variable for the unit of observation doesn't
+   have missing or assigned zero/null values. Ensure that the datasets are
+   sorted and arranged by their unique identifiers.
+   
+*Table 7* below gives a hypothetical example. In this dataset, the
+highlighted columns (hh1, hh2, hh3) are the key variables, which means that
+they are supposed to make up the unique identifier. However, looking at
+those variables, we can identify some problems: the key variables do not
+uniquely identify each observation as they have the same values in rows 4
+and 5, they also have some missing values (represented by asterisks), 
+assigned zero values and some null values (those that say NA, don’t know).
+All these issues suggest that those variables are not the key variables,
+and one needs to go back and double-check the data documentation.
+Alternatively, the archivist could check with the data producer and ask
+them how to fix these variables, in case those are indeed the key variables.
 
--  Verify the completeness of your data files by comparing the content
-   of these files with the survey questionnaire. Make sure that data
-   from all sections of the questionnaire are included in the dataset.
+**Table 7. Check for unique identifiers: Hypothetical data set**
 
--  Verify that all variables are labelled (variable labels), and that
-   the codes for all categorical variables are labelled (value labels).
-   The labels should be short but precise; a same label should not be
-   used for two different variables.
+.. image:: media/Page8_2.png
 
--  For the convenience of the data users, include the relevant weighting
-   coefficient variable(s) in all data files if possible.
+*Example 3* provides further details and describes the steps involved in
+performing a validation when the identifier is made of multiple variables
+(see *Section A*).
 
--  Avoid repeating a same variable in multiple files unless there is a
-   good reason for it (variables identifying the household, variables
-   such as geographic codes, and weighting variables should be present
-   in all files).
+1.5. Identifying duplicate observations
+---------------------------------------
 
--  Remove all unnecessary or temporary variables from the data files
-   (the variables that present no interest for secondary users). To be
-   useful, a derived variable must be documented. For example, the
-   filtering variables (“FILTER$”) generated by SPSS, or the *\_merge*
-   variable generated in Stata are not necessary in the files once the
-   analysis is done.
+One way to rule out problems with the unique identifier is to check if
+there are duplicate observations (records with identical values for all
+variables, not just the unique identifiers). Duplicate observations can
+generate erroneous analysis and cause data management problems. Some
+possible reasons for duplicate data are, for example, the same record
+being entered twice during data collection. They could also arise from
+an incorrect reading of the questionnaires during the scanning process
+if paper-based methods are being used. 
 
--  For sample surveys, verify that the variables identifying the various
-   levels of stratification and the primary sample unit are included and
-   easily identified in at least one of the data files. These variables
-   are needed for the calculation of sampling errors.
+Identifying duplicate observations is a crucial step. Correcting this
+issue may involve eliminating the duplicates from the dataset or giving
+them some other appropriate treatment.
 
--  Put the variables in a logic sequence (using the *order* command in
-   Stata if needed or the “/KEEP=” option in SPSS when saving a file).
+Statistical packages have several commands that help identify duplicates.
+*Table 8* shows examples of these commands in STATA, R and SPSS. The STATA
+command *-duplicates report-* generates a table that summarizes the number
+of copies for each record (across all variables). The command
+*-duplicates tag-* allows us to distinguish between duplicates and unique
+observations. For more details, refer to *Example 4* of *Section A*.
 
--  Generate descriptive statistics for all variables (frequencies for
-   discrete variables; min/max/mean for continuous variables) and verify
-   that these statistics look reasonable.
+**Table 8. Check for duplicates observations: STATA/R/SPSS Commands**
 
--  Compress the variables to reduce the file size; use the compress
-   command in Stata, or the *compress* option when you save a SPSS data
-   file.
++---------------------+---------------------------+----------------------+
+|   **STATA Code**    |         **R Code**        |  **SPSS Function**   |
++---------------------+---------------------------+----------------------+
+|*use “household.dta”*|*my_data<-*                |*GET*                 |
+|                     |*load("household.rda")*    |*FILE='household.sav'*|
+|*duplicates report*  |                           |                      |
+|                     |*household*                |*execute.*            |
+|*duplicates tag,*    |*[duplicated(household),]* |                      |
+|*generate(newvar)*   |                           |From the menu choose: |
+|                     |                           |                      |
+|                     |                           |- Data>Indentify      |
+|                     |                           |  Duplicate Cases     |
++---------------------+---------------------------+----------------------+
 
--  Sort records by their unique identifier before you save the file.
+1.6. Ensure that each individual dataset can be combined into a single database 
+-------------------------------------------------------------------------------
+
+For organizational purposes, surveys are often stored in different datasets.
+Therefore, checking the relationship between the data files is an essential
+step to keep in mind throughout the data validation process. The role of
+the data producer is to store the information as efficiently as possible,
+which implies storing data in different files. The role of the data user is
+to analyse the data as holistically as possible, which could sometimes mean
+that they might have to join all the different data files into a single
+file to facilitate analysis. It is essential to ensure that each of the
+separate files can be combined (merged or appended depending on the case)
+into a single file, should the data user want to undertake this step. 
+
+Use statistical software to validate that all files can be combined into
+one. For a household survey, for example, verify that all records in the
+individual-level files have a corresponding household in the household-level
+master file. Also, verify that all households have at least on
+e corresponding record in the household-roster file that lists all
+individuals. Below, some considerations to keep in mind before merging data
+files:
+
+- The variable name of the identifier should be the same across all datasets.
+- The ID variables need to be the same type (either both numeric or both 
+  string) across all databases.
+- Except for ID variables, it is highly recommended that the databases don't
+  share the same variable names or labels.
+
+Example
+ - A household survey is disseminated in two datasets; one contains
+   information about household characteristics and the other contains
+   information on the children (administered only to mothers or caretakers).
+   To build a dataset containing all the information about the household
+   characteristics, including where the children live, one needs to combine
+   these files. Users are thus assured that all observations in the
+   child-level file have corresponding household information.
+  
+ **Joining data files: Hypothetical data set** 
+  
+.. image:: media/Page10_1.png
+  
+.. image:: media/Page10_2.png
+  
+Statistical packages have some commands that allows us to combine datasets
+using one or multiple unique identifiers. *Table 9* shows examples of 
+these commands/functions in STATA, R and SPSS. For more details, refer to
+*Example 5* of *Section A*. 
+
+**Table 9. Joining data files: STATA/R/SPSS Commands**
+
++---------------------+---------------------------+----------------------+
+|   **STATA Code**    |         **R Code**        |  **SPSS Function**   |
++---------------------+---------------------------+----------------------+
+|*use “household.dta”*|*household<-*              |*GET*                 |
+|                     |*load("household.rda")*    |*FILE='household.sav'*|
+|*merge 1:m hh1 hh2*  |                           |                      |
+|*hh3 using*          |*individuals<-*            |                      |
+|*"individuals.dta"*  |*load("individuals.rda")*  |*execute.*            |
+|                     |                           |                      |
+|                     |*md<-merge(household,*     |From the menu choose: |
+|                     |*individuals, by=c("hh1",  |                      |
+|                     |"hh2", “hh3”),all=TRUE)*   |- Data>Merge Files>   |
+|                     |                           |  Add Variables       |
+|                     |                           |                      |
+|                     |                           |- Select the data file|
+|                     |                           |  to merge            |
+|                     |                           |                      |
+|                     |                           |- Select Key Variables|
++---------------------+---------------------------+----------------------+
+
+Panel datasets should be stored in different files as well. Having one
+file per data collection period is a good practice. To combine the different
+periods of a panel dataset, the data user could merge them (Adding variables
+to the existing observations for the same period) or append them (Adding
+observations for a different period to the existing variables). To make sure
+that panels can be properly appended, the following checks are suggested: 
+
+- Check for the column(s) that identifies the period of the data (Year, Wave,
+  Serie, etc.).
+- The variable names and variable types should be the same across all datasets.
+- Ensure that the variables use the same label and the same coding across all
+  datasets.
+  
+In SPSS, use the function *“Append new records”* and in STATA the command
+*-append-* to combine datasets vertically.
+
+1.7. Check for variables with missing values 
+--------------------------------------------
+
+Getting data ready for documentation also involves checking for variables
+that do not provide complete information because they are full of missing
+values. This step is important because missing values can have unexpected
+effects on the data analysis process. Typically, missing values are defined
+as a character (.a, .b, single period or asterisks), special numeric
+(-1, -2) or blanks. Variables entirely comprised of missing values should
+ideally not be included in the dataset. However, before excluding them, it
+is useful to check whether the missing values are expected according to the
+questionnaire, and the skip patterns.
+
+For example, a hypothetical household survey at the individual-level
+(Table 10) provides information about the respondent’s employment status.
+The survey identifies if the respondent is employed in Column D, and then
+provides information about the worker category in Column E, but only for
+those who reported being employed in Column D. This means that those who
+answered ‘unemployed’ in column D should have a valid missing value in
+column E. In other words, this is a pattern in the missing values that
+should be observed and duly noted. 
+
+On the other hand, Columns F and G are used to determine if the people who
+are not employed are looking for a job and are actively seeking it. These
+questions are not asked to the employed people (those who answered “yes”
+in Column D), which mean that again, the missing values in those columns
+correspond with what is expected. However, Column H contains information
+for all employed individuals, so missing values in this column suggest
+that there is a problem in the data and should be addressed. Therefore,
+one should not blindly delete missing values at the outset without checking
+for these patterns. 
+
+**Table 10. Checking for Missing Values: Hypothetical data set**
+
+.. image:: media/Page12.png
+
+In SPSS, use the function *“Missing Value Analysis”* and in R, do as shown
+in *Table 11*. You can also use the STATA command *-misstable summarize-*
+that produces a report that counts all the missing values. You can also use
+the *-rowmiss()-* command with *-egen-* to generate the number of missing 
+values among the specified variables. For more details, refer to
+*Example 6* of *Section A*.
+
+**Table 11. Counting Missing Values: STATA/R/SPSS Commands**
+
++----------------------+---------------------------+---------------------+
+|   **STATA Code**     |         **R Code**        |  **SPSS Function**  |
++----------------------+---------------------------+---------------------+
+|*use "individual.dta”*|*individual<-*             |*GET*                |
+|                      |*load("individual.rda")*   |*FILE=*              |
+|*misstable summarize* |                           |*'individual.sav'*   |
+|                      |*colSums*                  |                     |
+|                      |*(is.na(individual))*      |*execute.*           |
+|                      |                           |                     |
+|                      |*colMeans*                 |From the menu choose:|
+|                      |*(is.na(individual))*      |                     |
+|                      |                           |- Data>Analyze>      |
+|                      |                           |  Missing Value      |
+|                      |                           |  Analysis           |
+|                      |                           |                     |
+|                      |                           |- Select “Use All    |
+|                      |                           |  Variables”         |
++----------------------+---------------------------+---------------------+
+
++--------------------------------------------------------------------+
+|*Best Practices*                                                    |
+|                                                                    |
+|Since there are different reasons for missing values, data producer |
+|should code them with negative integers or letters to distinguish   |
+|the missing values and valid data. For instance, (− 1) might be the |
+|code for “Don’t Know”, (-2) the code for “Refused to Answer” and    |
+|(-9) code for “Not Applicable”.                                     |
++--------------------------------------------------------------------+
+
+1.8. Check Improper value ranges 
+--------------------------------
+
+It is helpful to generate descriptive statistics for all variables
+(frequencies for discrete variables; min/max/mean for continuous
+variables) and verify that these statistics look reasonable. Just as
+there are variables that must take on only specific values, such as “F”
+and “M” for gender, there are also some variables that can take on
+several values (such as age or height). However, those values must fit
+a particular range. For example, we don't expect negative values, or
+typically see values over 115 years for age. 
+
+Values for categorical variables should be guided by the questionnaire
+(or separate documentation for constructed variables). If we have an
+education variable that has 9 response options in the questionnaire,
+the corresponding ‘education’ variable in the dataset should have 9
+categories. We should not observe more than 9 unique values for this
+variable. Similarly, for any questions in the survey for which the
+options are only “yes”, “no” and “other”, we should not observe more
+than these 3 unique values.  When out of range values exist, this might
+signal data cleaning issues. 
+
+*Table 12* shows examples of some commands/functions in STATA, R and
+SPSS.
+
+**Table 12. Generate descriptive statistics: STATA/R/SPSS Commands**
+
++----------------------+---------------------------+---------------------+
+|   **STATA Code**     |         **R Code**        |  **SPSS Function**  |
++----------------------+---------------------------+---------------------+
+|*use "individual.dta”*|*individual<-*             |*GET*                |
+|                      |*load("individual.rda")*   |*FILE=*              |
+|*summarize*           |                           |*'individual.sav'*   |
+|                      |*summary(individual)*      |                     |
+|                      |                           |*execute.*           |
+|                      |                           |                     |
+|                      |                           |From the menu choose:|
+|                      |                           |                     |
+|                      |                           |- Data>Analyze>      |
+|                      |                           |  Descriptive        |
+|                      |                           |  Statistics>        |
+|                      |                           |  Frequencies        |
+|                      |                           |                     |
+|                      |                           |- Select “Statistics"|
++----------------------+---------------------------+---------------------+
+
+1.9. Verify that the number of records in each file corresponds to what is expected 
+-----------------------------------------------------------------------------------
+
+The technical documentation helps to form some expectations about the size
+of the dataset. Make sure that in all the files, the number of records is
+the same as (or is similar to) what is explicitly stated in the sample
+design of your survey.
+
+Suppose that you have a household survey and according to the documentation
+the sample size is 50,321 households. Consequently, the file that contains
+the household-level information should have a similar number of observations.
+When this is not the case, you should be able to account for this difference
+in data documentation.
+
+On the other hand, even if the number of individual records is not available
+in the documentation, you can still perform a rough check on the files. For
+example, if you have the household level file and the person level file, the
+latter should be between 2 or 6 times larger than the former, depending on
+the average household size in the country for which the information has been
+collected. Another example is to compare the household level file of an
+expenditure survey with the consumption level file (at the product-level).
+
+The latter should have n times the number of observations than the former,
+where n is the average number of products that each household records in the
+survey.
+
+1.10. Datasets must contain all variables from the questionnaire and be in a logic sequence 
+-------------------------------------------------------------------------------------------
+
+Verify the completeness of your data files by comparing the content of these
+files with the survey questionnaire. All variables in the questionnaire should
+appear in the dataset, except those excluded on purpose by the producer of the
+data because of reasons of confidentiality (see numeral *1.15*). 
+Cross-checking with the questionnaire(s) is needed to ensure that all sections
+are included in the dataset. 
+
+Additionally, it is a good practice to make sure that the database is sorted
+in the same order as the questionnaire. This practice will help users navigate
+seamlessly across the dataset using the questionnaire as a route map. 
+
+The Stata command *-describe-* displays the names, variable labels and other
+characteristics, which helps us verify that no variables have been omitted in
+the database. It simultaneously confirms that all variables are correctly
+ordered. Refer to *Example 7* of *Section A* for further details.
+
+1.11. Include the relevant weighting coefficients and variables identifying the stratification levels 
+-----------------------------------------------------------------------------------------------------
+
+All data files of a sample survey should have clearly labelled variable(s)
+with information on the survey weights. Sample surveys need to be
+representative of a broader population for which the data is collected,
+and the user needs the survey weights for almost every analysis performed.
+In the case of household surveys, the survey weights are equal among
+members of the same household but differ across households. Weights are
+positive and strictly higher than zero. They should not have a larger
+value than the population for which the survey is representative.
+
+A more detailed description of how the survey weights would look like
+should be provided in the documentation of the survey.  Based on it, you
+can perform some basic range checks. Notice that Census datasets do not
+need weights since a census collects data on all the individuals in the
+population. There are however some exceptions, for example in the case of
+IPUMS, the data collected are not full censuses but census samples, so
+weights are required in this context. 
+
+Additionally, for sample surveys, verify that the variables identifying
+the various levels of stratification and the primary sampling unit are
+included and easily identifiable in at least one of the data files. These
+variables are needed for the calculation of sampling errors.
+
+1.12. Variables and codes for categorical variables must be labelled 
+--------------------------------------------------------------------
+
+**Variable labels**
+
+Labels should be short and precise. They should provide a clear
+indication of what information is contained in the variables. Variable
+labels are brief descriptions or attributes of each variable. Without
+variable labels, users are not able to link the variables in the
+database to the questions of the questionnaire. So, one should ensure
+that all variables are labelled.
+ 
+Additionally, even if variables are fully labelled, the following
+practices must be considered: 
+
+- Variable labels can be up to 80 characters long in Stata and 255 in
+  SPSS, however, it is recommended that labels be informative,  short
+  and accurate.
+- It is a common practice to have a literal question from the survey as
+  a variable label. However, the literal questions are usually longer
+  than the maximum number of characters, so this is not an advisable
+  practice. 
+- The same label should not be used for two different variables. 
+
+**Value labels**
+
+Label values are used for categorical variables. To ensure the correct
+encoding of data, it is important to check that the stored values in
+those variables correspond to what is expected according to the
+questionnaire. In the case of continuous variables, we also suggest the
+checking of ranges. For instance, if the question is about the number of
+working hours, the variable should not have negative values. 
+
+You can compare variable labels in the dataset to those in the
+questionnaire using the *–codebook-* Stata command or *–labelbook*-. 
+Refer to *Example 8* of *Section A* for further details.
+
+1.13.  Temporary, calculated or derived variables should not be disseminated 
+----------------------------------------------------------------------------
+
+Remove all unnecessary or temporary variables from the data files. These
+variables are not collected in the field and present no interest for users.
+
+The data producer could generate variables that are only needed during the
+quality control process but are not relevant to the final data user. For
+example, the variable “_merge” in Stata is generated automatically after
+performing the check described in the Numeral *1.6*, when the data producer
+wants to see if the datasets match properly. Variables that group categories
+of a question, dummy variables that identify a question’s category are all
+variables produced during the coding process that are not relevant once the 
+analysis is completed. 
+
+There are cases in which calculated variables may be useful to the users, so
+they must be documented in the metadata. For example, most Labor Force Surveys
+(LFS) contain derived dummy variables to identify the sections of the
+population that are employed or unemployed. These variables are generated
+using multiple questions from the dataset and are essential elements of any 
+LFS. Most data users prefer to make use of them instead of computing them on
+their own, to reduce the risk of error. This is a strong argument to make a
+case for keeping these variables in the dataset, despite them being a
+by-product of other original variables.
+
+To be useful, those variables that remain in the dataset must be well
+documented, else they, they may be useless to or misunderstood by users.
+
+1.14. Check that the data types are correct
+-------------------------------------------
+
+Do not include string variables if they can be converted into numeric
+variables. Look at your data and check the variables' types, particularly
+for those that you expect to be numeric (age, years, number of
+persons/employees/hours, income, purchases/expenditures, weights, and so
+forth). If there are numeric variables stored as string variables, your
+data needs cleaning.
+
+For example, *Table 13* contains a data set at the individual-level with
+some variables that should be numeric. The columns B (Age) and E
+(Working Weeks) are stored as numeric variables, which is fine. However,
+the variables ‘Number of working of hours per week’ (Column G), ‘Number
+of persons working at the business’ (Column H) and ‘Monthly Income’
+(Column I) are loaded as strings because there are non-numeric values
+(don't know, skip, refused to answer) and some missing values present.
+Those variables need to be cleaned and converted from string variables
+to numeric variables.
+
+**Table 13. Checking Data Types: Hypothetical data set**
+
+.. image:: media/Page16.png
+
+Statistical packages have some commands that allows us to make such
+conversions. *Table 14* shows examples of these commands/functions in
+STATA, R and SPSS.
+
+**Table 14. Convert string variables to numeric: STATA/R/SPSS Commands**
+
++----------------------+---------------------------+---------------------+
+|   **STATA Code**     |         **R Code**        |  **SPSS Function**  |
++----------------------+---------------------------+---------------------+
+|*use "individual.dta”*|*individual<-*             |*GET*                |
+|                      |*load("individual.rda")*   |*FILE=*              |
+|*destring (varname),* |                           |*'individual.sav'*   |
+|*{generate|replace}*  |*Individual $varname =*    |                     |
+|                      |*as.numeric(Individual*    |*execute.*           |
+|                      |*$varname)*                |                     |
+|                      |                           |From the menu choose:|
+|                      |                           |                     |
+|                      |                           |- Data>Transform>    |
+|                      |                           |  Recode into Same|  |
+|                      |                           |  Different Variables|
+|                      |                           |                     |
+|                      |                           |- Select the variable|
+|                      |                           |                     |
+|                      |                           |- Select “Old and New|
+|                      |                           |  Values” and Recode |
+|                      |                           |  it                 |
+|                      |                           |                     |
+|                      |                           |- Select “Convert    |
+|                      |                           |  numeric strings to |
+|                      |                           |  numbers (‘5’->5)   |
++----------------------+---------------------------+---------------------+
+
+1.15. Datasets must not have directed identifiers
+-------------------------------------------------
+
+One must verify that in all data files, sensitive information or direct
+identifiers that could reveal the identity of the respondent directly
+(names, addresses, GPS coordinates, phone numbers, etc.) have been removed.
+Check to ensure this information is not in the dataset(s). If it is, those
+variables need to be removed from shared datasets. 
+
+Keep in mind that if you are preparing a dataset for public release, you
+need a cleaned, anonymous dataset.  Removing all direct identifiers is the
+first key step to ensuring the anonymity of the participants. However,
+before you start any privacy procedures, you should always check your data.
+
+For more information on how to apply statistical disclosure control (SDC)
+methods to data before release, see the document "Introduction to
+Statistical Disclosure Control (SDC)" available at
+http://ihsn.org/sites/default/files/resources/ihsn-working-paper-007-Oct27.pdf 
+
+1.16. Compress the variables to reduce the file size
+----------------------------------------------------
+
+Compress the variables consist of reducing the size of the data file without
+loss of precision or modifying the information that it provides. Listed
+below are some reasons why compressing a data set may be a useful practice
+for at least three reasons: First, it makes faster the process of creating
+backups, uploading and downloading data files from your data repository or
+any Survey Catalog. Second, it reduces the time that data users will need
+to spend working with the data. Additionally, it will make the data more
+accessible to the different type of users; sometimes the data size will
+impose restrictions on those users who lack high computational power.
+Third, it will help to free up disk space in the server where you store
+your data
+
+Example
+ - *Table 15* shows two versions of one dataset that provides 
+   individual-levelinformation about the year of the first union, age, 
+   school attendance,and health insurance. There is no difference in 
+   the appearance of both datasets. However, version 1 was saving 
+   uncompressed and version 2compressed. In the uncompressed version, 
+   the variables “ID” and “Year” are stored as double, which means that
+   they can store number with high decimal precision, but they
+   are designed to only record information of integer numbers between
+   -32,767 and 32,740. So, the compressed version changed the storage
+   type of these variables to int and saves 6 bytes per observation.
+   Similarly, other variables like “age” and “school attendance” are
+   stored as a byte in the compressed version, which saves 7 bytes
+   per observation when are compared to the uncompressed version.
+   Let’s suppose that one has a data set with 500 variables like these,
+   the total savings would be 3500 bytes per observation; if this data set
+   has 50.000 observations, it means that the savings in memory space
+   would be around 175 megabytes. 
+   
+ **Table 15. Compressing the Variables: Hypothetical data set**
+   
+.. image:: media/Page18_1.png
+
+.. image:: media/Page18_2.png
+
+Use the *compress* command in Stata, or the *compress* option when you
+save a SPSS data file.
 
 +--------------------------------------------------------------------+
 | *Suggestion:*                                                      |
@@ -306,7 +944,7 @@ to be included if available include:
 
    -  Sampling information
 
-   -  Interviewers and supervisors manuals
+   -  Interviewers and supervisor’s manuals
 
    -  List of codes
 
@@ -318,7 +956,7 @@ to be included if available include:
 
    -  Survey budget and other key planning documents
 
-   -  Powerpoint presentations and other related material
+   -  PowerPoint presentations and other related material
 
 -  Computer programs (used for data entry, editing, tabulation and
    analysis)
@@ -347,9 +985,8 @@ Scan all resources with an updated virus detection application.
 ================================================
 
 After all data and documentation files are gathered and checked, import
-the data files in the Toolkit. In the Microdata Management Toolkit,
-order the files in a logical fashion (e.g. sequentially through
-sections).
+the data files in the Editor. In the Metadata Editor, order the files
+in a logical fashion (e.g., sequentially through sections).
 
 .. note::
    If you are documenting a population census and have very large
@@ -359,9 +996,9 @@ sections).
    State or Province. In such case, import all files for one State or
    Province only. You will import the other data files after you
    complete the documentation of the files. This will considerably
-   reduce the time needed to save your files. The Toolkit will allow you
-   to replicate the metadata from the documented files to all other data
-   files that you will import later.
+   reduce the time needed to save your files. The Metadata Editor will 
+   allow you to replicate the metadata from the documented files to all 
+   other data files that you will import later.
 
 After all files are imported and ordered in a proper sequence, define
 the key variables for each data file. The base key variable(s) in a data
@@ -369,8 +1006,8 @@ file is (are) the variable(s) that provide the unique identifier of each
 record in that specific data file.
 
 Then establish the relations and validate them using the *Tool >
-Validate Relationships* in the Toolkit. This automatic validation is a
-way to check the structural integrity of the identifier variables and
+Validate Dataset Relations* in the Editor. This automatic validation is 
+a way to check the structural integrity of the identifier variables and
 assure there are no duplicates in the data.
 
 +--------------------------------------------------------------------+
@@ -399,52 +1036,42 @@ assure there are no duplicates in the data.
 +--------------------------------------------------------------------+
 |                   .. image:: media/image5.png                      |
 +--------------------------------------------------------------------+
-|In the IHSN Toolkit, these relationships will be established as     |
+|In the Metadata Editor, these relationships will be established as  |
 |follows in the “Key variables and relationships” section of each    |
 |data file:                                                          |
 +--------------------------------------------------------------------+
-|                   .. image:: media/image6.png                      |
+|                   .. image:: media/Page21.png                      |
 +--------------------------------------------------------------------+
 
 If you have imported your data from any format other than fixed ASCII,
 re-sequence the data using the *Variables* > *Resequence* option in the
-Toolkit. This re-sequencing tool will automatically fill the “StartCol”
+Editor. This re-sequencing tool will automatically fill the “StartCol”
 and “EndCol” columns in the variable description section. This must be
 done for each data file.
 
-.. image:: media/image7.png
-
-.. image:: media/image8.png
+.. image:: media/Page22.png
 
 Before going further, quickly browse all variables in all data files to
 visually check the frequencies. This will allow you to easily spot some
 outliers or invalid codes, which will require recoding (which can be
-done in the Toolkit or in the source data files which will then have to
+done in the Editor or in the source data files which will then have to
 be re-imported).
 
-.. image:: media/Image9_1.PNG
+.. image:: media/Page22_2.png
 
-Last, view the content of each data files in the “Data Entry” page. All
-data should be displayed in black fonts. Data displayed in bold red
-indicate out of range values. Data in bold blue fonts indicate that
-value labels are missing for that variable.
-
-.. image:: media/image10.png
-
-Save the file. The Toolkit saves all data files and the information you
-already added (on key relationships, etc) in one single file (Nesstar
-format). We recommend you save this file in the survey root directory,
-using the survey abbreviation, year and version number as file name
-(e.g., HIES2007_v11). Note that it is good practice to avoid using
+Save the project. The Editor saves the full project, the associated data
+and documentation in one zip file. We recommend you save the project using
+the survey abbreviation, year and version number as project name
+(e.g., UGA_2018_HIES_v01_M). Note that it is good practice to avoid using
 spaces in a file name (use underscore characters instead).
 
 4. Importing external resources
 ===============================
 
 +----------------------------+-----------------------+------------------+
-|Before importing your external resources, create folders in the Toolkit|
+|Before importing your external resources, create folders in the Editor |
 |as necessary (these are directories in the External Resources section  |
-|in the Toolkit, not new directories on your hard drive). If you have   |
+|in the Editor, not new directories on your hard drive). If you have    |
 |very few external resources, all resources can be listed in the root   |
 |directory. If you have many, organize them by type of resources (in the|
 |example below, we have created separate directories for the            |
@@ -464,31 +1091,28 @@ spaces in a file name (use underscore characters instead).
 |                            | the external resource. The resource      |
 |                            |                                          |
 |                            | consists of the filename, and a relative |
-|                            | path (relative to the directory where    |
+|                            | path. The reason for entering a relative |
 |                            |                                          |
-|                            | your study Nesstar file is saved). The   |
-|                            | reason for entering a relative path is   |
+|                            | path is that it will allow you to move   |
+|                            | the whole study directory and its        |
 |                            |                                          |
-|                            | that it will allow you to move the whole |
-|                            | study directory and its subdirectories to|
+|                            | subdirectories to another location or    |
+|                            | another drive, without having to re-enter|
 |                            |                                          |
-|                            | another location or another drive,       |
-|                            | without having to re-enter the location  |
-|                            |                                          |
-|                            | of the files.                            |
+|                            | the location of the files.               |
 +----------------------------+-----------------------+------------------+
 |Example:                                                               |
 |                                                                       |
-|Let’s assume your study is a household budget survey conducted in 2007.|
+|Let’s assume your study is a Household Budget Survey conducted in 2018.| 
 |If you followed the recommendations made in the introductory chapter   |
 |“Before you start – Organizing your files”, you will have created a    |
-|directory like C:\HIES2007. Your nesstar file will be saved as         |
-|HIES2007.Nesstar in this directory. Suppose also that a document titled|
-|Report2007.pdf is saved in a directory C:\HIES2007\DOCS. When you fill |
-|the resource field in the External Resources page, do NOT enter        |
-|“C:\HIES2007\DOCS\Report2007.pdf. Enter the file name as follows:      |
+|directory like C:\ UGA_2018_HIES. Suppose also that a document titled  |
+|Report2018.pdf is saved in a directory C:\ UGA_2018_HIES\Doc. When you |
+|fill the resource field in the External Resources page, do NOT enter   |
+|“C:\ UGA_2018_HIES\Doc\Report2018.pdf.pdf. Enter the file name as      |
+|follows: Doc\Reports\Report2018.pdf                                    |
 |                                                                       |
-|.. image:: media/image12.png                                           |
+|.. image:: media/Page22_3.png                                          |
 +----------------------------+-----------------------+------------------+
 
 Some resources might be composed of more than one file (for example, the
@@ -502,12 +1126,35 @@ separate resources, or zip the files into one single file. In such case,
 list the different formats available in the “Content/ Description”
 field.
 
++--------------------------------------------------------------------+
+|*Best Practices – Naming Convention for External Resources*         |
+|                                                                    |
+|- Use file names short, but self-explanatory about the content of   |
+|  the document.                                                     |
+|- Preferably, use lower cases.                                      |
+|- Avoid spaces to delimit words.                                    |
+|- Be consistent with your method of naming across all files. For    |
+|  instance, if you use underscores to delimit words, keep it that   |
+|  way in all files.                                                 |
+|- Use only alphanumeric characters, underscores or dashes. Avoid    |
+|  using special characters (!@#$%^&*()~) or any accented characters.|
+|- If you intend to have an archive useable and downloadable across  |
+|  multiple countries, use English names for your files.             |
++--------------------------------------------------------------------+
+
 5. Completing metadata
 ======================
 
-The IHSN Toolkit (version 1.n) makes use of the Data Documentation
-Initiative (DDI Version 2) and the Dublin Core (DCMI version X) metadata
-standards.
+The Metadata Editor makes use of the Data Documentation Initiative
+(DDI Version 2.5), the Dublin Core (DCMI version X) metadata standards
+and ISO 19139 for geospatial information. 
+
+The table below provides an overview of the different metadata standards
+as related to the project. Each metadata standard is integrated into the
+template that will define the project.
+
+
+.. image:: media/Page23.png
 
 A thorough completion of the DDI and DCMI elements will significantly
 raise the value of the archiving work by providing users with the
@@ -515,9 +1162,9 @@ necessary information to put the study into its proper context and to
 understand its purpose.
 
 The DDI requires completion of the following sections: Document
-Description, Study Description, Data Files Description, Variables
-Description, and External Resources Description. Recommendations for
-each field included in the IHSN template are provided below.
+Description, Study Description, Datasets, Variables Groups, and
+External Resources. Recommendations for each field included in the
+IHSN template are provided below. 
 
 +--------------------------------------------------------------------+
 | The IHSN recommends using the standardized IHSN DDI/DCMI templates |
@@ -533,7 +1180,7 @@ each field included in the IHSN template are provided below.
    involved in some of the technical aspects of the survey.
 
 -  As a general rule, avoid using ALL CAPS when you fill DDI fields.
-   Also, check the spelling of all entries. The Toolkit does not provide
+   Also, check the spelling of all entries. The Editor does not provide
    (yet) an automatic spell checker.
 
 -  Some of the examples below present an optimal documentation of some
@@ -550,39 +1197,9 @@ each field included in the IHSN template are provided below.
 Documenting a study using the DDI and DCMI metadata standards consists
 of generating a metadata file which will be saved in XML format in what
 is called an *XML Document*. The *Document Description* described below
-is a description of that XML file. The IHSN Template selected 5 elements
+is a description of that XML file. The IHSN Template selected 4 elements
 to describe the DDI document.
 
-+-----------------------------------+-----------------------------------+
-| Study Title                       |The title is the official name of  |
-|                                   |the survey as it is stated on the  |
-|                                   |questionnaire or as it appears in  |
-|                                   |the design documents. The          |
-|                                   |following items should be noted:   |
-|                                   |                                   |
-|                                   |-  Include the reference year(s)   |
-|                                   |   of the survey in the title.     |
-|                                   |                                   |
-|                                   |-  Do not include the              |
-|                                   |   abbreviation of the survey      |
-|                                   |   name in the title.              |
-|                                   |                                   |
-|                                   |-  As the survey title is a        |
-|                                   |   proper noun, the first letter   |
-|                                   |   of each word should be          |
-|                                   |   capitalized (except for         |
-|                                   |   prepositions or other           |
-|                                   |   conjunctions).                  |
-|                                   |                                   |
-|                                   |-  Including the country name in   |
-|                                   |   the title is optional.          |
-|                                   |                                   |
-|                                   |Example:                           |
-|                                   |  -  *National Household Budget    |
-|                                   |     Survey 2002-2003*             |
-|                                   |                                   |
-|                                   |  -  *Popstan Multiple Indicator   |
-|                                   |     Cluster Survey 2002*          |
 +-----------------------------------+-----------------------------------+
 | Metadata Producer                 |Name of the person(s) or           |
 |                                   |organization(s) who documented     |
@@ -634,9 +1251,9 @@ to describe the DDI document.
 |                                   |one(s) if relevant.                |
 |                                   |                                   |
 |                                   |Example:                           |
-|                                   |  *Version 1.1 (July 2006). This   |
+|                                   |  *Version 02 (July 2017). This    |
 |                                   |  version is identical to version  |
-|                                   |  1.0, except for the section on   |
+|                                   |  01, except for the section on    |
 |                                   |  Data Appraisal which was         |
 |                                   |  updated.*                        |
 +-----------------------------------+-----------------------------------+
@@ -646,7 +1263,7 @@ to describe the DDI document.
 |                                   |and use a consistent scheme to     |
 |                                   |use. Such an ID could be           |
 |                                   |constructed as follows:            |
-|                                   |DDI-country-producer-survey-year   |
+|                                   |DDI_COUNTRY_PRODUCER_SURVEY_YEAR   |
 |                                   |where                              |
 |                                   |                                   |
 |                                   |-  *country* is the 3-letter ISO   |
@@ -671,11 +1288,17 @@ to describe the DDI document.
 |                                   |  Uganda Bureau of Statistics in   |
 |                                   |  2005 would have the following    |
 |                                   |  ID:                              |
-|                                   |  DDI-UGA-UBOS-DHS-2005-v01. If    |
+|                                   |  DDI_UGA_UBOS_DHS_2005_v01. If    |
 |                                   |  the same survey is documented by |
 |                                   |  a staff from the IHSN, this      |
 |                                   |  would be                         |
-|                                   |  DDI-UGA-IHSN-DHS-205-v01.*       |
+|                                   |  DDI_UGA_IHSN_DHS_205_v01.*       |
++-----------------------------------+-----------------------------------+
+| Collection                        |This field allows viewed and       |
+|                                   |searched the study by collection   |
++-----------------------------------+-----------------------------------+
+| Programs                          |Link surveys to projects / trust   |
+|                                   |funds                              |
 +-----------------------------------+-----------------------------------+
 
 5.2. Good practices for completing the Study Description
@@ -688,7 +1311,7 @@ and methods, scope and coverage, etc.)
 +-----------------------------------+-----------------------------------+
 | **Identification**                                                    |
 +-----------------------------------+-----------------------------------+
-| Title                             |The title is the official name of  |
+| Survey Title                      |The title is the official name of  |
 |                                   |the survey as it is stated on the  |
 |                                   |questionnaire or as it appears in  |
 |                                   |the design documents. The          |
@@ -711,18 +1334,14 @@ and methods, scope and coverage, etc.)
 |                                   |-  Including the country name in   |
 |                                   |   the title is optional.          |
 |                                   |                                   |
-|                                   |The title will in most cases be    |
-|                                   |identical to the Document Title    |
-|                                   |(see above).                       |
-|                                   |                                   |
 |                                   |Example:                           |
 |                                   |  -  *National Household Budget    |
-|                                   |     Survey 2002-2003*             |
+|                                   |     Survey 2012-2013*             |
 |                                   |                                   |
 |                                   |  -  *Popstan Multiple Indicator   |
-|                                   |     Cluster Survey 2002*          |
+|                                   |     Cluster Survey 2012*          |
 +-----------------------------------+-----------------------------------+
-| Subtitle                          |Subtitle is optional and rarely    |
+| Survey Subtitle                   |Subtitle is optional and rarely    |
 |                                   |used. A subtitle can be used to    |
 |                                   |add information usually            |
 |                                   |associated with a sequential       |
@@ -734,17 +1353,17 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   |  *Subtitle: Fifth round*          |
 +-----------------------------------+-----------------------------------+
-| Abbreviation                      |The abbreviation of a survey is    |
+| Abbreviation or Acronym           |The abbreviation of a survey is    |
 |                                   |usually the first letter of each   |
 |                                   |word of the titled survey. The     |
 |                                   |survey reference year(s) may be    |
 |                                   |included.                          |
 |                                   |                                   |
 |                                   |Example:                           |
-|                                   |  -  *DHS 2000 for “Demographic and|
+|                                   |  -  *DHS 2015 for “Demographic and|
 |                                   |     Health Survey 2005”*          |
 |                                   |                                   |
-|                                   |  -  *HIES 2002-2003 for “Household|
+|                                   |  -  *HIES 2012-2013 for “Household|
 |                                   |     Income and Expenditure Survey |
 |                                   |     2003”*                        |
 +-----------------------------------+-----------------------------------+
@@ -810,7 +1429,7 @@ and methods, scope and coverage, etc.)
 |                                   |(such as accents and other stress  |
 |                                   |marks or different alphabets).     |
 +-----------------------------------+-----------------------------------+
-| ID Number                         |The ID number of a dataset is a    |
+| Unique user defined ID Number     |The ID number of a dataset is a    |
 |                                   |unique number that is used to      |
 |                                   |identify a particular survey.      |
 |                                   |Define and use a consistent        |
@@ -845,9 +1464,18 @@ and methods, scope and coverage, etc.)
 |                                   |                                   |
 |                                   |  *UGA-UBOS-DHS-2005-v01.*         |
 +-----------------------------------+-----------------------------------+
+| Depositor                         |The name of the person             |
+|                                   |(or institution) who provided this |
+|                                   |data collection to the archive     |
+|                                   |storing it.                        |
++-----------------------------------+-----------------------------------+
+| Date of Deposit                   |The date that the data collection  |
+|                                   |was deposited with the archive that|
+|                                   |originally received it.            |
++-----------------------------------+-----------------------------------+
 | **Version**                                                           |
 +-----------------------------------+-----------------------------------+
-| Description                       |The version description should     |
+| Version Description               |The version description should     |
 |                                   |contain a version number followed  |
 |                                   |by a version label. The version    |
 |                                   |number should follow a standard    |
@@ -868,15 +1496,15 @@ and methods, scope and coverage, etc.)
 |                                   |users (possibly anonymized).       |
 |                                   |                                   |
 |                                   |Example:                           |
-|                                   |  -  *v0.1: Basic raw data,        |
+|                                   |  -  *v00: Basic raw data,         |
 |                                   |     obtained from data entry      |
 |                                   |     (before editing)*.            |
 |                                   |                                   |
-|                                   |  -  *v1.2: Edited data, second    |
+|                                   |  -  *v01: Edited data, second     |
 |                                   |     version, for internal use     |
 |                                   |     only*.                        |
 |                                   |                                   |
-|                                   |  -  *v2.1: Edited, anonymous      |
+|                                   |  -  *v02: Edited, anonymous       |
 |                                   |     dataset for public            |
 |                                   |     distribution*.                |
 |                                   |                                   |
@@ -895,14 +1523,57 @@ and methods, scope and coverage, etc.)
 |                                   |that the date selected is in       |
 |                                   |compliance with the ISO format.    |
 +-----------------------------------+-----------------------------------+
-| Notes                             |Version notes should provide a     |
+| Version Notes                     |Version notes should provide a     |
 |                                   |brief report on the changes made   |
 |                                   |through the versioning process.    |
 |                                   |The note should indicate how this  |
 |                                   |version differs from other         |
 |                                   |versions of the same dataset.      |
 +-----------------------------------+-----------------------------------+
+| **Study Authorization**                                               |
++-----------------------------------+-----------------------------------+
+| Authorizing Agency                |Name of the agent or agency that   |
+|                                   |authorized the study. The          |
+|                                   |"affiliation" attribute indicates  |
+|                                   |the institutional affiliation of   |
+|                                   |the authorizing agent or agency.   |
+|                                   |The "abbr" attribute holds the     |
+|                                   |abbreviation of the authorizing    |
+|                                   |agent's or agency's name           |
++-----------------------------------+-----------------------------------+
+| Authorization Statement           |The text of the authorization. Use |
+|                                   |XHTML to capture significant       |
+|                                   |structure in the document          |
+|                                   |                                   |
+|                                   |Example:                           |
+|                                   |                                   |
+|                                   |Required documentation covering    |
+|                                   |the study purpose, disclosure      |
+|                                   |information, questionnaire         |
+|                                   |content, and consent statements    |
+|                                   |was delivered to the OUHS on       |
+|                                   |2010-10-01 and reviewed by the     |
+|                                   |compliance officer. Statement of   |
+|                                   |authorization for the described    |
+|                                   |study was received on 2010-11-04   |
++-----------------------------------+-----------------------------------+
+| Legal basis                       |Decree or law authorizing or       |
+|                                   |requiring the study                |
+|                                   |(e.g. census act)                  |
++-----------------------------------+-----------------------------------+
 | **Overview**                                                          |
++-----------------------------------+-----------------------------------+
+| Study Budget                      |Describe the budget of the project |
+|                                   |in as much detail as needed.       |
+|                                   |Internal structure is allowed using|
+|                                   |XHTML elements. Different          |
+|                                   |organizations express their budgets|
+|                                   |in different formats and this open |
+|                                   |format allows flexibility.         |
+|                                   |                                   |
+|                                   |Attributes: Budget line ID, Budget |
+|                                   |line label, Amount, Currency and   |
+|                                   |Source of funding.                 |
 +-----------------------------------+-----------------------------------+
 | Abstract                          |The abstract should provide a      |
 |                                   |clear summary of the purposes,     |
@@ -911,9 +1582,13 @@ and methods, scope and coverage, etc.)
 |                                   |researcher or survey statistician  |
 |                                   |aware of the survey.               |
 +-----------------------------------+-----------------------------------+
+| Objectives of the study           |Describe the Main (explicit) and   |
+|                                   |secondary (explicit) objectives of |
+|                                   |the survey.                        |
++-----------------------------------+-----------------------------------+
 | Kind of data                      |This field is a broad              |
 |                                   |classification of the data and it  |
-|                                   |is associated with a drop down     |
+|                                   |is associated with a drop-down     |
 |                                   |box providing controlled           |
 |                                   |vocabulary. That controlled        |
 |                                   |vocabulary includes 9 items but    |
@@ -1022,6 +1697,50 @@ and methods, scope and coverage, etc.)
 |                                   |is provided for advanced users     |
 |                                   |only.                              |
 +-----------------------------------+-----------------------------------+
+| **Quality Statement**                                                 |
++-----------------------------------+-----------------------------------+
+| Standards Compliance              |This section lists all specific    |
+|                                   |standards complied with during the |
+|                                   |execution of this study. Note the  |
+|                                   |standard name and producer and how |
+|                                   |the study complied with the        |
+|                                   |standard                           |
++-----------------------------------+-----------------------------------+
+| Other Quality Statement           |Enter any additional quality       |
+|                                   |statements                         |  
++-----------------------------------+-----------------------------------+
+| **Post Evaluation Procedures**                                        |
++-----------------------------------+-----------------------------------+
+| Evaluator Type                    |The evaluator element identifies   |
+|                                   |persons or organizations involved  |
+|                                   |in the evaluation. The Affiliation |
+|                                   |attribute contains the affiliation |
+|                                   |of the individual or organization. |
+|                                   |The Abbr. attribute holds an       |
+|                                   |abbreviation for the individual or |
+|                                   |organization. The Role attribute   |
+|                                   |indicates the role played by the   |
+|                                   |individual or organization in the  |
+|                                   |evaluation process.                |
+|                                   |                                   |
+|                                   |Example:                           |
+|                                   |                                   |
+|                                   |- Affiliation: United Nations      |
+|                                   |                                   |
+|                                   |- Abbr.: UNSD                      |
+|                                   |                                   |
+|                                   |- Role: Consultant                 |
++-----------------------------------+-----------------------------------+
+| Evaluation Process                |Describes the evaluation process   |
+|                                   |followed. Ex-Post Evaluations are  |
+|                                   |frequently done within large       |
+|                                   |statistical or research agencies,  |
+|                                   |in particular when the survey is   |
+|                                   |intended to be repeated or on-going|
++-----------------------------------+-----------------------------------+
+| Evaluation Outcomes               |Describe the outcomes of the       | 
+|                                   |evaluation                         | 
++-----------------------------------+-----------------------------------+
 | **Coverage**                                                          |
 +-----------------------------------+-----------------------------------+
 | Country                           | Enter the country name, even in   |
@@ -1052,6 +1771,9 @@ and methods, scope and coverage, etc.)
 |                                   |sampling strategy was such that    |
 |                                   |the representativity is national.  |
 +-----------------------------------+-----------------------------------+
+| Geographic Unit                   |Lowest level of geographic         |
+|                                   |aggregation covered by the data.   |
++-----------------------------------+-----------------------------------+
 | Universe                          |We are interested here in the      |
 |                                   |survey universe (not the universe  |
 |                                   |of particular sections of the      |
@@ -1079,10 +1801,39 @@ and methods, scope and coverage, etc.)
 |                                   |  (under age 5) resident in the    |
 |                                   |  household.*                      |
 +-----------------------------------+-----------------------------------+
-| **Producers and Sponsors**                                            |
+| Geographic bounding box           |The geographic bounding box is the |
+|                                   |minimum box, defined by west and   |
+|                                   |east longitudes and north and south|
+|                                   |latitudes, that includes the       |
+|                                   |largest geographic extent of the   |
+|                                   |dataset's geographic coverage.     |
+|                                   |This element is used in the first  |
+|                                   |pass of a coordinate-based search. |
+|                                   |If the Geographic bounding Polygon |
+|                                   |element is included, then this     |
+|                                   |field element MUST be included     | 
 +-----------------------------------+-----------------------------------+
-| Primary investigator              |The primary investigator will in   |
-|                                   |most cases be an institution, but  |
+| Geographic Bounding Polygon       |This field allows the creation of  |
+|                                   |multiple polygons to describe in a |
+|                                   |more detailed manner the geographic|
+|                                   |area covered by the dataset. It    |
+|                                   |should only be used to define the  |
+|                                   |outer boundaries of a covered area.|
+|                                   |                                   |
+|                                   |Example:                           |
+|                                   |In the United States, such polygons|
+|                                   |can be created to define boundaries|
+|                                   |for Hawaii, Alaska, and the        |
+|                                   |continental United States, but not |
+|                                   |interior boundaries for the        |
+|                                   |contiguous states. This field is   |
+|                                   |used to refine a coordinate-based  |
+|                                   |search, not to actually map an area| 
++-----------------------------------+-----------------------------------+
+| **Producers and Sponsors.**                                           |
++-----------------------------------+-----------------------------------+
+| Authoring Entity/Primary          |The primary investigator will in   |
+| investigators                     |most cases be an institution, but  |
 |                                   |could also be an individual in     |
 |                                   |the case of small-scale academic   |
 |                                   |surveys. The two fields to be      |
@@ -1107,7 +1858,7 @@ and methods, scope and coverage, etc.)
 |                                   |are mentioned use the appropriate  |
 |                                   |format of Surname, First name.     |
 +-----------------------------------+-----------------------------------+
-| Other producers                   |This field is provided to list     |
+| Producers                         |This field is provided to list     |
 |                                   |other interested parties and       |
 |                                   |persons that have played a         |
 |                                   |significant but not the leading    |
@@ -1147,7 +1898,7 @@ and methods, scope and coverage, etc.)
 |                                   |Do not include here the financial  |
 |                                   |sponsors.                          |
 +-----------------------------------+-----------------------------------+
-| Funding                           |List the organizations (national   |
+| Funding Agency/Sponsor            |List the organizations (national   |
 |                                   |or international) that have        |
 |                                   |contributed, in cash or in kind,   |
 |                                   |to the financing of the survey.    |
@@ -1155,8 +1906,8 @@ and methods, scope and coverage, etc.)
 |                                   |has provided funding should not    |
 |                                   |be forgotten.                      |
 +-----------------------------------+-----------------------------------+
-| Other acknowledgements            |This optional field can be used    |
-|                                   |to acknowledge any other people    |
+| Other Identifications/            |This optional field can be used    |
+| acknowledgements                  |to acknowledge any other people    |
 |                                   |and institutions that have in      |
 |                                   |some form contributed to the       |
 |                                   |survey.                            |
@@ -1239,6 +1990,58 @@ and methods, scope and coverage, etc.)
 |                                   |  interview of 92.5% and for the   |
 |                                   |  children's interview of 94.1%.*  |
 +-----------------------------------+-----------------------------------+
+| Sample Frame Name                 |Sample frame describes the sampling|
+|                                   |frame used for identifying the     |
+|                                   |population from which the sample   |
+|                                   |was taken. Label and text          |
+|                                   |describing the sample frame        |
++-----------------------------------+-----------------------------------+
+| Update of listing                 |Describes operations conducted to  |
+|                                   |update the sample frame            |
++-----------------------------------+-----------------------------------+
+| Valid Period                      |Defines a time period for the      |
+|                                   |validity of the sampling frame.    |
+|                                   |Enter dates in YYYY-MM-DD format.  |
++-----------------------------------+-----------------------------------+
+|Custodian                          |Custodian identifies the agency or |
+|                                   |individual who is responsible for  |
+|                                   |creating or maintaining the sample |
+|                                   |frame. Attribute affiliation       |
+|                                   |provides the affiliation of the    |
+|                                   |custodian with an agency or        |
+|                                   |organization. Attribute abbr.      |
+|                                   |provides an abbreviation for the   |
+|                                   |custodian.                         |
++-----------------------------------+-----------------------------------+
+|Use Statement                      |Sample frame use statement         |
++-----------------------------------+-----------------------------------+
+|Frame Unit                         |Provides information about the     |
+|                                   |sampling frame unit. The attribute |
+|                                   |"is Primary" is boolean, indicating|
+|                                   |whether the unit is primary or not.|
++-----------------------------------+-----------------------------------+
+|Reference Period                   |Indicates the period of time in    |
+|                                   |which the sampling frame was       |
+|                                   |actually used for the study in     |
+|                                   |question. Use ISO 8601 date/time   |
+|                                   |formats to enter the relevant      |
+|                                   |date(s).                           |
++-----------------------------------+-----------------------------------+
+|Sample Size                        |This element provides the targeted |
+|                                   |sample size in integer format.     |
+|                                   |                                   |
+|                                   |Attributes: Planned / Actual and   |
+|                                   |Unit and Number.                   |
++-----------------------------------+-----------------------------------+
+|Sample Size Formula                |This element includes the formula  |
+|                                   |that was used to determine the     |
+|                                   |sample size                        |
++-----------------------------------+-----------------------------------+
+|Stratification                     |Describe the Stratification        |
+|                                   |(implicit and explicit) and the    |
+|                                   |Variables identifying strata and   |
+|                                   |PSU                                |
++-----------------------------------+-----------------------------------+
 | Deviation from sample design      |This field only applies to sample  |
 |                                   |surveys.                           |
 |                                   |                                   |
@@ -1252,7 +2055,7 @@ and methods, scope and coverage, etc.)
 |                                   |has deviated, this should be       |
 |                                   |reported here.                     |
 +-----------------------------------+-----------------------------------+
-| Response rates                    |Response rate provides that        |
+| Response rate                     |Response rate provides that        |
 |                                   |percentage of households (or       |
 |                                   |other sample unit) that            |
 |                                   |participated in the survey based   |
@@ -1359,12 +2162,40 @@ and methods, scope and coverage, etc.)
 |                                   |and identify each wave in the      |
 |                                   |“cycle” field.                     |
 +-----------------------------------+-----------------------------------+
+|Collector Training                 |Describes the training provided to |
+|                                   |data collectors including          |
+|                                   |interviewer training, process      |
+|                                   |testing, compliance with standards |
+|                                   |etc. This is repeatable for        |
+|                                   |language and to capture different  |
+|                                   |aspects of the training process.   |
+|                                   |The type attribute allows          |
+|                                   |specification of the type of       |
+|                                   |training being described           |
++-----------------------------------+-----------------------------------+
+|Frequency of Data Collection       |For data collected at more than one|
+|                                   |point in time, the frequency with  |
+|                                   |which the data were collected. The |
+|                                   |"freq" attribute is included to    |
+|                                   |permit the development of a        |
+|                                   |controlled vocabulary for this     |
+|                                   |element.                           |
++-----------------------------------+-----------------------------------+
 | Time period                       |This field will usually be left    |
 |                                   |empty. Time period differs from    |
 |                                   |the dates of collection as they    |
 |                                   |represent the period for which     |
 |                                   |the data collected are applicable  |
 |                                   |or relevant.                       |
++-----------------------------------+-----------------------------------+
+|Data Sources                       |Used to list the book(s),          |
+|                                   |article(s), serial(s), and/or      |
+|                                   |machine-readable data file(s)--if  |
+|                                   |any--that served as the source(s)  |
+|                                   |of the data collection             |
++-----------------------------------+-----------------------------------+
+|Alternatives to data collection    |Sources of data available /        |
+|                                   |potentially considered             |
 +-----------------------------------+-----------------------------------+
 | Mode of data collection           |The mode of data collection is     |
 |                                   |the manner in which the interview  |
@@ -1379,6 +2210,13 @@ and methods, scope and coverage, etc.)
 |                                   |such as for example data on rain   |
 |                                   |falls, the response will be        |
 |                                   |different.                         |
++-----------------------------------+-----------------------------------+
+|Data Capture                       |Where was data capture done (e.g., |
+|                                   |In the field or at the office) and |
+|                                   |when was data capture done. Also,  |
+|                                   |describe the technology using for  |
+|                                   |data capture (e.g. scanning, PDAs  |
+|                                   |OR Web)                            |
 +-----------------------------------+-----------------------------------+
 | Notes on data collection          |This element is provided in order  |
 |                                   |to document any specific           |
@@ -1579,28 +2417,53 @@ and methods, scope and coverage, etc.)
 |                                   | are provided as external          |
 |                                   | resources.*                       |
 +-----------------------------------+-----------------------------------+
+|Instrument Development             |Describe any development work on   |
+|                                   |the data collection instrument.    |
+|                                   |Type attribute allows for the      |
+|                                   |optional use of a defined          |
+|                                   |development type with or without   |
+|                                   |use of a controlled vocabulary.    |
++-----------------------------------+-----------------------------------+
+|Review process for survey          |Description of the review process /|
+|instrument                         |list of agencies/people consulted  |
++-----------------------------------+-----------------------------------+
+|Pilot/testing of survey instrument |Description of pilot survey        |
+|and data collection                |                                   |
++-----------------------------------+-----------------------------------+
+|Survey management team             |Attributes: Name, Tittle, Agency,  |
+|                                   |Role                               |
++-----------------------------------+-----------------------------------+
 | Data collectors                   |This element is provided in order  |
 |                                   |to record information regarding    |
 |                                   |the persons and/or agencies that   |
 |                                   |took charge of the data            |
 |                                   |collection. This element includes  |
-|                                   |3 fields: Name, Abbreviation and   |
-|                                   |the Affiliation. In most cases,    |
-|                                   |we will record here the name of    |
-|                                   |the agency, not the name of        |
+|                                   |3 fields: Name, Abbreviation,      |
+|                                   |the Affiliation and the Role. In   |
+|                                   |most cases, we will record here the|
+|                                   |name of the agency, not the name of|
 |                                   |interviewers. Only in the case of  |
 |                                   |very small-scale surveys, with a   |
 |                                   |very limited number of             |
 |                                   |interviewers, the name of person   |
 |                                   |will be included as well. The      |
 |                                   |field Affiliation is optional and  |
-|                                   |not relevant in all cases.         |
+|                                   |not relevant in all cases. The role|
+|                                   |attribute specifies the role of    |
+|                                   |person in the data collection      |
+|                                   |process.                           |
 |                                   |                                   |
 |                                   |Example:                           |
 |                                   |  *Abbreviation: CSO*              |
 |                                   |                                   |
 |                                   |  *Affiliation: Ministry of        |
 |                                   |  Planning*                        |
+|                                   |                                   |
+|                                   |  *Role: Planner*                  |
++-----------------------------------+-----------------------------------+
+|Compliance with international data |Describe if the survey comply with |
+|collection standards               |international survey               |
+|                                   |recommendations                    |
 +-----------------------------------+-----------------------------------+
 | Supervision                       |This element will provide          |
 |                                   |information on the oversight of    |
@@ -1680,7 +2543,7 @@ and methods, scope and coverage, etc.)
 +-----------------------------------+-----------------------------------+
 | **Data Processing**               |                                   |
 +-----------------------------------+-----------------------------------+
-| Data editing                      |The data editing should contain    |
+| Data entry and editing            |The data editing should contain    |
 |                                   |information on how the data was    |
 |                                   |treated or controlled for in       |
 |                                   |terms of consistency and           |
@@ -1729,6 +2592,12 @@ and methods, scope and coverage, etc.)
 |                                   |  the “Data processing guidelines” |
 |                                   |  document provided as an external |
 |                                   |  resource.*                       |
++-----------------------------------+-----------------------------------+
+|Software                           |List of software used for the key  |
+|                                   |activities (especially data entry, |
+|                                   |editing, tabulation, analysis).    |
+|                                   |                                   |
+|                                   |Attributes: Purpose and Software   |
 +-----------------------------------+-----------------------------------+
 | Other processing                  |Use this field to provide as much  |
 |                                   |information as possible on the     |
@@ -1916,6 +2785,31 @@ and methods, scope and coverage, etc.)
 |                                   |both the score and quintiles were  |
 |                                   |included in the datasets for use   |
 |                                   |in tabulations.*                   |
++-----------------------------------+-----------------------------------+
+| **Coding Instructions**                                               |
++-----------------------------------+-----------------------------------+
+|Coding Instructions Text           |Describe specific coding           |
+|                                   |instructions used in data          |
+|                                   |processing, cleaning, assession,   |
+|                                   |or tabulation. Use this field to   |
+|                                   |describe instructions in a human   |
+|                                   |readable form.                     |
+|                                   |                                   |
+|                                   |Example:                           |
+|                                   | *Due to an error in the data      |
+|                                   | collection system the value of    |
+|                                   | “27” was entered for the variable |
+|                                   | NBWFBPC which should be coded as  |
+|                                   | an invalid value of “99”*         |
++-----------------------------------+-----------------------------------+
+|Command                            |Provide command code for the coding|
+|                                   |instruction. The formalLanguage    |
+|                                   |attribute identifies the language  |
+|                                   |of the command code.               |
+|                                   |                                   |
+|                                   |Example:                           |
+|                                   | *SPSS">RECODE V1 TO V100          |
+|                                   | (10 THROUGH HIGH = 0)*            |
 +-----------------------------------+-----------------------------------+
 | **Data Appraisal**                                                    |
 +-----------------------------------+-----------------------------------+
@@ -2121,7 +3015,7 @@ and methods, scope and coverage, etc.)
 |                                   |a particular individual whose      |
 |                                   |functions may change over time.    |
 +-----------------------------------+-----------------------------------+
-| Confidentiality                   |If the dataset is not anonymized,  |
+| Confidentiality Declaration       |If the dataset is not anonymized,  |
 |                                   |we may indicate here what          |
 |                                   |Affidavit of Confidentiality must  |
 |                                   |be signed before the data can be   |
@@ -2293,7 +3187,7 @@ and methods, scope and coverage, etc.)
 |                                   |    inferences based upon such     |
 |                                   |    uses.*                         |
 +-----------------------------------+-----------------------------------+
-| Citation requirements             |Citation requirement is the way    |
+| Citation requirement              |Citation requirement is the way    |
 |                                   |that the dataset should be         |
 |                                   |referenced when cited in any       |
 |                                   |publication. Every dataset should  |
@@ -2321,10 +3215,52 @@ and methods, scope and coverage, etc.)
 |                                   |  *"National Statistics Office of  |
 |                                   |  Popstan, Multiple Indicators     |
 |                                   |  Cluster Survey 2000 (MICS 2000), |
-|                                   |  Version 1.1 of the public use    |
+|                                   |  Version 01 of the public use     |
 |                                   |  dataset (April 2001), provided by|
 |                                   |  the National Data Archive.       |
 |                                   |  www.nda_popstan.org"*            |
++-----------------------------------+-----------------------------------+
+|Location of Data Collection        |Location where the data collection |
+|                                   |is currently stored. Use the URI   |
+|                                   |attribute to provide a URN or URL  |
+|                                   |for the storage site or the actual |
+|                                   |address from which the data may be |
+|                                   |downloaded.                        |
++-----------------------------------+-----------------------------------+
+|URL for Location of Data Collection|Location where the data collection |
+|                                   |is currently stored. Provide a URN |
+|                                   |or URL for the storage site or the |
+|                                   |actual address from which the data |
+|                                   |may be downloaded.                 |
++-----------------------------------+-----------------------------------+
+|Archive Where Study Originally     |Statement of collection            |
+|Stored                             |availability. An archive may need  |
+|                                   |to indicate that a collection is   |
+|                                   |unavailable because it is embargoed|
+|                                   |for a period of time, because it   |
+|                                   |has been superseded, because a new |
+|                                   |edition is imminent, etc. It is    |
+|                                   |anticipated that a controlled      |
+|                                   |vocabulary will be developed for   |
+|                                   |this element.                      |
++-----------------------------------+-----------------------------------+
+|Availability Status                |Statement of collection            |
+|                                   |availability. An archive may need  |
+|                                   |to indicate that a collection is   |
+|                                   |unavailable because it is embargoed|
+|                                   |for a period of time, because it   |
+|                                   |has been superseded, because a new |
+|                                   |edition is imminent, etc. It is    |
+|                                   |anticipated that a controlled      |
+|                                   |vocabulary will be developed for   |
+|                                   |this element.                      |
++-----------------------------------+-----------------------------------+
+|Deposit Requirement                |Information regarding user         |
+|                                   |responsibility for informing       |
+|                                   |archives of their use of data      |
+|                                   |through providing citations to the |
+|                                   |published work or providing copies |
+|                                   |of the manuscripts.                |
 +-----------------------------------+-----------------------------------+
 | **Disclaimer and Copyright**                                          |
 +-----------------------------------+-----------------------------------+
@@ -2350,7 +3286,7 @@ and methods, scope and coverage, etc.)
 |                                   |statement on the dataset, such     |
 |                                   |as:                                |
 |                                   |                                   |
-|                                   |*© 2007, Popstan Central           |
+|                                   |*© 2017, Popstan Central           |
 |                                   |Statistics Agency*                 |
 +-----------------------------------+-----------------------------------+
 | **Contacts**                                                          |
@@ -2396,7 +3332,11 @@ description of each data file. The IHSN has selected six of the
 available DDI elements.
 
 +-----------------------------------+-----------------------------------+
-| Contents                          |A data filename usually provides   |
+|File Citation                      |Provides for a full bibliographic  |
+|                                   |citation option for each data file |
+|                                   |described in File Description.     |
++-----------------------------------+-----------------------------------+
+| Contents of Files                 |A data filename usually provides   |
 |                                   |little information on its          |
 |                                   |content. Provide here a            |
 |                                   |description of this content. This  |
@@ -2437,7 +3377,7 @@ available DDI elements.
 |                                   |    “cons_aggregate.do” available  |
 |                                   |    in the external resources.*    |
 +-----------------------------------+-----------------------------------+
-| Producer                          |Put the name of the agency that    |
+| File Producer                     |Put the name of the agency that    |
 |                                   |produced the data file. Most data  |
 |                                   |files will have been produced by   |
 |                                   |the survey primary investigator.   |
@@ -2487,15 +3427,7 @@ available DDI elements.
 |                                   |Editing” filed in the Study        |
 |                                   |Description section).              |
 +-----------------------------------+-----------------------------------+
-| Missing data                      |Missing data can be given certain  |
-|                                   |coding. A common convention is to  |
-|                                   |iterate the number “9” to fill a   |
-|                                   |field. This value needs to be      |
-|                                   |defined as missing in the data     |
-|                                   |set and can be explained in        |
-|                                   |detail in this element.            |
-+-----------------------------------+-----------------------------------+
-| Notes                             |This field, aiming to provide      |
+| Files Notes                       |This field, aiming to provide      |
 |                                   |information to the user on items   |
 |                                   |not covered elsewhere, will in     |
 |                                   |most cases be left empty.          |
@@ -2508,7 +3440,9 @@ The Variable Description is the section of the DDI document that
 provides detailed information on each variable.
 
 +-----------------------------------+-----------------------------------+
-| Variable Names                    |These are the names given to the   |
+| **VARIABLES**                                                         |
++-----------------------------------+-----------------------------------+
+| Names                             |These are the names given to the   |
 |                                   |variables. Ideally, the variable   |
 |                                   |names should be a maximum of 8     |
 |                                   |characters, and use a logical      |
@@ -2518,11 +3452,11 @@ provides detailed information on each variable.
 |                                   |variable names do not follow       |
 |                                   |these principles, DO NOT CHANGE    |
 |                                   |THE VARIABLE NAMES IN THE          |
-|                                   |TOOLKIT, but make recommendations  |
+|                                   |EDITOR, but make recommendations   |
 |                                   |to the data processor for          |
 |                                   |consideration for future surveys.  |
 +-----------------------------------+-----------------------------------+
-| Variable Labels                   |All variables should have a label  |
+| Labels                            |All variables should have a label  |
 |                                   |that                               |
 |                                   |                                   |
 |                                   |-  Provides the item or question   |
@@ -2545,11 +3479,7 @@ provides detailed information on each variable.
 |                                   |-  Make sure that different        |
 |                                   |   variables have different        |
 |                                   |   labels (avoid duplicate         |
-|                                   |   labels). The IHSN Toolkit       |
-|                                   |   provides a tool to check        |
-|                                   |   availability and unicity of     |
-|                                   |   variable labels (see Tools >    |
-|                                   |   Validate Variable).             |
+|                                   |   labels).                        |
 |                                   |                                   |
 |                                   |-  For expenditure or income:      |
 |                                   |   indicating the currency and     |
@@ -2565,37 +3495,11 @@ provides detailed information on each variable.
 |                                   |in order to allow users to export  |
 |                                   |the data to ASCII fixed format.    |
 |                                   |To do so, use the “Variables >     |
-|                                   |Resequence” command in the         |
-|                                   |Toolkit, for each data file.       |
-+-----------------------------------+-----------------------------------+
-| Categories                        |Variable categories are the lists  |
-|                                   |of codes (and their meaning) that  |
-|                                   |apply to the variable. The         |
-|                                   |Toolkit imports categories and     |
-|                                   |their labels from the source data  |
-|                                   |files (SPSS, Stata).               |
-|                                   |                                   |
-|                                   |If necessary, add/edit the codes.  |
-|                                   |Use the Documentation > Create     |
-|                                   |categories from statistics if the  |
-|                                   |source dataset did not include     |
-|                                   |value labels (e,g., when imported  |
-|                                   |from ASCII). Make sure the         |
-|                                   |categories are not hierarchical,   |
-|                                   |and do not include codes for       |
-|                                   |“Missing”. The codes for Missing   |
-|                                   |must be specified in the “Missing  |
-|                                   |data” field. If you fail to do     |
-|                                   |that, the summary statistics       |
-|                                   |(mean, standard deviation, etc)    |
-|                                   |will be calculated including the   |
-|                                   |missing code, which will be        |
-|                                   |considered as a valid value.       |
-|                                   |                                   |
-|                                   |.. image:: media/image13.png       |
+|                                   |Resequence” function in the        |
+|                                   |Editor, for each data file.        |
 +-----------------------------------+-----------------------------------+
 | Data type                         |Four types of variables are        |
-|                                   |recognized by the Toolkit:         |
+|                                   |recognized by the Editot:          |
 |                                   |                                   |
 |                                   |-  *Numeric: Numeric variables     |
 |                                   |   are used to store any number,   |
@@ -2627,16 +3531,16 @@ provides detailed information on each variable.
 |                                   |when this is not absolutely        |
 |                                   |needed. Such issues must be taken  |
 |                                   |care of before the data is         |
-|                                   |imported in the Toolkit. See the   |
+|                                   |imported in the Editor. See the    |
 |                                   |section on “\ `1. Gathering and    |
 |                                   |preparing the                      |
 |                                   |dataset <#gathering-and-preparing  |
 |                                   |-the-data-set>`__\ ”               |
 |                                   |above.                             |
 +-----------------------------------+-----------------------------------+
-| Measure                           |The Microdata Management Toolkit   |
-|                                   |will allow you to define the       |
-|                                   |measure of a variable as:          |
+| Measure                           |The Metadata Editor will allow you |
+|                                   |to define the measure of a variable|
+|                                   |as:                                |
 |                                   |                                   |
 |                                   |-  *Nominal*: variable with        |
 |                                   |   numeric assignations for        |
@@ -2682,17 +3586,37 @@ provides detailed information on each variable.
 |                                   |   of the person, the amount of    |
 |                                   |   income or expenditure, etc.     |
 +-----------------------------------+-----------------------------------+
+| **CATEGORIES**                                                        |
++-----------------------------------+-----------------------------------+
+| Categories                        |Variable categories are the lists  |
+|                                   |of codes (and their meaning) that  |
+|                                   |apply to the variable. The         |
+|                                   |Editor imports categories and      |
+|                                   |their labels from the source data  |
+|                                   |files (SPSS, Stata).               |
+|                                   |                                   |
+|                                   |If necessary, add/edit the codes.  |
+|                                   |Use the Documentation > Create     |
+|                                   |categories from statistics if the  |
+|                                   |source dataset did not include     |
+|                                   |value labels (e,g., when imported  |
+|                                   |from ASCII). Do not include codes  |
+|                                   |for “Missing”. The codes for       |
+|                                   |Missing must be specified in the   |
+|                                   |“Missing data” field. If you fail  |
+|                                   |to do that, the summary statistics |
+|                                   |(mean, standard deviation, etc)    |
+|                                   |will be calculated including the   |
+|                                   |missing code, which will be        |
+|                                   |considered as a valid value.       |
+|                                   |                                   |
+|                                   |.. image:: media/Page42.png        |
++-----------------------------------+-----------------------------------+
+| **VARIABLE INFORMATION**                                              |
++-----------------------------------+-----------------------------------+
 | Time variable                     |This is a check-box used to tag    |
 |                                   |and identify variables used to     |
 |                                   |define time.                       |
-+-----------------------------------+-----------------------------------+
-| Weight variable                   |This is a check box that is used   |
-|                                   |to tag the weight variable. It is  |
-|                                   |a good practice to include the     |
-|                                   |weight variable with each data     |
-|                                   |file that is being archived. If    |
-|                                   |it is included, the check box      |
-|                                   |should be ticked.                  |
 +-----------------------------------+-----------------------------------+
 | Min                               |Allows modifying the minimum       |
 |                                   |value of a variable. For each      |
@@ -2733,6 +3657,8 @@ provides detailed information on each variable.
 |                                   |Missing values should be           |
 |                                   |differentiated from “not           |
 |                                   |applicable” and zero (0) values.   |
++-----------------------------------+-----------------------------------+
+| **STATISTICS**                                                        |
 +-----------------------------------+-----------------------------------+
 | Statistics Options                |Various options exist for          |
 |                                   |displaying and presenting summary  |
@@ -2802,20 +3728,17 @@ provides detailed information on each variable.
 |                                   |   99999 must be listed in the     |
 |                                   |   missing section as follows:     |
 |                                   |                                   |
-|                                   |.. image:: media/image14.png       |
+|                                   |.. image:: media/Page43.png        |
 |                                   |                                   |
 |                                   |-  If you modify information such  |
 |                                   |   as the categories or missing    |
 |                                   |   values, you must use the        |
 |                                   |   “Documentation > Update         |
 |                                   |   Statistics” command in the      |
-|                                   |   Toolkit to refresh the summary  |
+|                                   |   Editor to refresh the summary   |
 |                                   |   statistics.                     |
 +-----------------------------------+-----------------------------------+
-| Weights                           |The appropriate weight should be   |
-|                                   |attached to the file and selected  |
-|                                   |in this element. The weight        |
-|                                   |should be well labelled.           |
+| **DOCUMENTATION**                                                     |
 +-----------------------------------+-----------------------------------+
 | Definition                        |This element provides a space to   |
 |                                   |describe the variable in detail.   |
@@ -2876,7 +3799,7 @@ provides detailed information on each variable.
 +-----------------------------------+-----------------------------------+
 | Concepts                          |Greater description on the nature  |
 |                                   |of the variable can be placed in   |
-|                                   |this element. For example this     |
+|                                   |this element. For example, this    |
 |                                   |element can provide a clearer      |
 |                                   |definition for certain variables   |
 |                                   |(i.e. a variable that provides     |
@@ -2964,7 +3887,7 @@ provides detailed information on each variable.
 |                                   |cases where some instructions      |
 |                                   |relate to multiple variables,      |
 |                                   |repeat the information in all      |
-|                                   |variables. The Toolkit allows you  |
+|                                   |variables. The Editor allows you   |
 |                                   |to select multiple variables and   |
 |                                   |enter the information to all       |
 |                                   |these variables at once.           |
@@ -3057,7 +3980,7 @@ The External Resources are all materials related to the study others
 than the data files. They include documents (such as the questionnaires,
 interviewer’s manuals, reports, etc), programs (data entry, editing,
 tabulation, and analysis), maps, photos, and others. To document
-external resources, the IHSN Toolkit uses the Dublin Core metadata
+external resources, the Metadata Editor  uses the Dublin Core metadata
 standard (which complements the DDI standard).
 
 +-----------------------------------+-----------------------------------+
@@ -3184,7 +4107,7 @@ standard (which complements the DDI standard).
 | Author(s)                         |Include all authors that are       |
 |                                   |listed on the report.              |
 +-----------------------------------+-----------------------------------+
-| Date                              |Date of the publication of the     |
+| Date Created                      |Date of the publication of the     |
 |                                   |report or resource (at least       |
 |                                   |month and year). For reports,      |
 |                                   |this is most likely stated on the  |
@@ -3215,7 +4138,7 @@ standard (which complements the DDI standard).
 |                                   |controlled vocabulary does not     |
 |                                   |provide the format you need, type  |
 |                                   |it (or add it in the controlled    |
-|                                   |vocabulary using the Toolkit       |
+|                                   |vocabulary using the Editor        |
 |                                   |Template Editor). Providing        |
 |                                   |information on the format will     |
 |                                   |inform the user on the software    |
@@ -3280,8 +4203,6 @@ standard (which complements the DDI standard).
 |                                   |documenting studies.               |
 +-----------------------------------+-----------------------------------+
 
-.. _section-1:
-
 6. Creating variable groups
 ===========================
 
@@ -3291,19 +4212,18 @@ useful to the user in the case of data files that contain many variables
 and are not organized by topic (some flat files contain hundreds or even
 thousands of variables).
 
-The Toolkit allows you to group variables found in various separate data
-files. For example, education data may be found in various locations and
-the disparate variables grouped together. Also, a same variable can
+The Metadata Editor allows you to group variables found in various separate
+data files. For example, education data may be found in various locations 
+and the disparate variables grouped together. Also, a same variable can
 belong to more than one group.
 
 Variable groups are “virtual”. The variables themselves are not moved or
 grouped. They remain untouched in the data files.
 
-In the final output of the Toolkit (CD-ROM of website), the variable
-groups will appear under a menu item “Data dictionary”. The only reason
-for grouping variables is to allow users to easily locate variables
-related to their topic of interest. If your dataset contains very few
-variables, there is no justification for grouping them.
+The variable groups will appear under a menu item “Data dictionary”.
+The only reason for grouping variables is to allow users to easily
+locate variables related to their topic of interest. If your dataset
+contains very few variables, there is no justification for grouping them.
 
 If you decide to create variable groups (and sub-groups if needed), make
 sure that ALL variables in the dataset belong to at least one group.
@@ -3348,11 +4268,11 @@ optional and will in most cases be left empty.
 7. Running validations and diagnostics
 ======================================
 
-The Microdata Management Toolkit includes a useful series of diagnostic
-and validation modules (see the drop down menu *Tools*): these range
-from very simple validations (such as the *Tools-Validate Metadata*) to
-complex visual displays that iterate through each variable and provides
-feedback to the archivist at the variable level.
+The Metadata Editor includes a useful series of diagnostic and validation
+modules (see the drop down menu *Tools*): these range from very simple
+validations (such as the *Tools-Validate Metadata*) to complex visual
+displays that iterate through each variable and provides feedback to the
+archivist at the variable level.
 
 -  *Validate Metadata*: verifies that all mandatory fields are filled
    in.
@@ -3360,22 +4280,26 @@ feedback to the archivist at the variable level.
 -  *Validate External Resources*: verifies all mandatory fields in the
    External Resources are filled in.
 
--  *DDI Diagnostic*: this provides a visual display and issues warnings
-   if DDI elements are missing. It also displays information at the file
-   level and identifies any variables with missing labels, discrete
-   variables with missing value or code label, variables with the same
-   name or frequency displays with more than 30 modalities.
+-  *Health Check*: displays a popup window that provides some information
+   and diagnostics regarding the R package. The Metadata Editor uses R
+   to import and export the data. The health check option tells the which
+   version of R is being used on the machine. In addition, the Health
+   Check will provide information on the Environment Path and the result
+   of the execution of the R script.
 
--  *DDI Diagnostic Detailed*: this provides a more in-depth display as
-   the simpler DDI diagnostic (above). It checks the metadata at the
-   individual variable level and checks: labelling, definitions,
-   universe, source etc.
+-  *Validate Dataset Relations*: this option is used to validate
+   hierarchically related datasets. The ‘Base key variables’ should be
+   the variables that uniquely identify a case within that file.
 
--  *Dublin Core diagnostic*: Checks the metadata provided for the
-   External Resources.
+-  *Translation Manager*: provides the user with the ability to translate
+   the interface of the Metadata Editor into any language. Selecting this
+   option will display the Translation Manager interface. When using the
+   option for the first time, the English template will be displayed with
+   all the labels that require translation.
+
 
 In addition to these validations, it is recommended that you generate
-the DDI document (in the Toolkit, use the Export DDI” command) and
+the DDI document (in the Editor, use the Export DDI” function) and
 verify the size of the resulting [.xml] file. A fully documented survey
 with a large number of variables should not produce a file larger than
 10Mb. Very large DDI files often indicate errors in the selection of
@@ -3385,12 +4309,14 @@ like the household ID in a sample household file).
 8. Generating the survey documentation in PDF
 =============================================
 
-The Microdata Management Toolkit includes a useful tool for producing a
-PDF document summarizing all metadata entered in the Toolkit (see *Tools
-> Study Documentation PDF*). Generating this report is one of the final
-stages of properly preparing a survey for publication and dissemination.
-If previous versions exist and changes have been made to the data files
-or the metadata make sure you re-run the PDF generator.
+Once you are confident that all necessary checks have been completed, 
+you may generate the survey documentation in PDF. The Metadata Editor
+includes a useful tool for producing a PDF document summarizing all
+metadata entered in the Editor (see Documentation > PDF Documentation).
+Generating this report is one of the final stages of properly preparing
+a survey for publication and dissemination. If previous versions exist
+and changes have been made to the data files or the metadata make sure
+you re-run the PDF generator. 
 
 This report should be generated, saved and attached as an *External
 Resource*.
@@ -3401,7 +4327,7 @@ Resource*.
 |  related to the study. This list should include this PDF report    |
 |  itself. **Before** you generate it, make sure you create one entry|
 |  in the External Resources for documenting this report. Immediately|
-|  after you generate the PDF report, import it in the Toolkit.      |
+|  after you generate the PDF report, import it in the Editor.       |
 +--------------------------------------------------------------------+
 
 One thing to keep in mind is that in a survey with a large number of
@@ -3411,85 +4337,153 @@ produce one report with the study metadata, and one with the files and
 variables metadata), or change the content options (e.g., not including
 a frequency table for all variables).
 
-9. Producing the final output
-=============================
+If your agency has a website, you may upload this PDF directly to the
+web server. The IHSN recommends the use of a proper DDI-compliant
+cataloguing system, such as the one provided by its National Data
+Archive (NADA) application. NADA is an open source package, available
+free of charge at www.surveynetwork.org.
 
-Once you are confident that all necessary checks have been completed,
-you may generate the final output using the CD-ROM Builder module of the
-IHSN Toolkit. This includes the CD-ROM and survey website.
-
-Before you generate the CD-ROM:
-
--  Make sure you have a customized “branding” for the CD-ROM. If you
-   don’t, design a branding (instructions are provided in the Toolkit
-   User’s Guide).
-
--  Prepare content for the “Home page” of the CD-ROM. Typically, a
-   statement by the Director of the data producing agency, or a brief
-   summary of the objectives and findings of the survey, will be
-   generated.
-
-Generate the CD-ROM with the appropriate options. The IHSN recommends:
-
--  To generate the CD-ROM without data
-
--  To export all datasets to ASCII format, and to include the zipped
-   ASCII files on the CD-ROM, together with the syntax file to export
-   the data to SPSS, Stata and other formats (which shoulod be provided
-   as external resources). The ASCII format is more standard than the
-   Toolkit Nesstar format, and is a guarantee of long-term viability of
-   your data files.
-
--  To include an autorun file.
-
--  To include all external resources.
-
--  To check that the CD-ROM outline does not include any empty pages
-   (use the Toolkit utility to check)
-
--  To name the CD-ROM according to the dataset abbreviation and version.
-
-After you generate the CD-ROM:
-
--  Check all links before you replicate it, in particular the ones to
-   external resources.
-
--  Test the autorun.
-
-If your agency has a website, you may upload the content of the CD-ROM
-directly to the web server. The IHSN recommends the use of a proper
-DDI-compliant cataloguing system, such as the one provided by its
-National Data Archive (NADA) application. NADA is an open source
-package, available free of charge at www.surveynetwork.org.
-
-10. Independent quality review
+9. Independent quality review
 ==============================
 
 An independent review of the data and metadata is highly recommended
 prior to publishing the final output. The Appendix provides a blank
 review form (the *DDI Reviewer’s Feedback Form*) to be used by an
-external reviewer. The IHSN can assist in identifying external
-reviewers.
+external reviewer. 
 
 The external review can be based on:
 
 1. The DDI file (xml file, containing no microdata and no external
    resources)
 
-2. The Nesstar file (containing microdata and DDI/DCMI metadata)
+2. The Metadata Editor project (containing microdata and DDI/DCMI metadata)
 
-3. The CD-ROM (or website), without microdata
+3. The PDF Document
 
-4. The CD-ROM (or website), with microdata
+4. The Microdata
 
-The preferred option is the last one, as it allows a full check of the
-final output. If data are highly confidential and cannot be shared with
-the reviewer, option 3 is the most appropriate.
+The preferred option is to review the metadata and microdata, as it allows a
+full check of the final output. If data are highly confidential and cannot 
+be shared with the reviewer, options 1-3 are the most appropriate. 
 
 In order to prepare for the independent quality review, proceed to step
 10 if you will use options three or four. Follow the guidance there, and
 then finalize the archiving before producing the final output. Else,
-send the DDI-XML or the Nesstar file to the reviewer.
+send the DDI-XML to the reviewer.
+
+Section A . Data Validations in Stata: Practical Examples
+=========================================================
+
+**Example 1 . Check for unique identifiers (single variable)**
+
+This example uses a Country Opinion Survey and uses the Stata command
+*-isid-* to check whether the variable “id” uniquely identifies the 
+observations. Each row of the data represents a different Country’s 
+Stakeholders and the variable that identifies each one is named “id”.
+
+.. image:: media/Pag50_1.png
+
+If, after running the *-isid-* command you have not got an error
+message, it indicates that the “id” is unique and identifies each
+unit of analysis.
+
+**Example 2 . Check for unique identifiers (single variable)**
+
+For this example, we use the same data than *Example 1*, but in this
+case, there are some hypothetical observations with the same values
+for the variable “id”. The highlight observations are the duplicates
+IDs. 
+
+.. image:: media/Pag50_2.png
+
+Since there are not unique IDs in the data, it is also useful to see
+the list of all duplicates. To do that, we can use the Stata command
+*-duplicates list-*. 
+
+.. image:: media/Pag51_1.png
+
+**Example 3 . Check for unique identifiers (ID made of multiple variables)**
+
+The Multiple Indicator Cluster Survey at Women-level data is used in this
+example. According to the study’s metadata, the unique identification of
+each woman is the combination of variables HH1 (Cluster Number), HH2
+(Household Number) and Ln (Line Number of women), so instead of checking
+the unique identifier in just one variable, we are checking this condition
+in this group of variables.
+
+.. image:: media/Pag51_2.png
+
+After running this validation, it is possible to see that the combination
+of “HH1”, “HH2” and “ln” generates a unique ID.
+
+**Example 4 . Check for duplicate observations**
+
+This example uses the dataset mentioned in example 2, in which there are
+3 duplicated identifiers. 
+
+.. image:: media/Pag52_1.png
+
+As shown, 446 records are unique in the database, but there are six
+observations for which there are two copies of each one. Now, it is
+necessary to identify duplicates. The code below allows one to generate
+a variable that tags the duplicates with a value 1 or more, depending
+on the number of times a record is duplicated.
+
+.. image:: media/Pag52_2.png
+
+The table above shows that records with the IDs 101, 104 and 111 each
+have one duplicate.
+
+**Example 5 . Check the merge between datafiles**
+
+The code below helps us combine the data collected at the
+individual-level with the data collected at the household-level.
+In this case, we have two hierarchical datasets, in the household data
+each row represents one household, and each household has members or
+individuals. So, we need to combine many observations from one data set
+(individual-level) with one observation from the other (household-level).
+The ID of the household data set is the unique identifier that we are
+using for the merge (“HH1”and “HH2”).
+
+.. image:: media/Pag53_1.png
+
+The report shows that all observations in the Individual file have a
+corresponding household in the household data set and that all households
+have at least one member. However, let’s consider a hypothetical example
+that contains some records that do not match, below the results of the merge:
+
+.. image:: media/Pag53_2.png
+
+The merge command resulted in: 15 nonmatched observations originated from
+the master data and 2 from the using data. The inconsistencies between
+databases could be the result of a data entry error or processing errors
+and these also need to be referred to the data producer before documentation
+begins.
+
+**Example 6 . Check variables full of missing values**
+
+In the example above, there are 3 variables (WM1_1, WM3_1 and WM5_1) full
+of missing values. As shown in the table, the *-misstable summarize-* command
+allows one to identify all those cases at once. It is like tabulating every
+single variable to identify missing values but more efficiently.
+
+.. image:: media/Pag54_1.png
+
+**Example 7 . Check the completeness of the data files**
+
+This example shows how you can check for discrepancies (if any) between
+the variables from the MICS women's questionnaire and the data set.
+
+.. image:: media/Pag55_1.png
+
+As shown, this dataset contains all variables from the section “Woman’s
+background,” and they are organized according to the questionnaire. 
+The comparison between variables in the questionnaire to those in the
+data set should be made for every section in the questionnaire.
+
+**Example 8 . Check all variables are labelled**
+
+.. image:: media/Pag55_2.png
 
 The following Form is available at www.surveynetwork.org
 
