@@ -238,22 +238,19 @@ identifies it, the following checks are suggested:
 
 **Table 6. Check for unique identifiers: STATA/R/SPSS Commands**
 
-+---------------------+---------------------------+----------------------+
-|   **STATA Code**    |         **R Code**        |  **SPSS Function**   |
-+---------------------+---------------------------+----------------------+
-|*use “household.dta”*|*my_data<-*                |*GET*                 |
-|                     |*load("household.rda")*    |*FILE='household.sav'*|
-|*isid key1 key2*     |                           |                      |
-|                     |                           |*execute.*            |
-|                     |*id <-c( "key1" , " key2")*|                      |
-|                     |*library(eepttols)*        |From the menu choose: |
-|                     |*isid(my_data, id,*        |                      |
-|                     |*verbose = FALSE)*         |- Data>Indentify      |
-|                     |                           |  Duplicate Cases     |
-|                     |                           |- Select Key Variables|
-+---------------------+---------------------------+----------------------+
-
-load("household.rda"
++------------------------+-----------------------------------+-----------------------+
+|   **STATA**            |         **R**                     |  **SPSS**             |
++------------------------+-----------------------------------+-----------------------+
+| .. code-block:: STATA  |.. code-block:: R                  |Load dataset and choose|
+|                        |                                   |from the menu:         |
+|   use “household.dta”  |  my_data <-                       |                       |
+|                        |   load("household.rda")           |- Data>Identify        |
+|   isid key1 key2       |                                   |  Duplicate Cases      |
+|                        | id <-c( "key1" , " key2")         |- Select Key Variables |
+|                        | library(eeptools)                 |                       |
+|                        | isid(my_data, id, verbose=FALSE   |                       |
+|                        | verbose = FALSE)*                 |                       |
++------------------------+-----------------------------------+-----------------------+
 
 -  Finally, check that the ID variable for the unit of observation doesn't
    have missing or assigned zero/null values. Ensure that the datasets are
@@ -304,19 +301,18 @@ observations. For more details, refer to *Example 4* of *Section A*.
 
 **Table 8. Check for duplicates observations: STATA/R/SPSS Commands**
 
-+---------------------+---------------------------+----------------------+
-|   **STATA Code**    |         **R Code**        |  **SPSS Function**   |
-+---------------------+---------------------------+----------------------+
-|*use “household.dta”*|*my_data<-*                |*GET*                 |
-|                     |*load("household.rda")*    |*FILE='household.sav'*|
-|*duplicates report*  |                           |                      |
-|                     |*household*                |*execute.*            |
-|*duplicates tag,*    |*[duplicated(household),]* |                      |
-|*generate(newvar)*   |                           |From the menu choose: |
-|                     |                           |                      |
-|                     |                           |- Data>Indentify      |
-|                     |                           |  Duplicate Cases     |
-+---------------------+---------------------------+----------------------+
++------------------------+-----------------------------------+-----------------------+
+|   **STATA**            |         **R**                     |  **SPSS**             |
++------------------------+-----------------------------------+-----------------------+
+| .. code-block:: STATA  |.. code-block:: R                  |Load dataset and choose|
+|                        |                                   |from the menu:         |
+|   use “household.dta”  |  my_data <-                       |                       |
+|                        |   load("household.rda")           |- Data>Identify        |
+|   duplicates report    |                                   |  Duplicate Cases      |
+|                        | household[duplicated(household),] |  execute.             |
+|   duplicates tag,      |                                   |                       |
+|   generate(newvar)     |                                   |                       |
++------------------------+-----------------------------------+-----------------------+
 
 Ensure that each individual dataset can be combined into a single database 
 -------------------------------------------------------------------------------
@@ -368,25 +364,19 @@ these commands/functions in STATA, R and SPSS. For more details, refer to
 
 **Table 9. Joining data files: STATA/R/SPSS Commands**
 
-+---------------------+---------------------------+----------------------+
-|   **STATA Code**    |         **R Code**        |  **SPSS Function**   |
-+---------------------+---------------------------+----------------------+
-|*use “household.dta”*|*household<-*              |*GET*                 |
-|                     |*load("household.rda")*    |*FILE='household.sav'*|
-|*merge 1:m hh1 hh2*  |                           |                      |
-|*hh3 using*          |*individuals<-*            |                      |
-|*"individuals.dta"*  |*load("individuals.rda")*  |*execute.*            |
-|                     |                           |                      |
-|                     |*md<-merge(household,*     |From the menu choose: |
-|                     |*individuals, by=c("hh1",  |                      |
-|                     |"hh2", “hh3”),all=TRUE)*   |- Data>Merge Files>   |
-|                     |                           |  Add Variables       |
-|                     |                           |                      |
-|                     |                           |- Select the data file|
-|                     |                           |  to merge            |
-|                     |                           |                      |
-|                     |                           |- Select Key Variables|
-+---------------------+---------------------------+----------------------+
++------------------------+------------------------------------------+-----------------------+
+|   **STATA**            |         **R**                            |  **SPSS**             |
++------------------------+------------------------------------------+-----------------------+
+| .. code-block:: STATA  |.. code-block:: R                         |Load dataset and choose|
+|                        |                                          |from the menu:         |
+|   use “household.dta”  |  household <- load("household.rda")      |                       |
+|                        |                                          |- Data>Merge Files>    |
+|   merge 1:m hh1 hh2 hh3|  individuals <- load("individuals.rda")  |  Add Variables        |
+|   using                |                                          |- Select the data file |
+|   "individuals.dta"    |  md <- merge(household, individuals,     |  to merge             |
+|                        |              by = c("hh1", "hh2", “hh3”),|- Select Key Variables |
+|                        |              all =TRUE)                  |                       |
++------------------------+------------------------------------------+-----------------------+
 
 Panel datasets should be stored in different files as well. Having one
 file per data collection period is a good practice. To combine the different
@@ -449,24 +439,19 @@ values among the specified variables. For more details, refer to
 
 **Table 11. Counting Missing Values: STATA/R/SPSS Commands**
 
-+----------------------+---------------------------+---------------------+
-|   **STATA Code**     |         **R Code**        |  **SPSS Function**  |
-+----------------------+---------------------------+---------------------+
-|*use "individual.dta”*|*individual<-*             |*GET*                |
-|                      |*load("individual.rda")*   |*FILE=*              |
-|*misstable summarize* |                           |*'individual.sav'*   |
-|                      |*colSums*                  |                     |
-|                      |*(is.na(individual))*      |*execute.*           |
-|                      |                           |                     |
-|                      |*colMeans*                 |From the menu choose:|
-|                      |*(is.na(individual))*      |                     |
-|                      |                           |- Data>Analyze>      |
-|                      |                           |  Missing Value      |
-|                      |                           |  Analysis           |
-|                      |                           |                     |
-|                      |                           |- Select “Use All    |
-|                      |                           |  Variables”         |
-+----------------------+---------------------------+---------------------+
++------------------------+-----------------------------------+-----------------------+
+|   **STATA**            |         **R**                     |  **SPSS**             |
++------------------------+-----------------------------------+-----------------------+
+| .. code-block:: STATA  |.. code-block:: R                  |Load dataset and choose|
+|                        |                                   |from the menu:         |
+|   use “individual.dta” |  my_data <-                       |                       |
+|                        |   load("individual.rda")          |- Data>Analyze>        |
+|   misstable summarize  |                                   |  Missing Value        |
+|                        |  colSums(is.na(individual))       |  Analysis             |
+|                        |                                   |                       |
+|                        |  colMeans(is.na(individual))      |- Select “Use All      |
+|                        |                                   |  Variables”           |
++------------------------+-----------------------------------+-----------------------+
 
 +--------------------------------------------------------------------+
 |*Best Practices*                                                    |
@@ -505,24 +490,19 @@ SPSS.
 
 **Table 12. Generate descriptive statistics: STATA/R/SPSS Commands**
 
-+----------------------+---------------------------+---------------------+
-|   **STATA Code**     |         **R Code**        |  **SPSS Function**  |
-+----------------------+---------------------------+---------------------+
-|*use "individual.dta”*|*individual<-*             |*GET*                |
-|                      |*load("individual.rda")*   |*FILE=*              |
-|*summarize*           |                           |*'individual.sav'*   |
-|                      |*summary(individual)*      |                     |
-|                      |                           |*execute.*           |
-|                      |                           |                     |
-|                      |                           |From the menu choose:|
-|                      |                           |                     |
-|                      |                           |- Data>Analyze>      |
-|                      |                           |  Descriptive        |
-|                      |                           |  Statistics>        |
-|                      |                           |  Frequencies        |
-|                      |                           |                     |
-|                      |                           |- Select “Statistics"|
-+----------------------+---------------------------+---------------------+
++------------------------+-----------------------------------+-----------------------+
+|   **STATA**            |         **R**                     |  **SPSS**             |
++------------------------+-----------------------------------+-----------------------+
+| .. code-block:: STATA  |.. code-block:: R                  |Load dataset and choose|
+|                        |                                   |from the menu:         |
+|   use “individual.dta” |  individual <-                    |                       |
+|                        |   load("individual.rda")          |- Data>Analyze>        |
+|   summarize            |                                   |  Descriptive          |
+|                        |  summary(individual)              |  Statistics>          |
+|                        |                                   |  Frequencies          |
+|                        |                                   |                       |
+|                        |                                   |- Select “Statistics"  |
++------------------------+-----------------------------------+-----------------------+
 
 Verify that the number of records in each file corresponds to what is expected 
 -----------------------------------------------------------------------------------
@@ -689,31 +669,26 @@ STATA, R and SPSS.
 
 **Table 14. Convert string variables to numeric: STATA/R/SPSS Commands**
 
-+----------------------+---------------------------+---------------------+
-|   **STATA Code**     |         **R Code**        |  **SPSS Function**  |
-+----------------------+---------------------------+---------------------+
-|*use "individual.dta”*|*individual<-*             |*GET*                |
-|                      |*load("individual.rda")*   |*FILE=*              |
-|*destring (varname),* |                           |*'individual.sav'*   |
-|*{generate|replace}*  |*individual$varname =*    |                     |
-|                      |*as.numeric(individual*    |*execute.*           |
-|                      |*$varname)*                |                     |
-|                      |                           |From the menu choose:|
-|                      |                           |                     |
-|                      |                           |- Data>Transform>    |
-|                      |                           |  Recode into Same|  |
-|                      |                           |  Different Variables|
-|                      |                           |                     |
-|                      |                           |- Select the variable|
-|                      |                           |                     |
-|                      |                           |- Select “Old and New|
-|                      |                           |  Values” and Recode |
-|                      |                           |  it                 |
-|                      |                           |                     |
-|                      |                           |- Select “Convert    |
-|                      |                           |  numeric strings to |
-|                      |                           |  numbers (‘5’->5)   |
-+----------------------+---------------------------+---------------------+
++------------------------+-----------------------------------+-----------------------+
+|   **STATA**            |         **R**                     |  **SPSS**             |
++------------------------+-----------------------------------+-----------------------+
+| .. code-block:: STATA  |.. code-block:: R                  |Load dataset and choose|
+|                        |                                   |from the menu:         |
+|   use “individual.dta” |  individual <-                    |                       |
+|                        |   load("individual.rda")          |- Data>Transform>      |
+|   destring (varname),  |                                   |  Recode into Same|    |
+|    {generate|replace}  |  individual$varname <-            |  Different Variables  |
+|                        |    as.numeric(individual$varname) |                       |
+|                        |                                   |- Select the variable  |
+|                        |                                   |                       |
+|                        |                                   |- Select “Old and New  |
+|                        |                                   |  Values” and Recode   |
+|                        |                                   |  it                   |
+|                        |                                   |                       |
+|                        |                                   |- Select “Convert      |
+|                        |                                   |  numeric strings to   |
+|                        |                                   |  numbers (‘5’->5)     |
++------------------------+-----------------------------------+-----------------------+
 
 Datasets must not have directed identifiers
 -------------------------------------------------

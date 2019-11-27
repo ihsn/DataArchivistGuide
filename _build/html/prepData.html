@@ -218,21 +218,6 @@ data-checking procedures, archive a new version in addition to the
 original. Work on this new version, leaving the original data files
 untouched.</p>
 </div>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><em>Note</em></p>
-<p>If you are working in a data archive, be careful not to overwrite
-your original variables. Since managing databases involves several
-data-checking procedures, archive a new version in addition to the
-original. Work on this new version, leaving the original data files
-untouched.</p>
-</td>
-</tr>
-</tbody>
-</table>
 <p>The following procedures are recommended for preparing your dataset(s):</p>
 <div class="section" id="data-files-should-be-organized-in-a-hierarchical-format">
 <h2>3.1. Data files should be organized in a hierarchical format<a class="headerlink" href="#data-files-should-be-organized-in-a-hierarchical-format" title="Permalink to this headline">¶</a></h2>
@@ -473,30 +458,35 @@ details, refer to <em>Example 1 and Example 2 of Section A</em>.</p></li>
 <p><strong>Table 6. Check for unique identifiers: STATA/R/SPSS Commands</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 30%" />
-<col style="width: 39%" />
-<col style="width: 31%" />
+<col style="width: 29%" />
+<col style="width: 43%" />
+<col style="width: 28%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><strong>STATA Code</strong></p></td>
-<td><p><strong>R Code</strong></p></td>
-<td><p><strong>SPSS Function</strong></p></td>
+<tr class="row-odd"><td><p><strong>STATA</strong></p></td>
+<td><p><strong>R</strong></p></td>
+<td><p><strong>SPSS</strong></p></td>
 </tr>
-<tr class="row-even"><td><p><em>use “household.dta”</em></p>
-<p><em>isid “key1” “key2”</em></p>
+<tr class="row-even"><td><div class="highlight-STATA notranslate"><div class="highlight"><pre><span></span><span class="k">use</span> “household<span class="m">.</span>dta”
+
+<span class="k">isid</span> key1 key2
+</pre></div>
+</div>
 </td>
-<td><p><em>my_data&lt;-</em>
-<em>read_dta(“household.dta”)</em></p>
-<p><em>id &lt;-c( “key1” , ” key2”)</em></p>
-<p><em>isid(my_data, id,</em>
-<em>verbose = FALSE)</em></p>
+<td><div class="highlight-R notranslate"><div class="highlight"><pre><span></span> <span class="n">my_data</span> <span class="o">&lt;-</span>
+  <span class="nf">load</span><span class="p">(</span><span class="s">&quot;household.rda&quot;</span><span class="p">)</span>
+
+<span class="n">id</span> <span class="o">&lt;-</span><span class="nf">c</span><span class="p">(</span> <span class="s">&quot;key1&quot;</span> <span class="p">,</span> <span class="s">&quot; key2&quot;</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">eeptools</span><span class="p">)</span>
+<span class="nf">isid</span><span class="p">(</span><span class="n">my_data</span><span class="p">,</span> <span class="n">id</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">FALSE</span>
+<span class="n">verbose</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span><span class="o">*</span>
+</pre></div>
+</div>
 </td>
-<td><p><em>GET</em>
-<em>FILE=’household.sav’</em></p>
-<p><em>execute.</em></p>
-<p>From the menu choose:</p>
+<td><p>Load dataset and choose
+from the menu:</p>
 <ul class="simple">
-<li><p>Data&gt;Indentify
+<li><p>Data&gt;Identify
 Duplicate Cases</p></li>
 <li><p>Select Key Variables</p></li>
 </ul>
@@ -548,32 +538,37 @@ observations. For more details, refer to <em>Example 4</em> of <em>Section A</em
 <p><strong>Table 8. Check for duplicates observations: STATA/R/SPSS Commands</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 30%" />
-<col style="width: 39%" />
-<col style="width: 31%" />
+<col style="width: 29%" />
+<col style="width: 43%" />
+<col style="width: 28%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><strong>STATA Code</strong></p></td>
-<td><p><strong>R Code</strong></p></td>
-<td><p><strong>SPSS Function</strong></p></td>
+<tr class="row-odd"><td><p><strong>STATA</strong></p></td>
+<td><p><strong>R</strong></p></td>
+<td><p><strong>SPSS</strong></p></td>
 </tr>
-<tr class="row-even"><td><p><em>use “household.dta”</em></p>
-<p><em>duplicates report</em></p>
-<p><em>duplicates tag,</em>
-<em>generate(newvar)</em></p>
+<tr class="row-even"><td><div class="highlight-STATA notranslate"><div class="highlight"><pre><span></span><span class="k">use</span> “household<span class="m">.</span>dta”
+
+<span class="k">duplicates report</span>
+
+<span class="k">duplicates</span> tag,<span class="k"></span>
+<span class="k">generate</span>(newvar)
+</pre></div>
+</div>
 </td>
-<td><p><em>my_data&lt;-</em>
-<em>load(“household.rda”)</em></p>
-<p><em>household</em>
-<em>[duplicated(household),]</em></p>
+<td><div class="highlight-R notranslate"><div class="highlight"><pre><span></span> <span class="n">my_data</span> <span class="o">&lt;-</span>
+  <span class="nf">load</span><span class="p">(</span><span class="s">&quot;household.rda&quot;</span><span class="p">)</span>
+
+<span class="n">household</span><span class="nf">[duplicated</span><span class="p">(</span><span class="n">household</span><span class="p">),</span><span class="n">]</span>
+</pre></div>
+</div>
 </td>
-<td><p><em>GET</em>
-<em>FILE=’household.sav’</em></p>
-<p><em>execute.</em></p>
-<p>From the menu choose:</p>
+<td><p>Load dataset and choose
+from the menu:</p>
 <ul class="simple">
-<li><p>Data&gt;Indentify
-Duplicate Cases</p></li>
+<li><p>Data&gt;Identify
+Duplicate Cases
+execute.</p></li>
 </ul>
 </td>
 </tr>
@@ -628,32 +623,35 @@ these commands/functions in STATA, R and SPSS. For more details, refer to
 <p><strong>Table 9. Joining data files: STATA/R/SPSS Commands</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 30%" />
-<col style="width: 39%" />
-<col style="width: 31%" />
+<col style="width: 27%" />
+<col style="width: 47%" />
+<col style="width: 26%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><strong>STATA Code</strong></p></td>
-<td><p><strong>R Code</strong></p></td>
-<td><p><strong>SPSS Function</strong></p></td>
+<tr class="row-odd"><td><p><strong>STATA</strong></p></td>
+<td><p><strong>R</strong></p></td>
+<td><p><strong>SPSS</strong></p></td>
 </tr>
-<tr class="row-even"><td><p><em>use “household.dta”</em></p>
-<p><em>merge 1:m hh1 hh2</em>
-<em>hh3 using</em>
-<em>“individuals.dta”</em></p>
+<tr class="row-even"><td><div class="highlight-STATA notranslate"><div class="highlight"><pre><span></span><span class="k">use</span> “household<span class="m">.</span>dta”
+
+<span class="k">merge</span> <span class="m">1</span>:m hh1 hh2 hh3
+using
+<span class="s">&quot;individuals.dta&quot;</span>
+</pre></div>
+</div>
 </td>
-<td><p><em>household&lt;-</em>
-<em>load(“household.rda”)</em></p>
-<p><em>individuals&lt;-</em>
-<em>load(“individuals.rda”)</em></p>
-<p><em>md&lt;-merge(household,</em>
-<em>individuals, by=c(“hh1”,
-“hh2”, “hh3”),all=TRUE)</em></p>
+<td><div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">household</span> <span class="o">&lt;-</span> <span class="nf">load</span><span class="p">(</span><span class="s">&quot;household.rda&quot;</span><span class="p">)</span>
+
+<span class="n">individuals</span> <span class="o">&lt;-</span> <span class="nf">load</span><span class="p">(</span><span class="s">&quot;individuals.rda&quot;</span><span class="p">)</span>
+
+<span class="n">md</span> <span class="o">&lt;-</span> <span class="nf">merge</span><span class="p">(</span><span class="n">household</span><span class="p">,</span> <span class="n">individuals</span><span class="p">,</span>
+            <span class="n">by</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;hh1&quot;</span><span class="p">,</span> <span class="s">&quot;hh2&quot;</span><span class="p">,</span> “<span class="n">hh3</span>”<span class="p">),</span>
+            <span class="n">all</span> <span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
+</pre></div>
+</div>
 </td>
-<td><p><em>GET</em>
-<em>FILE=’household.sav’</em></p>
-<p><em>execute.</em></p>
-<p>From the menu choose:</p>
+<td><p>Load dataset and choose
+from the menu:</p>
 <ul class="simple">
 <li><p>Data&gt;Merge Files&gt;
 Add Variables</p></li>
@@ -720,30 +718,32 @@ values among the specified variables. For more details, refer to
 <p><strong>Table 11. Counting Missing Values: STATA/R/SPSS Commands</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 31%" />
-<col style="width: 39%" />
-<col style="width: 30%" />
+<col style="width: 29%" />
+<col style="width: 43%" />
+<col style="width: 28%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><strong>STATA Code</strong></p></td>
-<td><p><strong>R Code</strong></p></td>
-<td><p><strong>SPSS Function</strong></p></td>
+<tr class="row-odd"><td><p><strong>STATA</strong></p></td>
+<td><p><strong>R</strong></p></td>
+<td><p><strong>SPSS</strong></p></td>
 </tr>
-<tr class="row-even"><td><p><em>use “individual.dta”</em></p>
-<p><em>misstable summarize</em></p>
+<tr class="row-even"><td><div class="highlight-STATA notranslate"><div class="highlight"><pre><span></span><span class="k">use</span> “individual<span class="m">.</span>dta”
+
+misstable<span class="k"> summarize</span>
+</pre></div>
+</div>
 </td>
-<td><p><em>individual&lt;-</em>
-<em>load(“individual.rda”)</em></p>
-<p><em>colSums</em>
-<em>(is.na(individual))</em></p>
-<p><em>colMeans</em>
-<em>(is.na(individual))</em></p>
+<td><div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">my_data</span> <span class="o">&lt;-</span>
+ <span class="nf">load</span><span class="p">(</span><span class="s">&quot;individual.rda&quot;</span><span class="p">)</span>
+
+<span class="nf">colSums</span><span class="p">(</span><span class="nf">is.na</span><span class="p">(</span><span class="n">individual</span><span class="p">))</span>
+
+<span class="nf">colMeans</span><span class="p">(</span><span class="nf">is.na</span><span class="p">(</span><span class="n">individual</span><span class="p">))</span>
+</pre></div>
+</div>
 </td>
-<td><p><em>GET</em>
-<em>FILE=</em>
-<em>‘individual.sav’</em></p>
-<p><em>execute.</em></p>
-<p>From the menu choose:</p>
+<td><p>Load dataset and choose
+from the menu:</p>
 <ul class="simple">
 <li><p>Data&gt;Analyze&gt;
 Missing Value
@@ -795,27 +795,30 @@ SPSS.</p>
 <p><strong>Table 12. Generate descriptive statistics: STATA/R/SPSS Commands</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 31%" />
-<col style="width: 39%" />
-<col style="width: 30%" />
+<col style="width: 29%" />
+<col style="width: 43%" />
+<col style="width: 28%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><strong>STATA Code</strong></p></td>
-<td><p><strong>R Code</strong></p></td>
-<td><p><strong>SPSS Function</strong></p></td>
+<tr class="row-odd"><td><p><strong>STATA</strong></p></td>
+<td><p><strong>R</strong></p></td>
+<td><p><strong>SPSS</strong></p></td>
 </tr>
-<tr class="row-even"><td><p><em>use “individual.dta”</em></p>
-<p><em>summarize</em></p>
+<tr class="row-even"><td><div class="highlight-STATA notranslate"><div class="highlight"><pre><span></span><span class="k">use</span> “individual<span class="m">.</span>dta”
+
+<span class="k">summarize</span>
+</pre></div>
+</div>
 </td>
-<td><p><em>individual&lt;-</em>
-<em>load(“individual.rda”)</em></p>
-<p><em>summary(individual)</em></p>
+<td><div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">individual</span> <span class="o">&lt;-</span>
+ <span class="nf">load</span><span class="p">(</span><span class="s">&quot;individual.rda&quot;</span><span class="p">)</span>
+
+<span class="nf">summary</span><span class="p">(</span><span class="n">individual</span><span class="p">)</span>
+</pre></div>
+</div>
 </td>
-<td><p><em>GET</em>
-<em>FILE=</em>
-<em>‘individual.sav’</em></p>
-<p><em>execute.</em></p>
-<p>From the menu choose:</p>
+<td><p>Load dataset and choose
+from the menu:</p>
 <ul class="simple">
 <li><p>Data&gt;Analyze&gt;
 Descriptive
@@ -969,6 +972,50 @@ STATA, R and SPSS.</p>
 <p><strong>Table 14. Convert string variables to numeric: STATA/R/SPSS Commands</strong></p>
 <table class="docutils align-default">
 <colgroup>
+<col style="width: 29%" />
+<col style="width: 43%" />
+<col style="width: 28%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>STATA</strong></p></td>
+<td><p><strong>R</strong></p></td>
+<td><p><strong>SPSS</strong></p></td>
+</tr>
+<tr class="row-even"><td><div class="highlight-STATA notranslate"><div class="highlight"><pre><span></span><span class="k">use</span> “individual<span class="m">.</span>dta”
+
+<span class="k">destring</span> (varname),
+ {generate|replace}
+</pre></div>
+</div>
+</td>
+<td><div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">individual</span> <span class="o">&lt;-</span>
+ <span class="nf">load</span><span class="p">(</span><span class="s">&quot;individual.rda&quot;</span><span class="p">)</span>
+
+<span class="n">individual</span><span class="o">$</span><span class="n">varname</span> <span class="o">&lt;-</span>
+  <span class="nf">as.numeric</span><span class="p">(</span><span class="n">individual</span><span class="o">$</span><span class="n">varname</span><span class="p">)</span>
+</pre></div>
+</div>
+</td>
+<td><p>Load dataset and choose
+from the menu:</p>
+<ul class="simple">
+<li><p>Data&gt;Transform&gt;
+Recode into Same|
+Different Variables</p></li>
+<li><p>Select the variable</p></li>
+<li><p>Select “Old and New
+Values” and Recode
+it</p></li>
+<li><p>Select “Convert
+numeric strings to
+numbers (‘5’-&gt;5)</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
 <col style="width: 31%" />
 <col style="width: 39%" />
 <col style="width: 30%" />
@@ -984,8 +1031,8 @@ STATA, R and SPSS.</p>
 </td>
 <td><p><em>individual&lt;-</em>
 <em>load(“individual.rda”)</em></p>
-<p><em>Individual $varname =</em>
-<em>as.numeric(Individual</em>
+<p><em>individual$varname =</em>
+<em>as.numeric(individual</em>
 <em>$varname)</em></p>
 </td>
 <td><p><em>GET</em>
