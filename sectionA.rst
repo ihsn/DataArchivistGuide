@@ -152,11 +152,6 @@ The following Form is available at www.surveynetwork.org
 
 .. image:: media/image34.png
 
-.. [1]
-   DDI (Data Documentation Initiative) and DCMI (Dublin Core Metadata
-   Initiative) are international XML metadata specifications. For more
-   information on these standards and on the IHSN Toolkit, please visit
-   `www.surveynetwork.org <http://www.surveynetwork.org>`__.
 
 .. [2]
    See section 3 – *Importing data and establishing relationships* for

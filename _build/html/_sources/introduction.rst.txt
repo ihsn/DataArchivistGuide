@@ -4,7 +4,7 @@ Introduction
 This *Quick Reference Guide for Data Archivists* provides data
 archivists with guidelines to document a micro-dataset in compliance
 with the Data Documentation Initiative (DDI) and the Dublin Core (DCMI)
-metadata standards, using the World Bank Metadata Editor.
+metadata standards [#f1]_ , using the World Bank Metadata Editor.
 
 The World Bank Metadata Editor is an application designed to help document
 data collection operations undertaken for different kinds of research
@@ -53,28 +53,8 @@ assumed that users are already familiar with the Editor. A *Metadata*
 *Editor User’s Guide* is available at 
 https://metadata-editor.readthedocs.io/en/latest/.
 
-Before you start: organizing your files
-============================================
-
-Documentation of a dataset will be most efficient if you
-organize your data and other files properly. We recommend that, before
-anything else, you create the necessary directories as follows:
-
-+------------+--------------+------------------------------------------+
-|.. image:: media/Page2.png |- Create a directory for the survey.      |
-|                           |  We suggest you name it using the        |
-|                           |                                          |
-|                           |  country, survey’s year and the          |
-|                           |  abbreviated name, e.g. “UGA_2018_HIES”  |
-|                           |                                          |
-|                           |  for “Household Income and Expenditure   | 
-|                           |  Survey” of Uganda collected in 2018.    |
-+                           +------------------------------------------+
-|                           |- Create various sub-directories for the. |
-|                           |  data files (and for the various versions|
-|                           |  of the dataset if relevant)             |
-|                           +------------------------------------------+
-|                           |- Create sub-directories for the          |
-|                           |  documentation and for the program files |
-|                           |  if relevant (see example).              |
-+------------+--------------+------------------------------------------+
+.. [#f1]
+   DDI (Data Documentation Initiative) and DCMI (Dublin Core Metadata
+   Initiative) are international XML metadata specifications. For more
+   information on these standards and on the IHSN Toolkit, please visit
+   `www.surveynetwork.org <http://www.surveynetwork.org>`__.

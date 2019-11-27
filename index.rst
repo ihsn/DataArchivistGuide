@@ -26,6 +26,7 @@ Content
    :numbered:
 
    introduction
+   organizingFiles
    prepData
    prepDocumentation
    importData

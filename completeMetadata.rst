@@ -47,7 +47,7 @@ IHSN template are provided below.
    best possible documentation is available at completion of that
    survey.
 
-5.1. Good practices for completing the Document Description
+Good practices for completing the Document Description
 -----------------------------------------------------------
 
 Documenting a study using the DDI and DCMI metadata standards consists
@@ -157,7 +157,7 @@ to describe the DDI document.
 |                                   |funds                              |
 +-----------------------------------+-----------------------------------+
 
-5.2. Good practices for completing the Study Description
+Good practices for completing the Study Description
 --------------------------------------------------------
 
 In the DDI standard, the Study Description is the section that contains
@@ -2180,7 +2180,7 @@ and methods, scope and coverage, etc.)
 |                                   |  *URI: www.cso.org/databank*      |
 +-----------------------------------+-----------------------------------+
 
-5.3. Good practices for completing the File Description
+Good practices for completing the File Description
 -------------------------------------------------------
 
 The File Description is the DDI section that aims to provide a detailed
@@ -2289,7 +2289,7 @@ available DDI elements.
 |                                   |most cases be left empty.          |
 +-----------------------------------+-----------------------------------+
 
-5.4. Good practices for completing the Variables Description
+Good practices for completing the Variables Description
 ------------------------------------------------------------
 
 The Variable Description is the section of the DDI document that
@@ -2829,7 +2829,7 @@ provides detailed information on each variable.
 |                                   |the specific variable.             |
 +-----------------------------------+-----------------------------------+
 
-5.5. Good practices for completing the External Resources description
+Good practices for completing the External Resources description
 ---------------------------------------------------------------------
 
 The External Resources are all materials related to the study others

@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="3. 1. Gathering and preparing the data set" href="prepData.html" />
+    <link rel="next" title="2. Before you start: organizing your files" href="organizingFiles.html" />
     <link rel="prev" title="Quick Reference Guide for Data Archivists" href="index.html" /> 
 </head>
 
@@ -84,16 +84,16 @@
               <p class="caption"><span class="caption-text">Table of contents</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">1. Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#before-you-start-organizing-your-files">2. Before you start: organizing your files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="prepData.html">3. 1. Gathering and preparing the data set</a></li>
-<li class="toctree-l1"><a class="reference internal" href="prepDocumentation.html">4. 2. Gathering and preparing the documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="importData.html">5. 3. Importing data and establishing relationships</a></li>
-<li class="toctree-l1"><a class="reference internal" href="importResources.html">6. 4. Importing external resources</a></li>
-<li class="toctree-l1"><a class="reference internal" href="completeMetadata.html">7. 5. Completing metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="createVarGroups.html">8. 6. Creating variable groups</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation.html">9. 7. Running validations and diagnostics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pdfDoc.html">10. 8. Generating the survey documentation in PDF</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qualityReview.html">11. 9. Independent quality review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="organizingFiles.html">2. Before you start: organizing your files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepData.html">3. Gathering and preparing the data set</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepDocumentation.html">4. Gathering and preparing the documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="importData.html">5. Importing data and establishing relationships</a></li>
+<li class="toctree-l1"><a class="reference internal" href="importResources.html">6. Importing external resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="completeMetadata.html">7. Completing metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="createVarGroups.html">8. Creating variable groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation.html">9. Running validations and diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdfDoc.html">10. Generating the survey documentation in PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualityReview.html">11. Independent quality review</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sectionA.html">12. Section A . Data Validations in Stata: Practical Examples</a></li>
 </ul>
 
@@ -164,7 +164,7 @@
 <p>This <em>Quick Reference Guide for Data Archivists</em> provides data
 archivists with guidelines to document a micro-dataset in compliance
 with the Data Documentation Initiative (DDI) and the Dublin Core (DCMI)
-metadata standards, using the World Bank Metadata Editor.</p>
+metadata standards <a class="footnote-reference brackets" href="#f1" id="id1">1</a> , using the World Bank Metadata Editor.</p>
 <p>The World Bank Metadata Editor is an application designed to help document
 data collection operations undertaken for different kinds of research
 projects. The application is developed as an open-source tool by the World
@@ -199,48 +199,14 @@ an external reviewer.</p>
 assumed that users are already familiar with the Editor. A <em>Metadata</em>
 <em>Editor User’s Guide</em> is available at
 <a class="reference external" href="https://metadata-editor.readthedocs.io/en/latest/">https://metadata-editor.readthedocs.io/en/latest/</a>.</p>
-</div>
-<div class="section" id="before-you-start-organizing-your-files">
-<h1>2. Before you start: organizing your files<a class="headerlink" href="#before-you-start-organizing-your-files" title="Permalink to this headline">¶</a></h1>
-<p>Documentation of a dataset will be most efficient if you
-organize your data and other files properly. We recommend that, before
-anything else, you create the necessary directories as follows:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 18%" />
-<col style="width: 21%" />
-<col style="width: 62%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td colspan="2" rowspan="3"><img alt="_images/Page2.png" src="_images/Page2.png" />
-</td>
-<td><ul>
-<li><p>Create a directory for the survey.
-We suggest you name it using the</p>
-<p>country, survey’s year and the
-abbreviated name, e.g. “UGA_2018_HIES”</p>
-<p>for “Household Income and Expenditure
-Survey” of Uganda collected in 2018.</p>
-</li>
-</ul>
-</td>
-</tr>
-<tr class="row-even"><td><ul class="simple">
-<li><p>Create various sub-directories for the.
-data files (and for the various versions
-of the dataset if relevant)</p></li>
-</ul>
-</td>
-</tr>
-<tr class="row-odd"><td><ul class="simple">
-<li><p>Create sub-directories for the
-documentation and for the program files
-if relevant (see example).</p></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+<dl class="footnote brackets">
+<dt class="label" id="f1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>DDI (Data Documentation Initiative) and DCMI (Dublin Core Metadata
+Initiative) are international XML metadata specifications. For more
+information on these standards and on the IHSN Toolkit, please visit
+<a class="reference external" href="http://www.surveynetwork.org">www.surveynetwork.org</a>.</p>
+</dd>
+</dl>
 </div>
 
 
@@ -251,7 +217,7 @@ if relevant (see example).</p></li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="prepData.html" class="btn btn-neutral float-right" title="3. 1. Gathering and preparing the data set" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="organizingFiles.html" class="btn btn-neutral float-right" title="2. Before you start: organizing your files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral float-left" title="Quick Reference Guide for Data Archivists" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

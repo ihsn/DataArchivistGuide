@@ -35,20 +35,17 @@ outset. Listed below are some common data problems that users encounter:
 Some practical examples using a statistical package are provided in
 *Section A “Data Validations in Stata: Practical Examples*.
 
-+--------------------------------------------------------------------+
-| *Note*                                                             |
-|                                                                    |
-| If you are working in a data archive, be careful not to overwrite  |
-| your original variables. Since managing databases involves several |
-| data-checking procedures, archive a new version in addition to the |
-| original. Work on this new version, leaving the original data files|
-| untouched.                                                         |
-+--------------------------------------------------------------------+
+.. note::
+	If you are working in a data archive, be careful not to overwrite 
+	your original variables. Since managing databases involves several 
+	data-checking procedures, archive a new version in addition to the 
+	original. Work on this new version, leaving the original data files
+	untouched.  
 
 The following procedures are recommended for preparing your dataset(s):
 
 Data files should be organized in a hierarchical format
-------------------------------------------------------------
+-------------------------------------------------------
 
 Look at your data and visualize it to understand its structure.
 It is preferable to organize your files in a hierarchical format
