@@ -242,16 +242,18 @@ identifies it, the following checks are suggested:
 |   **STATA Code**    |         **R Code**        |  **SPSS Function**   |
 +---------------------+---------------------------+----------------------+
 |*use “household.dta”*|*my_data<-*                |*GET*                 |
-|                     |*read_dta("household.dta")*|*FILE='household.sav'*|
-|*isid "key1" "key2"* |                           |                      |
+|                     |*load("household.rda")*    |*FILE='household.sav'*|
+|*isid key1 key2*     |                           |                      |
 |                     |                           |*execute.*            |
 |                     |*id <-c( "key1" , " key2")*|                      |
-|                     |                           |From the menu choose: |
+|                     |*library(eepttols)*        |From the menu choose: |
 |                     |*isid(my_data, id,*        |                      |
 |                     |*verbose = FALSE)*         |- Data>Indentify      |
 |                     |                           |  Duplicate Cases     |
 |                     |                           |- Select Key Variables|
 +---------------------+---------------------------+----------------------+
+
+load("household.rda"
 
 -  Finally, check that the ID variable for the unit of observation doesn't
    have missing or assigned zero/null values. Ensure that the datasets are
@@ -693,8 +695,8 @@ STATA, R and SPSS.
 |*use "individual.dta”*|*individual<-*             |*GET*                |
 |                      |*load("individual.rda")*   |*FILE=*              |
 |*destring (varname),* |                           |*'individual.sav'*   |
-|*{generate|replace}*  |*Individual $varname =*    |                     |
-|                      |*as.numeric(Individual*    |*execute.*           |
+|*{generate|replace}*  |*individual$varname =*    |                     |
+|                      |*as.numeric(individual*    |*execute.*           |
 |                      |*$varname)*                |                     |
 |                      |                           |From the menu choose:|
 |                      |                           |                     |
