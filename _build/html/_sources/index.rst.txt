@@ -13,7 +13,7 @@ Quick Reference Guide for Data Archivists
 
 The production of this guide was made possible through a grant from the TFSCB\DFID funding to the World Bank P167116/TF0A7461.
 
-**Acknowledgments:** Francois Fonteneau (PARIS21), Geoffrey Greenwell (PARIS21) Chris Rockmore (World Bank) and Jan Smit (ESCAP) provided valuable input to an earlier version of the document. 
+**Acknowledgments:** Francois Fonteneau (PARIS21), Geoffrey Greenwell (PARIS21), Chris Rockmore (World Bank) and Jan Smit (ESCAP) provided valuable input to an earlier version of the document. 
 Trevor Croft (UNICEF) provided many of the examples of good practices for completing survey metadata. 
 
 

@@ -19,7 +19,7 @@ The Metadata Editor is modelled on the Nesstar Publisher. As such it should
 provide a familiar environment for the Nesstar users. As an added benefit,
 the Metadata Editor is flexible and can support the documentation of
 multiple-data types. Out of the box it supports the documentation of survey
-data, time Series data, geospatial data, statistical tables, images,
+data, time series data, geospatial data, statistical tables, images,
 analytical scripts and standalone publications or documents.
 
 This Guide summarizes the process in 10 chronological steps:

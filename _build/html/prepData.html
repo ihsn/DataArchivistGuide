@@ -374,7 +374,7 @@ the geographic codes.</p></li>
 <li><p>Suppose the unique identification of a household is a combination of
 of variables PROV (Province), DIST (District), EA (Enumeration Area),
 HHNUM (Household Number). Options 2 and 3 are recommended. Note that
-if option 3 is chosen, it is crucial o preserve (but not distribute)
+if option 3 is chosen, it is crucial to preserve (but not distribute)
 a file that would provide the mapping between the original codes and
 the new HHID.</p></li>
 </ul>
@@ -1014,48 +1014,6 @@ numbers (‘5’-&gt;5)</p></li>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 31%" />
-<col style="width: 39%" />
-<col style="width: 30%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>STATA Code</strong></p></td>
-<td><p><strong>R Code</strong></p></td>
-<td><p><strong>SPSS Function</strong></p></td>
-</tr>
-<tr class="row-even"><td><p><em>use “individual.dta”</em></p>
-<p><em>destring (varname),</em>
-<em>{generate|replace}</em></p>
-</td>
-<td><p><em>individual&lt;-</em>
-<em>load(“individual.rda”)</em></p>
-<p><em>individual$varname =</em>
-<em>as.numeric(individual</em>
-<em>$varname)</em></p>
-</td>
-<td><p><em>GET</em>
-<em>FILE=</em>
-<em>‘individual.sav’</em></p>
-<p><em>execute.</em></p>
-<p>From the menu choose:</p>
-<ul class="simple">
-<li><p>Data&gt;Transform&gt;
-Recode into Same|
-Different Variables</p></li>
-<li><p>Select the variable</p></li>
-<li><p>Select “Old and New
-Values” and Recode
-it</p></li>
-<li><p>Select “Convert
-numeric strings to
-numbers (‘5’-&gt;5)</p></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="section" id="datasets-must-not-have-directed-identifiers">
 <h2>3.15. Datasets must not have directed identifiers<a class="headerlink" href="#datasets-must-not-have-directed-identifiers" title="Permalink to this headline">¶</a></h2>
@@ -1092,7 +1050,7 @@ your data</p>
 individual-levelinformation about the year of the first union, age,
 school attendance,and health insurance. There is no difference in
 the appearance of both datasets. However, version 1 was saving
-uncompressed and version 2compressed. In the uncompressed version,
+uncompressed and version 2 compressed. In the uncompressed version,
 the variables “ID” and “Year” are stored as double, which means that
 they can store number with high decimal precision, but they
 are designed to only record information of integer numbers between
@@ -1102,8 +1060,8 @@ Similarly, other variables like “age” and “school attendance” are
 stored as a byte in the compressed version, which saves 7 bytes
 per observation when are compared to the uncompressed version.
 Let’s suppose that one has a data set with 500 variables like these,
-the total savings would be 3500 bytes per observation; if this data set
-has 50.000 observations, it means that the savings in memory space
+the total savings would be 3,500 bytes per observation; if this data set
+has 50,000 observations, it means that the savings in memory space
 would be around 175 megabytes.</p></li>
 </ul>
 <p><strong>Table 15. Compressing the Variables: Hypothetical data set</strong></p>
@@ -1113,6 +1071,15 @@ would be around 175 megabytes.</p></li>
 <img alt="_images/Page18_2.png" src="_images/Page18_2.png" />
 <p>Use the <em>compress</em> command in Stata, or the <em>compress</em> option when you
 save a SPSS data file.</p>
+<dl class="simple">
+<dt>Suggestion</dt><dd><p>If you are in the process of establishing a data archive and plan
+to document a collection of surveys, undertake a full inventory of
+all existing data and metadata before you start the documentation.
+Use the <em>IHSN Inventory Guidelines and Forms</em> to before you start the
+documentation. Use the <em>IHSN Inventory Guidelines and Forms</em> to
+facilitate this inventory (available at www.surveynetwork.org).</p>
+</dd>
+</dl>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 100%" />

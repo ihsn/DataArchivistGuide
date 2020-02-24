@@ -210,7 +210,7 @@ Example
   -  Suppose the unique identification of a household is a combination of
      of variables PROV (Province), DIST (District), EA (Enumeration Area),
      HHNUM (Household Number). Options 2 and 3 are recommended. Note that
-     if option 3 is chosen, it is crucial o preserve (but not distribute)
+     if option 3 is chosen, it is crucial to preserve (but not distribute)
      a file that would provide the mapping between the original codes and
      the new HHID.
 
@@ -690,32 +690,6 @@ STATA, R and SPSS.
 |                        |                                   |  numbers (‘5’->5)     |
 +------------------------+-----------------------------------+-----------------------+
 
-+----------------------+---------------------------+---------------------+
-|   **STATA Code**     |         **R Code**        |  **SPSS Function**  |
-+----------------------+---------------------------+---------------------+
-|*use "individual.dta”*|*individual<-*             |*GET*                |
-|                      |*load("individual.rda")*   |*FILE=*              |
-|*destring (varname),* |                           |*'individual.sav'*   |
-|*{generate|replace}*  |*individual$varname =*     |                     |
-|                      |*as.numeric(individual*    |*execute.*           |
-|                      |*$varname)*                |                     |
-|                      |                           |From the menu choose:|
-|                      |                           |                     |
-|                      |                           |- Data>Transform>    |
-|                      |                           |  Recode into Same|  |
-|                      |                           |  Different Variables|
-|                      |                           |                     |
-|                      |                           |- Select the variable|
-|                      |                           |                     |
-|                      |                           |- Select “Old and New|
-|                      |                           |  Values” and Recode |
-|                      |                           |  it                 |
-|                      |                           |                     |
-|                      |                           |- Select “Convert    |
-|                      |                           |  numeric strings to |
-|                      |                           |  numbers (‘5’->5)   |
-+----------------------+---------------------------+---------------------+
-
 Datasets must not have directed identifiers
 -------------------------------------------------
 
@@ -755,7 +729,7 @@ Example
    individual-levelinformation about the year of the first union, age, 
    school attendance,and health insurance. There is no difference in 
    the appearance of both datasets. However, version 1 was saving 
-   uncompressed and version 2compressed. In the uncompressed version, 
+   uncompressed and version 2 compressed. In the uncompressed version, 
    the variables “ID” and “Year” are stored as double, which means that
    they can store number with high decimal precision, but they
    are designed to only record information of integer numbers between
@@ -765,8 +739,8 @@ Example
    stored as a byte in the compressed version, which saves 7 bytes
    per observation when are compared to the uncompressed version.
    Let’s suppose that one has a data set with 500 variables like these,
-   the total savings would be 3500 bytes per observation; if this data set
-   has 50.000 observations, it means that the savings in memory space
+   the total savings would be 3,500 bytes per observation; if this data set
+   has 50,000 observations, it means that the savings in memory space
    would be around 175 megabytes. 
    
  **Table 15. Compressing the Variables: Hypothetical data set**
@@ -777,6 +751,14 @@ Example
 
 Use the *compress* command in Stata, or the *compress* option when you
 save a SPSS data file.
+
+Suggestion
+ If you are in the process of establishing a data archive and plan  
+ to document a collection of surveys, undertake a full inventory of 
+ all existing data and metadata before you start the documentation. 
+ Use the *IHSN Inventory Guidelines and Forms* to before you start the
+ documentation. Use the *IHSN Inventory Guidelines and Forms* to    
+ facilitate this inventory (available at www.surveynetwork.org).    
 
 +--------------------------------------------------------------------+
 | *Suggestion:*                                                      |
