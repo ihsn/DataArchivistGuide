@@ -320,7 +320,7 @@ multiple related files, each record in every file must have a unique
 identifier. The data producer can also choose multiple variables to
 define a unique identifier. In that case, more than one column in a
 dataset is used to guarantee uniqueness. These identifiers are also
-called <strong>key variables</strong> or <strong>ID variables</strong>. The variable(s) should
+called <strong>key variables</strong> or <strong>ID variables</strong> <a class="footnote-reference brackets" href="#id3" id="id1">2</a>. The variable(s) should
 not contain missing values or have any duplicates. They are used by
 statistical packages such as SPSS, R or Stata when data files need
 to be merged for analysis</p>
@@ -345,7 +345,7 @@ converted in different formats.</p></li>
 consisting of too many variables. For example, in a household
 survey, the household identifier should ideally be a single
 variable (which you may create by concatenating a group of
-variables <a href="#id2"><span class="problematic" id="id1">[3]_</span></a>), and the individual identifier should be the
+variables <a class="footnote-reference brackets" href="#id4" id="id2">3</a>), and the individual identifier should be the
 combination of only two variables (the household ID, and the
 sequential number of each member).</p></li>
 <li><p>It is recommended that you generate an ID based on a sequential
@@ -1096,6 +1096,18 @@ facilitate this inventory (available at www.surveynetwork.org).</p>
 </tr>
 </tbody>
 </table>
+<dl class="footnote brackets">
+<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id1">2</a></span></dt>
+<dd><p>See section 3 – <em>Importing data and establishing relationships</em> for
+more information on key variables.</p>
+</dd>
+<dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id2">3</a></span></dt>
+<dd><p>In Stata, this can be done through the use of the <em>group</em> function
+from the <em>egen</em> command. For example, to create a variable hhid based
+on a combination of variables <em>province</em>, <em>district</em>, <em>ea</em> and
+<em>hhnum</em>, use the command “egen hhid=group(province district ea hh_num)”.</p>
+</dd>
+</dl>
 </div>
 </div>
 

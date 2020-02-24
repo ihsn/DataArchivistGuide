@@ -162,7 +162,7 @@ multiple related files, each record in every file must have a unique
 identifier. The data producer can also choose multiple variables to
 define a unique identifier. In that case, more than one column in a
 dataset is used to guarantee uniqueness. These identifiers are also
-called **key variables** or **ID variables**. The variable(s) should
+called **key variables** or **ID variables** [2]_. The variable(s) should
 not contain missing values or have any duplicates. They are used by
 statistical packages such as SPSS, R or Stata when data files need
 to be merged for analysis
@@ -770,3 +770,13 @@ Suggestion
 | documentation. Use the *IHSN Inventory Guidelines and Forms* to    |
 | facilitate this inventory (available at www.surveynetwork.org).    |
 +--------------------------------------------------------------------+
+
+.. [2]
+   See section 3 – *Importing data and establishing relationships* for
+   more information on key variables.
+   
+.. [3]
+   In Stata, this can be done through the use of the *group* function
+   from the *egen* command. For example, to create a variable hhid based
+   on a combination of variables *province*, *district*, *ea* and
+   *hhnum*, use the command “egen hhid=group(province district ea hh_num)”.
