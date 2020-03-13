@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5. Importing data and establishing relationships &mdash; Guide for Data Archivists  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="6. Importing external resources" href="importResources.html" />
+    <link rel="prev" title="4. Gathering and preparing the documentation" href="prepDocumentation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Guide for Data Archivists
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="organizingFiles.html">2. Before you start: organizing your files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepData.html">3. Gathering and preparing the data set</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepDocumentation.html">4. Gathering and preparing the documentation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Importing data and establishing relationships</a></li>
+<li class="toctree-l1"><a class="reference internal" href="importResources.html">6. Importing external resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="completeMetadata.html">7. Completing metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="createVarGroups.html">8. Creating variable groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation.html">9. Running validations and diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdfDoc.html">10. Generating the survey documentation in PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualityReview.html">11. Independent quality review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sectionA.html">12. Section A . Data Validations in Stata: Practical Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Guide for Data Archivists</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>5. Importing data and establishing relationships</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/importData.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="importing-data-and-establishing-relationships">
+<h1>5. Importing data and establishing relationships<a class="headerlink" href="#importing-data-and-establishing-relationships" title="Permalink to this headline">¶</a></h1>
+<p>After all data and documentation files are gathered and checked, import
+the data files in the Editor. In the Metadata Editor, order the files
+in a logical fashion (e.g., sequentially through sections).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are documenting a population census and have very large
+data files, it is recommended to split the files by geographic area.
+Typically, you will have a file at individual level, one at the
+household level, and possibly one at the community level, for each
+State or Province. In such case, import all files for one State or
+Province only. You will import the other data files after you
+complete the documentation of the files. This will considerably
+reduce the time needed to save your files. The Metadata Editor will
+allow you to replicate the metadata from the documented files to all
+other data files that you will import later.</p>
+</div>
+<p>After all files are imported and ordered in a proper sequence, define
+the key variables for each data file. The base key variable(s) in a data
+file is (are) the variable(s) that provide the unique identifier of each
+record in that specific data file.</p>
+<p>Then establish the relations and validate them using the <em>Tool &gt;
+Validate Dataset Relations</em> in the Editor. This automatic validation is
+a way to check the structural integrity of the identifier variables and
+assure there are no duplicates in the data.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Establishing relationships – An example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>In this example, we assume that the dataset is obtained from a
+household budget survey and comprises:</p>
+<ul class="simple">
+<li><p>A household-level file “hhld.dat” with the household
+characteristics (one record per household). Each household is
+identified by a variable named <em>hhid</em>.</p></li>
+<li><p>A household-level file “hhld.dat” with the household (one record
+per person).Each household member is identified by the combination
+of variables <em>hhid and memno</em>.</p></li>
+<li><p>A consumption data file “cons.dat”, with one record per item
+(goods and services) per household. Each record is uniquely
+identified by the combination of variables <em>hhid</em> and <em>itemno</em>.
+The file also contains a variable <em>district</em> identifying the
+district where the household resides.</p></li>
+<li><p>A data file “prices.dat” with average price per commodity, per
+district (one record per item per district). Each record is
+uniquely identified by variables <em>district</em> and <em>itemno</em>.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/image5.png" src="_images/image5.png" />
+</td>
+</tr>
+<tr class="row-even"><td><p>In the Metadata Editor, these relationships will be established as
+follows in the “Key variables and relationships” section of each
+data file:</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="_images/Page21.png" src="_images/Page21.png" />
+</td>
+</tr>
+</tbody>
+</table>
+<p>If you have imported your data from any format other than fixed ASCII,
+re-sequence the data using the <em>Variables</em> &gt; <em>Resequence</em> option in the
+Editor. This re-sequencing tool will automatically fill the “StartCol”
+and “EndCol” columns in the variable description section. This must be
+done for each data file.</p>
+<img alt="_images/Page22.png" src="_images/Page22.png" />
+<p>Before going further, quickly browse all variables in all data files to
+visually check the frequencies. This will allow you to easily spot some
+outliers or invalid codes, which will require recoding (which can be
+done in the Editor or in the source data files which will then have to
+be re-imported).</p>
+<img alt="_images/Page22_2.png" src="_images/Page22_2.png" />
+<p>Save the project. The Editor saves the full project, the associated data
+and documentation in one zip file. We recommend you save the project using
+the survey abbreviation, year and version number as project name
+(e.g., UGA_2018_HIES_v01_M). Note that it is good practice to avoid using
+spaces in a file name (use underscore characters instead).</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="importResources.html" class="btn btn-neutral float-right" title="6. Importing external resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="prepDocumentation.html" class="btn btn-neutral float-left" title="4. Gathering and preparing the documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Olivier Dupriez, Diana Marcela Sanchez Castro, Matthew Welch
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

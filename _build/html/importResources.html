@@ -1,0 +1,296 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6. Importing external resources &mdash; Guide for Data Archivists  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="7. Completing metadata" href="completeMetadata.html" />
+    <link rel="prev" title="5. Importing data and establishing relationships" href="importData.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Guide for Data Archivists
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="organizingFiles.html">2. Before you start: organizing your files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepData.html">3. Gathering and preparing the data set</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepDocumentation.html">4. Gathering and preparing the documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="importData.html">5. Importing data and establishing relationships</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">6. Importing external resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="completeMetadata.html">7. Completing metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="createVarGroups.html">8. Creating variable groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation.html">9. Running validations and diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdfDoc.html">10. Generating the survey documentation in PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualityReview.html">11. Independent quality review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sectionA.html">12. Section A . Data Validations in Stata: Practical Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Guide for Data Archivists</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>6. Importing external resources</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/importResources.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="importing-external-resources">
+<h1>6. Importing external resources<a class="headerlink" href="#importing-external-resources" title="Permalink to this headline">¶</a></h1>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 33%" />
+<col style="width: 26%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="3"><p>Before importing your external resources, create folders in the Editor
+as necessary (these are directories in the External Resources section
+in the Editor, not new directories on your hard drive). If you have
+very few external resources, all resources can be listed in the root
+directory. If you have many, organize them by type of resources (in the
+example below, we have created separate directories for the
+Questionnaires, Technical Documents, Computer Programs, Reports,
+Tables, Photos and Maps).</p></td>
+</tr>
+<tr class="row-even"><td><img alt="_images/image11.png" src="_images/image11.png" />
+</td>
+<td colspan="2"><p>Create an entry for each resource by
+entering a label in the Resource</p>
+<p>Information field. This label should be
+short but explicit. Then identify the</p>
+<p>resource file in the  “Resource” field.
+The field “Resource” is used to indicate</p>
+<p>the filename or URL location (website) of
+the external resource. The resource</p>
+<p>consists of the filename, and a relative
+path. The reason for entering a relative</p>
+<p>path is that it will allow you to move
+the whole study directory and its</p>
+<p>subdirectories to another location or
+another drive, without having to re-enter</p>
+<p>the location of the files.</p>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>Example:</p>
+<p>Let’s assume your study is a Household Budget Survey conducted in 2018.
+If you followed the recommendations made in the introductory chapter
+“Before you start – Organizing your files”, you will have created a
+directory like C:UGA_2018_HIES. Suppose also that a document titled
+Report2018.pdf is saved in a directory C:UGA_2018_HIESDoc. When you
+fill the resource field in the External Resources page, do NOT enter
+“C:UGA_2018_HIESDocReport2018.pdf.pdf. Enter the file name as
+follows: DocReportsReport2018.pdf</p>
+<img alt="_images/Page22_3.png" src="_images/Page22_3.png" />
+</td>
+</tr>
+</tbody>
+</table>
+<p>Some resources might be composed of more than one file (for example, the
+CSPro data entry application includes multiple files that should not be
+separated). In such cases, zip them into one single file, and import it
+as a single resource.</p>
+<p>For documents available in multiple formats (for example, a
+questionnaire available in Excel and in PDF), you may create two
+separate resources, or zip the files into one single file. In such case,
+list the different formats available in the “Content/ Description”
+field.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><em>Best Practices – Naming Convention for External Resources</em></p>
+<ul class="simple">
+<li><p>Use file names short, but self-explanatory about the content of
+the document.</p></li>
+<li><p>Preferably, use lower cases.</p></li>
+<li><p>Avoid spaces to delimit words.</p></li>
+<li><p>Be consistent with your method of naming across all files. For
+instance, if you use underscores to delimit words, keep it that
+way in all files.</p></li>
+<li><p>Use only alphanumeric characters, underscores or dashes. Avoid
+using special characters (!&#64;#$%^&amp;*()~) or any accented characters.</p></li>
+<li><p>If you intend to have an archive useable and downloadable across
+multiple countries, use English names for your files.</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="completeMetadata.html" class="btn btn-neutral float-right" title="7. Completing metadata" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="importData.html" class="btn btn-neutral float-left" title="5. Importing data and establishing relationships" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Olivier Dupriez, Diana Marcela Sanchez Castro, Matthew Welch
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

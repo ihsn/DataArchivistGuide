@@ -1,0 +1,1163 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3. Gathering and preparing the data set &mdash; Guide for Data Archivists  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="4. Gathering and preparing the documentation" href="prepDocumentation.html" />
+    <link rel="prev" title="2. Before you start: organizing your files" href="organizingFiles.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Guide for Data Archivists
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="organizingFiles.html">2. Before you start: organizing your files</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Gathering and preparing the data set</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#data-files-should-be-organized-in-a-hierarchical-format">3.1. Data files should be organized in a hierarchical format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#datasets-with-multiple-units-of-analysis-should-be-stored-in-different-data-files">3.2. Datasets with multiple units of analysis should be stored in different data files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#columns-in-a-dataset-should-represent-variables-not-values">3.3. Columns in a dataset should represent variables, not values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#each-observation-in-every-file-must-have-a-unique-identifier">3.4. Each observation in every file must have a unique identifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#identifying-duplicate-observations">3.5. Identifying duplicate observations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ensure-that-each-individual-dataset-can-be-combined-into-a-single-database">3.6. Ensure that each individual dataset can be combined into a single database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-for-variables-with-missing-values">3.7. Check for variables with missing values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-improper-value-ranges">3.8. Check Improper value ranges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#verify-that-the-number-of-records-in-each-file-corresponds-to-what-is-expected">3.9. Verify that the number of records in each file corresponds to what is expected</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#datasets-must-contain-all-variables-from-the-questionnaire-and-be-in-a-logic-sequence">3.10. Datasets must contain all variables from the questionnaire and be in a logic sequence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#include-the-relevant-weighting-coefficients-and-variables-identifying-the-stratification-levels">3.11. Include the relevant weighting coefficients and variables identifying the stratification levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variables-and-codes-for-categorical-variables-must-be-labelled">3.12. Variables and codes for categorical variables must be labelled</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#temporary-calculated-or-derived-variables-should-not-be-disseminated">3.13. Temporary, calculated or derived variables should not be disseminated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-that-the-data-types-are-correct">3.14. Check that the data types are correct</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#datasets-must-not-have-directed-identifiers">3.15. Datasets must not have directed identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#compress-the-variables-to-reduce-the-file-size">3.16. Compress the variables to reduce the file size</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="prepDocumentation.html">4. Gathering and preparing the documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="importData.html">5. Importing data and establishing relationships</a></li>
+<li class="toctree-l1"><a class="reference internal" href="importResources.html">6. Importing external resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="completeMetadata.html">7. Completing metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="createVarGroups.html">8. Creating variable groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation.html">9. Running validations and diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdfDoc.html">10. Generating the survey documentation in PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualityReview.html">11. Independent quality review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sectionA.html">12. Section A . Data Validations in Stata: Practical Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Guide for Data Archivists</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>3. Gathering and preparing the data set</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/prepData.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="gathering-and-preparing-the-data-set">
+<h1>3. Gathering and preparing the data set<a class="headerlink" href="#gathering-and-preparing-the-data-set" title="Permalink to this headline">¶</a></h1>
+<p>Gathering and preparing data is a process that requires great care.
+Prior to documenting a dataset, it is important to ensure that you are
+working with the most appropriate version of all the concerned data
+files. If the dataset is meant for public release, one should work with
+the final, edited, anonymous version of the dataset. If the dataset is
+being documented for archiving and internal use only, one may include
+the raw data as well as the final, fully edited files. The Metadata
+Editor provides you with the possibility of documenting the specificity
+of each version of the dataset.</p>
+<p>Much of the quality of the output generated by the Editor will depend
+upon the prior preparatory work. Although the Editor can make some
+changes to the data, it is highly recommended that the necessary checks
+and changes be made in advance using a statistical package and a script.
+This ensures accurate and replicable results.</p>
+<p>This section describes the various checks and balances involved in the
+data preparation process, such as: making a diagnostic on the structure
+of your data, cleaning it and identifying the various variables at the
+outset. Listed below are some common data problems that users encounter:</p>
+<ul class="simple">
+<li><p>Absence of variables that uniquely identify each record of the dataset</p></li>
+<li><p>Duplicate observations</p></li>
+<li><p>Errors from merging multiple datasets</p></li>
+<li><p>Encountering incomplete data when comparing the content of the data
+files with the original survey questionnaire</p></li>
+<li><p>Unlabelled data</p></li>
+<li><p>Variables with missing values</p></li>
+<li><p>Unnecessary or temporary variables in the data files</p></li>
+<li><p>Data with sensitive information or direct identifiers</p></li>
+</ul>
+<p>Some practical examples using a statistical package are provided in
+<em>Section A “Data Validations in Stata: Practical Examples</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are working in a data archive, be careful not to overwrite
+your original variables. Since managing databases involves several
+data-checking procedures, archive a new version in addition to the
+original. Work on this new version, leaving the original data files
+untouched.</p>
+</div>
+<p>The following procedures are recommended for preparing your dataset(s):</p>
+<div class="section" id="data-files-should-be-organized-in-a-hierarchical-format">
+<h2>3.1. Data files should be organized in a hierarchical format<a class="headerlink" href="#data-files-should-be-organized-in-a-hierarchical-format" title="Permalink to this headline">¶</a></h2>
+<p>Look at your data and visualize it to understand its structure.
+It is preferable to organize your files in a hierarchical format
+instead of a flat format. In a hierarchical format, columns
+contain specific information about all possible units of analysis
+and rows form the individual observations (households,
+establishments, products, communities/countries, or any
+combination of those). Hierarchical files are easier to analyse,
+as they contain fewer columns that store the same information and
+are more compact. A flat format contains multiple columns with
+information on only one specific unit of analysis, so the
+information becomes redundant. For example, the information
+provided in one column is about the household head, and the row
+provides information on the child in the household.</p>
+<p><strong>Table 1. Flat Format</strong></p>
+<img alt="_images/Page4_1.png" src="_images/Page4_1.png" />
+<p><strong>Table 2. Hierarchical Format</strong></p>
+<img alt="_images/Page4_2.png" src="_images/Page4_2.png" />
+<p><em>Tables 1 and 2</em> illustrate the two data structures. They
+contain the same information about six people on age and their
+relationship with the head of the household. The flat dataset
+(Table 1) stores the information on each family member in a new
+column. Note that for every additional member or characteristic,
+the dataset gets flatter and wider. The hierarchical dataset
+(see Table 2) has one observation and one row per person.
+Each variable contains a value that measures the same attribute
+across people and each record contains all values measured on the
+same person across variables. For every additional member
+characteristic, the dataset maintains the same number of columns,
+gains additional rows and gets longer and less flat compared to
+<em>Table 1</em>. The first two columns of this dataset have a
+hierarchical structure, where the ID member column is nested
+inside the ID household column.</p>
+<p>Hierarchical files are easier to manage. Suppose in this example
+that there were many characteristics measured for everyone, the
+hierarchical structure would be a more convenient format because
+for each new characteristic, the dataset creates only one
+additional column, whereas, in the flat structure, it would
+create as many columns as there are people in the data with such
+characteristics.</p>
+</div>
+<div class="section" id="datasets-with-multiple-units-of-analysis-should-be-stored-in-different-data-files">
+<h2>3.2. Datasets with multiple units of analysis should be stored in different data files<a class="headerlink" href="#datasets-with-multiple-units-of-analysis-should-be-stored-in-different-data-files" title="Permalink to this headline">¶</a></h2>
+<p>It is recommended that you store your data in different files
+when you have multiple observational units. For example, <em>Table 3</em>
+shows a dataset that has both household-level data (columns on
+the type of dwelling and walls material) and individual-level
+data (columns on the marital status, work status, and worker
+category). Note that storing both levels of information in one
+dataset will result in a repetition of household characteristics
+for each household member. In Table 3, the information about the
+columns ‘type of dwelling’ and ‘wall material’ is repeated for
+everyone. Sometimes, this duplication is inefficient, and it is
+easier to have the dataset broken down by observational unit, into
+multiple files. In this example, it would be simpler to create two
+files:  one for the household characteristics and another for the
+individual characteristics. The two files can be connected through
+a unique identifier, which in this case will be the household ID and
+member ID. We discuss the need for this unique identifier further on
+in this text as well.</p>
+<p><strong>Table 3. Single data set with more than one observational unit</strong></p>
+<img alt="_images/Page5.png" src="_images/Page5.png" />
+</div>
+<div class="section" id="columns-in-a-dataset-should-represent-variables-not-values">
+<h2>3.3. Columns in a dataset should represent variables, not values<a class="headerlink" href="#columns-in-a-dataset-should-represent-variables-not-values" title="Permalink to this headline">¶</a></h2>
+<p>It is recommended that columns represent variables (e.g., sex, age,
+marital status) and rows represent observations (e.g., individuals,
+households, firms, products and so forth). In some datasets, columns
+instead of describing variables or attributes, describe values, which
+means that one variable is broken into segments and each one is
+stored in different columns. While this dataset structure can be
+useful for some analysis, the standard data structure where columns
+are variables and not values is the norm.</p>
+<p>For example, <em>Table 4</em> (options 1 and 2) gives information at the
+individual-level on marital status, relationship with the head of
+the household and age. The difference between both tables is how the
+variable ‘age’ is reported. Option 1 had broken the variable ‘age’
+into segments. This practice makes your data: i) messier, it has
+values of the variable as headings, and ii) inefficient, it increases
+the size of the dataset. Option 2 is recommended since there is only
+one heading and store of the information occupies less space, allowing
+the user to identify the structure of the data in a clear manner.</p>
+<p><strong>Table 4. Data Structures: Hypothetical datasets</strong></p>
+<img alt="_images/Page6_1.png" src="_images/Page6_1.png" />
+</div>
+<div class="section" id="each-observation-in-every-file-must-have-a-unique-identifier">
+<h2>3.4. Each observation in every file must have a unique identifier<a class="headerlink" href="#each-observation-in-every-file-must-have-a-unique-identifier" title="Permalink to this headline">¶</a></h2>
+<p>Before you check for uniqueness of the identifiers in your files, you
+need to figure out the unit of analysis. Even if you are not the data
+producer, it is often easy to identify it. You can always review the
+documentation to see if the information has been provided. Below, some
+examples of units of analysis:</p>
+<p><strong>Table 5. Unit of Analysis by Study type</strong></p>
+<img alt="_images/Page6_2.png" src="_images/Page6_2.png" />
+<p>Once you recognize the unit of analysis, the next step is to identify
+the column that uniquely identifies each record. If a dataset contains
+multiple related files, each record in every file must have a unique
+identifier. The data producer can also choose multiple variables to
+define a unique identifier. In that case, more than one column in a
+dataset is used to guarantee uniqueness. These identifiers are also
+called <strong>key variables</strong> or <strong>ID variables</strong> <a class="footnote-reference brackets" href="#id3" id="id1">2</a>. The variable(s) should
+not contain missing values or have any duplicates. They are used by
+statistical packages such as SPSS, R or Stata when data files need
+to be merged for analysis</p>
+<p>The absence of a unique identifier is a data quality issue, so one
+needs to ensure that the unique IDs remain fixed/present during the
+data cleaning process. If this correction is not possible, the archivist
+should note the anomalies in the documentation process.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><em>Best Practices</em></p>
+<ul class="simple">
+<li><p>It is recommended that ID variables be defined as a numeric since
+sorting and filtering records is much more efficient when
+variables are numeric.</p></li>
+<li><p>ID variables should not contain spaces, special characters or
+accents, since they may suffer modifications when the dataset is
+converted in different formats.</p></li>
+<li><p>For the convenience of users of the data, avoid identifiers
+consisting of too many variables. For example, in a household
+survey, the household identifier should ideally be a single
+variable (which you may create by concatenating a group of
+variables <a class="footnote-reference brackets" href="#id4" id="id2">3</a>), and the individual identifier should be the
+combination of only two variables (the household ID, and the
+sequential number of each member).</p></li>
+<li><p>It is recommended that you generate an ID based on a sequential
+number, however, keep in mind that it should not be too long
+because statistical packages and spreadsheet programs store a
+number of digits of precision, so opening a data set that contains
+ID variables with many characters, might result in truncated
+fields. For instance, the limit of the number of characters in
+Microsoft Excel is 15, so it changes any digits past the fifteenth
+place to zeroes.</p></li>
+<li><p>If you prepare your data files for public dissemination, it may be
+preferable to generate a unique household identification that
+would <strong>not</strong> be a compilation of geographic codes (because
+geographic codes are highly identifying). This recommendation is
+to ensure anonymity and will be explained in further detail later
+on in this text. The following example shows how to construct a
+unique identifier without using detailed information provided by
+the geographic codes.</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="simple">
+<dt>Example</dt><dd><ul class="simple">
+<li><p>Suppose the unique identification of a household is a combination of
+of variables PROV (Province), DIST (District), EA (Enumeration Area),
+HHNUM (Household Number). Options 2 and 3 are recommended. Note that
+if option 3 is chosen, it is crucial to preserve (but not distribute)
+a file that would provide the mapping between the original codes and
+the new HHID.</p></li>
+</ul>
+</dd>
+</dl>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="4"><dl class="simple">
+<dt>Option 1: Use a combination of</dt><dd><p>four variables</p>
+</dd>
+</dl>
+</th>
+<th class="head"><dl class="simple">
+<dt>Option 2: Generate a</dt><dd><p>concatenated ID</p>
+</dd>
+</dl>
+</th>
+<th class="head"><dl class="simple">
+<dt>Option 3: Generate a</dt><dd><p>sequential number</p>
+</dd>
+</dl>
+</th>
+</tr>
+<tr class="row-even"><th class="head"><p>PROV</p></th>
+<th class="head"><p>DIST</p></th>
+<th class="head"><p>EA</p></th>
+<th class="head"><p>HHNUM</p></th>
+<th class="head"><p>HHID</p></th>
+<th class="head"><p>HHID</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>01</p></td>
+<td><p>014</p></td>
+<td><p>004</p></td>
+<td><p>1201014004</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>12</p></td>
+<td><p>01</p></td>
+<td><p>015</p></td>
+<td><p>001</p></td>
+<td><p>1201015001</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>13</p></td>
+<td><p>07</p></td>
+<td><p>008</p></td>
+<td><p>112</p></td>
+<td><p>1307008112</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>Etc</p></td>
+<td><p>Etc</p></td>
+<td><p>Etc</p></td>
+<td><p>Etc</p></td>
+<td><p>Etc</p></td>
+<td><p>Etc</p></td>
+</tr>
+</tbody>
+</table>
+<p>Once you recognize the unit of analysis and the variable that uniquely
+identifies it, the following checks are suggested:</p>
+<ul class="simple">
+<li><p>Even if the data set has a variable with a label “unique identifier”,
+it is important to confirm that this variable truly does uniquely
+identify each record. To confirm or even to find out what the unique
+identifier is, you can make use of the <em>-duplicate-</em> function in SPSS or
+the <em>-isid-</em> command in Stata (for R, do as shown in <em>Table 6</em>). For more
+details, refer to <em>Example 1 and Example 2 of Section A</em>.</p></li>
+</ul>
+<p><strong>Table 6. Check for unique identifiers: STATA/R/SPSS Commands</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 43%" />
+<col style="width: 28%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>STATA</strong></p></td>
+<td><p><strong>R</strong></p></td>
+<td><p><strong>SPSS</strong></p></td>
+</tr>
+<tr class="row-even"><td><div class="highlight-STATA notranslate"><div class="highlight"><pre><span></span><span class="k">use</span> “household<span class="m">.</span>dta”
+
+<span class="k">isid</span> key1 key2
+</pre></div>
+</div>
+</td>
+<td><div class="highlight-R notranslate"><div class="highlight"><pre><span></span> <span class="n">my_data</span> <span class="o">&lt;-</span>
+  <span class="nf">load</span><span class="p">(</span><span class="s">&quot;household.rda&quot;</span><span class="p">)</span>
+
+<span class="n">id</span> <span class="o">&lt;-</span><span class="nf">c</span><span class="p">(</span> <span class="s">&quot;key1&quot;</span> <span class="p">,</span> <span class="s">&quot; key2&quot;</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">eeptools</span><span class="p">)</span>
+<span class="nf">isid</span><span class="p">(</span><span class="n">my_data</span><span class="p">,</span> <span class="n">id</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">FALSE</span>
+<span class="n">verbose</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span><span class="o">*</span>
+</pre></div>
+</div>
+</td>
+<td><p>Load dataset and choose
+from the menu:</p>
+<ul class="simple">
+<li><p>Data&gt;Identify
+Duplicate Cases</p></li>
+<li><p>Select Key Variables</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Finally, check that the ID variable for the unit of observation doesn’t
+have missing or assigned zero/null values. Ensure that the datasets are
+sorted and arranged by their unique identifiers.</p></li>
+</ul>
+<p><em>Table 7</em> below gives a hypothetical example. In this dataset, the
+highlighted columns (hh1, hh2, hh3) are the key variables, which means that
+they are supposed to make up the unique identifier. However, looking at
+those variables, we can identify some problems: the key variables do not
+uniquely identify each observation as they have the same values in rows 4
+and 5, they also have some missing values (represented by asterisks),
+assigned zero values and some null values (those that say NA, don’t know).
+All these issues suggest that those variables are not the key variables,
+and one needs to go back and double-check the data documentation.
+Alternatively, the archivist could check with the data producer and ask
+them how to fix these variables, in case those are indeed the key variables.</p>
+<p><strong>Table 7. Check for unique identifiers: Hypothetical data set</strong></p>
+<img alt="_images/Page8_2.png" src="_images/Page8_2.png" />
+<p><em>Example 3</em> provides further details and describes the steps involved in
+performing a validation when the identifier is made of multiple variables
+(see <em>Section A</em>).</p>
+</div>
+<div class="section" id="identifying-duplicate-observations">
+<h2>3.5. Identifying duplicate observations<a class="headerlink" href="#identifying-duplicate-observations" title="Permalink to this headline">¶</a></h2>
+<p>One way to rule out problems with the unique identifier is to check if
+there are duplicate observations (records with identical values for all
+variables, not just the unique identifiers). Duplicate observations can
+generate erroneous analysis and cause data management problems. Some
+possible reasons for duplicate data are, for example, the same record
+being entered twice during data collection. They could also arise from
+an incorrect reading of the questionnaires during the scanning process
+if paper-based methods are being used.</p>
+<p>Identifying duplicate observations is a crucial step. Correcting this
+issue may involve eliminating the duplicates from the dataset or giving
+them some other appropriate treatment.</p>
+<p>Statistical packages have several commands that help identify duplicates.
+<em>Table 8</em> shows examples of these commands in STATA, R and SPSS. The STATA
+command <em>-duplicates report-</em> generates a table that summarizes the number
+of copies for each record (across all variables). The command
+<em>-duplicates tag-</em> allows us to distinguish between duplicates and unique
+observations. For more details, refer to <em>Example 4</em> of <em>Section A</em>.</p>
+<p><strong>Table 8. Check for duplicates observations: STATA/R/SPSS Commands</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 43%" />
+<col style="width: 28%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>STATA</strong></p></td>
+<td><p><strong>R</strong></p></td>
+<td><p><strong>SPSS</strong></p></td>
+</tr>
+<tr class="row-even"><td><div class="highlight-STATA notranslate"><div class="highlight"><pre><span></span><span class="k">use</span> “household<span class="m">.</span>dta”
+
+<span class="k">duplicates report</span>
+
+<span class="k">duplicates</span> tag,<span class="k"></span>
+<span class="k">generate</span>(newvar)
+</pre></div>
+</div>
+</td>
+<td><div class="highlight-R notranslate"><div class="highlight"><pre><span></span> <span class="n">my_data</span> <span class="o">&lt;-</span>
+  <span class="nf">load</span><span class="p">(</span><span class="s">&quot;household.rda&quot;</span><span class="p">)</span>
+
+<span class="n">household</span><span class="nf">[duplicated</span><span class="p">(</span><span class="n">household</span><span class="p">),</span><span class="n">]</span>
+</pre></div>
+</div>
+</td>
+<td><p>Load dataset and choose
+from the menu:</p>
+<ul class="simple">
+<li><p>Data&gt;Identify
+Duplicate Cases
+execute.</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ensure-that-each-individual-dataset-can-be-combined-into-a-single-database">
+<h2>3.6. Ensure that each individual dataset can be combined into a single database<a class="headerlink" href="#ensure-that-each-individual-dataset-can-be-combined-into-a-single-database" title="Permalink to this headline">¶</a></h2>
+<p>For organizational purposes, surveys are often stored in different datasets.
+Therefore, checking the relationship between the data files is an essential
+step to keep in mind throughout the data validation process. The role of
+the data producer is to store the information as efficiently as possible,
+which implies storing data in different files. The role of the data user is
+to analyse the data as holistically as possible, which could sometimes mean
+that they might have to join all the different data files into a single
+file to facilitate analysis. It is essential to ensure that each of the
+separate files can be combined (merged or appended depending on the case)
+into a single file, should the data user want to undertake this step.</p>
+<p>Use statistical software to validate that all files can be combined into
+one. For a household survey, for example, verify that all records in the
+individual-level files have a corresponding household in the household-level
+master file. Also, verify that all households have at least on
+e corresponding record in the household-roster file that lists all
+individuals. Below, some considerations to keep in mind before merging data
+files:</p>
+<ul class="simple">
+<li><p>The variable name of the identifier should be the same across all datasets.</p></li>
+<li><p>The ID variables need to be the same type (either both numeric or both
+string) across all databases.</p></li>
+<li><p>Except for ID variables, it is highly recommended that the databases don’t
+share the same variable names or labels.</p></li>
+</ul>
+<dl>
+<dt>Example</dt><dd><ul class="simple">
+<li><p>A household survey is disseminated in two datasets; one contains
+information about household characteristics and the other contains
+information on the children (administered only to mothers or caretakers).
+To build a dataset containing all the information about the household
+characteristics, including where the children live, one needs to combine
+these files. Users are thus assured that all observations in the
+child-level file have corresponding household information.</p></li>
+</ul>
+<p><strong>Joining data files: Hypothetical data set</strong></p>
+</dd>
+</dl>
+<img alt="_images/Page10_1.png" src="_images/Page10_1.png" />
+<img alt="_images/Page10_2.png" src="_images/Page10_2.png" />
+<p>Statistical packages have some commands that allows us to combine datasets
+using one or multiple unique identifiers. <em>Table 9</em> shows examples of
+these commands/functions in STATA, R and SPSS. For more details, refer to
+<em>Example 5</em> of <em>Section A</em>.</p>
+<p><strong>Table 9. Joining data files: STATA/R/SPSS Commands</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 47%" />
+<col style="width: 26%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>STATA</strong></p></td>
+<td><p><strong>R</strong></p></td>
+<td><p><strong>SPSS</strong></p></td>
+</tr>
+<tr class="row-even"><td><div class="highlight-STATA notranslate"><div class="highlight"><pre><span></span><span class="k">use</span> “household<span class="m">.</span>dta”
+
+<span class="k">merge</span> <span class="m">1</span>:m hh1 hh2 hh3
+using
+<span class="s">&quot;individuals.dta&quot;</span>
+</pre></div>
+</div>
+</td>
+<td><div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">household</span> <span class="o">&lt;-</span> <span class="nf">load</span><span class="p">(</span><span class="s">&quot;household.rda&quot;</span><span class="p">)</span>
+
+<span class="n">individuals</span> <span class="o">&lt;-</span> <span class="nf">load</span><span class="p">(</span><span class="s">&quot;individuals.rda&quot;</span><span class="p">)</span>
+
+<span class="n">md</span> <span class="o">&lt;-</span> <span class="nf">merge</span><span class="p">(</span><span class="n">household</span><span class="p">,</span> <span class="n">individuals</span><span class="p">,</span>
+            <span class="n">by</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;hh1&quot;</span><span class="p">,</span> <span class="s">&quot;hh2&quot;</span><span class="p">,</span> “<span class="n">hh3</span>”<span class="p">),</span>
+            <span class="n">all</span> <span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
+</pre></div>
+</div>
+</td>
+<td><p>Load dataset and choose
+from the menu:</p>
+<ul class="simple">
+<li><p>Data&gt;Merge Files&gt;
+Add Variables</p></li>
+<li><p>Select the data file
+to merge</p></li>
+<li><p>Select Key Variables</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Panel datasets should be stored in different files as well. Having one
+file per data collection period is a good practice. To combine the different
+periods of a panel dataset, the data user could merge them (Adding variables
+to the existing observations for the same period) or append them (Adding
+observations for a different period to the existing variables). To make sure
+that panels can be properly appended, the following checks are suggested:</p>
+<ul class="simple">
+<li><p>Check for the column(s) that identifies the period of the data (Year, Wave,
+Serie, etc.).</p></li>
+<li><p>The variable names and variable types should be the same across all datasets.</p></li>
+<li><p>Ensure that the variables use the same label and the same coding across all
+datasets.</p></li>
+</ul>
+<p>In SPSS, use the function <em>“Append new records”</em> and in STATA the command
+<em>-append-</em> to combine datasets vertically.</p>
+</div>
+<div class="section" id="check-for-variables-with-missing-values">
+<h2>3.7. Check for variables with missing values<a class="headerlink" href="#check-for-variables-with-missing-values" title="Permalink to this headline">¶</a></h2>
+<p>Getting data ready for documentation also involves checking for variables
+that do not provide complete information because they are full of missing
+values. This step is important because missing values can have unexpected
+effects on the data analysis process. Typically, missing values are defined
+as a character (.a, .b, single period or asterisks), special numeric
+(-1, -2) or blanks. Variables entirely comprised of missing values should
+ideally not be included in the dataset. However, before excluding them, it
+is useful to check whether the missing values are expected according to the
+questionnaire, and the skip patterns.</p>
+<p>For example, a hypothetical household survey at the individual-level
+(Table 10) provides information about the respondent’s employment status.
+The survey identifies if the respondent is employed in Column D, and then
+provides information about the worker category in Column E, but only for
+those who reported being employed in Column D. This means that those who
+answered ‘unemployed’ in column D should have a valid missing value in
+column E. In other words, this is a pattern in the missing values that
+should be observed and duly noted.</p>
+<p>On the other hand, Columns F and G are used to determine if the people who
+are not employed are looking for a job and are actively seeking it. These
+questions are not asked to the employed people (those who answered “yes”
+in Column D), which mean that again, the missing values in those columns
+correspond with what is expected. However, Column H contains information
+for all employed individuals, so missing values in this column suggest
+that there is a problem in the data and should be addressed. Therefore,
+one should not blindly delete missing values at the outset without checking
+for these patterns.</p>
+<p><strong>Table 10. Checking for Missing Values: Hypothetical data set</strong></p>
+<img alt="_images/Page12.png" src="_images/Page12.png" />
+<p>In SPSS, use the function <em>“Missing Value Analysis”</em> and in R, do as shown
+in <em>Table 11</em>. You can also use the STATA command <em>-misstable summarize-</em>
+that produces a report that counts all the missing values. You can also use
+the <em>-rowmiss()-</em> command with <em>-egen-</em> to generate the number of missing
+values among the specified variables. For more details, refer to
+<em>Example 6</em> of <em>Section A</em>.</p>
+<p><strong>Table 11. Counting Missing Values: STATA/R/SPSS Commands</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 43%" />
+<col style="width: 28%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>STATA</strong></p></td>
+<td><p><strong>R</strong></p></td>
+<td><p><strong>SPSS</strong></p></td>
+</tr>
+<tr class="row-even"><td><div class="highlight-STATA notranslate"><div class="highlight"><pre><span></span><span class="k">use</span> “individual<span class="m">.</span>dta”
+
+misstable<span class="k"> summarize</span>
+</pre></div>
+</div>
+</td>
+<td><div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">my_data</span> <span class="o">&lt;-</span>
+ <span class="nf">load</span><span class="p">(</span><span class="s">&quot;individual.rda&quot;</span><span class="p">)</span>
+
+<span class="nf">colSums</span><span class="p">(</span><span class="nf">is.na</span><span class="p">(</span><span class="n">individual</span><span class="p">))</span>
+
+<span class="nf">colMeans</span><span class="p">(</span><span class="nf">is.na</span><span class="p">(</span><span class="n">individual</span><span class="p">))</span>
+</pre></div>
+</div>
+</td>
+<td><p>Load dataset and choose
+from the menu:</p>
+<ul class="simple">
+<li><p>Data&gt;Analyze&gt;
+Missing Value
+Analysis</p></li>
+<li><p>Select “Use All
+Variables”</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><em>Best Practices</em></p>
+<p>Since there are different reasons for missing values, data producer
+should code them with negative integers or letters to distinguish
+the missing values and valid data. For instance, (− 1) might be the
+code for “Don’t Know”, (-2) the code for “Refused to Answer” and
+(-9) code for “Not Applicable”.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="check-improper-value-ranges">
+<h2>3.8. Check Improper value ranges<a class="headerlink" href="#check-improper-value-ranges" title="Permalink to this headline">¶</a></h2>
+<p>It is helpful to generate descriptive statistics for all variables
+(frequencies for discrete variables; min/max/mean for continuous
+variables) and verify that these statistics look reasonable. Just as
+there are variables that must take on only specific values, such as “F”
+and “M” for gender, there are also some variables that can take on
+several values (such as age or height). However, those values must fit
+a particular range. For example, we don’t expect negative values, or
+typically see values over 115 years for age.</p>
+<p>Values for categorical variables should be guided by the questionnaire
+(or separate documentation for constructed variables). If we have an
+education variable that has 9 response options in the questionnaire,
+the corresponding ‘education’ variable in the dataset should have 9
+categories. We should not observe more than 9 unique values for this
+variable. Similarly, for any questions in the survey for which the
+options are only “yes”, “no” and “other”, we should not observe more
+than these 3 unique values.  When out of range values exist, this might
+signal data cleaning issues.</p>
+<p><em>Table 12</em> shows examples of some commands/functions in STATA, R and
+SPSS.</p>
+<p><strong>Table 12. Generate descriptive statistics: STATA/R/SPSS Commands</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 43%" />
+<col style="width: 28%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>STATA</strong></p></td>
+<td><p><strong>R</strong></p></td>
+<td><p><strong>SPSS</strong></p></td>
+</tr>
+<tr class="row-even"><td><div class="highlight-STATA notranslate"><div class="highlight"><pre><span></span><span class="k">use</span> “individual<span class="m">.</span>dta”
+
+<span class="k">summarize</span>
+</pre></div>
+</div>
+</td>
+<td><div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">individual</span> <span class="o">&lt;-</span>
+ <span class="nf">load</span><span class="p">(</span><span class="s">&quot;individual.rda&quot;</span><span class="p">)</span>
+
+<span class="nf">summary</span><span class="p">(</span><span class="n">individual</span><span class="p">)</span>
+</pre></div>
+</div>
+</td>
+<td><p>Load dataset and choose
+from the menu:</p>
+<ul class="simple">
+<li><p>Data&gt;Analyze&gt;
+Descriptive
+Statistics&gt;
+Frequencies</p></li>
+<li><p>Select “Statistics”</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="verify-that-the-number-of-records-in-each-file-corresponds-to-what-is-expected">
+<h2>3.9. Verify that the number of records in each file corresponds to what is expected<a class="headerlink" href="#verify-that-the-number-of-records-in-each-file-corresponds-to-what-is-expected" title="Permalink to this headline">¶</a></h2>
+<p>The technical documentation helps to form some expectations about the size
+of the dataset. Make sure that in all the files, the number of records is
+the same as (or is similar to) what is explicitly stated in the sample
+design of your survey.</p>
+<p>Suppose that you have a household survey and according to the documentation
+the sample size is 50,321 households. Consequently, the file that contains
+the household-level information should have a similar number of observations.
+When this is not the case, you should be able to account for this difference
+in data documentation.</p>
+<p>On the other hand, even if the number of individual records is not available
+in the documentation, you can still perform a rough check on the files. For
+example, if you have the household level file and the person level file, the
+latter should be between 2 or 6 times larger than the former, depending on
+the average household size in the country for which the information has been
+collected. Another example is to compare the household level file of an
+expenditure survey with the consumption level file (at the product-level).</p>
+<p>The latter should have n times the number of observations than the former,
+where n is the average number of products that each household records in the
+survey.</p>
+</div>
+<div class="section" id="datasets-must-contain-all-variables-from-the-questionnaire-and-be-in-a-logic-sequence">
+<h2>3.10. Datasets must contain all variables from the questionnaire and be in a logic sequence<a class="headerlink" href="#datasets-must-contain-all-variables-from-the-questionnaire-and-be-in-a-logic-sequence" title="Permalink to this headline">¶</a></h2>
+<p>Verify the completeness of your data files by comparing the content of these
+files with the survey questionnaire. All variables in the questionnaire should
+appear in the dataset, except those excluded on purpose by the producer of the
+data because of reasons of confidentiality (see numeral <em>1.15</em>).
+Cross-checking with the questionnaire(s) is needed to ensure that all sections
+are included in the dataset.</p>
+<p>Additionally, it is a good practice to make sure that the database is sorted
+in the same order as the questionnaire. This practice will help users navigate
+seamlessly across the dataset using the questionnaire as a route map.</p>
+<p>The Stata command <em>-describe-</em> displays the names, variable labels and other
+characteristics, which helps us verify that no variables have been omitted in
+the database. It simultaneously confirms that all variables are correctly
+ordered. Refer to <em>Example 7</em> of <em>Section A</em> for further details.</p>
+</div>
+<div class="section" id="include-the-relevant-weighting-coefficients-and-variables-identifying-the-stratification-levels">
+<h2>3.11. Include the relevant weighting coefficients and variables identifying the stratification levels<a class="headerlink" href="#include-the-relevant-weighting-coefficients-and-variables-identifying-the-stratification-levels" title="Permalink to this headline">¶</a></h2>
+<p>All data files of a sample survey should have clearly labelled variable(s)
+with information on the survey weights. Sample surveys need to be
+representative of a broader population for which the data is collected,
+and the user needs the survey weights for almost every analysis performed.
+In the case of household surveys, the survey weights are equal among
+members of the same household but differ across households. Weights are
+positive and strictly higher than zero. They should not have a larger
+value than the population for which the survey is representative.</p>
+<p>A more detailed description of how the survey weights would look like
+should be provided in the documentation of the survey.  Based on it, you
+can perform some basic range checks. Notice that Census datasets do not
+need weights since a census collects data on all the individuals in the
+population. There are however some exceptions, for example in the case of
+IPUMS, the data collected are not full censuses but census samples, so
+weights are required in this context.</p>
+<p>Additionally, for sample surveys, verify that the variables identifying
+the various levels of stratification and the primary sampling unit are
+included and easily identifiable in at least one of the data files. These
+variables are needed for the calculation of sampling errors.</p>
+</div>
+<div class="section" id="variables-and-codes-for-categorical-variables-must-be-labelled">
+<h2>3.12. Variables and codes for categorical variables must be labelled<a class="headerlink" href="#variables-and-codes-for-categorical-variables-must-be-labelled" title="Permalink to this headline">¶</a></h2>
+<p><strong>Variable labels</strong></p>
+<p>Labels should be short and precise. They should provide a clear
+indication of what information is contained in the variables. Variable
+labels are brief descriptions or attributes of each variable. Without
+variable labels, users are not able to link the variables in the
+database to the questions of the questionnaire. So, one should ensure
+that all variables are labelled.</p>
+<p>Additionally, even if variables are fully labelled, the following
+practices must be considered:</p>
+<ul class="simple">
+<li><p>Variable labels can be up to 80 characters long in Stata and 255 in
+SPSS, however, it is recommended that labels be informative,  short
+and accurate.</p></li>
+<li><p>It is a common practice to have a literal question from the survey as
+a variable label. However, the literal questions are usually longer
+than the maximum number of characters, so this is not an advisable
+practice.</p></li>
+<li><p>The same label should not be used for two different variables.</p></li>
+</ul>
+<p><strong>Value labels</strong></p>
+<p>Label values are used for categorical variables. To ensure the correct
+encoding of data, it is important to check that the stored values in
+those variables correspond to what is expected according to the
+questionnaire. In the case of continuous variables, we also suggest the
+checking of ranges. For instance, if the question is about the number of
+working hours, the variable should not have negative values.</p>
+<p>You can compare variable labels in the dataset to those in the
+questionnaire using the <em>–codebook-</em> Stata command or <em>–labelbook</em>-.
+Refer to <em>Example 8</em> of <em>Section A</em> for further details.</p>
+</div>
+<div class="section" id="temporary-calculated-or-derived-variables-should-not-be-disseminated">
+<h2>3.13. Temporary, calculated or derived variables should not be disseminated<a class="headerlink" href="#temporary-calculated-or-derived-variables-should-not-be-disseminated" title="Permalink to this headline">¶</a></h2>
+<p>Remove all unnecessary or temporary variables from the data files. These
+variables are not collected in the field and present no interest for users.</p>
+<p>The data producer could generate variables that are only needed during the
+quality control process but are not relevant to the final data user. For
+example, the variable “_merge” in Stata is generated automatically after
+performing the check described in the Numeral <em>1.6</em>, when the data producer
+wants to see if the datasets match properly. Variables that group categories
+of a question, dummy variables that identify a question’s category are all
+variables produced during the coding process that are not relevant once the
+analysis is completed.</p>
+<p>There are cases in which calculated variables may be useful to the users, so
+they must be documented in the metadata. For example, most Labor Force Surveys
+(LFS) contain derived dummy variables to identify the sections of the
+population that are employed or unemployed. These variables are generated
+using multiple questions from the dataset and are essential elements of any
+LFS. Most data users prefer to make use of them instead of computing them on
+their own, to reduce the risk of error. This is a strong argument to make a
+case for keeping these variables in the dataset, despite them being a
+by-product of other original variables.</p>
+<p>To be useful, those variables that remain in the dataset must be well
+documented, else they, they may be useless to or misunderstood by users.</p>
+</div>
+<div class="section" id="check-that-the-data-types-are-correct">
+<h2>3.14. Check that the data types are correct<a class="headerlink" href="#check-that-the-data-types-are-correct" title="Permalink to this headline">¶</a></h2>
+<p>Do not include string variables if they can be converted into numeric
+variables. Look at your data and check the variables’ types, particularly
+for those that you expect to be numeric (age, years, number of
+persons/employees/hours, income, purchases/expenditures, weights, and so
+forth). If there are numeric variables stored as string variables, your
+data needs cleaning.</p>
+<p>For example, <em>Table 13</em> contains a data set at the individual-level with
+some variables that should be numeric. The columns B (Age) and E
+(Working Weeks) are stored as numeric variables, which is fine. However,
+the variables ‘Number of working of hours per week’ (Column G), ‘Number
+of persons working at the business’ (Column H) and ‘Monthly Income’
+(Column I) are loaded as strings because there are non-numeric values
+(don’t know, skip, refused to answer) and some missing values present.
+Those variables need to be cleaned and converted from string variables
+to numeric variables.</p>
+<p><strong>Table 13. Checking Data Types: Hypothetical data set</strong></p>
+<img alt="_images/Page16.png" src="_images/Page16.png" />
+<p>Statistical packages have some commands that allows us to make such
+conversions. <em>Table 14</em> shows examples of these commands/functions in
+STATA, R and SPSS.</p>
+<p><strong>Table 14. Convert string variables to numeric: STATA/R/SPSS Commands</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 43%" />
+<col style="width: 28%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>STATA</strong></p></td>
+<td><p><strong>R</strong></p></td>
+<td><p><strong>SPSS</strong></p></td>
+</tr>
+<tr class="row-even"><td><div class="highlight-STATA notranslate"><div class="highlight"><pre><span></span><span class="k">use</span> “individual<span class="m">.</span>dta”
+
+<span class="k">destring</span> (varname),
+ {generate|replace}
+</pre></div>
+</div>
+</td>
+<td><div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="n">individual</span> <span class="o">&lt;-</span>
+ <span class="nf">load</span><span class="p">(</span><span class="s">&quot;individual.rda&quot;</span><span class="p">)</span>
+
+<span class="n">individual</span><span class="o">$</span><span class="n">varname</span> <span class="o">&lt;-</span>
+  <span class="nf">as.numeric</span><span class="p">(</span><span class="n">individual</span><span class="o">$</span><span class="n">varname</span><span class="p">)</span>
+</pre></div>
+</div>
+</td>
+<td><p>Load dataset and choose
+from the menu:</p>
+<ul class="simple">
+<li><p>Data&gt;Transform&gt;
+Recode into Same|
+Different Variables</p></li>
+<li><p>Select the variable</p></li>
+<li><p>Select “Old and New
+Values” and Recode
+it</p></li>
+<li><p>Select “Convert
+numeric strings to
+numbers (‘5’-&gt;5)</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="datasets-must-not-have-directed-identifiers">
+<h2>3.15. Datasets must not have directed identifiers<a class="headerlink" href="#datasets-must-not-have-directed-identifiers" title="Permalink to this headline">¶</a></h2>
+<p>One must verify that in all data files, sensitive information or direct
+identifiers that could reveal the identity of the respondent directly
+(names, addresses, GPS coordinates, phone numbers, etc.) have been removed.
+Check to ensure this information is not in the dataset(s). If it is, those
+variables need to be removed from shared datasets.</p>
+<p>Keep in mind that if you are preparing a dataset for public release, you
+need a cleaned, anonymous dataset.  Removing all direct identifiers is the
+first key step to ensuring the anonymity of the participants. However,
+before you start any privacy procedures, you should always check your data.</p>
+<p>For more information on how to apply statistical disclosure control (SDC)
+methods to data before release, see the document “Introduction to
+Statistical Disclosure Control (SDC)” available at
+<a class="reference external" href="http://ihsn.org/sites/default/files/resources/ihsn-working-paper-007-Oct27.pdf">http://ihsn.org/sites/default/files/resources/ihsn-working-paper-007-Oct27.pdf</a></p>
+</div>
+<div class="section" id="compress-the-variables-to-reduce-the-file-size">
+<h2>3.16. Compress the variables to reduce the file size<a class="headerlink" href="#compress-the-variables-to-reduce-the-file-size" title="Permalink to this headline">¶</a></h2>
+<p>Compress the variables consist of reducing the size of the data file without
+loss of precision or modifying the information that it provides. Listed
+below are some reasons why compressing a data set may be a useful practice
+for at least three reasons: First, it makes faster the process of creating
+backups, uploading and downloading data files from your data repository or
+any Survey Catalog. Second, it reduces the time that data users will need
+to spend working with the data. Additionally, it will make the data more
+accessible to the different type of users; sometimes the data size will
+impose restrictions on those users who lack high computational power.
+Third, it will help to free up disk space in the server where you store
+your data</p>
+<dl>
+<dt>Example</dt><dd><ul class="simple">
+<li><p><em>Table 15</em> shows two versions of one dataset that provides
+individual-levelinformation about the year of the first union, age,
+school attendance,and health insurance. There is no difference in
+the appearance of both datasets. However, version 1 was saving
+uncompressed and version 2 compressed. In the uncompressed version,
+the variables “ID” and “Year” are stored as double, which means that
+they can store number with high decimal precision, but they
+are designed to only record information of integer numbers between
+-32,767 and 32,740. So, the compressed version changed the storage
+type of these variables to int and saves 6 bytes per observation.
+Similarly, other variables like “age” and “school attendance” are
+stored as a byte in the compressed version, which saves 7 bytes
+per observation when are compared to the uncompressed version.
+Let’s suppose that one has a data set with 500 variables like these,
+the total savings would be 3,500 bytes per observation; if this data set
+has 50,000 observations, it means that the savings in memory space
+would be around 175 megabytes.</p></li>
+</ul>
+<p><strong>Table 15. Compressing the Variables: Hypothetical data set</strong></p>
+</dd>
+</dl>
+<img alt="_images/Page18_1.png" src="_images/Page18_1.png" />
+<img alt="_images/Page18_2.png" src="_images/Page18_2.png" />
+<p>Use the <em>compress</em> command in Stata, or the <em>compress</em> option when you
+save a SPSS data file.</p>
+<dl class="simple">
+<dt>Suggestion</dt><dd><p>If you are in the process of establishing a data archive and plan
+to document a collection of surveys, undertake a full inventory of
+all existing data and metadata before you start the documentation.
+Use the <em>IHSN Inventory Guidelines and Forms</em> to before you start the
+documentation. Use the <em>IHSN Inventory Guidelines and Forms</em> to
+facilitate this inventory (available at www.surveynetwork.org).</p>
+</dd>
+</dl>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><em>Suggestion:</em></p>
+<p>If you are in the process of establishing a data archive and plan
+to document a collection of surveys, undertake a full inventory of
+all existing data and metadata before you start the documentation.
+Use the IHSN Inventory Guidelines and Forms to before you start the
+documentation. Use the <em>IHSN Inventory Guidelines and Forms</em> to
+facilitate this inventory (available at www.surveynetwork.org).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="footnote brackets">
+<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id1">2</a></span></dt>
+<dd><p>See section 3 – <em>Importing data and establishing relationships</em> for
+more information on key variables.</p>
+</dd>
+<dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id2">3</a></span></dt>
+<dd><p>In Stata, this can be done through the use of the <em>group</em> function
+from the <em>egen</em> command. For example, to create a variable hhid based
+on a combination of variables <em>province</em>, <em>district</em>, <em>ea</em> and
+<em>hhnum</em>, use the command “egen hhid=group(province district ea hh_num)”.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="prepDocumentation.html" class="btn btn-neutral float-right" title="4. Gathering and preparing the documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="organizingFiles.html" class="btn btn-neutral float-left" title="2. Before you start: organizing your files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Olivier Dupriez, Diana Marcela Sanchez Castro, Matthew Welch
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

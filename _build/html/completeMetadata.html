@@ -1,0 +1,3371 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>7. Completing metadata &mdash; Guide for Data Archivists  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="8. Creating variable groups" href="createVarGroups.html" />
+    <link rel="prev" title="6. Importing external resources" href="importResources.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Guide for Data Archivists
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="organizingFiles.html">2. Before you start: organizing your files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepData.html">3. Gathering and preparing the data set</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepDocumentation.html">4. Gathering and preparing the documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="importData.html">5. Importing data and establishing relationships</a></li>
+<li class="toctree-l1"><a class="reference internal" href="importResources.html">6. Importing external resources</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">7. Completing metadata</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#good-practices-for-completing-the-document-description">7.1. Good practices for completing the Document Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#good-practices-for-completing-the-study-description">7.2. Good practices for completing the Study Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#good-practices-for-completing-the-file-description">7.3. Good practices for completing the File Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#good-practices-for-completing-the-variables-description">7.4. Good practices for completing the Variables Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#good-practices-for-completing-the-external-resources-description">7.5. Good practices for completing the External Resources description</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="createVarGroups.html">8. Creating variable groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation.html">9. Running validations and diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdfDoc.html">10. Generating the survey documentation in PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualityReview.html">11. Independent quality review</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sectionA.html">12. Section A . Data Validations in Stata: Practical Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Guide for Data Archivists</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>7. Completing metadata</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/completeMetadata.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="completing-metadata">
+<h1>7. Completing metadata<a class="headerlink" href="#completing-metadata" title="Permalink to this headline">¶</a></h1>
+<p>The Metadata Editor makes use of the Data Documentation Initiative
+(DDI Version 2.5), the Dublin Core (DCMI version X) metadata standards
+and ISO 19139 for geospatial information.</p>
+<p>The table below provides an overview of the different metadata standards
+as related to the project. Each metadata standard is integrated into the
+template that will define the project.</p>
+<img alt="_images/Page23.png" src="_images/Page23.png" />
+<p>A thorough completion of the DDI and DCMI elements will significantly
+raise the value of the archiving work by providing users with the
+necessary information to put the study into its proper context and to
+understand its purpose.</p>
+<p>The DDI requires completion of the following sections: Document
+Description, Study Description, Datasets, Variables Groups, and
+External Resources. Recommendations for each field included in the
+IHSN template are provided below.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>The IHSN recommends using the standardized IHSN DDI/DCMI templates
+(Study Template and External Resources Template). This Quick
+Reference Guide is based on these two templates. Visit the IHSN
+website to download the latest version of these templates,
+available in multiple languages.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Overall recommendations:</strong></p>
+<ul class="simple">
+<li><p>As an archivist, you may need to seek assistance from key experts
+involved in some of the technical aspects of the survey.</p></li>
+<li><p>As a general rule, avoid using ALL CAPS when you fill DDI fields.
+Also, check the spelling of all entries. The Editor does not provide
+(yet) an automatic spell checker.</p></li>
+<li><p>Some of the examples below present an optimal documentation of some
+fields. In many cases, for past surveys, you will not find such
+detailed information. Try to provide as much detail as possible. For
+future surveys, the information should be compiled and provided
+during the whole life cycle of the survey. This will ensure that the
+best possible documentation is available at completion of that
+survey.</p></li>
+</ul>
+<div class="section" id="good-practices-for-completing-the-document-description">
+<h2>7.1. Good practices for completing the Document Description<a class="headerlink" href="#good-practices-for-completing-the-document-description" title="Permalink to this headline">¶</a></h2>
+<p>Documenting a study using the DDI and DCMI metadata standards consists
+of generating a metadata file which will be saved in XML format in what
+is called an <em>XML Document</em>. The <em>Document Description</em> described below
+is a description of that XML file. The IHSN Template selected 4 elements
+to describe the DDI document.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 51%" />
+<col style="width: 23%" />
+<col style="width: 26%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td rowspan="4"><p>Metadata Producer</p></td>
+<td colspan="2"><p>Name of the person(s) or
+organization(s) who documented
+the dataset. Use the “role”
+attribute to distinguish
+different stages of involvement
+in the production process.</p>
+<p>Example:</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><em>Name</em></p></td>
+<td><p><em>Role</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><em>National
+Statistics
+Office
+(NSO)</em></p></td>
+<td><p><em>Documentation
+of the
+study</em></p></td>
+</tr>
+<tr class="row-even"><td><p><em>International
+Household
+Survey
+Network
+(IHSN)</em></p></td>
+<td><p><em>Review of
+the
+metadata</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>Date of Production</p></td>
+<td colspan="2"><p>This is the date (in ISO format
+YYYY-MM-DD) the DDI document was
+produced (not distributed or
+archived). This date will be
+automatically imputed when you
+save the file.</p></td>
+</tr>
+<tr class="row-even"><td><p>DDI Document Version</p></td>
+<td colspan="2"><p>Documenting a dataset is not a
+trivial exercise. Producing
+“perfect” metadata is probably
+impossible. It may therefore
+happen that, having identified
+errors in a DDI document or
+having received suggestions for
+improvement, you decide to modify
+the Document even after a first
+version has been disseminated.
+This element is used to identify
+and describe the current version
+of the document. It is good
+practice to provide a version
+number (and date), and
+information on what distinguishes
+this version from the previous
+one(s) if relevant.</p>
+<dl class="simple">
+<dt>Example:</dt><dd><p><em>Version 02 (July 2017). This
+version is identical to version
+01, except for the section on
+Data Appraisal which was
+updated.</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td><p>DDI Document ID Number</p></td>
+<td colspan="2"><p>The ID number of a DDI document
+is a unique number that is used
+to identify this DDI file. Define
+and use a consistent scheme to
+use. Such an ID could be
+constructed as follows:
+DDI_COUNTRY_PRODUCER_SURVEY_YEAR
+where</p>
+<ul class="simple">
+<li><p><em>country</em> is the 3-letter ISO
+country abbreviation</p></li>
+<li><p><em>producer</em> is the abbreviation
+of the producing agency</p></li>
+<li><p><em>survey</em> is the survey
+abbreviation</p></li>
+<li><p><em>year</em> is the reference year
+(or the year the survey
+started)</p></li>
+<li><p>DDI document version number</p></li>
+</ul>
+<dl class="simple">
+<dt>Example:</dt><dd><p><em>The DDI file related to the
+Demographic and Health Survey
+documented by staff from the
+Uganda Bureau of Statistics in
+2005 would have the following
+ID:
+DDI_UGA_UBOS_DHS_2005_v01. If
+the same survey is documented by
+a staff from the IHSN, this
+would be
+DDI_UGA_IHSN_DHS_205_v01.</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td><p>Collection</p></td>
+<td colspan="2"><p>This field allows viewed and
+searched the study by collection</p></td>
+</tr>
+<tr class="row-odd"><td><p>Programs</p></td>
+<td colspan="2"><p>Link surveys to projects / trust
+funds</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="good-practices-for-completing-the-study-description">
+<h2>7.2. Good practices for completing the Study Description<a class="headerlink" href="#good-practices-for-completing-the-study-description" title="Permalink to this headline">¶</a></h2>
+<p>In the DDI standard, the Study Description is the section that contains
+all elements needed to describe the study itself (investigators, dates
+and methods, scope and coverage, etc.)</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="2"><p><strong>Identification</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Survey Title</p></td>
+<td><p>The title is the official name of
+the survey as it is stated on the
+questionnaire or as it appears in
+the design documents. The
+following items should be noted:</p>
+<ul class="simple">
+<li><p>Include the reference year(s)
+of the survey in the title.</p></li>
+<li><p>Do not include the
+abbreviation of the survey
+name in the title.</p></li>
+<li><p>As the survey title is a
+proper noun, the first letter
+of each word should be
+capitalized (except for
+prepositions or other
+conjunctions).</p></li>
+<li><p>Including the country name in
+the title is optional.</p></li>
+</ul>
+<dl class="simple">
+<dt>Example:</dt><dd><ul class="simple">
+<li><p><em>National Household Budget
+Survey 2012-2013</em></p></li>
+<li><p><em>Popstan Multiple Indicator
+Cluster Survey 2012</em></p></li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Survey Subtitle</p></td>
+<td><p>Subtitle is optional and rarely
+used. A subtitle can be used to
+add information usually
+associated with a sequential
+qualifier for a survey.</p>
+<dl>
+<dt>Example:</dt><dd><p><em>Title: Welfare Monitoring
+Survey 2007</em></p>
+<p><em>Subtitle: Fifth round</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td><p>Abbreviation or Acronym</p></td>
+<td><p>The abbreviation of a survey is
+usually the first letter of each
+word of the titled survey. The
+survey reference year(s) may be
+included.</p>
+<dl class="simple">
+<dt>Example:</dt><dd><ul class="simple">
+<li><p><em>DHS 2015 for “Demographic and
+Health Survey 2005”</em></p></li>
+<li><p><em>HIES 2012-2013 for “Household
+Income and Expenditure Survey
+2003”</em></p></li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Study type</p></td>
+<td><p>The study type or <em>survey type</em>
+is the broad category defining
+the survey. This item has a
+controlled vocabulary (you may
+customize the IHSN template to
+adjust this controlled vocabulary
+if needed).</p></td>
+</tr>
+<tr class="row-even"><td><p>Series information</p></td>
+<td><p>A survey may be repeated at
+regular intervals (such as an
+annual labour force survey), or
+be part of an international
+survey program (such as the MICS,
+CWIQ, DHS, LSMS and others). The
+Series information is a
+description of this “collection”
+of surveys. A brief description
+of the characteristics of the
+survey, including when it
+started, how many rounds were
+already implemented, and who is
+in charge would be provided here.
+If the survey does not belong to
+a series, leave this field empty.</p>
+<dl>
+<dt>Example:</dt><dd><p><em>The Multiple Indicator Cluster
+Survey, Round 3 (MICS3) is the
+third round of MICS surveys,
+previously conducted around 1995
+(MICS1) and 2000 (MICS2). MICS
+surveys are designed by UNICEF,
+and implemented by national
+agencies in participating
+countries. MICS was designed to
+monitor various indicators
+identified at the World Summit
+for Children and the Millennium
+Development Goals.
+Many questions and indicators in
+MICS3 are consistent and
+compatible with the prior round
+of MICS (MICS2) but less so with
+MICS1, although there have been a
+number of changes in definition
+of indicators between rounds.</em></p>
+<p><em>Round 1 covered X countries,
+round 2 covered Y countries, and
+Round Z covered N countries.</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Translated title</p></td>
+<td><p>In countries with more than one
+official language, a translation
+of the title may be provided.
+Likewise, the translated title
+may simply be a translation into
+English from a country’s own
+language. Special characters
+should be properly displayed
+(such as accents and other stress
+marks or different alphabets).</p></td>
+</tr>
+<tr class="row-even"><td><p>Unique user defined ID Number</p></td>
+<td><p>The ID number of a dataset is a
+unique number that is used to
+identify a particular survey.
+Define and use a consistent
+scheme to use. Such an ID could
+be constructed as follows:
+country-producer-survey-year-vers
+ion
+where</p>
+<ul class="simple">
+<li><p><em>country</em> is the 3-letter ISO
+country abbreviation</p></li>
+<li><p><em>producer</em> is the abbreviation
+of the producing agency</p></li>
+<li><p><em>survey</em> is the survey
+abbreviation</p></li>
+<li><p><em>year</em> is the reference year
+(or the year the survey
+started)</p></li>
+<li><p><em>version</em> is the number
+dataset version number (see
+Version Description below)</p></li>
+</ul>
+<dl>
+<dt>Example:</dt><dd><p><em>The Demographic and Health
+Survey implemented by the Uganda
+Bureau of Statistics in 2005
+could have the following ID:</em></p>
+<p><em>UGA-UBOS-DHS-2005-v01.</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Depositor</p></td>
+<td><p>The name of the person
+(or institution) who provided this
+data collection to the archive
+storing it.</p></td>
+</tr>
+<tr class="row-even"><td><p>Date of Deposit</p></td>
+<td><p>The date that the data collection
+was deposited with the archive that
+originally received it.</p></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p><strong>Version</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Version Description</p></td>
+<td><p>The version description should
+contain a version number followed
+by a version label. The version
+number should follow a standard
+convention to be adopted by the
+institute. We recommend that
+larger series be defined by a
+number to the left of a decimal
+and iterations of the same series
+by a sequential number that
+identifies the release. Larger
+series will typically include (0)
+the raw, unedited dataset; (1)
+the edited dataset, non
+anonymized, for internal use at
+the data producing agency; and
+(2) the edited dataset, prepared
+for dissemination to secondary
+users (possibly anonymized).</p>
+<dl class="simple">
+<dt>Example:</dt><dd><ul class="simple">
+<li><p><em>v00: Basic raw data,
+obtained from data entry
+(before editing)</em>.</p></li>
+<li><p><em>v01: Edited data, second
+version, for internal use
+only</em>.</p></li>
+<li><p><em>v02: Edited, anonymous
+dataset for public
+distribution</em>.</p></li>
+</ul>
+</dd>
+</dl>
+<p>A brief description of the version
+should follow the numerical
+identification.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Production date</p></td>
+<td><p>This is the date in ISO format
+(yyyy-mm-dd) of actual and final
+production of the data.
+Production dates of all versions
+should be carefully tracked.
+Provide at least the month and
+year. Use the calendar icon in
+the Metadata editor to assure
+that the date selected is in
+compliance with the ISO format.</p></td>
+</tr>
+<tr class="row-even"><td><p>Version Notes</p></td>
+<td><p>Version notes should provide a
+brief report on the changes made
+through the versioning process.
+The note should indicate how this
+version differs from other
+versions of the same dataset.</p></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p><strong>Study Authorization</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Authorizing Agency</p></td>
+<td><p>Name of the agent or agency that
+authorized the study. The
+“affiliation” attribute indicates
+the institutional affiliation of
+the authorizing agent or agency.
+The “abbr” attribute holds the
+abbreviation of the authorizing
+agent’s or agency’s name</p></td>
+</tr>
+<tr class="row-odd"><td><p>Authorization Statement</p></td>
+<td><p>The text of the authorization. Use
+XHTML to capture significant
+structure in the document</p>
+<p>Example:</p>
+<p>Required documentation covering
+the study purpose, disclosure
+information, questionnaire
+content, and consent statements
+was delivered to the OUHS on
+2010-10-01 and reviewed by the
+compliance officer. Statement of
+authorization for the described
+study was received on 2010-11-04</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Legal basis</p></td>
+<td><p>Decree or law authorizing or
+requiring the study
+(e.g. census act)</p></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p><strong>Overview</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Study Budget</p></td>
+<td><p>Describe the budget of the project
+in as much detail as needed.
+Internal structure is allowed using
+XHTML elements. Different
+organizations express their budgets
+in different formats and this open
+format allows flexibility.</p>
+<p>Attributes: Budget line ID, Budget
+line label, Amount, Currency and
+Source of funding.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Abstract</p></td>
+<td><p>The abstract should provide a
+clear summary of the purposes,
+objectives and content of the
+survey. It should be written by a
+researcher or survey statistician
+aware of the survey.</p></td>
+</tr>
+<tr class="row-even"><td><p>Objectives of the study</p></td>
+<td><p>Describe the Main (explicit) and
+secondary (explicit) objectives of
+the survey.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kind of data</p></td>
+<td><p>This field is a broad
+classification of the data and it
+is associated with a drop-down
+box providing controlled
+vocabulary. That controlled
+vocabulary includes 9 items but
+is not limited to them.</p></td>
+</tr>
+<tr class="row-even"><td><p>Unit of analysis</p></td>
+<td><p>A survey could have various units
+of analysis. These are fairly
+standard and are usually:</p>
+<ul class="simple">
+<li><p>Household (household survey,
+census)</p></li>
+<li><p>Person (household survey,
+census)</p></li>
+<li><p>Enterprise (enterprise survey)</p></li>
+<li><p>Commodity (household survey,
+price survey)</p></li>
+<li><p>Plots of land (agricultural
+survey)</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p><strong>Scope</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Description of scope</p></td>
+<td><p>The scope is a description of the
+themes covered by the survey. It
+can be viewed as a summary of the
+modules that are included in the
+questionnaire. The scope does not
+deal with geographic coverage.</p>
+<dl class="simple">
+<dt>Example:</dt><dd><p>The scope of the Multiple
+Indicator Cluster Survey
+includes:</p>
+<ul class="simple">
+<li><p><em>HOUSEHOLD: Household
+characteristics, household
+listing, orphaned and
+vulnerable children,
+education, child labour, water
+and sanitation, household use
+of insecticide treated
+mosquito nets, and salt
+iodization, with optional
+modules for child discipline,
+child disability, maternal
+mortality and security of
+tenure and durability of
+housing.</em></p></li>
+<li><p><em>WOMEN: Women’s
+characteristics, child
+mortality, tetanus toxoid,
+maternal and newborn health,
+marriage, polygyny, female
+genital cutting,
+contraception, and HIV/AIDS
+knowledge, with optional
+modules for unmet need,
+domestic violence, and sexual
+behavior.</em></p></li>
+<li><p><em>CHILDREN: Children’s
+characteristics, birth
+registration and early
+learning, vitamin A,
+breastfeeding, care of
+illness, malaria,
+immunization, and
+anthropometry, with an
+optional module for child
+development.</em></p></li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Topic classifications</p></td>
+<td><p>A topic classification
+facilitates referencing and
+searches in electronic survey
+catalogs. Topics should be
+selected from a standard
+thesaurus, preferably an
+international, multilingual
+thesaurus. The IHSN recommends
+the use of the thesaurus used by
+the Council of European Social
+Science Data Archives (CESSDA).
+The CESSDA thesaurus has been
+introduced as a controlled
+vocabulary in the IHSN Study
+Template version 1.3 (available
+<a class="reference external" href="http://www.surveynetwork.org/toolkit">www.surveynetwork.org/toolkit</a>).</p></td>
+</tr>
+<tr class="row-even"><td><p>Keywords</p></td>
+<td><p>Keywords summarize the content or
+subject matter of the survey. As
+topic classifications, these are
+used to facilitate referencing
+and searches in electronic survey
+catalogs. Keywords should be
+selected from a standard
+thesaurus, preferably an
+international, multilingual
+thesaurus. Entering a list of
+keywords is tedious. This option
+is provided for advanced users
+only.</p></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p><strong>Quality Statement</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Standards Compliance</p></td>
+<td><p>This section lists all specific
+standards complied with during the
+execution of this study. Note the
+standard name and producer and how
+the study complied with the
+standard</p></td>
+</tr>
+<tr class="row-odd"><td><p>Other Quality Statement</p></td>
+<td><p>Enter any additional quality
+statements</p></td>
+</tr>
+<tr class="row-even"><td colspan="2"><p><strong>Post Evaluation Procedures</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Evaluator Type</p></td>
+<td><p>The evaluator element identifies
+persons or organizations involved
+in the evaluation. The Affiliation
+attribute contains the affiliation
+of the individual or organization.
+The Abbr. attribute holds an
+abbreviation for the individual or
+organization. The Role attribute
+indicates the role played by the
+individual or organization in the
+evaluation process.</p>
+<p>Example:</p>
+<ul class="simple">
+<li><p>Affiliation: United Nations</p></li>
+<li><p>Abbr.: UNSD</p></li>
+<li><p>Role: Consultant</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Evaluation Process</p></td>
+<td><p>Describes the evaluation process
+followed. Ex-Post Evaluations are
+frequently done within large
+statistical or research agencies,
+in particular when the survey is
+intended to be repeated or on-going</p></td>
+</tr>
+<tr class="row-odd"><td><p>Evaluation Outcomes</p></td>
+<td><p>Describe the outcomes of the
+evaluation</p></td>
+</tr>
+<tr class="row-even"><td colspan="2"><p><strong>Coverage</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Country</p></td>
+<td><p>Enter the country name, even in
+cases where the survey did not
+cover the entire country. In the
+field “Abbreviation”, we
+recommend that you enter the
+3-letter ISO code of the country.
+If the dataset you document
+covers more than one country,
+enter all in separate rows.</p></td>
+</tr>
+<tr class="row-even"><td><p>Geographic coverage</p></td>
+<td><p>This filed aims at describing at
+what geographic level the data
+are representative. Typical
+entries will be “National
+coverage”, “Urban (or rural)
+areas only”, “state of …”,
+“Capital city”, etc.</p>
+<p>Note that we do not describe here
+where the data was collected. For
+example, as sample survey could
+be declared as “national
+coverage” even in cases where
+some districts where not included
+in the sample, as long as the
+sampling strategy was such that
+the representativity is national.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Geographic Unit</p></td>
+<td><p>Lowest level of geographic
+aggregation covered by the data.</p></td>
+</tr>
+<tr class="row-even"><td><p>Universe</p></td>
+<td><p>We are interested here in the
+survey universe (not the universe
+of particular sections of the
+questionnaires or variables),
+i.e. in the identification of the
+population of interest in the
+survey. The universe will rarely
+be the entire population of the
+country. Sample household
+surveys, for example, usually do
+not cover homeless, nomads,
+diplomats, community households.
+Population censuses do not cover
+diplomats. Try to provide the
+most detailed information
+possible on the population
+covered by the survey/census.</p>
+<dl class="simple">
+<dt>Example:</dt><dd><p><em>The survey covered all de jure
+household members (usual
+residents), all women aged 15-49
+years resident in the household,
+and all children aged 0-4 years
+(under age 5) resident in the
+household.</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Geographic bounding box</p></td>
+<td><p>The geographic bounding box is the
+minimum box, defined by west and
+east longitudes and north and south
+latitudes, that includes the
+largest geographic extent of the
+dataset’s geographic coverage.
+This element is used in the first
+pass of a coordinate-based search.
+If the Geographic bounding Polygon
+element is included, then this
+field element MUST be included</p></td>
+</tr>
+<tr class="row-even"><td><p>Geographic Bounding Polygon</p></td>
+<td><p>This field allows the creation of
+multiple polygons to describe in a
+more detailed manner the geographic
+area covered by the dataset. It
+should only be used to define the
+outer boundaries of a covered area.</p>
+<p>Example:
+In the United States, such polygons
+can be created to define boundaries
+for Hawaii, Alaska, and the
+continental United States, but not
+interior boundaries for the
+contiguous states. This field is
+used to refine a coordinate-based
+search, not to actually map an area</p>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p><strong>Producers and Sponsors.</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Authoring Entity/Primary
+investigators</p></td>
+<td><p>The primary investigator will in
+most cases be an institution, but
+could also be an individual in
+the case of small-scale academic
+surveys. The two fields to be
+completed are the Name and the
+Affiliation fields. Generally, in
+a survey, the Primary
+Investigator will be the
+institution implementing the
+survey. If various institutions
+have been equally involved as
+main investigators, then all
+should be mentioned. This only
+includes the agencies responsible
+for the implementation of the
+survey, not its funding or
+technical assistance. The order
+in which they are listed is
+discretionary. It can be
+alphabetic or by significance of
+contribution. Individual persons
+can also be mentioned. If persons
+are mentioned use the appropriate
+format of Surname, First name.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Producers</p></td>
+<td><p>This field is provided to list
+other interested parties and
+persons that have played a
+significant but not the leading
+technical role in implementing
+and producing the data. The
+specific fields to be competed
+are: Name of the organization,
+Abbreviation, Affiliation and
+Role. If any of the fields are
+not applicable these can be left
+blank. The abbreviations should
+be the official abbreviation of
+the organization. The role should
+be a short and succinct phrase or
+description on the specific
+assistance provided by the
+organization in order to produce
+the data. The roles should be
+standard vocabulary such as:</p>
+<ul class="simple">
+<li><p>[Technical assistance in]
+questionnaire design</p></li>
+<li><p>[Technical assistance in]
+sampling methodology /
+selection</p></li>
+<li><p>[Technical assistance in] data
+collection</p></li>
+<li><p>[Technical assistance in] data
+processing</p></li>
+<li><p>[Technical assistance in] data
+analysis</p></li>
+</ul>
+<p>Do not include here the financial
+sponsors.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Funding Agency/Sponsor</p></td>
+<td><p>List the organizations (national
+or international) that have
+contributed, in cash or in kind,
+to the financing of the survey.
+The government institution that
+has provided funding should not
+be forgotten.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Other Identifications/
+acknowledgements</p></td>
+<td><p>This optional field can be used
+to acknowledge any other people
+and institutions that have in
+some form contributed to the
+survey.</p></td>
+</tr>
+<tr class="row-even"><td colspan="2"><p><strong>Sampling</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Sampling procedure</p></td>
+<td><p>This field only applies to sample
+surveys. Information on sampling
+procedure is crucial (although
+not applicable for censuses and
+administrative datasets). This
+section should include summary
+information that includes though
+is not limited to:</p>
+<ul class="simple">
+<li><p>Sample size</p></li>
+<li><p>Selection process (e.g.,
+probability proportional to
+size or over sampling)</p></li>
+<li><p>Stratification (implicit and
+explicit)</p></li>
+<li><p>Stages of sample selection</p></li>
+<li><p>Design omissions in the sample</p></li>
+<li><p>Level of representation</p></li>
+<li><p>Strategy for absent
+respondents/not found/refusals
+(replacement or not)</p></li>
+<li><p>Sample frame used, and listing
+exercise conducted to update
+it</p></li>
+</ul>
+<p>It is useful also to indicate
+here what variables in the data
+files identify the various levels
+of stratification and the primary
+sample unit. These are crucial to
+the data users who want to
+properly account for the sampling
+design in their analyses and
+calculations of sampling errors.</p>
+<p>This section accepts only text
+format; formulae cannot be
+entered. In most cases, technical
+documents will exist that
+describe the sampling strategy in
+detail. In such cases, include
+here a reference
+(title/author/date) to this
+document, and make sure that the
+document is provided in the
+External Resources.</p>
+<dl class="simple">
+<dt>Example:</dt><dd><p><em>5000 households were selected
+for the sample. Of these, 4996
+were occupied households and 4811
+were successfully interviewed for
+a response rate of 96.3%. Within
+these households, 7815 eligible
+women aged 15-49 were identified
+for interview, of which 7505 were
+successfully interviewed
+(response rate 96.0%), and 3242
+children aged 0-4 were identified
+for whom the mother or caretaker
+was successfully interviewed for
+3167 children (response rate
+97.7%). These give overall
+response rates (household
+response rate times individual
+response rate) for the women’s
+interview of 92.5% and for the
+children’s interview of 94.1%.</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td><p>Sample Frame Name</p></td>
+<td><p>Sample frame describes the sampling
+frame used for identifying the
+population from which the sample
+was taken. Label and text
+describing the sample frame</p></td>
+</tr>
+<tr class="row-odd"><td><p>Update of listing</p></td>
+<td><p>Describes operations conducted to
+update the sample frame</p></td>
+</tr>
+<tr class="row-even"><td><p>Valid Period</p></td>
+<td><p>Defines a time period for the
+validity of the sampling frame.
+Enter dates in YYYY-MM-DD format.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Custodian</p></td>
+<td><p>Custodian identifies the agency or
+individual who is responsible for
+creating or maintaining the sample
+frame. Attribute affiliation
+provides the affiliation of the
+custodian with an agency or
+organization. Attribute abbr.
+provides an abbreviation for the
+custodian.</p></td>
+</tr>
+<tr class="row-even"><td><p>Use Statement</p></td>
+<td><p>Sample frame use statement</p></td>
+</tr>
+<tr class="row-odd"><td><p>Frame Unit</p></td>
+<td><p>Provides information about the
+sampling frame unit. The attribute
+“is Primary” is boolean, indicating
+whether the unit is primary or not.</p></td>
+</tr>
+<tr class="row-even"><td><p>Reference Period</p></td>
+<td><p>Indicates the period of time in
+which the sampling frame was
+actually used for the study in
+question. Use ISO 8601 date/time
+formats to enter the relevant
+date(s).</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sample Size</p></td>
+<td><p>This element provides the targeted
+sample size in integer format.</p>
+<p>Attributes: Planned / Actual and
+Unit and Number.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Sample Size Formula</p></td>
+<td><p>This element includes the formula
+that was used to determine the
+sample size</p></td>
+</tr>
+<tr class="row-odd"><td><p>Stratification</p></td>
+<td><p>Describe the Stratification
+(implicit and explicit) and the
+Variables identifying strata and
+PSU</p></td>
+</tr>
+<tr class="row-even"><td><p>Deviation from sample design</p></td>
+<td><p>This field only applies to sample
+surveys.</p>
+<p>Sometimes the reality of the
+field requires a deviation from
+the sampling design (for example
+due to difficulty to access to
+zones due to weather problems,
+political instability, etc). If
+for any reason, the sample design
+has deviated, this should be
+reported here.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Response rate</p></td>
+<td><p>Response rate provides that
+percentage of households (or
+other sample unit) that
+participated in the survey based
+on the original sample size.
+Omissions may occur due to
+refusal to participate,
+impossibility to locate the
+respondent, or other. Sometimes,
+a household may be replaced by
+another by design. Check that the
+information provided here is
+consistent with the sample size
+indicated in the “Sampling
+procedure field” and the number
+of records found in the dataset
+(for example, if the sample
+design mention a sample of 5,000
+households and the data on
+contain data on 4,500 households,
+the response rate should not be
+100 percent).</p>
+<p>Provide if possible the response
+rates by stratum. If information
+is available on the causes of
+non-response (refusal/not
+found/other), provide this
+information as well.</p>
+<p>This field can also in some cases
+be used to describe non-responses
+in population censuses.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Weighting</p></td>
+<td><p>This field only applies to sample
+surveys.</p>
+<p>Provide here the list of
+variables used as weighting
+coefficient. If more than one
+variable is a weighting variable,
+describe how these variables
+differ from each other and what
+the purpose of each one of them
+is.</p>
+<dl>
+<dt>Example:</dt><dd><p><em>Sample weights were calculated
+for each of the data files.</em></p>
+<p><em>Sample weights for the household
+data were computed as the inverse
+of the probability of selection
+of the household, computed at the
+sampling domain level
+(urban/rural within each region).
+The household weights were
+adjusted for non-response at the
+domain level, and were then
+normalized by a constant factor
+so that the total weighted number
+of households equals the total
+unweighted number of households.
+The household weight variable is
+called HHWEIGHT and is used with
+the HH data and the HL data.</em></p>
+<p><em>Sample weights for the women’s
+data used the un-normalized
+household weights, adjusted for
+non-response for the women’s
+questionnaire, and were then
+normalized by a constant factor
+so that the total weighted number
+of women’s cases equals the total
+unweighted number of women’s
+cases.</em></p>
+<p><em>Sample weights for the
+children’s data followed the same
+approach as the women’s and used
+the un-normalized household
+weights, adjusted for
+non-response for the children’s
+questionnaire, and were then
+normalized by a constant factor
+so that the total weighted number
+of children’s cases equals the
+total unweighted number of
+children’s cases.</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p><strong>Data Collection</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Dates of data collection</p></td>
+<td><p>Enter the dates (at least month
+and year) of the start and end of
+the data collection. They should
+be in the standard ISO format of
+YYYY-MM-DD.</p>
+<p>In some cases, data collection
+for a same survey can be
+conducted in waves. In such case,
+you should enter the start and
+end date of each wave separately,
+and identify each wave in the
+“cycle” field.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Collector Training</p></td>
+<td><p>Describes the training provided to
+data collectors including
+interviewer training, process
+testing, compliance with standards
+etc. This is repeatable for
+language and to capture different
+aspects of the training process.
+The type attribute allows
+specification of the type of
+training being described</p></td>
+</tr>
+<tr class="row-even"><td><p>Frequency of Data Collection</p></td>
+<td><p>For data collected at more than one
+point in time, the frequency with
+which the data were collected. The
+“freq” attribute is included to
+permit the development of a
+controlled vocabulary for this
+element.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Time period</p></td>
+<td><p>This field will usually be left
+empty. Time period differs from
+the dates of collection as they
+represent the period for which
+the data collected are applicable
+or relevant.</p></td>
+</tr>
+<tr class="row-even"><td><p>Data Sources</p></td>
+<td><p>Used to list the book(s),
+article(s), serial(s), and/or
+machine-readable data file(s)–if
+any–that served as the source(s)
+of the data collection</p></td>
+</tr>
+<tr class="row-odd"><td><p>Alternatives to data collection</p></td>
+<td><p>Sources of data available /
+potentially considered</p></td>
+</tr>
+<tr class="row-even"><td><p>Mode of data collection</p></td>
+<td><p>The mode of data collection is
+the manner in which the interview
+was conducted or information was
+gathered. This field is a
+controlled vocabulary field. Use
+the drop-down button in the
+Toolkit to select one option. In
+most cases, the response will be
+“face to face interview”. But for
+some specific kinds of datasets,
+such as for example data on rain
+falls, the response will be
+different.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Data Capture</p></td>
+<td><p>Where was data capture done (e.g.,
+In the field or at the office) and
+when was data capture done. Also,
+describe the technology using for
+data capture (e.g. scanning, PDAs
+OR Web)</p></td>
+</tr>
+<tr class="row-even"><td><p>Notes on data collection</p></td>
+<td><p>This element is provided in order
+to document any specific
+observations, occurrences or
+events during data collection.
+Consider stating such items like:</p>
+<ul class="simple">
+<li><p>Was a training of enumerators
+held? (elaborate)</p></li>
+<li><p>Any events that could have a
+bearing on the data quality?</p></li>
+<li><p>How long did an interview take
+on average?</p></li>
+<li><p>Was there a process of
+negotiation between
+households, the community and
+the implementing agency?</p></li>
+<li><p>Are anecdotal events recorded?</p></li>
+<li><p>Have the field teams
+contributed by supplying
+information on issues and
+occurrences during data
+collection?</p></li>
+<li><p>In what language was the
+interview conducted?</p></li>
+<li><p>Was a pilot survey conducted?</p></li>
+<li><p>Were there any corrective
+actions taken by management
+when problems occurred in the
+field?</p></li>
+</ul>
+<dl>
+<dt>Example:</dt><dd><p><em>The pre-test for the survey took
+place from August 15, 2006 -
+August 25, 2006 and included 14
+interviewers who would later
+become supervisors for the main
+survey.</em></p>
+<p><em>Each interviewing team comprised
+of 3-4 female interviewers (no
+male interviewers were used due
+to the sensitivity of the subject
+matter), together with a field
+editor and a supervisor and a
+driver. A total of 52
+interviewers, 14 supervisors and
+14 field editors were used. Data
+collection took place over a
+period of about 6 weeks from
+September 2, 2006 until October
+17, 2006. Interviewing took place
+everyday throughout the fieldwork
+period, although interviewing
+teams were permitted to take one
+day off per week.</em></p>
+<p><em>Interviews averaged 35 minutes
+for the household questionnaire
+(excluding salt testing), 23
+minutes for the women’s
+questionnaire, and 27 for the
+under five children’s
+questionnaire (excluding the
+anthropometry). Interviews were
+conducted primarily in English
+and Mumbo-jumbo, but occasionally
+used local translation in
+double-Dutch, when the respondent
+did not speak English or
+Mumbo-jumbo.</em></p>
+<p><em>Six staff members of GenCenStat
+provided overall fieldwork
+coordination and supervision. The
+overall field coordinator was
+Mrs. Doe.</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Questionnaires</p></td>
+<td><p>This element is provided to
+describe the questionnaire(s)
+used for the data collection. The
+following should be mentioned:</p>
+<ul class="simple">
+<li><p>List of questionnaires and
+short description of each (all
+questionnaires must be
+provided as External
+Resources)</p></li>
+<li><p>In what language were the
+questionnaires published?</p></li>
+<li><p>Information on the
+questionnaire design process
+(based on a previous
+questionnaire, based on a
+standard model questionnaire,
+review by stakeholders). If a
+document was compiled that
+contains the comments provided
+by the stakeholders on the
+draft questionnaire, or a
+report prepared on the
+questionnaire testing, a
+reference to these documents
+should be provided here and
+the documents should be
+provided as External
+Resources.</p></li>
+</ul>
+<dl>
+<dt>Example:</dt><dd><p><em>The questionnaires for the
+Generic MICS were structured
+questionnaires based on the MICS3
+Model Questionnaire with some
+modifications and additions. A
+household questionnaire was
+administered in each household,
+which collected various
+information on household members
+including sex, age, relationship,
+and orphanhood status. The
+household questionnaire includes
+household characteristics,
+support to orphaned and
+vulnerable children, education,
+child labour, water and
+sanitation, household use of
+insecticide treated mosquito
+nets, and salt iodization, with
+optional modules for child
+discipline, child disability,
+maternal mortality and security
+of tenure and durability of
+housing.</em></p>
+<p><em>In addition to a household
+questionnaire, questionnaires
+were administered in each
+household for women age 15-49 and
+children under age five. For
+children, the questionnaire was
+administered to the mother or
+caretaker of the child.</em></p>
+<p><em>The women’s questionnaire
+include women’s characteristics,
+child mortality, tetanus toxoid,
+maternal and newborn health,
+marriage, polygyny, female
+genital cutting, contraception,
+and HIV/AIDS knowledge, with
+optional modules for unmet need,
+domestic violence, and sexual
+behavior.</em></p>
+<p><em>The children’s questionnaire
+includes children’s
+characteristics, birth
+registration and early learning,
+vitamin A, breastfeeding, care of
+illness, malaria, immunization,
+and anthropometry, with an
+optional module for child
+development.</em></p>
+<p><em>The questionnaires were
+developed in English from the
+MICS3 Model Questionnaires, and
+were translated into Mumbo-jumbo.
+After an initial review the
+questionnaires were translated
+back into English by an
+independent translator with no
+prior knowledge of the survey.
+The back translation from the
+Mumbo-jumbo version was
+independently reviewed and
+compared to the English original.
+Differences in translation were
+reviewed and resolved in
+collaboration with the original
+translators.</em></p>
+<p><em>The English and Mumbo-jumbo
+questionnaires were both piloted
+as part of the survey pretest.</em></p>
+<p><em>All questionnaires and modules
+are provided as external
+resources.</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td><p>Instrument Development</p></td>
+<td><p>Describe any development work on
+the data collection instrument.
+Type attribute allows for the
+optional use of a defined
+development type with or without
+use of a controlled vocabulary.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Review process for survey
+instrument</p></td>
+<td><p>Description of the review process /
+list of agencies/people consulted</p></td>
+</tr>
+<tr class="row-even"><td><p>Pilot/testing of survey instrument
+and data collection</p></td>
+<td><p>Description of pilot survey</p></td>
+</tr>
+<tr class="row-odd"><td><p>Survey management team</p></td>
+<td><p>Attributes: Name, Tittle, Agency,
+Role</p></td>
+</tr>
+<tr class="row-even"><td><p>Data collectors</p></td>
+<td><p>This element is provided in order
+to record information regarding
+the persons and/or agencies that
+took charge of the data
+collection. This element includes
+3 fields: Name, Abbreviation,
+the Affiliation and the Role. In
+most cases, we will record here the
+name of the agency, not the name of
+interviewers. Only in the case of
+very small-scale surveys, with a
+very limited number of
+interviewers, the name of person
+will be included as well. The
+field Affiliation is optional and
+not relevant in all cases. The role
+attribute specifies the role of
+person in the data collection
+process.</p>
+<dl>
+<dt>Example:</dt><dd><p><em>Abbreviation: CSO</em></p>
+<p><em>Affiliation: Ministry of
+Planning</em></p>
+<p><em>Role: Planner</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Compliance with international data
+collection standards</p></td>
+<td><p>Describe if the survey comply with
+international survey
+recommendations</p></td>
+</tr>
+<tr class="row-even"><td><p>Supervision</p></td>
+<td><p>This element will provide
+information on the oversight of
+the data collection. The
+following should be considered:</p>
+<ul class="simple">
+<li><p>Were the enumerators organized
+in teams that included a
+controller and a supervisor?
+With how many
+controllers/supervisors per
+interviewer?</p></li>
+<li><p>What were the main roles of
+the controllers/supervisors?</p></li>
+<li><p>Were there visits to the field
+by upper management? How
+often?</p></li>
+</ul>
+<dl>
+<dt>Example:</dt><dd><p><em>Interviewing was conducted by
+teams of interviewers. Each
+interviewing team comprised of
+3-4 female interviewers, a field
+editor and a supervisor, and a
+driver. Each team used a 4 wheel
+drive vehicle to travel from
+cluster to cluster (and where
+necessary within cluster).</em></p>
+<p><em>The role of the supervisor was
+to coordinator field data
+collection activities, including
+management of the field teams,
+supplies and equipment, finances,
+maps and listings, coordinate
+with local authorities concerning
+the survey plan and make
+arrangements for accommodation
+and travel. Additionally, the
+field supervisor assigned the
+work to the interviewers, spot
+checked work, maintained field
+control documents, and sent
+completed questionnaires and
+progress reports to the central
+office.</em></p>
+<p><em>The field editor was responsible
+for reviewing each questionnaire
+at the end of the day, checking
+for missed questions, skip
+errors, fields incorrectly
+completed, and checking for
+inconsistencies in the data. The
+field editor also observed
+interviews and conducted review
+sessions with interviewers.</em></p>
+<p><em>Responsibilities of the
+supervisors and field editors are
+described in the Instructions for
+Supervisors and Field Editors,
+together with the different field
+controls that were in place to
+control the quality of the
+fieldwork.</em></p>
+<p><em>Field visits were also made by a
+team of central staff on a
+periodic basis during fieldwork.
+The senior staff of GenCenStat
+also made 3 visits to field teams
+to provide support and to review
+progress.</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Data Processing</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Data entry and editing</p></td>
+<td><p>The data editing should contain
+information on how the data was
+treated or controlled for in
+terms of consistency and
+coherence. This item does not
+concern the data entry phase but
+only the editing of data whether
+manual or automatic.</p>
+<ul class="simple">
+<li><p>Was a hot deck or a cold deck
+technique used to edit the
+data?</p></li>
+<li><p>Were corrections made
+automatically (by program), or
+by visual control of the
+questionnaire?</p></li>
+<li><p>What software was used?</p></li>
+</ul>
+<p>If materials are available
+(specifications for data editing,
+report on data editing, programs
+used for data editing), they
+should be listed here and
+provided as external resources.</p>
+<dl>
+<dt>Example:</dt><dd><p><em>Data editing took place at a
+number of stages throughout the
+processing, including:</em></p>
+<p><em>a) Office editing and coding</em></p>
+<p><em>b) During data entry</em></p>
+<p><em>c) Structure checking and
+completenes</em></p>
+<p><em>d) Secondary editing</em></p>
+<p><em>e) Structural checking of SPSS
+data files</em></p>
+<p><em>Detailed documentation of the
+editing of data can be found in
+the “Data processing guidelines”
+document provided as an external
+resource.</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Software</p></td>
+<td><p>List of software used for the key
+activities (especially data entry,
+editing, tabulation, analysis).</p>
+<p>Attributes: Purpose and Software</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Other processing</p></td>
+<td><p>Use this field to provide as much
+information as possible on the
+data entry design. This includes
+such details as:</p>
+<ul class="simple">
+<li><p>Mode of data entry (manual or
+by scanning, in the field/in
+regions/at headquarters)</p></li>
+<li><p>Computer architecture (laptop
+computers in the field,
+desktop computers, scanners,
+PDA, other; indicate the
+number of computers used)</p></li>
+<li><p>Software used</p></li>
+<li><p>Use (and rate) of double data
+entry</p></li>
+<li><p>Average productivity of data
+entry operators; number of
+data entry operators involved
+and their work schedule</p></li>
+</ul>
+<p>Information on tabulation and
+analysis can also be provided
+here.</p>
+<p>All available materials (data
+entry/tabulation/analysis
+programs; reports on data entry)
+should be listed here and
+provided as external resources.</p>
+<dl class="simple">
+<dt>Example:</dt><dd><p><em>Data were processed in clusters,
+with each cluster being processed
+as a complete unit through each
+stage of data processing. Each
+cluster goes through the
+following steps:</em></p>
+</dd>
+</dl>
+<ol class="arabic simple">
+<li><p><em>Questionnaire reception</em></p></li>
+<li><p><em>Office editing and coding</em></p></li>
+<li><p><em>Data entry</em></p></li>
+<li><p><em>Structure and completeness
+checking</em></p></li>
+<li><p><em>Verification entry</em></p></li>
+<li><p><em>Comparison of verification
+data</em></p></li>
+<li><p><em>Back up of raw data</em></p></li>
+<li><p><em>Secondary editing</em></p></li>
+<li><p><em>Edited data back up</em></p></li>
+</ol>
+<p><em>After all clusters are
+processed, all data is
+concatenated together and then
+the following steps are completed
+for all data files:</em></p>
+<ol class="arabic simple" start="10">
+<li><p><em>Export to SPSS in 4 files
+(hh - household, hl -
+household members, wm - women,
+ch - children under 5)</em></p></li>
+<li><p><em>Recoding of variables needed
+for analysis</em></p></li>
+<li><p><em>Adding of sample weights</em></p></li>
+<li><p><em>Calculation of wealth
+quintiles and merging into
+data</em></p></li>
+<li><p><em>Structural checking of SPSS
+files</em></p></li>
+<li><p><em>Data quality tabulations</em></p></li>
+<li><p><em>Production of analysis
+tabulations</em></p></li>
+</ol>
+<p><em>Details of each of these steps
+can be found in the data
+processing documentation, data
+editing guidelines, data
+processing programs in CSPro and
+SPSS, and tabulation guidelines.</em></p>
+<p><em>Data entry was conducted by 12
+data entry operators in tow
+shifts, supervised by 2 data
+entry supervisors, using a total
+of 7 computers (6 data entry
+computers plus one supervisors’
+computer). All data entry was
+conducted at the GenCenStat head
+office using manual data entry.
+For data entry, CSPro version
+2.6.007 was used with a highly
+structured data entry program,
+using system controlled approach
+that controlled entry of each
+variable. All range checks and
+skips were controlled by the
+program and operators could not
+override these. A limited set of
+consistency checks were also
+included in the data entry
+program. In addition, the
+calculation of anthropometric
+Z-scores was also included in the
+data entry programs for use
+during analysis. Open-ended
+responses (“Other” answers) were
+not entered or coded, except in
+rare circumstances where the
+response matched an existing code
+in the questionnaire.</em></p>
+<p><em>Structure and completeness
+checking ensured that all
+questionnaires for the cluster
+had been entered, were
+structurally sound, and that
+women’s and children’s
+questionnaires existed for each
+eligible woman and child.</em></p>
+<p><em>100% verification of all
+variables was performed using
+independent verification, i.e.
+double entry of data, with
+separate comparison of data
+followed by modification of one
+or both datasets to correct
+keying errors by original
+operators who first keyed the
+files.</em></p>
+<p><em>After completion of all
+processing in CSPro, all
+individual cluster files were
+backed up before concatenating
+data together using the CSPro
+file concatenate utility.</em></p>
+<p><em>For tabulation and analysis SPSS
+versions 10.0 and 14.0 were used.
+Version 10.0 was originally used
+for all tabulation programs,
+except for child mortality. Later
+version 14.0 was used for child
+mortality, data quality
+tabulations and other analysis
+activities.</em></p>
+<p><em>After transferring all files to
+SPSS, certain variables were
+recoded for use as background
+characteristics in the tabulation
+of the data, including grouping
+age, education, geographic areas
+as needed for analysis. In the
+process of recoding ages and
+dates some random imputation of
+dates (within calculated
+constraints) was performed to
+handle missing or “don’t know”
+ages or dates. Additionally, a
+wealth (asset) index of household
+members was calculated using
+principal components analysis,
+based on household assets, and
+both the score and quintiles were
+included in the datasets for use
+in tabulations.</em></p>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p><strong>Coding Instructions</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Coding Instructions Text</p></td>
+<td><p>Describe specific coding
+instructions used in data
+processing, cleaning, assession,
+or tabulation. Use this field to
+describe instructions in a human
+readable form.</p>
+<dl class="simple">
+<dt>Example:</dt><dd><p><em>Due to an error in the data
+collection system the value of
+“27” was entered for the variable
+NBWFBPC which should be coded as
+an invalid value of “99”</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Command</p></td>
+<td><p>Provide command code for the coding
+instruction. The formalLanguage
+attribute identifies the language
+of the command code.</p>
+<dl class="simple">
+<dt>Example:</dt><dd><p><em>SPSS”&gt;RECODE V1 TO V100
+(10 THROUGH HIGH = 0)</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><p><strong>Data Appraisal</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Estimate of sampling error</p></td>
+<td><p>For sampling surveys, it is good
+practice to calculate and publish
+sampling error. This field is
+used to provide information on
+these calculations. This
+includes:</p>
+<ul class="simple">
+<li><p>A list of ratios/indicators
+for which sampling errors were
+computed.</p></li>
+<li><p>Details regarding the software
+used for computing the
+sampling error, and reference
+to the programs used (to be
+provided as external
+resources) as the program used
+to perform the calculations.</p></li>
+<li><p>Reference to the reports or
+other document where the
+results can be found (to be
+provided as external
+resources).</p></li>
+</ul>
+<dl>
+<dt>Example:</dt><dd><p><em>Estimates from a sample survey
+are affected by two types of
+errors: 1) non-sampling errors
+and 2) sampling errors.
+Non-sampling errors are the
+results of mistakes made in the
+implementation of data collection
+and data processing. Numerous
+efforts were made during
+implementation of the 2005-2006
+MICS to minimize this type of
+error, however, non-sampling
+errors are impossible to avoid
+and difficult to evaluate
+statistically.</em></p>
+<p><em>If the sample of respondents had
+been a simple random sample, it
+would have been possible to use
+straightforward formulae for
+calculating sampling errors.
+However, the 2005-2006 MICS
+sample is the result of a
+multi-stage stratified design,
+and consequently needs to use
+more complex formulae. The SPSS
+complex samples module has been
+used to calculate sampling errors
+for the 2005-2006 MICS. This
+module uses the Taylor
+linearization method of variance
+estimation for survey estimates
+that are means or proportions.
+This method is documented in the
+SPSS file CSDescriptives.pdf
+found under the Help, Algorithms
+options in SPSS.</em></p>
+<p><em>Sampling errors have been
+calculated for a select set of
+statistics (all of which are
+proportions due to the
+limitations of the Taylor
+linearization method) for the
+national sample, urban and rural
+areas, and for each of the five
+regions. For each statistic, the
+estimate, its standard error, the
+coefficient of variation (or
+relative error – the ratio
+between the standard error and
+the estimate), the design effect,
+and the square root design effect
+(DEFT – the ratio between the
+standard error using the given
+sample design and the standard
+error that would result if a
+simple random sample had been
+used), as well as the 95 percent
+confidence intervals (+/-2
+standard errors).</em></p>
+<p><em>Details of the sampling errors
+are presented in the sampling
+errors appendix to the report and
+in the sampling errors table
+presented in the external
+resources.</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td><p>Other forms data appraisal</p></td>
+<td><p>This section can be used to
+report any other action taken to
+assess the reliability of the
+data, or any observations
+regarding data quality. This item
+can include:</p>
+<ul class="simple">
+<li><p>For a population census,
+information on the post
+enumeration survey (a report
+should be provided in external
+resources and mentioned here).</p></li>
+<li><p>For any survey/census, a
+comparison with data from
+another source.</p></li>
+<li><p>Etc.</p></li>
+</ul>
+<dl class="simple">
+<dt>Example:</dt><dd><p><em>A series of data quality tables
+and graphs are available to
+review the quality of the data
+and include the following:</em></p>
+</dd>
+</dl>
+<ul class="simple">
+<li><p><em>Age distribution of the
+household population</em></p></li>
+<li><p><em>Age distribution of eligible
+women and interviewed women</em></p></li>
+<li><p><em>Age distribution of eligible
+children and children for whom
+the mother or caretaker was
+interviewed</em></p></li>
+<li><p><em>Age distribution of children
+under age 5 by 3 month groups</em></p></li>
+<li><p><em>Age and period ratios at
+boundaries of eligibility</em></p></li>
+<li><p><em>Percent of observations with
+missing information on
+selected variables</em></p></li>
+<li><p><em>Presence of mother in the
+household and person
+interviewed for the under 5
+questionnaire</em></p></li>
+<li><p><em>School attendance by single
+year age</em></p></li>
+<li><p><em>Sex ratio at birth among
+children ever born, surviving
+and dead by age of respondent</em></p></li>
+<li><p><em>Distribution of women by time
+since last birth</em></p></li>
+<li><p><em>Scatter plot of weight by
+height, weight by age and
+height by age</em></p></li>
+<li><p><em>Graph of male and female
+population by single years of
+age</em></p></li>
+<li><p><em>Population pyramid</em></p></li>
+</ul>
+<p><em>The results of each of these
+data quality tables are shown in
+the appendix of the final report
+and are also given in the
+external resources section.</em></p>
+<p><em>The general rule for
+presentation of missing data in
+the final report tabulations is
+that a column is presented for
+missing data if the percentage of
+cases with missing data is 1% or
+more. Cases with missing data on
+the background characteristics
+(e.g. education) are included in
+the tables, but the missing data
+rows are suppressed and noted at
+the bottom of the tables in the
+report (not in the SPSS output,
+however).</em></p>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p><strong>Data Access</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Access authority</p></td>
+<td><p>This section is composed of
+various sections:
+Name-Affiliation-email-URI. This
+information provides the contact
+person or entity to gain
+authority to access the data. It
+is advisable to use a generic
+email contact such as
+<a class="reference external" href="mailto:data&#37;&#52;&#48;popstatsoffice&#46;org">data<span>&#64;</span>popstatsoffice<span>&#46;</span>org</a> whenever
+possible to avoid tying access to
+a particular individual whose
+functions may change over time.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Confidentiality Declaration</p></td>
+<td><p>If the dataset is not anonymized,
+we may indicate here what
+Affidavit of Confidentiality must
+be signed before the data can be
+accessed. Another option is to
+include this information in the
+next element (Access conditions).
+If there is no confidentiality
+issue, this field can be left
+blank.</p>
+<p>An example of statement could be
+the following:</p>
+<p><em>Confidentiality of respondents
+is guaranteed by Articles N to NN
+of the National Statistics Act of
+[date].</em></p>
+<p><em>Before being granted access to
+the dataset, all users have to
+formally agree:</em></p>
+<ol class="arabic simple">
+<li><p><em>To make no copies of any
+files or portions of files to
+which s/he is granted access
+except those authorized by the
+data depositor.</em></p></li>
+<li><p><em>Not to use any technique in
+an attempt to learn the
+identity of any person,
+establishment, or sampling
+unit not identified on public
+use data files.</em></p></li>
+<li><p><em>To hold in strictest
+confidence the identification
+of any establishment or
+individual that may be
+inadvertently revealed in any
+documents or discussion, or
+analysis. Such inadvertent
+identification revealed in
+her/his analysis will be
+immediately brought to the
+attention of the data
+depositor.</em></p></li>
+</ol>
+<p><em>This statement does not replace
+a more comprehensive data
+agreement(see Access condition).</em></p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Access conditions</p></td>
+<td><p>Each dataset should have an
+“Access policy” attached to it.
+The IHSN recommends three levels
+of accessibility:</p>
+<ul class="simple">
+<li><p>Public use files, accessible
+to all</p></li>
+<li><p>Licensed datasets, accessible
+under conditions</p></li>
+<li><p>Datasets only accessible in a
+data enclave, for the most
+sensitive and confidential
+data.</p></li>
+</ul>
+<p>The IHSN has formulated standard,
+generic policies and access forms
+for each one of these three
+levels (which each country can
+customize to its specific needs).
+One of the three policies may be
+copy/pasted in this field once it
+has been edited as needed and
+approved by the appropriate
+authority. Before you fill this
+field, a decision has to be made
+by the management of the data
+depositor agency. Avoid writing a
+specific statement for each
+dataset.</p>
+<p>If the access policy is subject
+to regular changes, you should
+enter here a URL where the user
+will find detailed information on
+access policy which applies to
+this specific dataset. If the
+datasets are sold, pricing
+information should also be
+provided on a website instead of
+being entered here.</p>
+<p>If the access policy is not
+subject to regular changes, you
+may enter more detailed
+information here. For a public
+use file for example, you could
+enter information like:</p>
+<p><em>The dataset has been anonymized
+and is available as a Public Use
+Dataset. It is accessible to all
+for statistical and research
+purposes only, under the
+following terms and conditions:</em></p>
+<ol class="arabic simple">
+<li><p><em>The data and other materials
+will not be redistributed or
+sold to other individuals,
+institutions, or organizations
+without the written agreement
+of the [National Data
+Archive].</em></p></li>
+<li><p><em>The data will be used for
+statistical and scientific
+research purposes only. They
+will be used solely for
+reporting of aggregated
+information, and not for
+investigation of specific
+individuals or organizations.</em></p></li>
+<li><p><em>No attempt will be made to
+re-identify respondents, and
+no use will be made of the
+identity of any person or
+establishment discovered
+inadvertently. Any such
+discovery would immediately be
+reported to the [National Data
+Archive].</em></p></li>
+<li><p><em>No attempt will be made to
+produce links among datasets
+provided by the [National Data
+Archive], or among data from
+the [National Data Archive]
+and other datasets that could
+identify individuals or
+organizations.</em></p></li>
+<li><p><em>Any books, articles,
+conference papers, theses,
+dissertations, reports, or
+other publications that employ
+data obtained from the
+[National Data Archive] will
+cite the source of data in
+accordance with the Citation
+Requirement provided with each
+dataset.</em></p></li>
+<li><p><em>An electronic copy of all
+reports and publications based
+on the requested data will be
+sent to the [National Data
+Archive].</em></p></li>
+<li><p><em>The original collector of the
+data, the [National Data
+Archive], and the relevant
+funding agencies bear no
+responsibility for use of the
+data or for interpretations or
+inferences based upon such
+uses.</em></p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Citation requirement</p></td>
+<td><p>Citation requirement is the way
+that the dataset should be
+referenced when cited in any
+publication. Every dataset should
+have a citation requirement. This
+will guarantee that the data
+producer gets proper credit, and
+that analytical results can be
+linked to the proper version of
+the dataset. The Access Policy
+should explicitly mention the
+obligation to comply with the
+citation requirement (in the
+example above, see item 5). The
+citation should include at least
+the primary investigator, the
+name and abbreviation of the
+dataset, the reference year, and
+the version number. Include also
+a website where the data or
+information on the data is made
+available by the official data
+depositor.</p>
+<dl class="simple">
+<dt>Example:</dt><dd><p><em>“National Statistics Office of
+Popstan, Multiple Indicators
+Cluster Survey 2000 (MICS 2000),
+Version 01 of the public use
+dataset (April 2001), provided by
+the National Data Archive.
+www.nda_popstan.org”</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td><p>Location of Data Collection</p></td>
+<td><p>Location where the data collection
+is currently stored. Use the URI
+attribute to provide a URN or URL
+for the storage site or the actual
+address from which the data may be
+downloaded.</p></td>
+</tr>
+<tr class="row-odd"><td><p>URL for Location of Data Collection</p></td>
+<td><p>Location where the data collection
+is currently stored. Provide a URN
+or URL for the storage site or the
+actual address from which the data
+may be downloaded.</p></td>
+</tr>
+<tr class="row-even"><td><p>Archive Where Study Originally
+Stored</p></td>
+<td><p>Statement of collection
+availability. An archive may need
+to indicate that a collection is
+unavailable because it is embargoed
+for a period of time, because it
+has been superseded, because a new
+edition is imminent, etc. It is
+anticipated that a controlled
+vocabulary will be developed for
+this element.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Availability Status</p></td>
+<td><p>Statement of collection
+availability. An archive may need
+to indicate that a collection is
+unavailable because it is embargoed
+for a period of time, because it
+has been superseded, because a new
+edition is imminent, etc. It is
+anticipated that a controlled
+vocabulary will be developed for
+this element.</p></td>
+</tr>
+<tr class="row-even"><td><p>Deposit Requirement</p></td>
+<td><p>Information regarding user
+responsibility for informing
+archives of their use of data
+through providing citations to the
+published work or providing copies
+of the manuscripts.</p></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p><strong>Disclaimer and Copyright</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Disclaimer</p></td>
+<td><p>A disclaimer limits the liability
+that the Statistics Office has
+regarding the use of the data. A
+standard legal statement should
+be used for all datasets from a
+same agency. The IHSN recommends
+the following formulation:</p>
+<p><em>The user of the data
+acknowledges that the original
+collector of the data, the
+authorized distributor of the
+data, and the relevant funding
+agency bear no responsibility for
+use of the data or for
+interpretations or inferences
+based upon such uses.</em></p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Copyright</p></td>
+<td><p>Include here a copyright
+statement on the dataset, such
+as:</p>
+<p><em>© 2017, Popstan Central
+Statistics Agency</em></p>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><p><strong>Contacts</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Contact persons</p></td>
+<td><p>Users of the data may need
+further clarification and
+information. This section may
+include the
+name-affiliation-email-URI of one
+or multiple contact persons.
+Avoid putting the name of
+individuals. The information
+provided here should be valid for
+the long term. It is therefore
+preferable to identify contact
+persons by a title. The same
+applies for the email field.
+Ideally, a “generic” email
+address should be provided. It is
+easy to configure a mail server
+in such a way that all messages
+sent to the generic email address
+would be automatically forwarded
+to some staff members.</p>
+<dl>
+<dt>Example:</dt><dd><p><em>Name: Head, Data Processing
+Division</em></p>
+<p><em>Affiliation: National
+Statistics Office</em></p>
+<p><em>Email: dataproc&#64;cso.org</em></p>
+<p><em>URI: www.cso.org/databank</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="good-practices-for-completing-the-file-description">
+<h2>7.3. Good practices for completing the File Description<a class="headerlink" href="#good-practices-for-completing-the-file-description" title="Permalink to this headline">¶</a></h2>
+<p>The File Description is the DDI section that aims to provide a detailed
+description of each data file. The IHSN has selected six of the
+available DDI elements.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>File Citation</p></td>
+<td><p>Provides for a full bibliographic
+citation option for each data file
+described in File Description.</p></td>
+</tr>
+<tr class="row-even"><td><p>Contents of Files</p></td>
+<td><p>A data filename usually provides
+little information on its
+content. Provide here a
+description of this content. This
+description should clearly
+distinguish collected variables
+and derived variables. It is also
+useful to indicate the
+availability in the data file of
+some particular variables such as
+the weighting coefficients. If
+the file contains derived
+variables, it is good practice to
+refer to the computer program
+that generated it.</p>
+<dl class="simple">
+<dt>Examples:</dt><dd><ul class="simple">
+<li><p><em>The file contains data
+related to section 3A of the
+household survey questionnaire
+(Education of household
+members aged 6 to 24 years).
+It also contains the weighting
+coefficient, and various
+recoded variables on levels of
+education.</em></p></li>
+<li><p><em>The file contains derived
+data on household consumption,
+annualized and aggregated by
+category of products and
+services. The file also
+contains a regional price
+deflator variable and the
+household weighting
+coefficient. The file was
+generated using a Stata
+program named
+“cons_aggregate.do” available
+in the external resources.</em></p></li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td><p>File Producer</p></td>
+<td><p>Put the name of the agency that
+produced the data file. Most data
+files will have been produced by
+the survey primary investigator.
+In some cases however, auxiliary
+or derived files from other
+producers may be released with a
+data set. This may for example
+include CPI data generated by a
+different agency, or files
+containing derived variables
+generated by a researcher.</p></td>
+</tr>
+<tr class="row-even"><td><p>Version</p></td>
+<td><p>A data file may undergo various
+changes and modifications. These
+file specific versions can be
+tracked in this element. This
+field will in most cases be left
+empty. It is more important to
+fill the field identifying the
+version of the dataset (see
+above).</p></td>
+</tr>
+<tr class="row-odd"><td><p>Processing Checks</p></td>
+<td><p>Use this element if needed to
+provide information about the
+types of checks and operations
+that have been performed on the
+data file to make sure that the
+data are as correct as possible,
+e.g. consistency checking,
+wildcode checking, etc. Note that
+the information included here
+should be specific to the data
+file. Information about data
+processing checks that have been
+carried out on the data
+collection (study) as a whole
+should be provided in the “Data
+editing” element at the study
+level.</p>
+<p>You may also provide here a
+reference to an external resource
+that contains the specifications
+for the data processing checks
+(that same information may be
+provided also in the “Data
+Editing” filed in the Study
+Description section).</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Files Notes</p></td>
+<td><p>This field, aiming to provide
+information to the user on items
+not covered elsewhere, will in
+most cases be left empty.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="good-practices-for-completing-the-variables-description">
+<h2>7.4. Good practices for completing the Variables Description<a class="headerlink" href="#good-practices-for-completing-the-variables-description" title="Permalink to this headline">¶</a></h2>
+<p>The Variable Description is the section of the DDI document that
+provides detailed information on each variable.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="2"><p><strong>VARIABLES</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Names</p></td>
+<td><p>These are the names given to the
+variables. Ideally, the variable
+names should be a maximum of 8
+characters, and use a logical
+naming convention (e.g., section
+(S) and question (Q) numbers to
+name the question). If the
+variable names do not follow
+these principles, DO NOT CHANGE
+THE VARIABLE NAMES IN THE
+EDITOR, but make recommendations
+to the data processor for
+consideration for future surveys.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Labels</p></td>
+<td><p>All variables should have a label
+that</p>
+<ul class="simple">
+<li><p>Provides the item or question
+number in the original data
+collection instrument (unless
+item number serves as the
+variable name)</p></li>
+<li><p>Provides a clear indication of
+what the variable contains</p></li>
+<li><p>Provides an indication of
+whether the variable is
+constructed from other items</p></li>
+</ul>
+<p>Recommendations:</p>
+<ul class="simple">
+<li><p>Do not use ALL CAPS in labels.</p></li>
+<li><p>Make sure that different
+variables have different
+labels (avoid duplicate
+labels).</p></li>
+<li><p>For expenditure or income:
+indicating the currency and
+period of reference is crucial
+(e.g. “Annual per capita real
+expenditure in local currency”</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Width, StartCol, Endcol</p></td>
+<td><p>When you import your data files
+from Stata or SPSS, the
+information on StartCol and
+EndCol will be empty. It is
+crucial to add this information,
+in order to allow users to export
+the data to ASCII fixed format.
+To do so, use the “Variables &gt;
+Resequence” function in the
+Editor, for each data file.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Data type</p></td>
+<td><p>Four types of variables are
+recognized by the Editot:</p>
+<ul class="simple">
+<li><p><em>Numeric: Numeric variables
+are used to store any number,
+integer or floating point
+(decimals).</em></p></li>
+<li><p><em>Fixed string: A fixed string
+variable has a predefined
+length (default length is 8
+but it can range from 1 to 255
+characters in length) which
+enables the publisher to
+handle this data type more
+efficiently.</em></p></li>
+<li><p><em>Dynamic string: Dynamic
+string variables can be used
+to store open-ended
+questions.</em></p></li>
+<li><p><em>Date: date variables stored
+in ISO format
+(YYYY-MM-DD?—should specify)</em></p></li>
+</ul>
+<p>The data type is usually properly
+identified when the data is
+imported. It is important to
+avoid the use of string variables
+when this is not absolutely
+needed. Such issues must be taken
+care of before the data is
+imported in the Editor. See the
+section on “<a class="reference external" href="#gathering-and-preparing-the-data-set">1. Gathering and
+preparing the
+dataset</a>”
+above.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Measure</p></td>
+<td><p>The Metadata Editor will allow you
+to define the measure of a variable
+as:</p>
+<ul class="simple">
+<li><p><em>Nominal</em>: variable with
+numeric assignations for
+responses; the number assigned
+to each response does not have
+a meaning by itself.</p></li>
+</ul>
+<dl class="simple">
+<dt>Example:</dt><dd><p>Variable <em>sex</em>: 1 =
+Male, 2 = Female (the number
+does not have a meaning by
+itself; we could as well have
+assigned Male = 2 and Female =
+1). When variables are
+nominal, we can produce
+frequency tables by code, but
+calculating mean or standard
+deviation of the codes would
+not make sense.</p>
+</dd>
+</dl>
+<ul class="simple">
+<li><p><em>Ordinal</em>: variable with
+numeric assignations and in a
+logical sequence. The absolute
+size of the number, or the
+difference between two numbers
+has no meaning. But the
+sequence of the number
+matters.</p></li>
+</ul>
+<dl class="simple">
+<dt>Example:</dt><dd><p>An example of an
+ordinal variable would be a
+variable indicating the level
+of satisfaction of the
+respondent, for example on a
+scale of 1 (very unsatisfied)
+to 5 (very satisfied).</p>
+</dd>
+</dl>
+<ul class="simple">
+<li><p><em>Scale</em>: continuous variables
+that have inherent and not
+categorical value. Examples of
+such variables include the age
+of the person, the amount of
+income or expenditure, etc.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p><strong>CATEGORIES</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Categories</p></td>
+<td><p>Variable categories are the lists
+of codes (and their meaning) that
+apply to the variable. The
+Editor imports categories and
+their labels from the source data
+files (SPSS, Stata).</p>
+<p>If necessary, add/edit the codes.
+Use the Documentation &gt; Create
+categories from statistics if the
+source dataset did not include
+value labels (e,g., when imported
+from ASCII). Do not include codes
+for “Missing”. The codes for
+Missing must be specified in the
+“Missing data” field. If you fail
+to do that, the summary statistics
+(mean, standard deviation, etc)
+will be calculated including the
+missing code, which will be
+considered as a valid value.</p>
+<img alt="_images/Page42.png" src="_images/Page42.png" />
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p><strong>VARIABLE INFORMATION</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Time variable</p></td>
+<td><p>This is a check-box used to tag
+and identify variables used to
+define time.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Min</p>
+<p>Max</p>
+</td>
+<td><p>Allows modifying the minimum
+value of a variable. For each
+variable where it makes sense,
+you should check that the Min and
+Max values are correct. Remember:
+if a specific value is used for
+“Missing”, this should not be
+included in the Min-Max range.
+For example, if codes 1 and 2 are
+used for Male and Female, and 9
+for unknown sex, then the Min
+will be 1 and the Max will be 2.
+The code 9 must be listed in the
+“Missing” codes (see below).</p></td>
+</tr>
+<tr class="row-even"><td><p>Decimals</p></td>
+<td><p>Defines the number of decimal
+places of a numeric variable
+type.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Implicit decimals</p></td>
+<td><p>This check box is selected only
+when a fixed ASCII-type file is
+imported and the data file
+includes a decimal character. As
+the decimal character also
+requires a space in the variable
+length assignation, it is
+important to check this box in
+order to assure proper alignment
+of the data.</p></td>
+</tr>
+<tr class="row-even"><td><p>Missing data</p></td>
+<td><p>Missing values are those values
+that are blank in a data file but
+should have been responses and
+are within the path or universe
+of the questionnaire. Missing
+values should always be coded.
+Missing values should be
+differentiated from “not
+applicable” and zero (0) values.</p></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p><strong>STATISTICS</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Statistics Options</p></td>
+<td><p>Various options exist for
+displaying and presenting summary
+information of the variable to
+the user or the person browsing
+the output. Summary statistics
+are saved in the DDI document and
+become part of the metadata. It
+is therefore important to select
+the appropriate ones.</p>
+<ul class="simple">
+<li><p>For nominal variables you want
+to be sure that the categories
+are well defined and that some
+of the summary statistics are
+not displayed (such as means
+and standard deviations.</p></li>
+<li><p>For ordinal values, you want
+to be sure that the categories
+are displayed if they are
+required. Not all ordinal
+values will require a
+category. In some cases you
+may want to include some
+summary statistics such as
+mean and standard deviation.</p></li>
+<li><p>For scale values, you do not
+want to define categories and
+you may want to include some
+summary statistics such as
+mean and standard deviation.</p></li>
+</ul>
+<p>Make sure you do not include
+“Frequencies” for variables such
+as the household identification
+number or enumeration area. This
+would produce a useless frequency
+table, that would considerably
+increase the size of your DDI
+file (in general, a very large
+DDI file–8 to 10Mb or more–
+indicates such a problem).</p>
+<p>Make sure also that you do not
+include meaningless summary
+statistics, such as the mean or
+standard deviation calculated on
+the codes used for variable SEX.</p>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>Summary statistics such as the
+mean or standard deviation are
+calculated using all valid
+values. If special codes are
+used to indicate missing
+values, make sure they are
+declared in the “Missing”
+section. If not, they will be
+included in the calculations.
+For example, if you use code
+99999 for indicating missing
+values in a variable on
+household expenditure, code
+99999 must be listed in the
+missing section as follows:</p></li>
+</ul>
+<img alt="_images/Page43.png" src="_images/Page43.png" />
+<ul class="simple">
+<li><p>If you modify information such
+as the categories or missing
+values, you must use the
+“Documentation &gt; Update
+Statistics” command in the
+Editor to refresh the summary
+statistics.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p><strong>DOCUMENTATION</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Definition</p></td>
+<td><p>This element provides a space to
+describe the variable in detail.
+Not all variables require
+definition. The following
+variables should always be
+defined when available in a
+questionnaire:</p>
+<ul class="simple">
+<li><p>Household (attach this
+definition to the
+“household ID” variable</p></li>
+<li><p>Head of household (attach this
+definition to the variable
+“relationship to the head”</p></li>
+<li><p>Urban/rural</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Universe</p></td>
+<td><p>The universe at the variable
+level reflects skip patterns
+within-records in a
+questionnaire. This information
+can typically be copy/pasted from
+the survey questionnaire. Try to
+be as specific as possible. This
+information is very useful for
+the analyst.</p>
+<p>In many cases, a block of
+variables will have the same
+universe (for example, a block of
+variables on education can all
+relate to the “Population aged 6
+to 24 year). The Toolkit allows
+you to select multiple variables
+and enter the universe
+information to all variables at
+once.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Source of information</p></td>
+<td><p>Enter information regarding who
+provided the information
+contained within the variable. In
+most cases, the source will be
+“Head of household” or “Household
+member”. But it may also be:</p>
+<ul class="simple">
+<li><p>GPS measure (for geographic
+position)</p></li>
+<li><p>Interviewer’s visual
+observation (for type of
+dwelling)</p></li>
+<li><p>Best informant in community</p></li>
+<li><p>Etc.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Concepts</p></td>
+<td><p>Greater description on the nature
+of the variable can be placed in
+this element. For example, this
+element can provide a clearer
+definition for certain variables
+(i.e. a variable that provides
+information on whether a person
+is a household member). In the
+case of household membership, a
+conceptual definition can be
+provided.</p>
+<dl class="simple">
+<dt>Example:</dt><dd><p><em>A household member is defined as
+any person who has been resident
+in the household for six months
+or more in a given year and takes
+meals together OR by default the
+head of household, infants under
+6 months, newly wedded couples
+etc.</em></p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td><p>Pre-question text</p>
+<p>Literal question</p>
+<p>Post-question text</p>
+</td>
+<td><p>The <em>pre-question texts</em> are the
+instructions provided to the
+interviewers and <strong>printed in the
+questionnaire before the literal
+question</strong>. This does not apply to
+all variables. Do not confuse
+this with instructions provided
+in the interviewer’s manual. With
+this and the next two fields, one
+should be able to understand how
+the question was asked during the
+interview. See example below.</p>
+<p>The <em>literal question</em> is the
+full text of the questionnaire as
+the enumerator is expected to ask
+it when conducting the interview.
+This does not apply to all
+variables (it does not apply to
+derived variables).</p>
+<p>The <em>post-question texts</em> are
+instructions provided to the
+interviewers, <strong>printed in the
+questionnaire after the literal
+question</strong>. Post-question can be
+used to enter information on
+skips provided in the
+questionnaire. This does not
+apply to all variables. Do not
+confuse this with instructions
+provided in the interviewer’s
+manual. With this and the next
+two fields, one should be able to
+understand how the question was
+asked during the interview. See
+example above.</p>
+<dl class="simple">
+<dt>Example:</dt><dd><p>In the example below
+(extracted from a UNICEF-MICS
+standard questionnaire), we find
+a pre-question, a literal
+question and a post-question.</p>
+</dd>
+</dl>
+<img alt="_images/image15.png" src="_images/image15.png" />
+<ul class="simple">
+<li><p>Pre-question: <em>Check age. If
+child is 3 years old or more,
+ask:</em></p></li>
+<li><p>Literal question: <em>Does (name)
+attend any organized learning
+or early childhood education
+programme, such as private or
+government facility, including
+kindergarten or community
+child care?</em></p></li>
+<li><p>Post-question: <em>If answer is 2
+or 9 &gt; Goto next module</em></p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Interviewer Instruction</p></td>
+<td><p>Copy/paste the instructions
+provided to the interviewers <strong>in
+the interviewer’s manual</strong>. In
+cases where some instructions
+relate to multiple variables,
+repeat the information in all
+variables. The Editor allows you
+to select multiple variables and
+enter the information to all
+these variables at once.</p></td>
+</tr>
+<tr class="row-even"><td><p>Imputation</p></td>
+<td><p>The field is provided to record
+any imputation or replacement
+technique used to correct
+inconsistent or unreasonable
+data. It is recommended that this
+field provide a summary of what
+was done and include a reference
+to a file in the external
+resources section.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Recoding and derivation</p></td>
+<td><p>This element applies to data that
+were obtained by recoding
+collected variables, or by
+calculating new variables that
+were not directly obtained from
+data collection. It is very
+important to properly document
+such variables. Poorly documented
+variables cannot (or should not)
+be used by researchers. In cases
+where the recoding or derivation
+method was very simple, a full
+description can be provided here.
+For example, if variable AGE_GRP
+was obtained by recoding variable
+S1Q3, we could simply mention
+<em>“Variable obtained by recoding
+the age in years provided in
+variable S1Q3 into age groups for
+years 0-4, 5-9, …, 60-64, 65 and
+over. Code 99 indicates unknown
+age.”</em></p>
+<p>When the derivation method is
+more complex, provide here a
+reference to a document (and/or
+computer program) to be provided
+as an External Resource. This
+will be the case for example for
+a variable “TOT_EXP” containing
+the household annual total
+expenditure, obtained from a
+household budget survey. In such
+case, the information provided
+here could be:</p>
+<p><em>“This variable provides the
+annual household expenditure. It
+was obtained by aggregating
+expenditure data on all goods and
+services, available in sections 4
+to 6 of the household
+questionnaire. It contains
+imputed rental values for
+owner-occupied dwellings. The
+values have been deflated by a
+regional price deflator available
+in variable REG_DEF”. All values
+are in local currency. Outliers
+have been fixed. Details on the
+calculations are available in
+Appendix 2 of the Report on Data
+Processing, and in the Stata
+program “aggregates.do” available
+in external resources.”</em></p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Security</p></td>
+<td><p>This field will be left empty in
+most cases. It can be used to
+identify variables that are
+direct identifiers of the
+respondents (or highly
+identifying indirect
+identifiers), and that should not
+be released.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Notes</p></td>
+<td><p>This element is provided in order
+to record any additional or
+auxiliary information related to
+the specific variable.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="good-practices-for-completing-the-external-resources-description">
+<h2>7.5. Good practices for completing the External Resources description<a class="headerlink" href="#good-practices-for-completing-the-external-resources-description" title="Permalink to this headline">¶</a></h2>
+<p>The External Resources are all materials related to the study others
+than the data files. They include documents (such as the questionnaires,
+interviewer’s manuals, reports, etc), programs (data entry, editing,
+tabulation, and analysis), maps, photos, and others. To document
+external resources, the Metadata Editor  uses the Dublin Core metadata
+standard (which complements the DDI standard).</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Label</p></td>
+<td><p>This is the label that will be
+used to display a hyper link to
+the attached document. It can be
+the title, name, or an
+abbreviated version of the title.</p></td>
+</tr>
+<tr class="row-even"><td><p>Resource</p></td>
+<td><p>The resource is used to point to
+the file that will be attached
+and distributed. The folder where
+the document is found is a
+relative path and should be the
+folder that will be pasted into
+the document path. Once you
+have pointed to the specified
+resource make sure you check file
+access by clicking the folder
+icon to the right of the entry
+field.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Type</p></td>
+<td><p>This is crucial information. A
+controlled vocabulary is
+provided. The selection of the
+type is important as it
+determines the way it will be
+presented or displayed to the
+user in the final output. The
+following are the choices:</p>
+<ul class="simple">
+<li><p>Document Administrative: This
+includes materials such as the
+survey budget; grant agreement
+with sponsors; list of staff
+and interviewers, etc.</p></li>
+<li><p>Document Analytical: Documents
+that present analytical output
+(academic papers, etc. This
+does not include the
+descriptive survey report (see
+below).</p></li>
+<li><p>Document Questionnaire: the
+actual questionnaire(s) used
+in the field.</p></li>
+<li><p>Document Reference: Any
+reference documents that are
+not directly related to the
+specific dataset, but that
+provide background information
+regarding methodology, etc.
+For international standard
+surveys, this may for example
+include the generic guidelines
+provided by the survey
+sponsor.</p></li>
+<li><p>Document Report: Survey
+reports, studies and other
+reports that use the data as
+the basis for their findings.</p></li>
+<li><p>Document Technical:
+Methodological documents
+related to survey design,
+interviewer’s and supervisor’s
+manuals, editing
+specifications, data entry
+operator’s manual, tabulation
+and analysis plan, etc.</p></li>
+<li><p>Document Other: Miscellaneous
+items</p></li>
+<li><p>Audio: audio type files.</p></li>
+<li><p>Map: Any cartographic
+information.</p></li>
+<li><p>Photo: Photos can provide good
+documentary evidence of a
+survey.</p></li>
+<li><p>Program: programs generated
+during data entry and analysis
+(data entry, editing,
+tabulation and analysis).
+These can be zipped together
+(include a brief summary
+report to describe the
+contents)</p></li>
+<li><p>Table: Tabulations such as
+confidence intervals that may
+not be included in a general
+report.</p></li>
+<li><p>Video: video type files
+provided as additional visual
+information</p></li>
+<li><p>Website: Link to related
+website(s), such as a link to
+a Redatam server, or to the
+website of the survey sponsor
+in the case of international
+survey programs like the DHS,
+LSMS, or MICS).</p></li>
+<li><p>Database: any databases
+related to the survey (e.g., a
+Devinfo database providing the
+aggregated results of the
+survey).</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Title</p></td>
+<td><p>Full title of the document as it
+is provided on the cover page.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Subtitle</p></td>
+<td><p>Subtitle if relevant.</p></td>
+</tr>
+<tr class="row-even"><td><p>Author(s)</p></td>
+<td><p>Include all authors that are
+listed on the report.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Date Created</p></td>
+<td><p>Date of the publication of the
+report or resource (at least
+month and year). For reports,
+this is most likely stated on the
+cover page of the document. For
+other types of resources, put
+here the date the resource was
+produced.</p></td>
+</tr>
+<tr class="row-even"><td><p>Country</p></td>
+<td><p>The country (or countries) that
+are covered by the associated
+document.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Language</p></td>
+<td><p>Use the Language element to list
+all languages which appear in a
+resource. The languages should be
+selected from the drop-down list,
+and each language should appear
+on its own line. The proposed
+controlled vocabulary is based on
+ISO 639-3s.</p></td>
+</tr>
+<tr class="row-even"><td><p>Format</p></td>
+<td><p>The file format provides
+information on the kind of
+electronic document being
+provided. This includes: PDF,
+Word, Excel etc. This is a
+controlled vocabulary. If the
+controlled vocabulary does not
+provide the format you need, type
+it (or add it in the controlled
+vocabulary using the Editor
+Template Editor). Providing
+information on the format will
+inform the user on the software
+needed to open the file.</p></td>
+</tr>
+<tr class="row-odd"><td><p>ID Number</p></td>
+<td><p>If there is a unique ID number
+which references the document
+(such as a Library of Congress
+number or a World Bank
+Publication number) include this
+as the ID Number.</p></td>
+</tr>
+<tr class="row-even"><td><p>Contributor(s)</p></td>
+<td><p>Include the names of all
+organizations that have been
+involved or contributed to
+producing the publication. This
+included funding sources as well
+as authoring entities.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Publisher(s)</p></td>
+<td><p>Include the official
+organization(s) accredited with
+disseminating the report.</p></td>
+</tr>
+<tr class="row-even"><td><p>Rights</p></td>
+<td><p>Some resources are protected by
+copyrights. Use the Rights
+element to provide a clear and
+complete description of the usage
+rights if relevant.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Description</p></td>
+<td><p>A brief description of the
+resource.</p></td>
+</tr>
+<tr class="row-even"><td><p>Abstract</p></td>
+<td><p>An abstract of the content of the
+resource.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Table of Contents</p></td>
+<td><p>Use the Table of Contents element
+to list all sections of a report,
+questionnaire, or other document.
+When copying a table of contents
+from another file into a project,
+pay close attention to the
+formatting as tabs, indents, and
+fonts may not be preserved.
+Because the text cannot be
+formatted, adopting strategies
+such as placing chapter titles in
+capital letters can help keep a
+table of contents organized.
+Including page numbers is not
+crucial.</p></td>
+</tr>
+<tr class="row-even"><td><p>Subjects</p></td>
+<td><p>The key topics discussed in the
+resource can be listed in the
+Subjects element. Although the
+IHSN Resource Template does not
+include a controlled vocabulary
+for this element, organizations
+may opt to modify the template
+and establish a set list of
+subjects which all of their
+projects should use when
+documenting studies.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="createVarGroups.html" class="btn btn-neutral float-right" title="8. Creating variable groups" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="importResources.html" class="btn btn-neutral float-left" title="6. Importing external resources" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Olivier Dupriez, Diana Marcela Sanchez Castro, Matthew Welch
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
